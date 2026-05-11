@@ -1,11 +1,11 @@
 # Randy Olson — Episode 1 proposals
 
-Randy is co-founder/CTO of Good Eye Labs, a longtime AI/ML researcher (early work on TPOT/AutoML) and a data-viz veteran who has moderated r/dataisbeautiful for years. His segment screen-shared one big skill in action (data-viz generation + Tuftean verifier loop) and laid out a lot of generalisable skill-design advice. He posts daily AI-generated data-viz stories from this same skill.
+Randy is co-founder/CTO of Goodeye Labs, a longtime AI/ML researcher (early work on TPOT/AutoML) and a data-viz veteran who has moderated r/dataisbeautiful for years. His segment screen-shared one big skill in action (data-viz generation + Tuftean verifier loop) and laid out a lot of generalisable skill-design advice. He posts daily AI-generated data-viz stories from this same skill.
 
 ## Skills
 
 ### Data-visualization skill (Tufte-style + verifier loop)
-The headline artifact. A long, phase-structured skill that takes a one-line idea and produces a publishable chart. Phases observed on screen: environment setup → dataset discovery (biased toward CDC / government / educational sources) → multi-variant prototyping (line, small multiples, area) → an LLM-as-judge "Tufty test" verifier loop that scores the image against Tuftean principles (no chart junk, clear annotations, labeled axes, clear story) and feeds failures back as fix-it instructions → final chart. He demoed a live run on US marriage/divorce data; Hugo separately re-ran it on Secretariat's Kentucky Derby record. Randy: *"I run this skill every single morning, and that's how I make that post series."* [01:33:00] Demoed across [01:13:00–01:32:00]; said it can be made available after the episode [01:13:00]. Blog with daily outputs referenced [01:34:00].
+The headline artifact. A long, phase-structured skill that takes a one-line idea and produces a publishable chart. Phases observed on screen: environment setup → dataset discovery (biased toward CDC / government / educational sources) → multi-variant prototyping (line, small multiples, area) → an LLM-as-judge "Tufte test" verifier loop that scores the image against Tuftean principles (no chart junk, clear annotations, labeled axes, clear story) and feeds failures back as fix-it instructions → final chart. He demoed a live run on US marriage/divorce data; Hugo separately re-ran it on Secretariat's Kentucky Derby record. Randy: *"I run this skill every single morning, and that's how I make that post series."* [01:33:00] Demoed across [01:13:00–01:32:00]; said it can be made available after the episode [01:13:00]. Blog with daily outputs referenced [01:34:00].
 
 ### "Be concise and unambiguous" skill (aspirational)
 Randy on his most-typed prompt: *"One of my most typed phrases is probably, like, 'Be concise, unam- and unambiguous.' I should just turn that into a skill."* [01:11:00] He hasn't shipped it, but it's a clean micro-skill candidate in the Jeremiah `ship-it` mould.
@@ -16,7 +16,7 @@ Randy on his most-typed prompt: *"One of my most typed phrases is probably, like
 Randy maintains *"a growing memory base where I throw in ideas and track everything"* and loads agents with *"what I call a digital twin"* so they push back instead of being sycophantic. *"You can induce that... by prompting LLMs."* [01:07:00–01:08:00] Described, not shown — a practice he layers on top of every agent he works with.
 
 ### Generate-and-verify built into the skill itself
-Concrete instance, not the concept: Randy's data-viz skill pairs a deterministic check (e.g. DPI on the rendered image) with an LLM-as-judge "Tufty test" that scores the chart and feeds failures back as fix-it instructions. *"You don't wanna just tell it what to do, you also wanna tell it how to check it."* [01:29:00] Hugo flagged this as one of the five workflows in Anthropic's *Building Effective AI Agents* post [01:35:00–01:36:00].
+Concrete instance, not the concept: Randy's data-viz skill pairs a deterministic check (e.g. DPI on the rendered image) with an LLM-as-judge "Tufte test" that scores the chart and feeds failures back as fix-it instructions. *"You don't wanna just tell it what to do, you also wanna tell it how to check it."* [01:29:00] Hugo flagged this as one of the five workflows in Anthropic's *Building Effective AI Agents* post [01:35:00–01:36:00].
 
 ### Daily cron-driven AI work
 *"I have a ton of cron jobs that do things like that, that automatically send off reports to colleagues."* [01:14:00–01:15:00] The data-viz skill itself runs daily on a cron and feeds his blog post series [01:33:00].
@@ -26,8 +26,8 @@ He runs the skill, then his actual job is to glance at outputs: *"Most of what I
 
 ## Tools / projects he showed
 
-### Workflow-pull tool (not named)
-Briefly pointed at: *"This is a tool that I use to pull it [the workflow/template], and I can... if we have time, I can talk about that."* [01:26:00] Never got back to it on stream. Worth chasing offline before proposing as a repo artifact — name unknown.
+### Goodeye
+The tool Randy pointed at is [Goodeye](https://goodeyelabs.com), the outcome-aligned AI workflow registry he co-founded. Agents pull a workflow body from its public template catalog and execute it. The workflow he ran live on stream is shipped in this repo at [`skills/high-signal-chart-workflow`](../../skills/high-signal-chart-workflow); the maintained version lives at https://app.goodeyelabs.com/templates/randalolson/high-signal-chart-workflow. [01:26:00]
 
 ## Explainers
 
