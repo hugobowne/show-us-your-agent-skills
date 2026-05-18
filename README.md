@@ -67,9 +67,13 @@ Workflow writeups are coming next, starting with Wes McKinney's stack:
 | [prompt-refinement](skills/prompt-refinement) | Interview the user's intent, ask for three variations at different magnitudes of change, score against a rubric you wrote up front. | Hilary Mason (Hidden Door) | [01:01:00](https://youtube.com/live/l37PR-OkYKA?t=3660) |
 | [marimo-pair](skills/marimo-pair) | A coding agent drives a reactive Marimo notebook through a bash bridge into the Python kernel, for human-in-the-loop EDA. | Eric Ma (Moderna) | [00:11:57](https://youtube.com/live/l37PR-OkYKA?t=717) |
 
-Workflow writeups are coming next, including:
+| Workflow | What it does | Guest | Watch |
+|----------|--------------|-------|-------|
+| [agentic-eda](workflows/agentic-eda) | Human-in-the-loop EDA: agent renders the next plot, human picks the next question, every claim backed by an artifact. | Eric Ma (Moderna) | [00:23:27](https://youtube.com/live/l37PR-OkYKA?t=1407) |
+| [eval-driven-charts](workflows/eval-driven-charts) | Build an agent-facing chart library by generalising eval failures into features; the package can never regress on an eval it once passed. | Bryan Bischof (Theory Ventures) | [01:25:11](https://youtube.com/live/l37PR-OkYKA?t=5111) |
 
-- **Eval-driven feature development.** Bryan Bischof's BBplot ships features only when agent failures on a separate eval repo generalize into feature requests; he isn't allowed to add anything just because he thinks it would be nice.
+Still to come from this episode:
+
 - **Weekly gremlin agents.** Hilary Mason runs a Sunday-night cron of three agent personas that pull from Hidden Door's "bad ideas" Slack channel, pitch and critique each other, and write design docs for moonshots the team would never schedule.
 - **Local-first inference.** Tom Tunguz runs Qwen 35B on a Mac M5 at 120 to 140 tokens per second with a 256K context window; cloud only comes in for multi-file rearchitectures or hard bugs.
 
