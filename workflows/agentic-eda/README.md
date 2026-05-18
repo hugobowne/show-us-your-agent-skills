@@ -2,7 +2,7 @@
 
 A human-in-the-loop workflow for exploratory data analysis with a coding agent. The agent renders the next plot, the human picks the next question, and every claim is backed by an artifact. Captured from Eric Ma's episode 2 demo, where he ran a full protein engineering analysis this way in roughly twenty minutes.
 
-This is Eric's workflow, attributed throughout. The agent skill Eric uses to make it fluid (Marimo Pair) is described in [`skills/marimo-pair/`](../../skills/marimo-pair).
+This is Eric's workflow. The agent skill Eric uses to make it fluid (Marimo Pair) is described in [`skills/marimo-pair/`](../../skills/marimo-pair).
 
 ## who showed it
 
