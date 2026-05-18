@@ -52,5 +52,8 @@ It's also project-agnostic. He offered to release it publicly *"under the banner
 
 ## status
 
-Stub. Not yet ported from Jeremiah's own repo. He offered on stream to
-make it public under this podcast.
+The `SKILL.md` here was transcribed via OCR from the live recording
+([\[00:50:30\]](https://youtube.com/live/Pq3xuChdwxQ?t=3030) onward),
+not ported from Jeremiah's own repo. He offered on stream to make the
+authoritative version public under this podcast, which will replace
+this file soon.

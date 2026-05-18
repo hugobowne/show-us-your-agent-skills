@@ -46,4 +46,9 @@ short file he keeps editing as he notices new tics he doesn't like
 
 ## status
 
-Stub. Not yet ported from Jeremiah's own skills folder.
+The `SKILL.md` here was transcribed via OCR from the live recording
+([\[00:54:13\]](https://youtube.com/live/Pq3xuChdwxQ?t=3253) onward),
+not ported from Jeremiah's own skills folder. It is **incomplete**:
+Jeremiah did not scroll past the `### Response Patterns` heading on
+camera, so the body cuts off there. The full file will replace this
+one soon.

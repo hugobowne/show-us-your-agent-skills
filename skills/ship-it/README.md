@@ -38,4 +38,7 @@ to deterministic behavior.
 
 ## status
 
-Stub. Not yet ported from Jeremiah's own repo.
+The `SKILL.md` here was transcribed via OCR from the live recording
+([\[00:54:40\]](https://youtube.com/live/Pq3xuChdwxQ?t=3280) onward),
+not ported from Jeremiah's own repo. Jeremiah's authoritative version
+will replace this file soon.
