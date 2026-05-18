@@ -1,5 +1,8 @@
 # github-reply
 
+<a href="https://youtube.com/live/Pq3xuChdwxQ?t=3248"><img src="images/hero.png" alt="Jeremiah Lowin walking through the github-reply skill on Episode 1 of Show Us Your Agent Skills" /></a>
+<sub>Jeremiah Lowin demos `github-reply` on Episode 1 of <em>Show Us Your Agent Skills</em>. <a href="https://youtube.com/live/Pq3xuChdwxQ?t=3248">[00:54:08]</a></sub>
+
 A small skill that shapes the tone of replies to GitHub contributors so
 the agent doesn't sandwich a rejection inside a "Great work."
 

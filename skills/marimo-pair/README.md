@@ -1,5 +1,8 @@
 # marimo-pair
 
+<a href="https://youtube.com/live/l37PR-OkYKA?t=717"><img src="images/hero.png" alt="Eric Ma opening his marimo-pair demo on Episode 2 of Show Us Your Agent Skills" /></a>
+<sub>Eric Ma opens his `marimo-pair` demo on Episode 2 of <em>Show Us Your Agent Skills</em>. <a href="https://youtube.com/live/l37PR-OkYKA?t=717">[00:11:57]</a></sub>
+
 An agent skill that pairs markdown instructions with a bash bridge into a reactive Marimo notebook, so a coding agent can drive interactive exploratory data analysis end-to-end while the human steers one plot at a time.
 
 ## who showed it

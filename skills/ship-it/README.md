@@ -1,5 +1,8 @@
 # ship-it
 
+<a href="https://youtube.com/live/Pq3xuChdwxQ?t=3292"><img src="images/hero.png" alt="Jeremiah Lowin walking through the ship-it skill on Episode 1 of Show Us Your Agent Skills" /></a>
+<sub>Jeremiah Lowin demos `ship-it` on Episode 1 of <em>Show Us Your Agent Skills</em>. <a href="https://youtube.com/live/Pq3xuChdwxQ?t=3292">[00:54:52]</a></sub>
+
 A one-instruction skill that re-trains the agent's interpretation of
 "ship it" so the right thing happens: open a PR, do not merge.
 

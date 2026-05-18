@@ -1,5 +1,8 @@
 # 8-bit-video-gen
 
+<img src="images/hero.png" alt="Eric Ma's headshot rendered as 8-bit pixel art by the skill" />
+<sub>Eric Ma's headshot, run through `8-bit-video-gen` and stylised by Gemini.</sub>
+
 A two-step pipeline that turns a guest's photo into a short 8-bit pixel-art video. Gemini stylizes the photo as an 8-bit still, then Replicate's seedance-2.0 animates that still into an MP4.
 
 ## how it's used
