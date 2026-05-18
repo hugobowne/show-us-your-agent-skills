@@ -17,6 +17,29 @@ This repo turns each episode into browsable, forkable artifacts: markdown
 skills, workflow writeups, and tool references you can read, copy, and
 adapt to your own setup.
 
+## Installation (npx skills)
+
+You can install the skills in this repo with:
+
+```
+npx skills add https://github.com/hugobowne/show-us-your-agent-skills
+```
+
+Install one skill only:
+
+```
+npx skills add https://github.com/hugobowne/show-us-your-agent-skills --skill explain
+```
+
+Check for updates:
+
+```
+npx skills check
+npx skills update
+```
+
+These skills are snapshots from the corresponding live streams. Creators often iterate on their own versions afterwards, so check each skill's README for instructions to pull the latest from the creator when one is linked.
+
 ## Episode 1: Wes McKinney, Jeremiah Lowin, Randy Olson
 
 [Watch on YouTube](https://youtube.com/live/Pq3xuChdwxQ)
@@ -42,6 +65,12 @@ Workflow writeups are coming next, starting with Wes McKinney's stack:
 |-------|--------------|-------|-------|
 | [prompt-refinement](skills/prompt-refinement) | Interview the user's intent, ask for three variations at different magnitudes of change, score against a rubric you wrote up front. | Hilary Mason (Hidden Door) | [01:01:00](https://youtube.com/live/l37PR-OkYKA?t=3660) |
 | [marimo-pair](skills/marimo-pair) | A coding agent drives a reactive Marimo notebook through a bash bridge into the Python kernel, for human-in-the-loop EDA. | Eric Ma (Moderna) | [00:11:57](https://youtube.com/live/l37PR-OkYKA?t=717) |
+
+Workflow writeups are coming next, including:
+
+- **Eval-driven feature development.** Bryan Bischof's BBplot ships features only when agent failures on a separate eval repo generalize into feature requests; he isn't allowed to add anything just because he thinks it would be nice.
+- **Weekly gremlin agents.** Hilary Mason runs a Sunday-night cron of three agent personas that pull from Hidden Door's "bad ideas" Slack channel, pitch and critique each other, and write design docs for moonshots the team would never schedule.
+- **Local-first inference.** Tom Tunguz runs Qwen 35B on a Mac M5 at 120 to 140 tokens per second with a 256K context window; cloud only comes in for multi-file rearchitectures or hard bugs.
 
 ## Upcoming episodes
 
