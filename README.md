@@ -34,15 +34,18 @@ Workflow writeups are coming next, starting with Wes McKinney's stack:
 - **A fleet of long-running sessions.** 4–5 Superpowers projects spec'd and implementing in parallel, unattended; one plan ran 14 hours and 45 tasks without him touching it.
 - **"Off the rails?" review.** No line-level reading. The only question Wes asks is whether the agent strayed structurally or chased scope creep.
 
+## Episode 2: Hilary Mason, Bryan Bischof, Eric Ma, Tomasz Tunguz
+
+[Watch on YouTube](https://youtube.com/live/l37PR-OkYKA)
+
+| Skill | What it does | Guest | Watch |
+|-------|--------------|-------|-------|
+| [prompt-refinement](skills/prompt-refinement) | Interview the user's intent, ask for three variations at different magnitudes of change, score against a rubric you wrote up front. | Hilary Mason (Hidden Door) | [01:01:00](https://youtube.com/live/l37PR-OkYKA?t=3660) |
+| [marimo-pair](skills/marimo-pair) | A coding agent drives a reactive Marimo notebook through a bash bridge into the Python kernel, for human-in-the-loop EDA. | Eric Ma (Moderna) | [00:11:57](https://youtube.com/live/l37PR-OkYKA?t=717) |
+
 ## Upcoming episodes
 
 Register on Luma to join live, or get the recording after.
-
-### Episode 2: Hilary Mason, Bryan Bischof, Eric Ma, Tomasz Tunguz
-
-[Register on Luma](https://luma.com/7kfkk6wb)
-
-Joined by Hilary Mason (CEO, HiddenDoor), Bryan Bischof (Theory Ventures), Eric Ma (leads Research DS in the DS/AI group at Moderna Therapeutics), and Tomasz Tunguz (Theory Ventures).
 
 ### Episode 3: Matthew Honnibal & Ines Montani, Eleanor Berger, Alan Nichol, Vincent Warmerdam
 
