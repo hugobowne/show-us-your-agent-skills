@@ -1,8 +1,5 @@
 # prompt-refinement
 
-<a href="https://youtube.com/live/l37PR-OkYKA?t=3660"><img src="images/hero.png" alt="Hilary Mason presenting prompt-refinement on Episode 2 of Show Us Your Agent Skills" /></a>
-<sub>Hilary Mason presents `prompt-refinement` on Episode 2 of <em>Show Us Your Agent Skills</em>. <a href="https://youtube.com/live/l37PR-OkYKA?t=3660">[01:01:00]</a></sub>
-
 A skill that lifts the agentic-software refinement loop (interview, baseline, variations, eval) into prompt refinement, so the agent stops returning one slightly different version and instead drives toward what you actually want.
 
 ## who showed it
@@ -49,3 +46,6 @@ Her one-line takeaway on the variations piece:
 ## status
 
 Stub. Not yet ported from Hilary's externalised version. She offered it on stream and flagged that the extraction lost some personality, so she plans to edit before sharing.
+
+<a href="https://youtube.com/live/l37PR-OkYKA?t=3660"><img src="images/hero.png" alt="Hilary Mason presenting prompt-refinement on Episode 2 of Show Us Your Agent Skills" /></a>
+<sub>Hilary Mason presents `prompt-refinement` on Episode 2 of <em>Show Us Your Agent Skills</em>. <a href="https://youtube.com/live/l37PR-OkYKA?t=3660">[01:01:00]</a></sub>

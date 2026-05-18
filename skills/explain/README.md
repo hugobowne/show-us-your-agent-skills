@@ -1,8 +1,5 @@
 # explain
 
-<a href="https://youtube.com/live/Pq3xuChdwxQ?t=2774"><img src="images/hero.png" alt="Jeremiah Lowin demoing the explain skill on Episode 1 of Show Us Your Agent Skills" /></a>
-<sub>Jeremiah Lowin demos `explain` on Episode 1 of <em>Show Us Your Agent Skills</em>. <a href="https://youtube.com/live/Pq3xuChdwxQ?t=2774">[00:46:14]</a></sub>
-
 A short natural-language skill that makes the agent narrate what it just
 did in the voice of a colleague who knows your project, so you can keep
 up with many agents running in parallel.
@@ -60,3 +57,6 @@ The `SKILL.md` here was transcribed via OCR from the live recording
 not ported from Jeremiah's own repo. He offered on stream to make the
 authoritative version public under this podcast, which will replace
 this file soon.
+
+<a href="https://youtube.com/live/Pq3xuChdwxQ?t=2774"><img src="images/hero.png" alt="Jeremiah Lowin demoing the explain skill on Episode 1 of Show Us Your Agent Skills" /></a>
+<sub>Jeremiah Lowin demos `explain` on Episode 1 of <em>Show Us Your Agent Skills</em>. <a href="https://youtube.com/live/Pq3xuChdwxQ?t=2774">[00:46:14]</a></sub>

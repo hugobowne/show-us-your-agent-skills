@@ -1,8 +1,5 @@
 # marimo-pair
 
-<a href="https://youtube.com/live/l37PR-OkYKA?t=717"><img src="images/hero.png" alt="Eric Ma opening his marimo-pair demo on Episode 2 of Show Us Your Agent Skills" /></a>
-<sub>Eric Ma opens his `marimo-pair` demo on Episode 2 of <em>Show Us Your Agent Skills</em>. <a href="https://youtube.com/live/l37PR-OkYKA?t=717">[00:11:57]</a></sub>
-
 An agent skill that pairs markdown instructions with a bash bridge into a reactive Marimo notebook, so a coding agent can drive interactive exploratory data analysis end-to-end while the human steers one plot at a time.
 
 ## who showed it
@@ -50,3 +47,6 @@ The skill is [`marimo-team/marimo-pair`](https://github.com/marimo-team/marimo-p
 Vendored snapshot. The skill files (`SKILL.md`, `scripts/`, `reference/`) are a frozen copy of [`marimo-team/marimo-pair/skills/marimo-pair`](https://github.com/marimo-team/marimo-pair/tree/main/skills/marimo-pair) as of 2026-05-18. The maintained version lives upstream and may have evolved since this snapshot.
 
 To use it in Claude Code: copy this folder into `.claude/skills/marimo-pair/` (project) or `~/.claude/skills/marimo-pair/` (user). For other harnesses, see your harness's docs for the expected skills directory.
+
+<a href="https://youtube.com/live/l37PR-OkYKA?t=717"><img src="images/hero.png" alt="Eric Ma opening his marimo-pair demo on Episode 2 of Show Us Your Agent Skills" /></a>
+<sub>Eric Ma opens his `marimo-pair` demo on Episode 2 of <em>Show Us Your Agent Skills</em>. <a href="https://youtube.com/live/l37PR-OkYKA?t=717">[00:11:57]</a></sub>

@@ -1,8 +1,5 @@
 # high-signal-chart-workflow
 
-<a href="https://youtube.com/live/Pq3xuChdwxQ?t=4357"><img src="images/hero.png" alt="The Episode 1 panel (Jeremiah Lowin, Randy Olson, Thomas Wiecki, Hugo Bowne-Anderson) during Randy's high-signal-chart-workflow segment" /></a>
-<sub>Randy Olson presents `high-signal-chart-workflow` to the Episode 1 panel of <em>Show Us Your Agent Skills</em>. <a href="https://youtube.com/live/Pq3xuChdwxQ?t=4357">[01:12:37]</a></sub>
-
 A phase-structured agent skill that turns a one-line idea into a publication-quality, Tufte-style chart. Pairs a deterministic image and code linter with an LLM-as-judge verifier loop that scores the rendered chart against Tuftean principles and feeds failures back as fix-it instructions until the chart actually carries the data story.
 
 This skill is `randalolson/high-signal-chart-workflow` from [Goodeye Labs](https://goodeyelabs.com), captured as a frozen snapshot from **2026-05-06**. The living, maintained version is at [**app.goodeyelabs.com/templates/randalolson/high-signal-chart-workflow**](https://app.goodeyelabs.com/templates/randalolson/high-signal-chart-workflow).
@@ -70,3 +67,6 @@ In plain English:
 - **You may** read this skill, run it for personal or noncommercial use, and share unmodified copies with attribution.
 - **You may not** use it for commercial purposes, or publish modified versions of it.
 - **For commercial use, or to customize the workflow privately,** install Goodeye and fork the template (commands above).
+
+<a href="https://youtube.com/live/Pq3xuChdwxQ?t=4357"><img src="images/hero.png" alt="The Episode 1 panel (Jeremiah Lowin, Randy Olson, Thomas Wiecki, Hugo Bowne-Anderson) during Randy's high-signal-chart-workflow segment" /></a>
+<sub>Randy Olson presents `high-signal-chart-workflow` to the Episode 1 panel of <em>Show Us Your Agent Skills</em>. <a href="https://youtube.com/live/Pq3xuChdwxQ?t=4357">[01:12:37]</a></sub>
