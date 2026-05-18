@@ -18,15 +18,15 @@ Interview first, do not take the brief at face value:
 
 Variations, not a single rewrite:
 
-> *"if you ask it at once to give you three very different versions that have, uh, different magnitudes of change and risk in the changes, you can actually get multiple variations that are somewhat more creative than if you g- you ask for just one."* [\[01:02:23\]](https://youtube.com/live/l37PR-OkYKA?t=3743)
+> *"if you ask it at once to give you three very different versions that have different magnitudes of change and risk in the changes, you can actually get multiple variations that are somewhat more creative than if you ask for just one."* [\[01:02:23\]](https://youtube.com/live/l37PR-OkYKA?t=3743)
 
 Score against a rubric you defined before you started, then compare to the baseline:
 
-> *"here is a set of criteria that we are looking for editorially. Compare each output against this set of criteria, score it, run multiple variations, and therefore, you know, we get to something that is not, it's not going to give you an independent sense of like, this is great, but it will give you something you can compare to that eval we did at the beginning of the whole process so that you know you have made something better or you have made something worse."* [\[01:03:16\]](https://youtube.com/live/l37PR-OkYKA?t=3796)
+> *"here is a set of criteria that we are looking for editorially. Compare each output against this set of criteria, score it, run multiple variations, and therefore we get to something that is not going to give you an independent sense of 'this is great,' but it will give you something you can compare to that eval we did at the beginning of the whole process so that you know you have made something better or you have made something worse."* [\[01:03:16\]](https://youtube.com/live/l37PR-OkYKA?t=3796)
 
 The shareable artifact:
 
-> *"it calls this skill. And you said there's a repo we can throw examples in, and I also, um, had Claude sort of pull it out of our context, so anyone could use those for prompt refinement. Though it, um, it lost a lot of its personality, so I'll have to go back and edit it again."* [\[01:04:25\]](https://youtube.com/live/l37PR-OkYKA?t=3865)
+> *"it calls this skill. And you said there's a repo we can throw examples in, and I also had Claude sort of pull it out of our context, so anyone could use those for prompt refinement. Though it lost a lot of its personality, so I'll have to go back and edit it again."* [\[01:04:25\]](https://youtube.com/live/l37PR-OkYKA?t=3865)
 
 ## why it's notable
 
@@ -34,7 +34,7 @@ Hilary's framing is that LLMs are *"aspirationally very mid"* (biased, samesy), 
 
 Her one-line takeaway on the variations piece:
 
-> *"if anyone is like taking one thing away for creative stuff, multiple variations."* [\[01:02:48\]](https://youtube.com/live/l37PR-OkYKA?t=3768)
+> *"if anyone is taking one thing away for creative stuff, multiple variations."* [\[01:02:48\]](https://youtube.com/live/l37PR-OkYKA?t=3768)
 
 ## watch it
 
