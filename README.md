@@ -71,10 +71,10 @@ Workflow writeups are coming next, starting with Wes McKinney's stack:
 |----------|--------------|-------|-------|
 | [agentic-eda](workflows/agentic-eda) | Human-in-the-loop EDA: agent renders the next plot, human picks the next question, every claim backed by an artifact. | Eric Ma (Moderna) | [00:23:27](https://youtube.com/live/l37PR-OkYKA?t=1407) |
 | [eval-driven-charts](workflows/eval-driven-charts) | Build an agent-facing chart library by generalising eval failures into features; the package can never regress on an eval it once passed. | Bryan Bischof (Theory Ventures) | [01:25:11](https://youtube.com/live/l37PR-OkYKA?t=5111) |
+| [weekly-gremlins](workflows/weekly-gremlins) | Three agent personas pull from a bad-ideas backlog, pitch and critique each other, and write design docs for moonshots no roadmap would schedule. | Hilary Mason (Hidden Door) | [01:14:20](https://youtube.com/live/l37PR-OkYKA?t=4460) |
 
 Still to come from this episode:
 
-- **Weekly gremlin agents.** Hilary Mason runs a Sunday-night cron of three agent personas that pull from Hidden Door's "bad ideas" Slack channel, pitch and critique each other, and write design docs for moonshots the team would never schedule.
 - **Local-first inference.** Tom Tunguz runs Qwen 35B on a Mac M5 at 120 to 140 tokens per second with a 256K context window; cloud only comes in for multi-file rearchitectures or hard bugs.
 
 ## Upcoming episodes
