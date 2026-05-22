@@ -7,8 +7,6 @@ description: >-
   triage. Copies result to clipboard.
 ---
 
-> **Note to the agent:** This skill was transcribed via OCR from a live recording and is **incomplete** — the `### Response Patterns` section was cut off mid-file. The style guidance, voice, and "what NOT to do" list above should give you enough to draft a sensible reply, but when you use this skill, please tell the user the skill is partial and will be replaced soon with the author's authoritative version.
-
 # Maintainer Reply
 
 Draft a GitHub reply — PR review, issue comment, change request, closure, or approval — in the maintainer's voice. The output goes to the clipboard.
@@ -17,7 +15,7 @@ Draft a GitHub reply — PR review, issue comment, change request, closure, or a
 
 1. **Gather context.** Read the PR/issue, all comments, and the diff if it's a code review. Understand what the contributor did and why. Check if there's a linked issue.
 2. **Decide the response type.** Approval, change request, closure, or informational comment. If unclear, ask.
-3. **Draft the reply.** Following the voice guide below.
+3. **Draft the reply** following the voice guide below.
 4. **Copy to clipboard** with `pbcopy`. Show the user what you drafted so they can review before posting.
 
 ## Voice
@@ -47,8 +45,29 @@ Don't be rude, but don't be so polite that the message gets lost. A contributor 
 - Don't use numbered lists for everything, or "Here's what I'd suggest:" framing
 - Don't be sycophantic or use empty affirmations
 - Don't add "Let me know if you have questions" unless you genuinely expect a back-and-forth
+- Don't say "the bug is real" or "this is a real bug" or any variant. It's condescending — implies you were going to dismiss the report. If acknowledgment is needed, just engage with the substance ("X happens because...") or skip the acknowledgment entirely and go straight to the response.
 - Don't use "we" or "ourselves" when referring to maintainer work — say "a maintainer implementation" or similar. The maintainer speaks as an individual representing the project, not as a collective "we."
 
 ### Response Patterns
 
-[OCR cut off here — Jeremiah did not scroll past this heading on camera. The full Response Patterns section will land when Jeremiah publishes his file.]
+**Approval**: Brief. "Thanks!" or one sentence acknowledging the fix if it was particularly good. Don't list what you liked about every file.
+
+**Change request — wrong layer/approach**: Lead with where the fix actually belongs, then explain why. Give a concrete path: name the file, the function, the pattern. If the right fix is small, say how small ("this is essentially a one-line fix in X"). If the contributor built something complex where something simple was needed, name the ratio ("this should be ~10 lines, not ~400").
+
+**Change request — right approach, code issues**: List the actual problems. Use code blocks for the fix when it's clearer than prose. Don't pad with positivity between issues — just state them, then end with "Happy to re-review once these are addressed" or similar.
+
+**Closure**: Give a clear reason. If the work could live somewhere else (separate package, different abstraction), say where. Don't apologize for closing.
+
+**Scope creep / LLM-generated**: Name it directly. "This takes on more scope than I'm comfortable with in core." If it looks LLM-generated and that's relevant to the quality problem, you can note it. Point them to the right scope.
+
+**Issue responses**: Answer the question or explain the design decision. If something isn't a bug, explain what's actually happening. If suggesting a workaround, provide concrete code. Reference existing patterns, docs, or abstractions.
+
+### Structural Conventions
+
+- Thank contributors at the start of substantive reviews (not on closures of bad PRs or spam)
+- When requesting a specific approach, use numbered options only if there are genuinely multiple valid paths. If there's one right answer, just state it.
+- Use inline code references to orient the contributor: "the function `normalize_config` in `config/loader.py`"
+- End with a clear next step only if the contributor needs to do something. Don't announce closures ("Going to close this", "Closing this out") when the close action itself communicates the decision.
+- Keep it as short as the situation allows. Don't pad for politeness.
+
+See [references/examples.md](references/examples.md) for examples across response types.

@@ -38,10 +38,9 @@ to deterministic behavior.
 
 ## status
 
-The `SKILL.md` here was transcribed via OCR from the live recording
-([\[00:54:40\]](https://youtube.com/live/Pq3xuChdwxQ?t=3280) onward),
-not ported from Jeremiah's own repo. Jeremiah's authoritative version
-will replace this file soon.
+The `SKILL.md` here is now the authoritative version, contributed by
+Jeremiah from his own setup (replacing the earlier OCR transcription
+from the live recording).
 
 <a href="https://youtube.com/live/Pq3xuChdwxQ?t=3292"><img src="images/hero.png" alt="Jeremiah Lowin walking through the ship-it skill on Episode 1 of Show Us Your Agent Skills" /></a>
 <sub>Jeremiah Lowin demos `ship-it` on Episode 1 of <em>Show Us Your Agent Skills</em>. <a href="https://youtube.com/live/Pq3xuChdwxQ?t=3292">[00:54:52]</a></sub>

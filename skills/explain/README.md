@@ -52,11 +52,9 @@ It's also project-agnostic. He offered to release it publicly *"under the banner
 
 ## status
 
-The `SKILL.md` here was transcribed via OCR from the live recording
-([\[00:50:30\]](https://youtube.com/live/Pq3xuChdwxQ?t=3030) onward),
-not ported from Jeremiah's own repo. He offered on stream to make the
-authoritative version public under this podcast, which will replace
-this file soon.
+The `SKILL.md` here is now the authoritative version, contributed by
+Jeremiah from his own setup (replacing the earlier OCR transcription
+from the live recording).
 
 <a href="https://youtube.com/live/Pq3xuChdwxQ?t=2774"><img src="images/hero.png" alt="Jeremiah Lowin demoing the explain skill on Episode 1 of Show Us Your Agent Skills" /></a>
 <sub>Jeremiah Lowin demos `explain` on Episode 1 of <em>Show Us Your Agent Skills</em>. <a href="https://youtube.com/live/Pq3xuChdwxQ?t=2774">[00:46:14]</a></sub>
