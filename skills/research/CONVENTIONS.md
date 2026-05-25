@@ -54,7 +54,7 @@ Three layers, in priority order for any agent reading the dir:
         └── canvases/<slug>.canvas
 ```
 
-**Layout note (v4):** `index.yaml`, `index.md`, `log.md`, `raw/`, and `wiki/` all sit directly under `<research_dir>`. Earlier versions wrapped them in a `memory/` subdirectory; that wrapper is gone. `migrate_layout.py` flattens older dirs into v4.
+**Layout note (v4):** `index.yaml`, `index.md`, `log.md`, `raw/`, and `wiki/` all sit directly under `<research_dir>`. Earlier versions wrapped them in a `memory/` subdirectory; that wrapper is gone. Older dirs must be flattened into v4 before they can be appended to.
 
 **Invariants:**
 - `raw/` is **immutable**. Files land here on ingest and are never edited. Re-ingesting an existing source overwrites only with explicit user consent.

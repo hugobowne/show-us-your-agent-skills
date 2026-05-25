@@ -29,7 +29,7 @@ Before processing the brain dump, classify the user's intent. Three modes:
 5. Otherwise → **init**.
 
 ### Append-* preconditions
-- Verify the research dir is v4 layout (`raw/` and `wiki/` directly under the research dir, no `memory/` wrapper). If it's older (v1 with raw at root, or v3 with a `memory/` wrapper), run `migrate_layout.py` first or instruct the user to.
+- Verify the research dir is v4 layout (`raw/` and `wiki/` directly under the research dir, no `memory/` wrapper). If it's older (v1 with raw at root, or v3 with a `memory/` wrapper), migrate it to v4 first — or instruct the user to — before ingesting.
 - Read existing `index.yaml`. The `original_path` set is the dedup key — sources already there are skipped during research rounds (append-deep) or refused with a "already ingested" message (append-trusted).
 - Capture the existing `created` timestamp; pass it as `--existing-created` to `build_index_yaml.py` in Step 6.7.
 
@@ -712,6 +712,5 @@ Sessions expire in ~20 minutes. If commands fail with auth errors, skip NLM for 
 - `scripts/build_index_md.py` — Generates Obsidian-readable `index.md` from `index.yaml`. Idempotent + byte-stable. Always the last write before the log entry.
 - `scripts/extract_pdf.py` — PDF → markdown via `pymupdf4llm`. Extracts images to `raw/assets/<slug>/`, preserves the original PDF, flags low-quality (scanned) PDFs. Used in Step 6.2 for user-dropped or web-fetched PDFs.
 - `scripts/download_assets.py` — Scans a markdown file for remote image references, downloads them to `raw/assets/<slug>/`, and rewrites references to local paths. Used in Step 6.2 on every raw markdown file.
-- `scripts/migrate_layout.py` — Migrates older layouts to v4. Handles v1 → v4 (flat `raw_*.md` files at root → `raw/` subdir + `wiki/`) AND v3 → v4 (lift everything out of an inner `memory/` wrapper). Idempotent; supports `--dry-run`. Used once per existing dir, not part of routine ingest.
 - `scripts/github_parse_targets.py` — Parses the brain dump (and referenced markdown files) for GitHub file references against a specific repo. Groups them into modules by parent directory. Used in Step 1a.
 - `scripts/github_clone.py` — Shallow-clones a GitHub repo into a reusable `.github-cache/` placed as a sibling of the research dir (`--research-dir` → its parent) and returns the HEAD SHA. Used in Step 1a.
