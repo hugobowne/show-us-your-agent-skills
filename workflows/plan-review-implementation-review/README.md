@@ -8,17 +8,17 @@ Chris Fonnesbeck created PyMC 1.0, was a Vanderbilt professor, worked for the Ya
 
 ## the premise
 
-Chris likes agents because they lower the cost of trying serious data-science ideas. They remove boilerplate and make experimentation feel less scarce:
+Fast agent work can make data-science code too easy to accept before the plan, assumptions, and implementation have been checked. Chris's loop puts explicit review gates around the work: first review the plan, then implement, then review the implementation.
 
-> *"it really frees my brain to focus on creative tasks. you know, takes away all of the boilerplate, all the boring stuff to focus on, you know, the fun stuff."* [[00:49:25]](https://youtube.com/live/XaYQFtca798?t=2965)
+The workflow starts from a concrete PyMC task, not an abstract coding exercise. Chris asks an agent for an implementation plan, points `review plans` at that plan, writes the findings to markdown, gives the reviewed plan back to an implementation agent, and then runs `review implementation` over the finished code.
+
+The reason for the extra structure is the same thing that makes agents useful: they make experimentation cheap enough that it can bypass the research and review loop if you let it.
+
+> *"it really frees my brain to focus on creative tasks. you know, takes away all of the boilerplate, all the boring stuff to focus on, you know, the fun stuff."* [[00:49:12]](https://youtube.com/live/XaYQFtca798?t=2952)
 
 > *"it allows you to do almost infinite experimentation."* [[00:49:38]](https://youtube.com/live/XaYQFtca798?t=2978)
 
-The danger, for him, is that the same speed can bypass the research and review loop that makes the work yours:
-
 > *"you can kind of paint yourself into a corner because you haven't, you know, you haven't done the work. you haven't done the research yourself and and it's too easy to ask the agent for it."* [[00:51:19]](https://youtube.com/live/XaYQFtca798?t=3079)
-
-The plan-review and implementation-review workflow is his way of keeping the speed while preserving the audit trail.
 
 <a href="https://youtube.com/live/XaYQFtca798?t=3683"><img src="images/1-review-skills.png" alt="Chris's screen share showing cutie-pi entries for socratic-review, review-plans, and review-implementation." /></a>
 <sub>Chris's `cutie-pi` repo includes the review skills used in the loop: `socratic-review`, `review-plans`, and `review-implementation`. <a href="https://youtube.com/live/XaYQFtca798?t=3683">[01:01:23]</a></sub>

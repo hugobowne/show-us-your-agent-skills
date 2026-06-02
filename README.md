@@ -112,7 +112,7 @@ Field notes: [Hamel Husain](episode-field-notes/ep-4/hamel.md), [Chris Fonnesbec
 
 | Workflow | What it does | Guest | Watch |
 |----------|--------------|-------|-------|
-| [skill-scepticism](workflows/skill-scepticism) | Review shared agent skills before trusting, adapting, replacing, or rejecting them. | Hamel Husain (Parlance Labs) | [00:32:39](https://youtube.com/live/XaYQFtca798?t=1959) |
+| [skill-scepticism](workflows/skill-scepticism) | Review shared agent skills before trusting, adapting, replacing, or rejecting them. | Hamel Husain (Parlance Labs) | [00:22:32](https://youtube.com/live/XaYQFtca798?t=1352) |
 | [plan-review-implementation-review](workflows/plan-review-implementation-review) | Ask an agent for a plan, audit it with `review plans`, implement only after the plan is clean, then audit the finished code with `review implementation`. | Chris Fonnesbeck (PyMC Labs) | [01:05:53](https://youtube.com/live/XaYQFtca798?t=3953) |
 | [auto-research-agentic-search](workflows/auto-research-agentic-search) | Let an agent experiment with search-code patches while hidden validation decides what survives. | Doug Turnbull | [01:41:07](https://youtube.com/live/XaYQFtca798?t=6067) |
 

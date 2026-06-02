@@ -22,7 +22,7 @@ His real job is keeping the agent inside the right boundary: *"okay, yes, you ca
 
 ### Auto-research a better BM25 for one dataset
 
-Doug's central workflow asks whether an agent can improve a BM25-style retrieval function on a specific dataset. He is careful not to claim a universal replacement for BM25. The aim is local and eval-driven: *"could I find a basically a better retrieval function? A slightly better way of doing the keyword matching."* [\[01:35:39\]](https://youtube.com/live/XaYQFtca798?t=5739)
+Doug's central workflow asks whether an agent can improve a BM25-style retrieval function on a specific dataset. He is careful not to claim a universal replacement for BM25. The aim is local and eval-driven: *"could I find a basically a better retrieval function? A slightly better way of doing the keyword matching."* [\[01:35:47\]](https://youtube.com/live/XaYQFtca798?t=5747)
 
 He links the work to his [Autoresearching BM25 on MSMarco](https://softwaredoug.com/blog/2026/05/17/autoresearching-a-better-msmarco-bm25) post and the [search-experiments notebook](https://github.com/softwaredoug/search-experiments/blob/main/notebooks/codegen/codegen_minimarco.ipynb).
 
@@ -94,7 +94,7 @@ His example is Luke Skywalker: "Skywalker" is more specific than "Luke" because 
 
 ### Agents need ML-style process, not just a metric
 
-Doug's auto-research lesson is that agent freedom only works when the process is designed. If you let an agent see evals and optimize directly, it overfits. Training, validation, holdout data, and patch gates are the boring machinery that makes the agent useful. *"all the gotchas are really about process. They're not necessarily about they're not necessarily about like some s the the idea that the agent had."* [\[01:45:28\]](https://youtube.com/live/XaYQFtca798?t=6928)
+Doug's auto-research lesson is that agent freedom only works when the process is designed. If you let an agent see evals and optimize directly, it overfits. Training, validation, holdout data, and patch gates are the boring machinery that makes the agent useful. *"all the gotchas are really about process. They're not necessarily about they're not necessarily about like some s the the idea that the agent had."* [\[01:45:38\]](https://youtube.com/live/XaYQFtca798?t=6338)
 
 ### Auto-research mostly tries known human ideas faster
 
@@ -116,7 +116,7 @@ He puts a rough scale on that claim: *"the general threshold is a hundred thousa
 
 ## Additional quotations
 
-- On his search obsession: *"I'm still in that labyrinth trying to find my way out."* [\[01:20:11\]](https://youtube.com/live/XaYQFtca798?t=4811)
+- On his search obsession: *"I'm still in that labyrinth trying to find my way out."* [\[01:19:47\]](https://youtube.com/live/XaYQFtca798?t=4787)
 - On OpenCode: *"I just like being able to switch between different kinds of models and play around with some of the open models and that kind of thing."* [\[01:23:12\]](https://youtube.com/live/XaYQFtca798?t=4992)
 - On BM25 speed: *"It's very fast. Like you can spin up a lexical index and get BM twenty five search working really fast."* [\[01:26:20\]](https://youtube.com/live/XaYQFtca798?t=5180)
 - On search heuristics: *"there are insights like this that have come out through honestly, people dorking around with heuristics against open data sets."* [\[01:30:21\]](https://youtube.com/live/XaYQFtca798?t=5421)
@@ -150,6 +150,6 @@ The chat picked up the memory/search thread and pushed on simple baselines:
 
 ### Hugo's follow-up: verification before scope
 
-Hugo's question after the demo sharpens the central lesson. Auto-research gives agents more freedom, but the trust comes from verification. He asks how Doug thinks about *"building trust with the agent to then give it more and more scope and more and more time or space to do things and bring you back results."* [\[01:44:57\]](https://youtube.com/live/XaYQFtca798?t=6897)
+Hugo's question after the demo sharpens the central lesson. Auto-research gives agents more freedom, but the trust comes from verification. He asks how Doug thinks about *"building trust with the agent to then give it more and more scope and more and more time or space to do things and bring you back results."* [\[01:44:45\]](https://youtube.com/live/XaYQFtca798?t=6285)
 
 Doug's answer is the thesis of the segment: more autonomy means better process, not fewer constraints.

@@ -2,7 +2,7 @@
 
 Hamel's "Fuck Your Skills" workflow: a review loop for deciding whether a shared agent skill deserves trust, adaptation, replacement, or rejection.
 
-> *"When you see a skill, you should whisper to yourself, maybe fuck your skills, including my skills. Don't trust anyone's. Even if they're my skills, just be careful."* [[00:32:39]](https://youtube.com/live/XaYQFtca798?t=1959)
+> *"When you see a skill, you should whisper to yourself, maybe fuck your skills, including my skills. Don't trust anyone's. Even if they're my skills, just be careful."* [[00:32:20]](https://youtube.com/live/XaYQFtca798?t=1940)
 
 Captured from his episode 4 segment, where he put his own eval skills on blast, inspected public skills through `skills.sh`, and still landed on a useful version of the pattern: shared skills can transmit working practice, but only after you read them like code.
 
@@ -33,7 +33,7 @@ This is not a ceremonial read-through. You are looking for what the file actuall
 
 The trust question is not "does the README sound smart?" It is "would I run this in my environment?"
 
-> *"It's kind of like how you would judge code on GitHub in a lot of ways. It's like, I try to see like, what are some signals, you know, that you should take this skill seriously."* [[00:35:25]](https://youtube.com/live/XaYQFtca798?t=2125)
+> *"It's kind of like how you would judge code on GitHub in a lot of ways. It's like, I try to see like, what are some signals, you know, that you should take this skill seriously."* [[00:35:22]](https://youtube.com/live/XaYQFtca798?t=2122)
 
 Those signals include who published it, whether you trust them, whether the author appears to use it, whether it has changed over time, how stale it is, and whether the skill is just a prompt or contains concrete code, tools, tests, examples, or operating constraints.
 
@@ -41,7 +41,7 @@ Those signals include who published it, whether you trust them, whether the auth
 
 Hamel is careful not to turn commit count into dogma. A comedy skill may need one commit. A skill that claims to encode a serious workflow probably deserves more evidence.
 
-> *"if it's not being iterated on, you have to tune up your skepticism a little bit and say, maybe this skill is very shallow and the ceiling might be very low in terms of what the skill is imparting to you because it's not being iterated on."* [[00:29:22]](https://youtube.com/live/XaYQFtca798?t=1762)
+> *"if it's not being iterated on, you have to tune up your skepticism a little bit and say, maybe this skill is very shallow and the ceiling might be very low in terms of what the skill is imparting to you because it's not being iterated on."* [[00:29:27]](https://youtube.com/live/XaYQFtca798?t=1767)
 
 The point is not shame. The point is intake. A stale, one-commit skill can still be useful as a sketch, a prompt reference, or a source of vocabulary. It should not silently become policy.
 
@@ -52,7 +52,7 @@ The point is not shame. The point is intake. A stale, one-commit skill can still
 
 For Hamel, a skill earns value by constraining the agent in useful ways. A single prompt in a single file may still help, but it is weaker evidence than code, tools, examples, or a tested procedure.
 
-> *"If it's just a single prompt in a single file, that seems a little bit less useful, honestly. If it's like a bunch of code tools, things like that, that's more of a signal that is like trying to constrain your agent more."* [[00:28:02]](https://youtube.com/live/XaYQFtca798?t=1682)
+> *"If it's just a single prompt in a single file, that seems a little bit less useful, honestly. If it's like a bunch of code tools, things like that, that's more of a signal that is like trying to constrain your agent more."* [[00:28:25]](https://youtube.com/live/XaYQFtca798?t=1705)
 
 This is where "skill" stops meaning "magic markdown" and starts meaning "a durable way to steer work." The file is not the artifact. The constraint is.
 
@@ -81,11 +81,11 @@ His replacement was a course chatbot and MCP that could search the underlying kn
 
 Hugo pushes back on the "don't use other people's skills" reading. The valuable part of sharing may be that a skill transmits a way of working, then another builder adapts it.
 
-> *"it's a way of not only steering and constraining an agent, but sharing via some form of instructional memory our workflows with each other that then become personalized."* [[00:34:41]](https://youtube.com/live/XaYQFtca798?t=2081)
+> *"it's a way of not only steering and constraining an agent, but sharing via some form of instructional memory our workflows with each other that then become personalized."* [[00:34:48]](https://youtube.com/live/XaYQFtca798?t=2088)
 
 Hamel accepts the sharing point, while keeping the review posture:
 
-> *"Yeah, I think the sharing part is definitely very, very good."* [[00:35:25]](https://youtube.com/live/XaYQFtca798?t=2125)
+> *"Yeah, I think the sharing part is definitely very, very good."* [[00:35:01]](https://youtube.com/live/XaYQFtca798?t=2101)
 
 So the intake decision is not just accept/reject. The best answer is often "fork the idea, rewrite the instructions, keep the taste."
 
@@ -121,8 +121,8 @@ This is a useful counterweight to the marketplace critique. Some skills are shal
 - **Outsourcing taste.** Adopting someone else's preferences wholesale, then wondering why your outputs all look like theirs.
 - **Compressing deep knowledge too hard.** Turning an entire course, community, or expert practice into one markdown checklist when the actual job needs retrieval, tools, or conversation.
 
-<a href="https://youtube.com/live/XaYQFtca798?t=1959"><img src="images/4-maybe-fuck-your-skills.png" alt="Hamel closing his skills critique with a warning not to trust anyone's skills uncritically." /></a>
-<sub>The mood, basically: <em>"maybe fuck your skills, including my skills."</em> Not anti-skill, just anti-sleepwalking. <a href="https://youtube.com/live/XaYQFtca798?t=1959">[00:32:39]</a></sub>
+<a href="https://youtube.com/live/XaYQFtca798?t=1940"><img src="images/4-maybe-fuck-your-skills.png" alt="Hamel closing his skills critique with a warning not to trust anyone's skills uncritically." /></a>
+<sub>The mood, basically: <em>"maybe fuck your skills, including my skills."</em> Not anti-skill, just anti-sleepwalking. <a href="https://youtube.com/live/XaYQFtca798?t=1940">[00:32:20]</a></sub>
 
 ## what you need
 
@@ -135,8 +135,8 @@ This is a useful counterweight to the marketplace critique. Some skills are shal
 
 ## watch it
 
-<a href="https://youtube.com/live/XaYQFtca798?t=2125"><img src="images/5-github-code-signals.png" alt="Hamel responding to Hugo's pushback and explaining that he judges shared skills like code on GitHub." /></a>
-<sub>Hamel after Hugo's pushback: sharing workflows is good, but the intake posture still looks like reviewing code from GitHub. <a href="https://youtube.com/live/XaYQFtca798?t=2125">[00:35:25]</a></sub>
+<a href="https://youtube.com/live/XaYQFtca798?t=2122"><img src="images/5-github-code-signals.png" alt="Hamel responding to Hugo's pushback and explaining that he judges shared skills like code on GitHub." /></a>
+<sub>Hamel after Hugo's pushback: sharing workflows is good, but the intake posture still looks like reviewing code from GitHub. <a href="https://youtube.com/live/XaYQFtca798?t=2122">[00:35:22]</a></sub>
 
 - [**00:20:18**](https://youtube.com/live/XaYQFtca798?t=1218): Many public skills are made for Twitter, not maintained use.
 - [**00:21:08**](https://youtube.com/live/XaYQFtca798?t=1268): "look at the prompt and look at the skill."
@@ -145,12 +145,12 @@ This is a useful counterweight to the marketplace critique. Some skills are shal
 - [**00:25:34**](https://youtube.com/live/XaYQFtca798?t=1534): A skill is lossy compression.
 - [**00:26:56**](https://youtube.com/live/XaYQFtca798?t=1616): Why Hamel prefers the course chatbot/MCP for nuanced eval questions.
 - [**00:28:02**](https://youtube.com/live/XaYQFtca798?t=1682): Prompt-only versus code/tool-backed skills.
-- [**00:28:57**](https://youtube.com/live/XaYQFtca798?t=1737): `skills.sh` as a discovery and analysis surface.
-- [**00:29:22**](https://youtube.com/live/XaYQFtca798?t=1762): Commit history as a skepticism trigger.
+- [**00:29:04**](https://youtube.com/live/XaYQFtca798?t=1744): `skills.sh` as a discovery and analysis surface.
+- [**00:29:27**](https://youtube.com/live/XaYQFtca798?t=1767): Commit history as a skepticism trigger.
 - [**00:30:02**](https://youtube.com/live/XaYQFtca798?t=1802): Do not adopt someone else's prompts wholesale.
-- [**00:32:39**](https://youtube.com/live/XaYQFtca798?t=1959): "maybe fuck your skills, including my skills."
-- [**00:34:41**](https://youtube.com/live/XaYQFtca798?t=2081): Hugo's pushback: shared skills as instructional memory that becomes personal.
-- [**00:35:25**](https://youtube.com/live/XaYQFtca798?t=2125): Judge skills like code on GitHub.
+- [**00:32:20**](https://youtube.com/live/XaYQFtca798?t=1940): "maybe fuck your skills, including my skills."
+- [**00:34:48**](https://youtube.com/live/XaYQFtca798?t=2088): Hugo's pushback: shared skills as instructional memory that becomes personal.
+- [**00:35:22**](https://youtube.com/live/XaYQFtca798?t=2122): Judge skills like code on GitHub.
 - [**00:36:56**](https://youtube.com/live/XaYQFtca798?t=2216): Hamel's scoped monorepo for skills and markdown memory.
 - [**00:38:42**](https://youtube.com/live/XaYQFtca798?t=2322): Point agents at your own blog posts.
 - [**00:42:32**](https://youtube.com/live/XaYQFtca798?t=2552): Browser-internal-API skill workflow.

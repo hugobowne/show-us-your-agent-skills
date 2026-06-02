@@ -172,4 +172,4 @@ The chat tracked the segment closely:
 
 ### Hugo's transition: the show is broader than literal skills
 
-After Chris's segment, Hugo uses the discussion to clarify the premise of the show. Skills matter, but the real subject is how builders work with agents. *"it really is about, you know, showing workflows, and some of those are skills, some are not"* [\[01:16:15\]](https://youtube.com/live/XaYQFtca798?t=4575)
+After Chris's segment, Hugo uses the discussion to clarify the premise of the show. Skills matter, but the real subject is how builders work with agents. *"it really is about, you know, showing workflows, and some of those are skills, some are not"* [\[01:16:30\]](https://youtube.com/live/XaYQFtca798?t=4590)

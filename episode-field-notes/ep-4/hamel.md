@@ -56,7 +56,7 @@ His operating rule is simple: *"look at the prompt and Look at the skill"* [\[00
 
 ### Judge shared skills using code-review-like signals
 
-Hamel treats skills like code from GitHub. Signals include whether the author uses it, whether it is being iterated on, who published it, how stale it is, and whether it constrains the agent with actual tools or code. *"It's kind of like how you would judge code on GitHub in a lot of ways. It's like, I try to see like, what are some signals, you know, that you should take this skill seriously."* [\[00:35:25\]](https://youtube.com/live/XaYQFtca798?t=2125)
+Hamel treats skills like code from GitHub. Signals include whether the author uses it, whether it is being iterated on, who published it, how stale it is, and whether it constrains the agent with actual tools or code. *"It's kind of like how you would judge code on GitHub in a lot of ways. It's like, I try to see like, what are some signals, you know, that you should take this skill seriously."* [\[00:35:22\]](https://youtube.com/live/XaYQFtca798?t=2122)
 
 ### Keep memory and skills in a scoped monorepo
 
@@ -118,7 +118,7 @@ Hamel replaced the static skill idea with a higher-fidelity course chatbot and a
 
 ### skills.sh
 
-Hamel used [skills.sh](https://skills.sh/) to analyze public skills. He describes it as *"a way to discover skills and install skills"* and says it is useful, then uses its download-ranked data to show how many popular skills have only one commit. [\[00:28:57\]](https://youtube.com/live/XaYQFtca798?t=1737)
+Hamel used [skills.sh](https://skills.sh/) to analyze public skills. He describes it as *"a way to discover skills and install skills"* and says it is useful, then uses its download-ranked data to show how many popular skills have only one commit. [\[00:29:04\]](https://youtube.com/live/XaYQFtca798?t=1744)
 
 ### Anthropic front-end design skill
 
@@ -158,11 +158,11 @@ Hamel's MCP searches the course knowledge rather than trying to encode it all in
 
 ### Code and tools are stronger skill signals than prompt-only files
 
-Hamel frames a skill's value as the degree to which it usefully constrains the agent. Prompt-only skills are often just someone else's prompt, while code and tools can encode concrete constraints. *"If it's just a single prompt in a single file, that seems a little bit less useful, honestly. If it's like a bunch of code tools, things like that, that's more of a signal that is like trying to constrain your agent more and thus maybe more useful because someone has found. useful constraints."* [\[00:28:02\]](https://youtube.com/live/XaYQFtca798?t=1682)
+Hamel frames a skill's value as the degree to which it usefully constrains the agent. Prompt-only skills are often just someone else's prompt, while code and tools can encode concrete constraints. *"If it's just a single prompt in a single file, that seems a little bit less useful, honestly. If it's like a bunch of code tools, things like that, that's more of a signal that is like trying to constrain your agent more and thus maybe more useful because someone has found. useful constraints."* [\[00:28:25\]](https://youtube.com/live/XaYQFtca798?t=1705)
 
 ### Commit history is a weak but useful smell test
 
-Hamel does not claim one commit means a skill is bad in every case, but he uses it as a skepticism trigger. In his skills.sh sample, about a third of the top 300 skills had only one commit. *"If you're to use a skill, if it's not being iterated on, you have to tune up your skepticism a little bit and say, maybe this skill is very shallow and the ceiling might be very low in terms of what the skill is imparting to you because it's not being iterated on."* [\[00:29:22\]](https://youtube.com/live/XaYQFtca798?t=1762)
+Hamel does not claim one commit means a skill is bad in every case, but he uses it as a skepticism trigger. In his skills.sh sample, about a third of the top 300 skills had only one commit. *"If you're to use a skill, if it's not being iterated on, you have to tune up your skepticism a little bit and say, maybe this skill is very shallow and the ceiling might be very low in terms of what the skill is imparting to you because it's not being iterated on."* [\[00:29:27\]](https://youtube.com/live/XaYQFtca798?t=1767)
 
 ### Prompt-only skills need adaptation, not wholesale adoption
 
@@ -180,14 +180,14 @@ This is how he handles older web tools: *"this is like a lot of websites are sti
 
 ## Additional quotations
 
-- On Codex Desktop's UI: *"I think it's unparalleled, meaning, you know, it's just super polished and very impressive."* [\[00:08:23\]](https://youtube.com/live/XaYQFtca798?t=503)
-- On the user-experience gap created by fast mode: *"Because the best models at high thinking is quite slow. So it just makes a huge difference."* [\[00:11:04\]](https://youtube.com/live/XaYQFtca798?t=664)
+- On Codex Desktop's UI: *"I think it's unparalleled, meaning, you know, it's just super polished and very impressive."* [\[00:08:25\]](https://youtube.com/live/XaYQFtca798?t=505)
+- On the user-experience gap created by fast mode: *"Because the best models at high thinking is quite slow. So it just makes a huge difference."* [\[00:11:12\]](https://youtube.com/live/XaYQFtca798?t=672)
 - On vendor harnesses absorbing orchestration: *"I think a lot of the orchestration that you had to do is like disappearing and going, you know, the harnesses are like absorbing them."* [\[00:16:02\]](https://youtube.com/live/XaYQFtca798?t=962)
 - On Devin's price: *"It is expensive though, it's very expensive. But you know, some less more is less expensive than a human, I think. So it's fine."* [\[00:17:30\]](https://youtube.com/live/XaYQFtca798?t=1050)
 - On his own skills becoming suspect: *"Also, if you look at my skills, like, okay, like I haven't updated in two months. So was like, am I using the skill? No, because I'm using this other thing."* [\[00:27:27\]](https://youtube.com/live/XaYQFtca798?t=1647)
-- On the overall warning: *"When you see a skill, you should whisper to yourself, maybe fuck your skills, including my skills. Don't trust anyone's Even if they're my skills, just be careful."* [\[00:32:39\]](https://youtube.com/live/XaYQFtca798?t=1959)
+- On the overall warning: *"When you see a skill, you should whisper to yourself, maybe fuck your skills, including my skills. Don't trust anyone's Even if they're my skills, just be careful."* [\[00:32:20\]](https://youtube.com/live/XaYQFtca798?t=1940)
 - On using agents to clean the memory directory: *"sometimes I'll use an agent to clean up my directory as well."* [\[00:37:21\]](https://youtube.com/live/XaYQFtca798?t=2241)
-- On the future of YouTube in an agentic world: *"I also don't know what's gonna happen to YouTube eventually, because I don't know who's gonna, like lot of videos, maybe people won't watch, I don't know."* [\[00:45:12\]](https://youtube.com/live/XaYQFtca798?t=2712)
+- On the future of YouTube in an agentic world: *"I also don't know what's gonna happen to YouTube eventually, because I don't know who's gonna, like lot of videos, maybe people won't watch, I don't know."* [\[00:44:50\]](https://youtube.com/live/XaYQFtca798?t=2690)
 
 ## Live reactions and follow-ups
 
@@ -195,7 +195,7 @@ This is how he handles older web tools: *"this is like a lot of websites are sti
 
 Hugo pushed back on one piece of Hamel's argument: the value of a shared skill is not necessarily that someone installs it unchanged. It can be a way to transmit a workflow, then let another builder adapt it. His example was Anthropic's skill creator skill: *"the way they've done their skill doesn't quite work for me for a number of reasons. And I want to make sure that then I can test the skill in a variety of ways. And so I have my own version of their skill."* [\[00:34:29\]](https://youtube.com/live/XaYQFtca798?t=2069)
 
-Hamel accepted the sharing point, but kept the evaluation frame: *"it's kind of like how you would judge code on GitHub in in a lot of ways."* He still wants signals before trusting a skill. [\[00:35:42\]](https://youtube.com/live/XaYQFtca798?t=2142)
+Hamel accepted the sharing point, but kept the evaluation frame: *"it's kind of like how you would judge code on GitHub in in a lot of ways."* He still wants signals before trusting a skill. [\[00:35:22\]](https://youtube.com/live/XaYQFtca798?t=2122)
 
 ### Chris's follow-up: customize, do not hoard
 
