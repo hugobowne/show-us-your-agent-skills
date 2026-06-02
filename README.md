@@ -52,11 +52,10 @@ These skills are snapshots from the corresponding live streams. Creators often i
 | [high-signal-chart-workflow](skills/high-signal-chart-workflow) | Turns a one-line idea into a Tufte-style chart, with an LLM-as-judge verifier loop. | Randy Olson (Goodeye Labs, r/dataisbeautiful) | [01:12:37](https://youtube.com/live/Pq3xuChdwxQ?t=4357) |
 | [8-bit-video-gen](skills/8-bit-video-gen) | Turns guest headshots into short 8-bit pixel-art video clips for livestream intros and cutaways. | Show Us Your Agent Skills | [Episode 1](https://youtube.com/live/Pq3xuChdwxQ) |
 
-Workflow writeups are coming next, starting with Wes McKinney's stack:
-
-- **Agents reviewing agents.** A daemon reads every commit your agents make, so by the time a PR merges, code has been read by agents 4–5 times.
-- **A fleet of long-running sessions.** 4–5 Superpowers projects spec'd and implementing in parallel, unattended; one plan ran 14 hours and 45 tasks without him touching it.
-- **"Off the rails?" review.** No line-level reading. The only question Wes asks is whether the agent strayed structurally or chased scope creep.
+| Workflow | What it does | Guest | Watch |
+|----------|--------------|-------|-------|
+| [agentic-software-factory](workflows/agentic-software-factory) | Run several agent projects in parallel while background review agents read every commit and maintain a fix queue. | Wes McKinney (Posit, pandas) | [00:27:14](https://youtube.com/live/Pq3xuChdwxQ?t=1634) |
+| [second-brain](workflows/second-brain) | Feed a personal agent memory with daily voice memos and use an editable memory substrate for asynchronous work. | Jeremiah Lowin (Prefect, FastMCP) | [00:35:50](https://youtube.com/live/Pq3xuChdwxQ?t=2150) |
 
 ## Episode 2: Hilary Mason, Bryan Bischof, Eric Ma, Tomasz Tunguz
 
@@ -72,10 +71,7 @@ Workflow writeups are coming next, starting with Wes McKinney's stack:
 | [agentic-eda](workflows/agentic-eda) | Human-in-the-loop EDA: agent renders the next plot, human picks the next question, every claim backed by an artifact. | Eric Ma (Moderna) | [00:23:27](https://youtube.com/live/l37PR-OkYKA?t=1407) |
 | [eval-driven-charts](workflows/eval-driven-charts) | Build an agent-facing chart library by generalising eval failures into features; the package can never regress on an eval it once passed. | Bryan Bischof (Theory Ventures) | [01:25:11](https://youtube.com/live/l37PR-OkYKA?t=5111) |
 | [weekly-gremlins](workflows/weekly-gremlins) | Three agent personas pull from a bad-ideas backlog, pitch and critique each other, and write design docs for moonshots no roadmap would schedule. | Hilary Mason (Hidden Door) | [01:14:20](https://youtube.com/live/l37PR-OkYKA?t=4460) |
-
-Still to come from this episode:
-
-- **Local-first inference.** Tom Tunguz runs Qwen 35B on a Mac M5 at 120 to 140 tokens per second with a 256K context window; cloud only comes in for multi-file rearchitectures or hard bugs.
+| [local-first-agents](workflows/local-first-agents) | Default to a local model and thin harness, reaching for cloud inference only for named exceptions. | Tomasz Tunguz (Theory Ventures) | [02:07:42](https://youtube.com/live/l37PR-OkYKA?t=7662) |
 
 ## Episode 3: Matthew Honnibal, Eleanor Berger, Nico Gerold, Alan Nichol, Vincent Warmerdam, Paul Iusztin
 
@@ -92,10 +88,14 @@ Still to come from this episode:
 | [youtube-watch-later-gist-summaries](skills/youtube-watch-later-gist-summaries) | Reads your YouTube Watch Later playlist, summarises every video from its transcript, and publishes each summary as a secret gist. | Eleanor Berger (Jimini Health) | [00:52:57](https://youtube.com/live/ud2WzkKeDZs?t=3177) |
 | [thread-postmortem](skills/thread-postmortem) | Introspects a thread that went sideways, traces each misstep to the instruction behind it, and proposes edits biased toward deletion. | Nico Gerold (Sourcegraph, Amp) | [01:59:04](https://youtube.com/live/ud2WzkKeDZs?t=7144) |
 | [remotion-video](skills/remotion-video) | Encodes a builder's design judgment for programmatic video, so Claude turns a few minutes of recorded audio into a finished explainer. | Alan Nichol (Rasa) | [02:46:00](https://youtube.com/live/ud2WzkKeDZs?t=9960) |
+| [research](skills/research) | Builds and queries a persistent LLM-curated research wiki from Obsidian, Readwise, NotebookLM, GitHub repos, and supplied sources. | Paul Iusztin (Decoding AI) | [02:19:52](https://youtube.com/live/ud2WzkKeDZs?t=8392) |
+
+| Workflow | What it does | Guest | Watch |
+|----------|--------------|-------|-------|
+| [personal-agent-harness](workflows/personal-agent-harness) | Run a personal agent on isolated spare hardware, reachable through Discord or WhatsApp, with autonomy granted gradually. | Eleanor Berger (Jimini Health) | [00:47:50](https://youtube.com/live/ud2WzkKeDZs?t=2870) |
 
 Still to come from this episode:
 
-- **Paul Iusztin's writing loop.** Diff a hand-edit against the agent's draft, extract the signal, and fold it back into a markdown style profile the agent reads next time.
 - **Vincent Warmerdam** showed notebooks as a shared canvas for humans and agents; his Marimo Pair skill already shipped in Episode 2 ([marimo-pair](skills/marimo-pair)).
 
 ## Episode 4: Hamel Husain, Chris Fonnesbeck, Doug Turnbull
