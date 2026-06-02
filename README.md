@@ -114,6 +114,14 @@ Still to come from this episode:
 | [plan-review-implementation-review](workflows/plan-review-implementation-review) | Ask an agent for a plan, audit it with `review plans`, implement only after the plan is clean, then audit the finished code with `review implementation`. | Chris Fonnesbeck (PyMC Labs) | [01:05:53](https://youtube.com/live/XaYQFtca798?t=3953) |
 | [auto-research-agentic-search](workflows/auto-research-agentic-search) | Let an agent experiment with search-code patches while hidden validation decides what survives. | Doug Turnbull | [01:41:07](https://youtube.com/live/XaYQFtca798?t=6067) |
 
+## Upcoming Episode 5: John Berryman, Isaac Flath, Matt Palmer
+
+[Register on Luma](https://luma.com/0t8kiodw)
+
+Friday, June 19, 9:00 AM - 10:30 AM GMT+10, live on YouTube.
+
+Joined by John Berryman (Arcturus Labs, early engineer on GitHub Copilot, O'Reilly author), Isaac Flath (Kentro Tech, ex-Answer.AI), and Matt Palmer (Conductor, ex-Replit).
+
 ## More from us
 
 Vanishing Gradients is a podcast, workshop series, blog, and newsletter focused on what you can build with AI right now. Over 70 episodes with expert practitioners from Google DeepMind, Netflix, Stanford, and elsewhere. Hundreds of hours of free, hands-on workshops. All independent, all free. [Subscribe on Substack](https://hugobowne.substack.com/).
