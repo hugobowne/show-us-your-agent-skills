@@ -98,15 +98,21 @@ Still to come from this episode:
 - **Paul Iusztin's writing loop.** Diff a hand-edit against the agent's draft, extract the signal, and fold it back into a markdown style profile the agent reads next time.
 - **Vincent Warmerdam** showed notebooks as a shared canvas for humans and agents; his Marimo Pair skill already shipped in Episode 2 ([marimo-pair](skills/marimo-pair)).
 
-## Upcoming episodes
+## Episode 4: Hamel Husain, Chris Fonnesbeck, Doug Turnbull
 
-Register on Luma to join live, or get the recording after.
+[Watch on YouTube](https://youtube.com/live/XaYQFtca798)
 
-### Episode 4: Hamel Husain, Chris Fonnesbeck, Doug Turnbull
+| Field notes | Guest |
+|-------------|-------|
+| [Hamel Husain](episode-field-notes/ep-4/hamel.md) | Parlance Labs |
+| [Chris Fonnesbeck](episode-field-notes/ep-4/chris.md) | PyMC Labs |
+| [Doug Turnbull](episode-field-notes/ep-4/doug.md) | Search specialist, author of *AI-Powered Search* |
 
-[Register on Luma](https://luma.com/ltpzpqgw)
-
-Joined by Hamel Husain (Parlance Labs), Chris Fonnesbeck (PyMC Labs, veteran analyst for the Mets, Brewers, and Yankees), and Doug Turnbull (led Search at Shopify and Reddit).
+| Workflow | What it does | Guest | Watch |
+|----------|--------------|-------|-------|
+| [skill-scepticism](workflows/skill-scepticism) | Review shared agent skills before trusting, adapting, replacing, or rejecting them. | Hamel Husain (Parlance Labs) | [00:32:39](https://youtube.com/live/XaYQFtca798?t=1959) |
+| [plan-review-implementation-review](workflows/plan-review-implementation-review) | Ask an agent for a plan, audit it with `review plans`, implement only after the plan is clean, then audit the finished code with `review implementation`. | Chris Fonnesbeck (PyMC Labs) | [01:05:53](https://youtube.com/live/XaYQFtca798?t=3953) |
+| [auto-research-agentic-search](workflows/auto-research-agentic-search) | Let an agent experiment with search-code patches while hidden validation decides what survives. | Doug Turnbull | [01:41:07](https://youtube.com/live/XaYQFtca798?t=6067) |
 
 ## More from us
 
