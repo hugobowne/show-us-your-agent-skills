@@ -44,6 +44,8 @@ These skills are snapshots from the corresponding live streams. Creators often i
 
 [Watch on YouTube](https://youtube.com/live/Pq3xuChdwxQ)
 
+Field notes: [Wes McKinney](episode-field-notes/ep-1/wes.md), [Jeremiah Lowin](episode-field-notes/ep-1/jeremiah.md), [Randy Olson](episode-field-notes/ep-1/randy.md).
+
 | Skill | What it does | Guest | Watch |
 |-------|--------------|-------|-------|
 | [explain](skills/explain) | Agent narrates what it just did, like a teammate handing off. | Jeremiah Lowin (Prefect, FastMCP) | [00:46:14](https://youtube.com/live/Pq3xuChdwxQ?t=2774) |
@@ -61,6 +63,8 @@ These skills are snapshots from the corresponding live streams. Creators often i
 
 [Watch on YouTube](https://youtube.com/live/l37PR-OkYKA)
 
+Field notes: [Hilary Mason](episode-field-notes/ep-2/hilary.md), [Bryan Bischof](episode-field-notes/ep-2/bryan.md), [Eric Ma](episode-field-notes/ep-2/eric.md), [Tomasz Tunguz](episode-field-notes/ep-2/tom.md).
+
 | Skill | What it does | Guest | Watch |
 |-------|--------------|-------|-------|
 | [prompt-refinement](skills/prompt-refinement) | Interview the user's intent, ask for three variations at different magnitudes of change, score against a rubric you wrote up front. | Hilary Mason (Hidden Door) | [01:01:00](https://youtube.com/live/l37PR-OkYKA?t=3660) |
@@ -76,6 +80,8 @@ These skills are snapshots from the corresponding live streams. Creators often i
 ## Episode 3: Matthew Honnibal, Eleanor Berger, Nico Gerold, Alan Nichol, Vincent Warmerdam, Paul Iusztin
 
 [Watch on YouTube](https://youtube.com/live/ud2WzkKeDZs)
+
+Field notes: [Matthew Honnibal](episode-field-notes/ep-3/matt.md), [Eleanor Berger](episode-field-notes/ep-3/eleanor.md), [Nico Gerold](episode-field-notes/ep-3/nico.md), [Alan Nichol](episode-field-notes/ep-3/alan.md), [Vincent Warmerdam](episode-field-notes/ep-3/vincent.md), [Paul Iusztin](episode-field-notes/ep-3/paul.md).
 
 | Skill | What it does | Guest | Watch |
 |-------|--------------|-------|-------|
@@ -102,11 +108,7 @@ Still to come from this episode:
 
 [Watch on YouTube](https://youtube.com/live/XaYQFtca798)
 
-| Field notes | Guest |
-|-------------|-------|
-| [Hamel Husain](episode-field-notes/ep-4/hamel.md) | Parlance Labs |
-| [Chris Fonnesbeck](episode-field-notes/ep-4/chris.md) | PyMC Labs |
-| [Doug Turnbull](episode-field-notes/ep-4/doug.md) | Search specialist, author of *AI-Powered Search* |
+Field notes: [Hamel Husain](episode-field-notes/ep-4/hamel.md), [Chris Fonnesbeck](episode-field-notes/ep-4/chris.md), [Doug Turnbull](episode-field-notes/ep-4/doug.md).
 
 | Workflow | What it does | Guest | Watch |
 |----------|--------------|-------|-------|
@@ -118,7 +120,7 @@ Still to come from this episode:
 
 [Register on Luma](https://luma.com/0t8kiodw)
 
-Friday, June 19, 9:00 AM - 10:30 AM GMT+10, live on YouTube.
+Friday, June 19, 2026, 9:00 AM - 10:30 AM AEST (GMT+10), live on YouTube.
 
 Joined by John Berryman (Arcturus Labs, early engineer on GitHub Copilot, O'Reilly author), Isaac Flath (Kentro Tech, ex-Answer.AI), and Matt Palmer (Conductor, ex-Replit).
 
