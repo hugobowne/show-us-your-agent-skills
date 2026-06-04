@@ -1,148 +1,232 @@
-# Vincent Warmerdam, Episode 3 field notes
+# Vincent - Episode 3 field notes
 
-Vincent Warmerdam is an engineer at [marimo](https://marimo.io/) who has worked with Matt and Ines on spaCy and with [Rasa](https://rasa.com/). His segment centered on notebooks as interactive canvases for humans and agents: widget-driven exploration, agent-readable docs, Marimo Pair, cloud sandboxes, and the discipline of staying personally engaged instead of outsourcing understanding to the model.
+Vincent, an engineer at [marimo](https://marimo.io/) who has worked with Matt Honnibal and Ines Montani on [spaCy](https://spacy.io/), has worked with [Rasa](https://rasa.com/), maintains [Wiggly Stuff](https://koaning.github.io/wigglystuff/), and is associated with [CalmCode](https://calmcode.io/), uses his Episode 3 segment to show notebooks as a shared surface for human understanding and agent work. His demos keep returning to one operating model: the notebook should expose live state, interactive controls, docs, and runtime variables in a way that both the human and the coding agent can act on.
+
+His thesis lands early while he zooms and watches a notebook cell update from an interactive widget: *"We can really look at the notebook more like a canvas."* [\[01:12:45\]](https://youtube.com/live/ud2WzkKeDZs?t=4365) Wiggly Stuff provides the Lego-brick widgets, marimo gives him the reactive notebook surface, [marimo pair](https://marimo.io/blog/marimo-pair) gives an agent access to live Python variables, and [Pi](https://pi.dev/) plus [MoLab](https://molab.marimo.io/) point toward sandboxed agent work where local file access can be narrowed when the code runs in a proper cloud sandbox.
+
+The segment also argues for human understanding as the goal. Vincent likes agents because they let a small idea become a working artifact quickly, but he keeps the learning burden on himself: *"The whole point of a notebook is that I eventually understand something and that's not something the agent can do for me."* [\[01:14:02\]](https://youtube.com/live/ud2WzkKeDZs?t=4442)
+
+<a href="https://youtube.com/live/ud2WzkKeDZs?t=5164"><img src="images/vincent-marimo-pair-slider.png" alt="Vincent showing a marimo notebook paired with a coding agent that can inspect variables and update a slider" /></a>
+<sub>Vincent shows marimo pair giving a coding agent access to live notebook state, including a slider value the agent can read and change. <a href="https://youtube.com/live/ud2WzkKeDZs?t=5164">[01:26:04]</a></sub>
 
 ## On working with agents
 
-### What he loves: daydreams that become artifacts quickly
+### What he loves: agents let small ideas become artifacts quickly
 
-Vincent likes agents because they let small creative ideas become concrete fast enough to keep the idea alive. The Game of Life widget was his example: an asynchronous front-end and Python loop started as a "what if" and became something explorable. *"I do like the fact that they allow me to dream during the day a bit differently. So if I have a brain fart, it's a lot easier for that brain fart to be satisfied within half an hour."* [\[01:31:01\]](https://youtube.com/live/ud2WzkKeDZs?t=5461)
+Vincent loves the way agents make daydreaming operational. A stray idea can become a prototype fast enough to teach him whether it is worth following. *"They allow me to dream during the day a bit differently."* [\[01:31:05\]](https://youtube.com/live/ud2WzkKeDZs?t=5465)
 
-The creative unlock is not just speed, it is speed that leaves a usable artifact behind: *"So the fact that an agent allows me to sort of quickly bootstrap things like that, that's like a huge creative unlock."* [\[01:31:28\]](https://youtube.com/live/ud2WzkKeDZs?t=5488)
+His Game of Life widget is the example: he wondered whether a front-end drawing surface plus an asynchronous loop could become something more interesting, then the agent helped bootstrap it. *"The fact that an agent allows me to quickly bootstrap things like that, that's a huge creative unlock."* [\[01:31:30\]](https://youtube.com/live/ud2WzkKeDZs?t=5490)
 
-### What he finds most frustrating: hype that blocks calm learning
+### What he finds most frustrating: hype makes calm learning hard
 
-Vincent's frustration is less with agents themselves than with the media layer around them. When he wants to learn what [Hermes](https://hermes-agent.nousresearch.com/) is, he wants a calm, time-respectful explanation, not guru posture and algorithmic spectacle. *"The hype around it, it's, it's, oh God, I just want normal boring people to exchange notes, but instead you get all these, God, like, I don't know."* [\[01:32:09\]](https://youtube.com/live/ud2WzkKeDZs?t=5529)
+Vincent's frustration is the culture around agent tools. He uses Hermes as the example of something he would like to understand plainly: *"Could I just have a calm video that explains to me what Hermes agent really is?"* [\[01:31:54\]](https://youtube.com/live/ud2WzkKeDZs?t=5514)
 
-His preferred norm is ordinary practitioners comparing notes: *"There is something about the way that ideas are being shared where it almost feels like you have to pretend to be a guru instead of being like a boring person that just says, I tried a bunch of stuff. It kind of works."* [\[01:32:20\]](https://youtube.com/live/ud2WzkKeDZs?t=5540)
-
-## Skills
-
-### [Marimo Pair](https://marimo.io/blog/marimo-pair)
-
-Vincent showed Marimo Pair as an agent-notebook pairing skill, first with a simple slider. The key feature is that the agent can read Python variables and interact with UI elements in the notebook, instead of debugging through command-line prints. *"this is the new Marimo Pair thing. It's effectively a skill."* [\[01:24:25\]](https://youtube.com/live/ud2WzkKeDZs?t=5065)
-
-The concrete demo was deliberately simple: ask the agent the slider value, then ask it to move the slider. *"It can read every single Python variable here, but you can also ask it to interact with UI elements."* [\[01:25:36\]](https://youtube.com/live/ud2WzkKeDZs?t=5136)
+The problem, for him, is that ideas get shared as performance instead of notes from practice. *"I just want normal boring people to exchange notes."* [\[01:32:12\]](https://youtube.com/live/ud2WzkKeDZs?t=5532) He says the current incentive makes people *"pretend to be a guru instead of being a boring person that just says, I tried a bunch of stuff. It kind of works."* [\[01:32:26\]](https://youtube.com/live/ud2WzkKeDZs?t=5546)
 
 ## Workflows
 
-### Treat the notebook as a shared canvas
+### Build reusable notebook widgets with agent-readable docs
 
-Vincent's core workflow is to make the notebook a space where both human and agent can manipulate live objects, inspect state, and learn by changing things. Wiggly Stuff widgets, Marimo Pair, and cloud sandboxes all serve that larger goal. *"We can really look at the notebook more like a canvas, and that's, think, where the quote came from, than before, because it's definitely more about having agents be able to interact with something that you yourself can also interact with."* [\[01:12:41\]](https://youtube.com/live/ud2WzkKeDZs?t=4361)
+Vincent's Wiggly Stuff workflow starts with small interactive widgets that can be clicked together with Python code. The library gives him 3D widgets, graph widgets, a Paint-like drawing surface, and docs that agents can read. *"The really nice philosophy with this Wiggly Stuff library is it's just a Lego brick and you can click it together with the rest of your code."* [\[01:11:47\]](https://youtube.com/live/ud2WzkKeDZs?t=4307)
 
-### Build libraries as Lego bricks for agents
+He makes each widget's docs available in Markdown and provides `llms.txt` so coding agents and search tools can discover how the library works. *"If you have an agent that needs to know how to add this to a Jupyter notebook or a Marimo notebook or what have you, the docs can just get you here."* [\[01:12:01\]](https://youtube.com/live/ud2WzkKeDZs?t=4321)
 
-Wiggly Stuff is designed as small composable widgets, with docs that agents can read. Vincent frames this as more useful than another instruction file when the library itself contains examples and conventions the model can imitate. *"the really nice philosophy with this Wiggly Stuff library is it's just a Lego brick and you can click it together with the rest of your code."* [\[01:11:45\]](https://youtube.com/live/ud2WzkKeDZs?t=4305)
+The same component shape helps agents extend the library. Wiggly Stuff already contains many examples, so when Vincent asks Claude to build a new widget, it can search similar widgets and copy the local style. *"It will just see the way that I like things to be and it will just follow that."* [\[01:22:48\]](https://youtube.com/live/ud2WzkKeDZs?t=4968)
 
-That componentization makes the library agent-friendly: *"if you have a library full of Lego bricks that have this rule on how things should click together, it's a lot easier for Claude or whatever agent to figure out what the next Lego brick should be because there's examples to follow."* [\[01:23:04\]](https://youtube.com/live/ud2WzkKeDZs?t=4984)
+### Use interactive notebooks so the human can play with agent-built explanations
 
-### Use Conductor workspace scripts to make review loops automatic
+Vincent's notebook demos make abstract behavior inspectable. A Paint-like widget lets the user draw pixels, Python reacts every second, and the front end updates asynchronously. Then he switches the same surface into Conway's Game of Life, where drawing a straight line versus an arc changes the resulting growth. *"If you understand, you're going to understand the game of life way better."* [\[01:16:07\]](https://youtube.com/live/ud2WzkKeDZs?t=4567)
 
-Vincent uses Conductor as a wrapper around Codex, Claude, or terminal-based coding agents. The small but important trick is scripting workspace setup and demo-running through `conductor.json`, so every iteration can be reviewed in the browser without redoing setup. *"I can actually script this conductor.json thing."* [\[01:21:54\]](https://youtube.com/live/ud2WzkKeDZs?t=4914)
+The agent helps him assemble these experiments, but the learning comes from manipulating the system. *"Something about reading the code and being able to change the code to see what happens makes me better at understanding the thing than if I were just to read it from a book."* [\[01:16:39\]](https://youtube.com/live/ud2WzkKeDZs?t=4599)
 
-The run command opens all the demo notebooks, which makes visual checking cheap: *"whenever it's done an iteration, I can just open the notebook and see if it did the right thing."* [\[01:22:25\]](https://youtube.com/live/ud2WzkKeDZs?t=4945)
+### Script agent workspaces so demos are always runnable
 
-### Prefer fast, slightly worse models when they keep you engaged
+Vincent uses Conductor to wrap coding agents and script the workspace around them. A `conductor.json` setup command installs dependencies, and a run command starts every demo notebook in the library. *"When a workspace sets up, I want you to run this one install command."* [\[01:22:03\]](https://youtube.com/live/ud2WzkKeDZs?t=4923)
 
-Vincent argues that the best model can seduce the user into taking a back seat. A faster, "dumber" model may produce better human-agent collaboration because the human stays alert and in the loop. *"if you use a worse model, besides the fact that it's like actually a whole lot quicker usually, you have to be on your toes a little bit more."* [\[01:20:23\]](https://youtube.com/live/ud2WzkKeDZs?t=4823)
+The recurring loop is simple: start a fresh workspace, let the agent iterate, then open the notebook and inspect whether the demos still work. *"Whenever it's done an iteration, I can just open the notebook and see if it did the right thing."* [\[01:22:25\]](https://youtube.com/live/ud2WzkKeDZs?t=4945)
 
-The speed matters because long waits trigger context switching: *"if there's a delay of like a minute, you're gonna do something else."* [\[01:20:32\]](https://youtube.com/live/ud2WzkKeDZs?t=4832)
+### Pair a live notebook with a coding agent that can inspect and change runtime state
 
-### Start from scratch sometimes to avoid intellectual laziness
+Vincent uses marimo pair with [OpenCode](https://opencode.ai/) to connect a coding agent to a live notebook. The scratch pad gives the agent access to notebook variables, and the agent can interact with UI elements such as a slider. *"It can read every single Python variable here, but you can also ask it to interact with UI elements."* [\[01:25:36\]](https://youtube.com/live/ud2WzkKeDZs?t=5136)
 
-Vincent explicitly warns against letting the model do all the work. Even if an agent can produce the artifact, the human still needs the ability to build from first principles. *"there is a risk of intellectual laziness if you just have the L and really do everything."* [\[01:19:47\]](https://youtube.com/live/ud2WzkKeDZs?t=4787)
+That removes a common debugging loop where the agent has to print intermediate steps to the terminal to discover state. *"You just have a way to give Claude or whatever access to every single Python variable."* [\[01:26:30\]](https://youtube.com/live/ud2WzkKeDZs?t=5190)
 
-His prescription is tactile as well as conceptual: *"it is also good to be able to start from scratch yourself. Like there's something very empowering where you can just sort of say, screw it, I'm just building this from scratch."* [\[01:19:34\]](https://youtube.com/live/ud2WzkKeDZs?t=4774)
+### Constrain notebook-paired agents with cloud sandboxes and local file rules
+
+Vincent sketches a cloud-sandbox workflow with MoLab and Pi. The code runs in a cloud sandbox, a local agent connects from the terminal, and Pi listens for tool-call events so local file access can be narrowed. *"If the tool call is of type read, then you can say you're only allowed to read the Marimo Pair files because everything else has to happen in the cloud."* [\[01:28:08\]](https://youtube.com/live/ud2WzkKeDZs?t=5288)
+
+He also suggests checking a file hash before allowing access. The point is a custom agent whose local permissions match the sandboxed notebook task. *"You can really narrow down what Pi is allowed to touch."* [\[01:28:20\]](https://youtube.com/live/ud2WzkKeDZs?t=5300)
+
+## Skills
+
+### Marimo Pair
+
+Vincent introduces [marimo pair](https://marimo.io/blog/marimo-pair) as effectively a skill, then Hugo recognizes the demo from Eric Ma's Episode 2 segment. Vincent continues the explanation: *"This is the new Marimo Pair thing. It's effectively a skill that opens up a scratch pad that Claude can write into the notebook."* [\[01:24:25\]](https://youtube.com/live/ud2WzkKeDZs?t=5065)
+
+The skill matters because the scratch pad can see live notebook variables. Vincent uses that access to ask the agent for the current slider value and then to change the slider without him touching the keyboard.
+
+### Marimo skills
+
+Vincent says he maintains the marimo skills and treats them as files that deserve manual inspection before use. *"I maintain the Marimo skills, and I do my best to make sure that they don't have any tomfoolery in them."* [\[01:30:35\]](https://youtube.com/live/ud2WzkKeDZs?t=5435)
+
+His security warning is practical: the file is still handed to an agent, so users should control where it comes from and whether it was altered. *"Be careful where you get that file from, and make sure it's not tampered with as you download it."* [\[01:30:46\]](https://youtube.com/live/ud2WzkKeDZs?t=5446)
 
 ## Tools / projects he showed
 
-### [Wiggly Stuff](https://koaning.github.io/wigglystuff/)
+### Wiggly Stuff
 
-Wiggly Stuff is Vincent's side library of interactive Python notebook widgets. He showed widgets for 3D, graphs, painting, and Conway's Game of Life, all designed to work in notebooks and also in notebooks running fully in Wasm. *"I maintain this library on the side that basically has all of these widgets that are suspiciously useful, and it feels weird that people are sleeping on this."* [\[01:11:28\]](https://youtube.com/live/ud2WzkKeDZs?t=4288)
+[Wiggly Stuff](https://koaning.github.io/wigglystuff/) is Vincent's widget library for notebooks. *"It's all this wiggly stuff that you can put in a notebook, because Python notebooks got a whole lot better."* [\[01:11:03\]](https://youtube.com/live/ud2WzkKeDZs?t=4263)
 
-The docs are deliberately agent-readable: *"every single widget, the docs are also fully available in Markdown as well on the site."* [\[01:11:52\]](https://youtube.com/live/ud2WzkKeDZs?t=4312)
+He shows widgets for 3D, graphs, zooming, a Paint-like drawing surface, and Game of Life. He also shows that the widgets can run in notebooks hosted fully in Wasm, so users can try them without downloading anything. *"These widgets will also host on notebooks that are running fully in Wasm."* [\[01:11:38\]](https://youtube.com/live/ud2WzkKeDZs?t=4298)
 
-### Wiggly Stuff Paint widget and Game of Life demo
+Wiggly Stuff also carries the agent-readable docs story. Vincent makes each widget's docs available in Markdown and says the library exposes an `llms.txt` file so OpenCode can figure out how the Lego bricks fit together.
 
-Vincent showed a notebook-native paint widget, then used a timer so Python could draw flowers over black pixels in the front end. He then swapped the playful flower example for an interactive Game of Life demo where drawing different shapes changes the simulated behavior. *"I'm able to interact with the game of life here."* [\[01:15:52\]](https://youtube.com/live/ud2WzkKeDZs?t=4552)
+### AnyWidget
 
-The pedagogical point is that interactivity makes the concept easier to understand: *"if I draw a straight line, then a lot of life starts to appear. But if I just draw an arc, it's going to be less life. Okay. Why is that?"* [\[01:15:57\]](https://youtube.com/live/ud2WzkKeDZs?t=4557)
+[AnyWidget](https://docs.anywidget.dev/) is the specification Vincent credits for bridging Python notebooks and JavaScript interactivity. *"This guy called Trevor who made this specification called AnyWidget. And this will work in every single Python notebook."* [\[01:13:33\]](https://youtube.com/live/ud2WzkKeDZs?t=4413)
 
-### [remember.cards](https://remember.cards/)
+Vincent says discovering it addressed the missing interactivity in notebooks: he could run a cell, but the resulting image was barely interactive, and building custom D3 around it did not click the way he wanted.
 
-Vincent showed remember.cards, a flashcard app he built and uses. The agent-related lesson came from asking an LLM to generate flashcards for saying "thank you" in many languages. It produced a useless English card, revealing the gap between generating plausible content and understanding the learner's goal. *"So I made it very hard to forget. So it's called remember.cards. And it's free, so people can go ahead and play with it."* [\[01:16:57\]](https://youtube.com/live/ud2WzkKeDZs?t=4617)
+### Marimo
 
-The failure case was the lesson: *"The first card of the entire deck was, how do you say thank you in English? And you would flip the card and it would say thank you."* [\[01:17:39\]](https://youtube.com/live/ud2WzkKeDZs?t=4659)
+[marimo](https://marimo.io/) is the notebook system behind Vincent's segment and his employer in the bio Hugo gives. Vincent says part of his work is convincing people how useful marimo is, and that the argument demos better when he has a widget library attached to the work. [\[01:13:45\]](https://youtube.com/live/ud2WzkKeDZs?t=4425)
 
-### [Conductor](https://www.conductor.build/)
+He uses Marimo as the surface where Python cells, widgets, UI state, and agent scratch pads can all coexist.
 
-Vincent uses Conductor to run coding-agent workspaces, with a disclosure that he has a working relationship with the company. In his setup, Conductor wraps Codex, Claude, or terminal agents and gives each conversation its own workspace. *"I like to use this thing called Conductor. And there's other apps like it."* [\[01:21:20\]](https://youtube.com/live/ud2WzkKeDZs?t=4880)
+### remember.cards
 
-The useful feature is repeatable setup and review through `conductor.json`: install commands, run commands, and browser-opened notebook demos. *"it's like a little thing that that's just always there and I don't have to think about setting this up."* [\[01:22:28\]](https://youtube.com/live/ud2WzkKeDZs?t=4948)
+[remember.cards](https://remember.cards/) is Vincent's flashcard app. *"This is the flashcard app that I made and used. So I made it very hard to forget. So it's called remember.cards."* [\[01:16:59\]](https://youtube.com/live/ud2WzkKeDZs?t=4619)
 
-### [Marimo Pair](https://marimo.io/blog/marimo-pair)
+He uses it to show why agent generation is not the same as learning. The LLM can make a deck quickly, but Vincent still writes cards by hand when the goal is to remember.
 
-Marimo Pair connects a notebook to a coding agent so the agent can read variables, write into a scratchpad, and interact with UI elements. Vincent used OpenCode and a Kimi model in the demo, but emphasized that the idea works with Claude, Codex, or another coding agent. *"you can do this with Claude, you can do this with Codex, you can do this with whatever, Slider value is 3."* [\[01:25:26\]](https://youtube.com/live/ud2WzkKeDZs?t=5126)
+In his thank-you-card example, the LLM creates plausible cards for Danish, Swedish, and Romanian, then also creates a useless card asking how to say thank you in English. *"The LLM has no way of understanding that's a useless card to have."* [\[01:17:47\]](https://youtube.com/live/ud2WzkKeDZs?t=4667)
 
-The debug benefit is direct access to state: *"you just have a way to give Claude or whatever access to every single Python variable. And that really lets it fix its own problems way better than anything you can print to the command line effectively."* [\[01:26:30\]](https://youtube.com/live/ud2WzkKeDZs?t=5190)
+### Conductor
 
-### [MoLab](https://molab.marimo.io/)
+[Conductor](https://docs.conductor.build/) is the coding-agent wrapper Vincent uses to make widgets. *"I definitely do a lot of things with coding agents. I like to use this thing called Conductor."* [\[01:21:17\]](https://youtube.com/live/ud2WzkKeDZs?t=4877)
 
-Vincent described MoLab as a cloud sandbox product for Marimo notebooks, with an announcement expected soon. He did not demo the unreleased feature, but framed it as "Colab, but it uses Marimo." *"all the code will actually be running in the cloud in the sandbox for you."* [\[01:27:29\]](https://youtube.com/live/ud2WzkKeDZs?t=5249)
+He describes it as a wrapper around Codex or Claude, with a terminal option for other coding agents. Its value in the demo is the scriptable workspace setup and run command.
 
-### [Pi](https://pi.dev/docs/latest/extensions)
+Vincent shows `conductor.json` as the config file that captures those commands. *"I can actually script this conductor.json thing."* [\[01:21:52\]](https://youtube.com/live/ud2WzkKeDZs?t=4912)
 
-Vincent showed Pi as a TypeScript-based agent customization surface that can listen for tool-call events and restrict what the agent can read. In the Marimo sandbox case, the goal is to let a local terminal agent connect to cloud execution while preventing it from touching local files except the specific Marimo Pair files it needs. *"If the tool call is of type read, then you can say you're only allowed to read the Marimo Pair files because everything else has to happen in the cloud."* [\[01:28:08\]](https://youtube.com/live/ud2WzkKeDZs?t=5288)
+### OpenCode
 
-The point is a bespoke coding agent with much narrower permissions: *"You can really narrow down what Pi is allowed to touch."* [\[01:28:21\]](https://youtube.com/live/ud2WzkKeDZs?t=5301)
+[OpenCode](https://opencode.ai/) appears twice in Vincent's segment. First, he says the search engine OpenCode uses looks for `llms.txt`, which helps the agent learn Wiggly Stuff documentation. [\[01:12:18\]](https://youtube.com/live/ud2WzkKeDZs?t=4338)
 
-### [Calm Code](https://calmcode.io/)
+Later he uses OpenCode for the Marimo Pair notebook demo: *"Let me use OpenCode for this."* [\[01:24:18\]](https://youtube.com/live/ud2WzkKeDZs?t=5058)
 
-Hugo closed the segment by pointing people to Vincent's Calm Code. Vincent tied this to his wider theme of calm, boring, non-hype learning. *"sometimes you want to follow the boring person, not the person with like the ridiculous freaking thumbnail."* [\[01:35:39\]](https://youtube.com/live/ud2WzkKeDZs?t=5739)
+### Claude
 
-## Explainers
+[Claude](https://claude.ai/) is Vincent's example coding agent for extending Wiggly Stuff and for the Marimo Pair scratch pad. In Wiggly Stuff, it searches existing widgets and follows his style. *"If I give it a command to make a specific widget, it will just look for similar widgets."* [\[01:22:49\]](https://youtube.com/live/ud2WzkKeDZs?t=4969)
 
-### LLMs can think without understanding
+In Marimo Pair, the scratch pad is the place Claude can write into the notebook and inspect variables.
 
-The remember.cards example was Vincent's cleanest distinction between generation and understanding. The model could generate plausible cards for many languages, but it could not infer that "thank you" in English is a useless card for him. *"that's a perfect example for me where the LLM can do thinking, but it cannot do understanding."* [\[01:17:51\]](https://youtube.com/live/ud2WzkKeDZs?t=4671)
+### Codex
 
-That distinction changes how he uses agents: *"the goal is that I understand something, writing flashcards, I tend to do that by hand still, because that helps me also remember better."* [\[01:17:58\]](https://youtube.com/live/ud2WzkKeDZs?t=4678)
+[Codex](https://openai.com/codex/) is one of the coding agents Conductor can wrap. Vincent describes Conductor as *"just a wrapper around Codex or Claude"* [\[01:21:35\]](https://youtube.com/live/ud2WzkKeDZs?t=4895), and later says the marimo pair pattern can work with Claude, Codex, or another coding agent.
 
-### Interactivity turns explanations into understanding
+### MoLab
 
-Vincent argues that agents explaining code is weaker than agents giving you something you can manipulate. If the agent wants to teach a multi-step concept, the user learns more by reading code, changing it, and seeing feedback. *"something about reading the code and being able to change the code to see what happens makes me better at understanding the thing than if I were just to read it from a book."* [\[01:16:39\]](https://youtube.com/live/ud2WzkKeDZs?t=4599)
+[MoLab](https://molab.marimo.io/) is the cloud-sandbox project Vincent says is being worked on. He does not demo the unreleased version, but he describes the direction: *"You can also use a sandbox on MoLab and connect to that instead."* [\[01:27:27\]](https://youtube.com/live/ud2WzkKeDZs?t=5247)
 
-His preferred medium is not passive content: *"I prefer to have something of a canvas that also gives me feedback than if I were just to passively sit here and watch content and pretend that that's something that actually teaches me anything."* [\[01:18:25\]](https://youtube.com/live/ud2WzkKeDZs?t=4705)
+He describes it as Colab-like but using Marimo, with sandboxes users can reach through MoLab.
 
-### Component shape can matter more than another skill file
+### Pi
 
-Vincent's Wiggly Stuff and scikit-learn comparison turns "agent readiness" into API design. If components are small, consistent, documented, and easy to test, the model can infer the next component from the existing pattern. *"if you have a library that you can get into this mold, that will do more than any scale file, I think, because you get into the situation where the LLM can just fix its own problems."* [\[01:23:31\]](https://youtube.com/live/ud2WzkKeDZs?t=5011)
+[Pi](https://pi.dev/) is the TypeScript agent library Vincent uses to discuss sandbox safeguards. It can listen to a tool-call event and restrict what the agent is allowed to read. *"With Pi you can actually, because it's TypeScript, that means JavaScript, instead of having this, then that you would do in Python, you could just listen to an event."* [\[01:27:53\]](https://youtube.com/live/ud2WzkKeDZs?t=5273)
 
-### Direct variable access changes agent debugging
+He also notes that Pi can customize the UI, including a startup mascot, but the main use in the segment is permission control for a notebook-paired agent.
 
-Marimo Pair removes a debugging loop that Vincent sees as wasteful: printing intermediate values to the command line, inspecting column names, then repeating across pipeline steps. A notebook pairing surface gives the agent access to the live Python state directly. *"there's like a five-step pipeline. Let me print all those separate steps to figure out what the column names are. All those things basically go away because you just have a way to give Claude or whatever access to every single Python variable."* [\[01:26:23\]](https://youtube.com/live/ud2WzkKeDZs?t=5183)
+### Hermes agent
 
-He also points toward richer object representations as agent instruction manuals: *"you could also imagine that this becomes like the instruction manual for the agent on how to actually work with this variable if you have very custom objects."* [\[01:26:53\]](https://youtube.com/live/ud2WzkKeDZs?t=5213)
+Hermes agent appears in Vincent's frustration answer. He has not used it, but he uses it as an example of a tool he would like explained calmly. *"I've never used Hermes before, but what I would like to learn is Hermes agent."* [\[01:31:47\]](https://youtube.com/live/ud2WzkKeDZs?t=5507)
 
-### Sandboxing is only meaningful with a real sandbox
+For Vincent, Hermes is a proxy for a broader information problem: agent ideas often arrive through hype-shaped media rather than plain exchange of working notes.
 
-Vincent is careful about the limits of permission controls. Restricting which files a skill can read is not enough if the local notebook still has disk access. The sandboxing story works best when execution actually happens in a proper cloud sandbox. *"this only works if you have a very proper sandbox at the moment."* [\[01:30:15\]](https://youtube.com/live/ud2WzkKeDZs?t=5415)
+## Principles and explainers
 
-The broader warning is about casually importing skills and files: *"people just randomly start pulling in all sorts of files and skills, not check it out, and that that's going to lead to all sorts of big problems."* [\[01:30:26\]](https://youtube.com/live/ud2WzkKeDZs?t=5426)
+### Interactivity helps the human understand what the agent cannot
 
-### Weather alchemy and AI hype
+Vincent's notebook philosophy separates generation from understanding. The agent can build and explain, but the human still has to form the mental model. *"The whole point of a notebook is that I eventually understand something and that's not something the agent can do for me."* [\[01:14:02\]](https://youtube.com/live/ud2WzkKeDZs?t=4442)
 
-Vincent used 1800s weather prediction as a historical analogy for AI hype. When demand is high enough, bad supply finds a market, including alchemists and quacks. The way out is boring empirical work. *"it's because the demand for something was so high that bullshit supply suddenly had like a reason to actually exist and survive for a bit there."* [\[01:34:30\]](https://youtube.com/live/ud2WzkKeDZs?t=5670)
+Interactivity matters because it lets the human poke at the problem from another direction. *"If the chart is also interactive, you tend to learn way quicker."* [\[01:14:19\]](https://youtube.com/live/ud2WzkKeDZs?t=4459)
 
-The conclusion is a call for slower, calmer practice: *"The internet could use a good linter. Yeah, I'm inclined to agree. But anyway, but also like for yourself, it's okay to go slow if it means you understand it better."* [\[01:35:23\]](https://youtube.com/live/ud2WzkKeDZs?t=5723)
+### Generated artifacts must stay subordinate to human understanding
+
+Vincent's remember.cards example gives the principle its sharpest form: the LLM can make cards, but it cannot know whether the cards help him remember. He still writes flashcards by hand because the goal is memory, not card count. *"The LLM can do thinking, but it cannot do understanding."* [\[01:17:52\]](https://youtube.com/live/ud2WzkKeDZs?t=4672)
+
+The same rule applies to agent-made explanations. If Vincent wants to understand the Game of Life, he wants a canvas that gives feedback while he changes it, not a passive artifact that lets him pretend he learned.
+
+### Faster weaker models can keep the human engaged
+
+Vincent agrees with Hugo's summary that sometimes a slightly weaker model can be useful because the user trusts it less. He says the best model can push the human into a back-burner role, while a worse model keeps them alert and often responds faster. *"If you use a worse model, besides the fact that it's actually a whole lot quicker usually, you have to be on your toes a little bit more."* [\[01:20:26\]](https://youtube.com/live/ud2WzkKeDZs?t=4826)
+
+The speed matters because long delays encourage context switching. *"Having a quote unquote dumb model, but one that's really quick, that definitely is something that can really help."* [\[01:20:54\]](https://youtube.com/live/ud2WzkKeDZs?t=4854)
+
+### Live notebook state helps agents debug without print loops
+
+Vincent says the most important help for a notebook-paired agent is access to live Python variables. That lets the agent inspect state directly instead of asking the user to print every intermediate value. *"All those things basically go away because you just have a way to give Claude or whatever access to every single Python variable."* [\[01:26:27\]](https://youtube.com/live/ud2WzkKeDZs?t=5187)
+
+He also points to object representations as future instruction manuals for agents, where custom objects could carry API docs or usage guidance inside their representation.
+
+### Agent skill files need provenance and tamper checks
+
+Vincent agrees that sandboxing helps only under the right boundary. Locally, an agent that can read through the notebook still has access to disk unless the sandbox is real. *"This only works if you have a very proper sandbox at the moment."* [\[01:30:17\]](https://youtube.com/live/ud2WzkKeDZs?t=5417)
+
+The file itself remains a risk surface. *"It remains a file, and it remains the fact that you give that to an agent."* [\[01:30:44\]](https://youtube.com/live/ud2WzkKeDZs?t=5444)
+
+### Boring science beats hype when demand outruns evidence
+
+Vincent closes with a story about 1800s weather prediction: demand for prediction was high, the supply was weak, and people still found a market. *"Even though the supply was bullshit, boy, was there supply because this demand was so high."* [\[01:33:40\]](https://youtube.com/live/ud2WzkKeDZs?t=5620)
+
+His agent-world lesson is to test claims calmly instead of imitating hype. *"The only reason you could get out of that is by just doing the boring science. You would just check, does the thing work? Yes, no."* [\[01:34:42\]](https://youtube.com/live/ud2WzkKeDZs?t=5682)
+
+### Going slow can be the right agent practice
+
+Vincent's final practical rule connects his frustration with hype back to his notebook demos. Calm learning can require resisting the fastest or loudest artifact. *"It's okay to go slow if it means you understand it better."* [\[01:35:35\]](https://youtube.com/live/ud2WzkKeDZs?t=5735)
+
+He points people toward quieter practitioners: *"Sometimes you want to follow the boring person, not the person with the ridiculous freaking thumbnail."* [\[01:35:39\]](https://youtube.com/live/ud2WzkKeDZs?t=5739)
 
 ## Additional quotations
 
-- On interactive widgets as a missing notebook affordance: *"the thing that was missing inside of my notebook was a lack of interactivity."* [\[01:13:05\]](https://youtube.com/live/ud2WzkKeDZs?t=4385)
-- On the purpose of notebooks: *"The whole point of a notebook is that I eventually understand something and that's not something the agent can do for me."* [\[01:13:56\]](https://youtube.com/live/ud2WzkKeDZs?t=4436)
-- On interactive charts: *"if the chart is also interactive, you tend to learn way quicker."* [\[01:14:16\]](https://youtube.com/live/ud2WzkKeDZs?t=4456)
-- On agent-readable docs: *"OpenCode should also be able to figure out how this library works and how the Lego bricks click together, if it were."* [\[01:12:25\]](https://youtube.com/live/ud2WzkKeDZs?t=4345)
-- On a small but useful workspace habit: *"when a workspace sets up, I want you to run this one install command."* [\[01:22:03\]](https://youtube.com/live/ud2WzkKeDZs?t=4923)
-- On Marimo Pair and UI manipulation: *"I'm gonna not touch the keyboard anymore. And you should see the slider jump any moment now."* [\[01:25:43\]](https://youtube.com/live/ud2WzkKeDZs?t=5143)
-- On agent safety and skill files: *"it remains a file, and it remains the fact that you give that to an agent. So be careful where you get that file from, and make sure it's not tampered with as you download it."* [\[01:30:37\]](https://youtube.com/live/ud2WzkKeDZs?t=5437)
-- On calm learning: *"Don't choose the life of imitation, but it's all that I'm seeing if it sometimes feels like."* [\[01:34:53\]](https://youtube.com/live/ud2WzkKeDZs?t=5693)
+- On Wiggly Stuff's usefulness: *"I maintain this library on the side that basically has all of these widgets that are suspiciously useful, and it feels weird that people are sleeping on this."* [\[01:11:28\]](https://youtube.com/live/ud2WzkKeDZs?t=4288)
+
+- On docs for agents: *"Every single widget, the docs are also fully available in Markdown as well on the site."* [\[01:11:53\]](https://youtube.com/live/ud2WzkKeDZs?t=4313)
+
+- On the missing bridge in notebooks: *"There's not a convenient bridge between Python and JavaScript land."* [\[01:13:28\]](https://youtube.com/live/ud2WzkKeDZs?t=4408)
+
+- On the Paint-like widget: *"I made a widget that's very much like Microsoft Paint, but it's something that you could use from inside of a notebook."* [\[01:14:43\]](https://youtube.com/live/ud2WzkKeDZs?t=4483)
+
+- On agent-readable widget docs: *"Agents can read the entire docs of this thing very easily."* [\[01:16:21\]](https://youtube.com/live/ud2WzkKeDZs?t=4581)
+
+- On passive content: *"I prefer to have something of a canvas that also gives me feedback than if I were just to passively sit here and watch content and pretend that that's something that actually teaches me anything."* [\[01:18:25\]](https://youtube.com/live/ud2WzkKeDZs?t=4705)
+
+- On starting from scratch: *"It is also good to be able to start from scratch yourself."* [\[01:19:44\]](https://youtube.com/live/ud2WzkKeDZs?t=4784)
+
+- On weaker models keeping attention active: *"You have to be on your toes a little bit more, and that also means you're in the loop more."* [\[01:20:35\]](https://youtube.com/live/ud2WzkKeDZs?t=4835)
+
+- On Conductor's run command: *"This is going to run all the notebooks that are in my demos folder."* [\[01:22:11\]](https://youtube.com/live/ud2WzkKeDZs?t=4931)
+
+- On the notebook-agent canvas: *"You can inspect the variables, so can the agent, and the agent can also make changes."* [\[01:26:05\]](https://youtube.com/live/ud2WzkKeDZs?t=5165)
+
+- On MoLab: *"It's like Colab, but it uses Marimo."* [\[01:29:21\]](https://youtube.com/live/ud2WzkKeDZs?t=5361)
+
+- On Wiggly Stuff's name: *"Annoyingly I did pick a name that sounds like a Pokemon."* [\[01:29:29\]](https://youtube.com/live/ud2WzkKeDZs?t=5369)
+
+- On skill security: *"Be careful where you get that file from, and make sure it's not tampered with as you download it."* [\[01:30:46\]](https://youtube.com/live/ud2WzkKeDZs?t=5446)
+
+- On the internet: *"The internet could use a good linter."* [\[01:35:30\]](https://youtube.com/live/ud2WzkKeDZs?t=5730)
+
+## Live reactions and follow-ups
+
+### Nico picked up the Pi and cloud-agent thread
+
+When Hugo welcomed Nico and Paul, he immediately tied Nico's next segment to Vincent's Pi demo: *"It was wonderful that Vincent showed Py."* [\[01:36:34\]](https://youtube.com/live/ud2WzkKeDZs?t=5794) Nico then connected that direction to coding agents moving away from local terminal-only sessions and toward cloud or background execution, where review and product boundaries become larger parts of the tool. [\[01:37:22\]](https://youtube.com/live/ud2WzkKeDZs?t=5842)
+
+### Discord links filled in marimo pair, Pi, and Vincent's side projects
+
+During the episode window, Hugo posted [marimo pair](https://marimo.io/blog/marimo-pair) and [Pi](https://pi.dev/) in Discord. Earlier, Vincent shared his [Conductor, I Am In LÖVE](https://www.youtube.com/watch?v=FDcNTlB9BUQ) video with the note, "Maybe the best skill ... is to find a framework that doesn't need one ..." A viewer also asked what agentic tool Vincent used to build his GitHub profile [README](https://github.com/koaning/koaning/blob/main/README.md), traced it to [readme.py](https://github.com/koaning/koaning/blob/main/readme.py), and Vincent later answered, "That is simply written by hand."
+
+### Hugo later returned to Vincent's calm-builder advice
+
+Near the end of the episode, Hugo recalled a recent podcast exchange with Vincent and summarized the line as "be calm." The follow-up kept Vincent's anti-hype point in view: Hugo paraphrased him as saying he could not remember creativity coming from serious stress, then asked Alan what builders should do more of in their own practice. [\[03:13:59\]](https://youtube.com/live/ud2WzkKeDZs?t=11639)

@@ -1,131 +1,259 @@
-# Alan Nichol, Episode 3 field notes
+# Alan Nichol - Episode 3 field notes
 
-Alan Nichol is co-founder and CTO of [Rasa](https://rasa.com/), a developer platform for building AI agents. He holds a PhD in machine learning from the University of Cambridge and has been building chatbots since 2016, with over a decade of experience delivering AI products to enterprise. The segment centered on programmatic video generation with Claude and [Remotion](https://www.remotion.dev/), the tradeoffs between code-based and no-code interfaces (vibe coding vs agentic engineering), and the challenge of encoding domain judgment into skills when working outside your area of expertise.
+Alan Nichol, co-founder and CTO of [Rasa](https://rasa.com/), used his Episode 3 segment to show how he creates product videos with a coding agent: [Claude](https://www.anthropic.com/claude) writes [Remotion](https://github.com/remotion-dev/remotion) code, [Whisper](https://github.com/openai/whisper) timestamps align the audio, generated avatar video supplies the face, and an agent skill carries Alan's visual rules. His operating thesis was blunt: *"Everything that can be code will be code."* [\[02:46:28\]](https://youtube.com/live/ud2WzkKeDZs?t=9988)
+
+The video workflow came from the same pressure as his answer about agents more broadly. Alan spends his day context switching, and agents turn small pockets of time into finished artifacts. He can record audio in a phone booth, let the system generate the face and visuals, then keep refining the content with a collaborator that understands the technical domain. *"All the context about the actual refinement of what we want to show and what really makes sense. All of that is in there."* [\[02:50:17\]](https://youtube.com/live/ud2WzkKeDZs?t=10217)
+
+His frustration is that taste, timing, spatial layout, and product abstraction are still hard to encode. Claude can write Remotion code without help, but Alan uses the skill to teach it focal points, text rules, animation style, layout modes, safe areas, and timing tricks. The same problem connects back to Rasa: natural language lets a user ask for a vague high-level change or a precise expert edit without learning one fixed UI abstraction first.
+
+<a href="https://youtube.com/live/ud2WzkKeDZs?t=10074"><img src="images/alan-programmatic-video-workflow.png" alt="Alan Nichol showing a generated Rasa product video during the livestream" /></a>
+<sub>Alan plays a generated Rasa product video, with the screen share showing the AI avatar output and the livestream speaker tiles beside it. <a href="https://youtube.com/live/ud2WzkKeDZs?t=10074">[02:47:54]</a></sub>
 
 ## On working with agents
 
-### What he loves: fitting productivity into fragmented time
+### What he loves: turning dead time into useful work
 
-Alan values agents for making productive work possible in small windows between meetings and context switches. Without agents, a project requiring half a day becomes feasible in 20 minutes over a coffee break. *"You know, the kind of project that would take me half a day, I can just fire off and just get done. And so it just makes your whole day so much more productive."* [[02:41:20]](https://youtube.com/live/ud2WzkKeDZs?t=9680)
+Alan loves agents because they let him use the small gaps inside a context-switching day. *"I'm actually able to be productive and do something in the 20 minutes I have between meetings and quickly grabbing a cup of coffee versus that just being dead time."* [\[02:41:27\]](https://youtube.com/live/ud2WzkKeDZs?t=9687)
 
-### What he finds most frustrating: prompt and pray, no systematic debugging
+That makes half-day tasks small enough to launch between other commitments: *"The kind of project that would take me half a day, I can just fire off and just get done."* [\[02:41:40\]](https://youtube.com/live/ud2WzkKeDZs?t=9700) The same parallelism has a cost, because all the live threads can become addictive and distracting.
 
-Alan's primary frustration is the lack of a systematic way to improve outputs. When something does not work, the only option is trial and error with no principled path forward, reminding him of deep learning research in 2014-2015 where you throw architectures at the wall and see what sticks. *"I think the thing that frustrates me most about it is prompt and pray. For real. I mean, it's so frustrating when you don't have a systematic way to say, here's the thing I didn't like about the output. How can I achieve the output that I do want? Right? It's only trial and error. It's the only thing you have available to you."* [[02:41:37]](https://youtube.com/live/ud2WzkKeDZs?t=9697)
+### What he finds most frustrating: prompt and pray
 
-## Skills
+Alan's named frustration is "prompt and pray," because output problems often lack a systematic path from failure to improvement. *"It's so frustrating when you don't have a systematic way to say, here's the thing I didn't like about the output, how can I achieve the output that I do want?"* [\[02:42:06\]](https://youtube.com/live/ud2WzkKeDZs?t=9726)
 
-### Remotion video generation skill
+He compares that trial-and-error loop to deep learning in 2014 and 2015, when architecture changes did not come with reliable causal guidance. *"You're throwing stuff at the wall and seeing what works."* [\[02:42:45\]](https://youtube.com/live/ud2WzkKeDZs?t=9765)
 
-Alan has built a skill that encodes design rules for programmatic video generation with Remotion, a JavaScript library for code-based video creation. The skill exists because Claude requires no help whatsoever writing Remotion code; instead, the skill teaches Claude what Alan wants in terms of animations, easing functions, layout modes, styling, and text treatment. *"Claude needs no help whatsoever writing remotion code. So it will just do it. And everything that's in the skill is me telling it like what I want in there and how to do animations and style guides and rules and text."* [[02:51:23]](https://youtube.com/live/ud2WzkKeDZs?t=10283)
+### What he misses: thinking on paper with an agent present
 
-The skill contains conceptual design rules: only one central focal point at a time, animated text should not verbatim repeat speech (show, do not tell), audio timestamps from Whisper enable precise timing of on-screen elements, and distinct layout modes (talking head on left, animation on right). Canvas safe areas, minimum font sizes, and easing functions (cubic, quintic) all prevent common visual mistakes. *"There should only be one thing that's the central focal point at any point in time... you shouldn't your text that you're animating that you show shouldn't be repeating verbatim what I said. It should just you know, because that doesn't add any value just distracts right."* [[02:53:33]](https://youtube.com/live/ud2WzkKeDZs?t=10413)
+Alan likes to think with loose printer paper rather than a bound notebook or a computer. *"If I really want to think about a problem, I get a stack of printer paper. I clear my desk and I just sit and write things down and I draw pictures."* [\[02:42:55\]](https://youtube.com/live/ud2WzkKeDZs?t=9775)
 
-### Short-form vertical video re-editing skill (in progress)
-
-Alan has attempted to build a skill for converting the horizontally-framed videos into short-form vertical content for TikTok and YouTube Reels, with different rules: full-screen talking head, dynamic animated subtitles overlaid, illustrations as face overlays, aggressive jump-cut editing. He has not yet brought this to production quality. *"I've tried to make a skill that will take this raw content and re-edit it as like short form vertical video, you know, for TikTok reels YouTube. And there's different rules, right?"* [[03:07:49]](https://youtube.com/live/ud2WzkKeDZs?t=11269)
+The problem is that paper removes the agent from the early thinking loop. *"There's no good way to collaborate with your agent when you're writing on a piece of paper."* [\[02:43:28\]](https://youtube.com/live/ud2WzkKeDZs?t=9808) His desired setup is a continuous camera over the paper that can feed a multimodal model. [\[02:43:43\]](https://youtube.com/live/ud2WzkKeDZs?t=9823)
 
 ## Workflows
 
-### Encode judgment into skills when you lack vocabulary
+### Make product videos with a coding agent, skills, and rendered inspection
 
-When working in an unfamiliar domain, Alan starts by making vague, subjective requests to Claude and observes how it interprets them into technical implementations, learning the vocabulary in the process. He then encodes that vocabulary back into the skill for consistency. *"So when I was first building these, I would just say like, hey, can you make this a bit more high energy? Don't go full influencer, but just, it needs to pop a little bit. And just these sort of very vague subjective inputs. then Claude would kind of reason about, what makes a video feel that way? And what do I need to do?"* [[02:54:02]](https://youtube.com/live/ud2WzkKeDZs?t=10442)
+Alan starts from the output: short videos at [2026.rasa.com](https://2026.rasa.com/) made with Claude acting as the coding agent, Remotion as the video library, and skills as the instruction layer. *"I've been making some videos with Claude and Remotion and some skills."* [\[02:46:00\]](https://youtube.com/live/ud2WzkKeDZs?t=9960)
 
-The friction point: Alan lacks the videography vocabulary to specify what he likes and dislikes, making it difficult to encode nuanced judgment into instructions. *"I would say it's probably the biggest gap right now. And partly because I don't really have the vocabulary to understand what I like and what I don't like and what I would want to change about it."* [[03:02:39]](https://youtube.com/live/ud2WzkKeDZs?t=10959)
+The work stays code-shaped because Alan does not want to learn conventional video editing software. He credits Rod from Rasa's developer relations team with seeding the first version, then describes the workflow as something he can operate from the terminal. When Hugo asks whether he built the shown video with an agent from the command line, Alan answers: *"Yep. Didn't touch a GUI."* [\[02:48:50\]](https://youtube.com/live/ud2WzkKeDZs?t=10130)
 
-### Render frames for visual inspection, but accept spatial reasoning limits
+The coding agent writes the Remotion code that defines the animated text, graphics, and graphic animations. [HeyGen](https://www.heygen.com/) generates the face video from Alan's real audio. The workflow exists because it removes the production overhead around lighting, re-recording, and calendar time. *"This, I just record some audio into my computer, quickly in a phone booth or something when I have a few minutes, and then it can generate the rest."* [\[02:49:57\]](https://youtube.com/live/ud2WzkKeDZs?t=10197)
 
-Alan's skill instructs Claude to render individual frames throughout the video for inspection, which helps catch some issues. But spatial reasoning remains weak: Claude frequently misses layout problems and needs explicit correction. *"it says, hey, go and render individual frames throughout this video and then take a look at those, which is good and it's helpful. But I would still say that sort of visual spatial reasoning is one of the weak points of Claude and it doesn't do it particularly well and it can often miss like really obvious layout issues or things like that and then I have to really spell it out."* [[03:00:09]](https://youtube.com/live/ud2WzkKeDZs?t=10809)
+Alan values the agent because the content conversation and the video generation happen with the same collaborator. A human video collaborator may understand the craft but lack the technical domain context. Claude can discuss what the product video is trying to convey while also making the artifact.
 
-### Open abstraction levels for non-coders with vibe coding
+He describes that collaborator as a sparring partner: *"It can be your sparring partner on the ideas."* [\[02:50:51\]](https://youtube.com/live/ud2WzkKeDZs?t=10251) That lets him ask whether a scene can be cut because the idea is already obvious, and those content decisions stay inside the same working context as the generated video.
 
-At Rasa, Alan has observed that no-code UIs surface the same abstractions as code, making them harder to use, not easier. Vibe coding (conversational agentic interface) solves this by allowing users to interact at whatever abstraction level makes sense to them: non-developers can say "make this friendlier," while expert domain users can make precise edits. *"Someone can come in and say, Hey, can you make this agent friendlier? And that will, you know, produce some output, right? Or someone could come in who's that have been on the project for 12 months and knows it in detail and could come in spearfishing with a very precise edit."* [[02:56:24]](https://youtube.com/live/ud2WzkKeDZs?t=10584)
+Alan's skill does not teach Claude Remotion syntax. Claude can already write that code. The skill tells Claude what Alan wants: animations, style guides, text rules, layout modes, and visual behavior. *"Everything that's in the skill is me telling it what I want in there and how to do animations and style guides and rules and text."* [\[02:51:14\]](https://youtube.com/live/ud2WzkKeDZs?t=10274)
 
-Rasa made a deliberate bet that no-code is dead and vibe code is in. *"We very clearly took the bet that no code is out, no code is dead, and vibe code is in."* [[02:56:24]](https://youtube.com/live/ud2WzkKeDZs?t=10584)
+He uses the skill to correct failures he saw in earlier outputs: too many things moving at once, slow fades that drain energy, text that repeats the spoken words, literal illustrations, tiny slide-like typography, and layouts with too much white space. The skill also uses Whisper timestamps so Claude can align text or animations with the audio. *"I run Whisper on the audio so that I've got timestamps so that Claude knows exactly when the text is coming in."* [\[02:53:39\]](https://youtube.com/live/ud2WzkKeDZs?t=10419)
+
+Alan agrees with the verification-loop principle from earlier episodes. *"Anytime you're building with an agent, it's 100 times faster and more effective if you give it a way to inspect the output that it's produced."* [\[02:59:53\]](https://youtube.com/live/ud2WzkKeDZs?t=10793)
+
+Video makes that difficult because Claude does not take video as input in his setup. The skill asks Claude to render individual frames and inspect them. That catches some issues, but Alan still has to spell out obvious layout problems, such as a talking head in one corner, text in the opposite corner, and a mostly empty frame. [\[03:00:13\]](https://youtube.com/live/ud2WzkKeDZs?t=10813)
+
+### Use generated videos to share Rasa's evolving product thinking
+
+Alan used to think of thought leadership as a large essay written once or twice a year around a polished thesis. For Rasa's current product work, he prefers smaller, less polished videos that show the company's evolving thinking.
+
+He says the videos are less about a single feature and more about showing how Rasa works: *"You're conveying more: here's how we attack problems, here's how we think about things. Here's the vibe of Rasa and the ethos of how we do things."* [\[03:06:58\]](https://youtube.com/live/ud2WzkKeDZs?t=11218)
+
+The cost shift changes the publication threshold. Agency-style production would take weeks and cost thousands of dollars per video. Alan says his agent workflow turns them out in a couple of afternoons, which makes the videos possible at all. *"It's a 100x reduction in cost to produce these things to the point that we just wouldn't be doing it."* [\[03:05:57\]](https://youtube.com/live/ud2WzkKeDZs?t=11157)
+
+## Skills
+
+### Programmatic video skill
+
+Alan shows a local skill file for making Remotion videos with Claude. The skill is the instruction artifact inside the broader audio-to-video workflow: it carries Alan's visual rules, while Claude writes the Remotion code. *"Claude needs no help whatsoever writing Remotion code."* [\[02:51:04\]](https://youtube.com/live/ud2WzkKeDZs?t=10264)
+
+The skill captures rules for:
+
+- one central focal point at a time
+- non-verbatim animated text
+- show-not-tell imagery
+- layout modes such as talking head on one side and content on the other
+- canvas safe areas and large text
+- timing against Whisper audio timestamps
+- easing, typography, and transition behavior
+
+Alan calls judgment encoding the biggest remaining gap because he lacks some of the video vocabulary needed to specify what he wants. *"If I knew more about videography, I would be able to give much more precise instructions."* [\[03:02:43\]](https://youtube.com/live/ud2WzkKeDZs?t=10963)
+
+### Short-form vertical video skill
+
+Alan has also tried to make a skill that takes the raw horizontal video content and re-edits it into short-form vertical video for TikTok, Reels, and YouTube. *"I've tried to make a skill that will take this raw content and re-edit it as short form vertical video."* [\[03:07:47\]](https://youtube.com/live/ud2WzkKeDZs?t=11267)
+
+He describes the vertical-video rules as different from the main video rules: full-screen talking head, dynamic animated subtitles over the top, illustrations overlaid on the face, and aggressive jump-cut editing. The experiment is not good enough for him to run yet, and he explicitly asks for outside help from someone who knows that craft. [\[03:08:00\]](https://youtube.com/live/ud2WzkKeDZs?t=11280)
 
 ## Tools / projects he showed
 
-### Remotion
+### 2026.rasa.com videos
 
-Remotion is a JavaScript library for programmatically generating video. Alan uses it because the productivity gains from having code-based video production far outweigh GUI-based video editing, which he finds fundamentally frustrating. All animated text, graphics, animation of graphics, and timing are written in code. *"Yeah, and like all the animated text and the graphics and the animation of the graphics and all that stuff. That's all just defined in Remotion. It's all just written in code."* [[02:49:09]](https://youtube.com/live/ud2WzkKeDZs?t=9749)
+Alan shows the Rasa videos at [2026.rasa.com](https://2026.rasa.com/), describing them as one-minute videos made with Claude, Remotion, and skills. [\[02:46:00\]](https://youtube.com/live/ud2WzkKeDZs?t=9960)
 
-The videos are hosted at https://2026.rasa.com/.
-
-### HeyGen
-
-[HeyGen](https://www.heygen.com/) is the AI video-generation tool Alan uses to create the avatar video component. The demo video he showed was made with the V4 model; the newer V5 is considerably better. *"the video you saw there is from the V4 model. The new model is the V5 and it's considerably better."* [[03:09:06]](https://youtube.com/live/ud2WzkKeDZs?t=11346)
-
-### Whisper
-
-Alan runs Whisper on his recorded audio to extract timestamps for each word, allowing Claude to time text animations and cuts precisely to when he is speaking. *"I've got, I run whisper on the audio so that I've got timestamps so that Cloud knows exactly when the text is coming in so it can like, if it wants to pop up some text or an animation as I'm saying it, it figures out the timing on its own."* [[02:53:33]](https://youtube.com/live/ud2WzkKeDZs?t=10413)
-
-### Bear
-
-Alan uses [Bear](https://bear.app/) for weekly note-taking. He creates one note per week (dated by Monday) and writes raw thoughts into it. He does not use a structured filing system or knowledge base. *"I use Bear for note taking and I have a new note per week, week of whatever the Monday is. And I just like write shit down in there and I'm not like a filer or an organizer or whatever."* [[03:13:26]](https://youtube.com/live/ud2WzkKeDZs?t=11606)
-
-### Google models for video analysis (attempted)
-
-Alan tried Google's video-capable models, uploading videos he liked and asking them to describe the editing and transitions in video-editing jargon. The models were unable to extract or describe the technical details meaningfully, despite being able to generate cinematic video themselves. *"I tried this as well with some of the Google models, which do have video input as a modality. And I uploaded some videos that I liked and I said, you know what, like describe in video editing terms, what makes these good... It really didn't do a good job at all."* [[03:00:09]](https://youtube.com/live/ud2WzkKeDZs?t=10809)
+The video shown on stream is about emergent personalization: *"Memory your agent builds on its own, shared across every skill it has."* [\[02:47:54\]](https://youtube.com/live/ud2WzkKeDZs?t=10074) Alan then explains that the voice is his real audio, while the face video is generated. [\[02:49:23\]](https://youtube.com/live/ud2WzkKeDZs?t=10163)
 
 ### Claude
 
-Claude is Alan's primary tool for video generation and design instruction. He has strong opinions about its spatial reasoning limitations but considers it superior for the collaborative aspect of the work.
+Claude is Alan's video collaborator and code generator. It writes Remotion code, reasons about high-level subjective feedback, and helps refine content. When Alan gives vague input like *"make this a bit more high energy"* [\[02:54:55\]](https://youtube.com/live/ud2WzkKeDZs?t=10495), Claude maps that request into video-editing choices such as easing, transitions, and animation behavior.
 
-## Explainers
+Alan's main limitation is not Claude's ability to write code. It is visual taste and spatial judgment. *"Claude has no taste when it comes to editing or visuals."* [\[02:51:26\]](https://youtube.com/live/ud2WzkKeDZs?t=10286)
 
-### Everything that can be code will be code
+### Remotion
 
-Alan is "code-pilled" on the principle that anything expressed in code becomes vastly more productive when paired with a coding agent than when trapped in a GUI. He has never used an IDE and has always hated graphical interfaces. *"I think that the thesis that I'm fully like, piled on, subscribed to Choose Your Slang is that everything that can be code will be code. Because I'm code-pilled. Yeah. Because the productivity gains from making something code and being able to work on it with a coding agent are so massive that I think nothing survives that."* [[02:46:01]](https://youtube.com/live/ud2WzkKeDZs?t=9961)
+[Remotion](https://github.com/remotion-dev/remotion) is the JavaScript library Alan uses for programmatic video generation. *"Remotion is a JavaScript library for programmatically generating video."* [\[02:46:08\]](https://youtube.com/live/ud2WzkKeDZs?t=9968)
 
-### Vibe coding is not "not looking at code," it is asymmetric verification
+Alan uses it because animated text, graphics, and graphic animations can all be defined as code. That makes video reachable through a coding agent, which fits his preference for terminal work over GUIs.
 
-Early in the conversation, Alan said he does not look at Remotion code, but Hugo challenged the definition of vibe coding. Alan clarified: vibe coding is working without looking at code because you have robust verification (tests, rendering, visual inspection) and you do not care about the code artifact itself, only the output. *"I am definitely vibe coding, and I'm not looking at the code because I really don't care about the code. I only care about the video and the app because no one else needs to run this code ever. It just needs to produce one nice looking video once."* [[02:59:40]](https://youtube.com/live/ud2WzkKeDZs?t=10780)
+### Whisper
 
-Agentic engineering (Wes McKinney's approach mentioned in the conversation) is when you skip looking at code but have systematic verification loops to build confidence in correctness.
+[Whisper](https://github.com/openai/whisper) provides timestamps for the source audio. Alan uses those timestamps so Claude can coordinate text and animation with what he is saying. *"If it wants to pop up some text or an animation as I'm saying it, it figures out the timing on its own."* [\[02:53:46\]](https://youtube.com/live/ud2WzkKeDZs?t=10426)
 
-### Abstraction levels matter, and natural language unlocks multiple levels simultaneously
+The timestamps are useful but not precise enough for every edit. Alan says jump cuts and dead air live at millisecond margins, so exact word-boundary trimming is still fragile. [\[03:04:48\]](https://youtube.com/live/ud2WzkKeDZs?t=11088)
 
-When building a platform, forcing a single abstraction level (whether code or no-code UI) excludes users. Natural language allows a newcomer to make vague requests and an expert to make precise ones without learning a UI. *"The amazing thing about interacting with natural language is you don't have to pick like the one size fits all. This is the abstraction you work at."* [[02:56:24]](https://youtube.com/live/ud2WzkKeDZs?t=10584)
+### HeyGen
 
-This principle applies to both video editing and to Rasa's platform design. Developers want branches and code; non-developers want high-level control. Neither should have to learn a UI to get their level of control.
+[HeyGen](https://www.heygen.com/) is the generated-face tool behind the shown video. Alan says the stream video used the V4 model and that the V5 model is considerably better. [\[03:08:57\]](https://youtube.com/live/ud2WzkKeDZs?t=11337)
 
-### Verification loops are essential; they are 100 times more effective than instructions alone
+The V4 model had a dead-air failure mode where pauses returned Alan's face to an unsettling base expression. He had to trim around those frames aggressively: *"Sometimes I would have to cut off part of a word just because I had to not show the frames."* [\[03:09:24\]](https://youtube.com/live/ud2WzkKeDZs?t=11364)
 
-Any agent-based work becomes vastly faster and more effective when the agent can inspect its output and validate it. *"you really need that verification loop. And any time you're building with an agent, it's a hundred times faster and more effective if you give it a way to inspect the output that it's produced and is it happy with that output."* [[03:00:09]](https://youtube.com/live/ud2WzkKeDZs?t=10809)
+### Google video models for extracting editing vocabulary
 
-In video generation, this means rendering frames to inspect layout and composition. In code, it means tests and observability.
+Alan tried Google models with video input as a way to extract video-editing vocabulary from examples he liked. He uploaded videos and asked the model to describe the transitions, editing, and jargon so he could feed that into prompts.
 
-### Domain knowledge asymmetry: effectiveness scales with familiarity
+The result did not work well: *"I wasn't able to get good output."* [\[03:01:34\]](https://youtube.com/live/ud2WzkKeDZs?t=10894) Alan found that surprising because the same class of models can generate cinematic video from prompts, but they did not capture and describe the editing mechanics he wanted.
 
-When Alan works on agent architectures or browser features (domains where he is expert), the effectiveness is vastly higher than when working on video production (where he is a novice). The difference is not the agent, it is his ability to specify and validate. *"When I'm using an agent for something that I understand very well, like agent architectures or building browser features or things like that, it's just a level of... The effectiveness is just vastly different, isn't it?"* [[03:02:49]](https://youtube.com/live/ud2WzkKeDZs?t=11009)
+### Rasa
 
-The implication: agents expose the limits of your own knowledge. They are not a substitute for domain expertise, they amplify it.
+[Rasa](https://rasa.com/) is the enterprise agent platform behind Alan's product examples and the videos he is making. He describes it as *"a developer platform for building AI agents"* [\[02:55:23\]](https://youtube.com/live/ud2WzkKeDZs?t=10523), with an enterprise collaboration layer on top.
 
-### Learning by doing in an agent context
+The segment connects his personal video workflow back to Rasa's product bet. Natural language can let different collaborators work at their own abstraction level, from "make this agent friendlier" to precise expert changes.
 
-Alan no longer bothers to learn unfamiliar libraries before using them with an agent. He just produces. This is a shift from the older practice of deliberately learning one new framework per month to maintain beginner's mind. *"Well now, a lot of the time I won't bother to learn. I'll just do. Right? Like I've never written a line of remotion code by hand."* [[02:58:36]](https://youtube.com/live/ud2WzkKeDZs?t=10716)
+### Prompt and Pray stickers
 
-However, he still values occasional deep learning for beginner's mindset and perspective. The agent approach works when you have a verification loop and do not need to understand the underlying details.
+Alan shows the "prompt and pray" sticker from his LinkedIn profile, then names two other stickers: a vibe coder sticker and a "we have Opus at home" sticker. *"I go to conferences and I leave those on tables."* [\[02:44:40\]](https://youtube.com/live/ud2WzkKeDZs?t=9880)
 
-### Millisecond timing is human judgment
+He jokes that stickers became a LinkedIn skill: *"I put stickers as a skill on LinkedIn and people have started endorsing me for it."* [\[02:44:48\]](https://youtube.com/live/ud2WzkKeDZs?t=9888)
 
-Video editing requires decisions at a resolution of milliseconds between word endings and cuts, between dead air pauses and the next phrase. Whisper timestamps are reasonably accurate but not precise enough. The gap between a jump cut that feels energetic and one that feels like it loses energy is milliseconds, and no amount of instruction bridges that gap. This is a human judgment problem, not an LLM limitation. *"The difference between something that feels like a jump cut, like a TikTok style, you know, almost interrupting yourself cut and something that feels like it loses energy. I mean, it's, it's milliseconds."* [[02:56:24]](https://youtube.com/live/ud2WzkKeDZs?t=10584)
+### Beyond Prompt and Pray
 
-### Easing functions and animation details convey energy and personality
+Hugo shares the O'Reilly essay [Beyond Prompt and Pray](https://www.oreilly.com/radar/beyond-prompt-and-pray/) while Alan is showing the prompt-and-pray sticker, and Alan briefly confirms the title: *"We did. We did."* [\[02:46:00\]](https://youtube.com/live/ud2WzkKeDZs?t=9960)
 
-Small animation details like easing (cubic, quintic) are what give animated text personality and energy. A linear animation (like a DVD logo bouncing) feels dead. Easing in and overshooting then returning feels alive. These details are never taught, yet Claude learns to apply them when asked for high-energy video. *"Easing means when you move a piece of text into a screen, you typically you don't move it at a linear rate. Typically you kind of move it fast and then sometimes you even overshoot and then you go back. And that's really what gives it personality."* [[03:10:15]](https://youtube.com/live/ud2WzkKeDZs?t=11415)
+### Bear
 
-### Thought leadership is shifting from annual essays to raw, rapid insights
+[Bear](https://bear.app/) is Alan's note-taking tool. He uses a new note per week and writes into it without a heavy organization system. *"I use Bear for note taking and I have a new note per week, week of whatever the Monday is."* [\[03:13:23\]](https://youtube.com/live/ud2WzkKeDZs?t=11603)
 
-The market has shifted away from rewarding polished, well-reasoned annual essays toward continuous sharing of rough, evolving thinking. Alan now publishes frequent short videos about features, ideas, and emerging thinking within Rasa rather than comprehensive treatises. The goal is to convey how Rasa thinks and operates, not to present finished theories. *"The way I used to think about sort of like thought leadership, right, is I would write like a big essay once or twice a year with like, you know, really like a thesis, right, like well thought out stuff and I just don't think the market rewards that right now."* [[03:06:33]](https://youtube.com/live/ud2WzkKeDZs?t=11193)
+For deeper thinking, Bear is less central than quiet time. *"My favorite thing is just to create a quiet environment and just think really hard about it for a while."* [\[03:13:39\]](https://youtube.com/live/ud2WzkKeDZs?t=11619)
+
+## Principles and explainers
+
+### Code-shaped artifacts are easier for agents to edit
+
+Alan's code-first thesis is that making an artifact programmable makes it available to coding agents. *"The productivity gains from making something code and being able to work on it with a coding agent are so massive that I think nothing survives that."* [\[02:46:35\]](https://youtube.com/live/ud2WzkKeDZs?t=9995)
+
+That is why video becomes interesting to him only when it can be expressed through Remotion and edited from the terminal. He says he will not learn video-editing software, but he can work on video if the artifact is code-shaped.
+
+### Natural language lets collaborators work at different abstraction levels
+
+Alan argues that product teams do not need to choose one abstraction level for every collaborator. A no-code UI may expose the same primitives as the codebase, while natural language lets users ask at whatever level they understand.
+
+His example spans both ends of the range: *"Someone can come in and say, 'Hey, can you make this agent friendlier?' And that will produce some output."* [\[02:56:01\]](https://youtube.com/live/ud2WzkKeDZs?t=10561) A long-running expert on the project can also make a precise edit, and the same system can execute it. [\[02:56:15\]](https://youtube.com/live/ud2WzkKeDZs?t=10575)
+
+That pushed Rasa toward a strong bet: *"No code is out, no code is dead, and vibe code is in."* [\[02:56:27\]](https://youtube.com/live/ud2WzkKeDZs?t=10587) For large customer-facing enterprise agents, Alan says time to value is not competitive when every collaborator has to learn the UI, primitives, concepts, and composition rules before they can make useful changes.
+
+Alan frames the next product problem as giving non-coders the equivalent of a coding agent. Developers can work in branches comfortably. Non-coders working at a higher abstraction still need confidence that they understand what changed and whether they want it. His Rasa question is direct: *"How do you build the equivalent of a coding agent for someone who's not a coder?"* [\[02:57:04\]](https://youtube.com/live/ud2WzkKeDZs?t=10624)
+
+The product requirement is concrete: *"How do you give them confidence, help them understand the changes that they've made, give them confidence in what they've done, and help them reason about whether that's what they want, and then test it and push it up for review?"* [\[02:57:20\]](https://youtube.com/live/ud2WzkKeDZs?t=10640)
+
+### Vibe coding depends on the artifact and the verification loop
+
+Alan accepts Hugo's distinction that not looking at code is not always vibe coding. For Alan's videos, though, he says the label fits because nobody else needs to run the code and the output is the artifact that matters. *"I only care about the video and the app because no one else needs to run this code ever. It just needs to produce one nice looking video once."* [\[02:59:37\]](https://youtube.com/live/ud2WzkKeDZs?t=10777)
+
+That distinction matters because video can tolerate a different engineering posture from production software. The verification burden moves to rendered output, timing, layout, and whether the video communicates the idea.
+
+### Creative domains can be explored by doing first
+
+Alan used to pick a new framework or library once a month to regain a beginner's mindset. The video workflow gives him that same feeling in a domain he does not understand, while still letting him produce something. *"I'm in a domain that I don't know anything and I don't understand anything, but I can somehow be productive."* [\[02:58:08\]](https://youtube.com/live/ud2WzkKeDZs?t=10688)
+
+He does not learn Remotion in the conventional sense. *"I've never written a line of Remotion code by hand."* [\[02:58:32\]](https://youtube.com/live/ud2WzkKeDZs?t=10712) He describes this as a pure vibe experience because he looks at the output, not the code, and describes what he wants.
+
+### Visual judgment is easier when the human has the vocabulary
+
+Alan says the biggest gap in encoding judgment is vocabulary. In domains he knows well, such as agent architectures or browser features, the agent is much more effective because he can give precise instructions. [\[03:02:43\]](https://youtube.com/live/ud2WzkKeDZs?t=10963)
+
+Video exposes the missing vocabulary. He can say "make this more high energy," but a videographer could improve the skill faster by naming the transitions, timing, typography, and motion rules more precisely.
+
+### One focal point beats busy animation
+
+Alan's video skill includes concrete visual rules. *"There should only be one thing that's the central focal point at any point in time."* [\[03:03:46\]](https://youtube.com/live/ud2WzkKeDZs?t=11026)
+
+He adds that animated text should not repeat the audio verbatim, because it distracts rather than adds value. The video should use one or two keywords or an animation, and should communicate at a higher abstraction than literal illustrations of spoken words. [\[03:03:53\]](https://youtube.com/live/ud2WzkKeDZs?t=11033)
+
+### Timing carries energy in video
+
+Alan says the difference between an energetic jump cut and a low-energy transition can be milliseconds. *"The difference between something that feels like a jump cut, a TikTok style almost interrupting yourself cut, and something that feels like it loses energy, it's milliseconds."* [\[03:04:48\]](https://youtube.com/live/ud2WzkKeDZs?t=11088)
+
+That makes automatic editing hard even with Whisper timestamps. Some words get cut off, some pauses leave dead air, and Alan still treats exact timing as a human judgment problem.
+
+### Easing gives motion personality
+
+Alan explains easing as motion that does not move at a constant linear rate. Text can move quickly, overshoot, and then come back. *"That's really what gives it personality."* [\[03:10:07\]](https://youtube.com/live/ud2WzkKeDZs?t=11407)
+
+He says these details are invisible until someone starts editing video. Linear movement feels strange, like a DVD logo bouncing around the screen. [\[03:10:54\]](https://youtube.com/live/ud2WzkKeDZs?t=11454)
+
+### Good text can lead the spoken phrase
+
+Alan uses "emergent personalization" from the shown Rasa video to explain a timing trick. Showing the words exactly as he says them is useful, but showing them slightly before the phrase makes the video feel more intentional.
+
+He describes the rule directly: *"You want to do it just a hair before you say it."* [\[03:11:23\]](https://youtube.com/live/ud2WzkKeDZs?t=11483) That makes the video feel like it is leading and gives the viewer's brain time to engage.
+
+### Fast idea sharing can beat polished annual essays
+
+Alan says the market currently rewards smaller, more frequent artifacts over occasional grand essays. *"I think it's better to have maybe a little bit less polish and less here's my grand theory of everything because everything's changing all the time."* [\[03:06:25\]](https://youtube.com/live/ud2WzkKeDZs?t=11185)
+
+For Rasa, the videos let him share nuggets of product thinking, features, and internal problem-solving style as they evolve.
+
+### Builders should tinker and have fun
+
+Alan's final advice is short: *"Just have fun."* [\[03:14:48\]](https://youtube.com/live/ud2WzkKeDZs?t=11688)
+
+When Hugo says decision-making is hard because there are so many things to work on, Alan repeats the same builder stance: *"Just tinker and have fun. It's just the greatest."* [\[03:15:04\]](https://youtube.com/live/ud2WzkKeDZs?t=11704)
 
 ## Additional quotations
 
-- On the frustration of learning video vocabulary: *"I didn't even have the vocabulary to describe what it is I want to achieve. Right. And I've learned a little bit of the vocabulary since then about like jump cuts."* [[02:54:02]](https://youtube.com/live/ud2WzkKeDZs?t=10442)
-- On HeyGen V4's terrifying default face: *"The V4 also had this weird quirk where anytime there was dead air or there was just no audio, I wasn't speaking, I was pausing between words. It's like bass that it would return to was me doing like this face. Which was absolutely terrifying."* [[03:09:06]](https://youtube.com/live/ud2WzkKeDZs?t=11346)
-- On cost reduction and solo capability: *"I'm turning these out in a couple of afternoons, just to like share some ideas about Rasa... It's just, it's really like a hundred X reduction in cost to produce these things to the point that like we just wouldn't be doing it. I wouldn't be doing it if, you know, if I couldn't do it solo."* [[03:05:51]](https://youtube.com/live/ud2WzkKeDZs?t=11151)
-- On thinking before building: *"If I really want to think about a problem, I got to stack a print of paper, I clear my desk, and I just sit and write things down, and I draw pictures and things like that."* [[02:41:20]](https://youtube.com/live/ud2WzkKeDZs?t=9680)
-- On getting endorsed for stickers on LinkedIn: *"I put stickers as a skill on LinkedIn and people started endorsing me for it. So I'll just I'll take it."* [[02:44:32]](https://youtube.com/live/ud2WzkKeDZs?t=9872)
-- On staying in the terminal: *"I just can't get out of the terminal because the GUI just annoys me."* [[02:47:01]](https://youtube.com/live/ud2WzkKeDZs?t=10021)
-- On word timing before speech creates anticipation: *"It's cool to have the words emergent personalization show up as I'm saying them. But actually, the really cool thing is you want to do it just a hair before you say it. And that really makes it feel, you know, if that the video is leading and that it's sizing and your brain starts to engage with it."* [[03:11:29]](https://youtube.com/live/ud2WzkKeDZs?t=11489)
-- On timing refinement as fantasy: *"To trim at exact word boundaries from transcript, this It's a nice fantasy, but it's not really realistic."* [[03:09:34]](https://youtube.com/live/ud2WzkKeDZs?t=11374)
-- On the final message to builders: *"Just have fun. Just have fun... just tinker, tinker and have fun. I mean, it's just, it's just the greatest."* [[03:14:57]](https://youtube.com/live/ud2WzkKeDZs?t=11697)
+- On watching the other guests: *"I thought I was a power user of this stuff, and then I realized I am a little baby. I don't know anything."* [\[02:40:30\]](https://youtube.com/live/ud2WzkKeDZs?t=9630)
+
+- On too many parallel threads: *"It can get a little addictive, and you can get distracted very easily with all your threads that you're pursuing in parallel."* [\[02:41:50\]](https://youtube.com/live/ud2WzkKeDZs?t=9710)
+
+- On loose printer paper: *"I don't even like it to be a bound notebook. That already frustrates me. It's just got to be a stack of printer paper."* [\[02:43:10\]](https://youtube.com/live/ud2WzkKeDZs?t=9790)
+
+- On programmatic video: *"All the animated text and the graphics and the animation of the graphics and all that stuff, that's all just defined in Remotion."* [\[02:49:05\]](https://youtube.com/live/ud2WzkKeDZs?t=10145)
+
+- On the generated avatar: *"The voice is really my audio, but then the video is generated."* [\[02:49:23\]](https://youtube.com/live/ud2WzkKeDZs?t=10163)
+
+- On video quality expectations: *"No one's going to watch those videos and think that they were done by Ridley Scott, but the fact that it's me solo and I'm able to produce them."* [\[02:50:05\]](https://youtube.com/live/ud2WzkKeDZs?t=10205)
+
+- On beginner's mindset: *"It's very good to get back in that beginner's mindset."* [\[02:57:58\]](https://youtube.com/live/ud2WzkKeDZs?t=10678)
+
+- On Remotion as vibe work: *"I haven't learned Remotion at all. It's a pure vibe experience."* [\[02:58:42\]](https://youtube.com/live/ud2WzkKeDZs?t=10722)
+
+- On spatial reasoning: *"Visual spatial reasoning is one of the weak points of Claude."* [\[03:00:22\]](https://youtube.com/live/ud2WzkKeDZs?t=10822)
+
+- On video vocabulary extraction: *"Give me the jargon for what's happening here, the transitions, the editing, whatever, and I wasn't able to get good output."* [\[03:01:34\]](https://youtube.com/live/ud2WzkKeDZs?t=10894)
+
+- On vertical-video help: *"If anyone knows about this stuff and wants to help out and wants to do some consulting work, I will happily pay you to help me fix this."* [\[03:08:35\]](https://youtube.com/live/ud2WzkKeDZs?t=11315)
+
+- On making the materials playable: *"We're publishing all of these, so people want to play around."* [\[03:12:01\]](https://youtube.com/live/ud2WzkKeDZs?t=11521)
+
+## Live reactions and follow-ups
+
+### Discord links: Rasa, prompt and pray, and Remotion
+
+The Discord chat supplied the main links around Alan's segment:
+
+- [Rasa](https://rasa.com/)
+- [Beyond Prompt and Pray](https://www.oreilly.com/radar/beyond-prompt-and-pray/), posted by Hugo while Alan was showing the sticker and introducing the video workflow
+- [Remotion](https://github.com/remotion-dev/remotion), posted while Alan explained programmatic video generation
+- [2026.rasa.com](https://2026.rasa.com/), posted again after Alan pointed viewers to the Rasa videos
+
+### Discord reaction: programmatic video and second brain
+
+The chat reacted to the video workflow while Alan was presenting it. Suren called Alan's programmatic video workflow "fire" and asked whether Alan had a second-brain stack for working with agents. Hugo brought that question into the livestream, and Alan answered with a deliberately lightweight setup: Bear for weekly notes, loose writing rather than filing, and quiet thinking time before serious work. [\[03:13:14\]](https://youtube.com/live/ud2WzkKeDZs?t=11594)

@@ -1,171 +1,236 @@
-# Nico Gerold, Episode 3 field notes
+# Nico Gerold - Episode 3 field notes
 
-Nico, also introduced as Nicolay Gerold, is a software engineer at [Sourcegraph](https://sourcegraph.com/) building [Amp](https://ampcode.com/). He writes about coding agents, software, and AI in production. His segment centered on Amp, coding agents moving out of local terminal loops, team-shared threads, feedback loops for debugging, and skills as capabilities that teach agents how to use project-specific tools and context.
+Nico Gerold, a software engineer at [Sourcegraph](https://sourcegraph.com/) building [AMP](https://sourcegraph.com/amp), used his Episode 3 segment to show how AMP is pushing coding agents from local terminal sessions into background, cloud, and team workflows. The segment centered on skills, agent files, AMP threads, Tmux-driven reproduction, logs from distributed systems, a focus inspector in the CLI, and a thread postmortem skill for improving prompts and instructions.
+
+Nico frames the ["Coding Agents are Dead"](https://ampcode.com/news/the-coding-agent-is-dead) line as a claim about product shape. [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview), [Pi](https://pi.dev/), and today's terminal agents still write and run code locally, while [Codex](https://openai.com/codex/) and AMP point toward background work where changes live elsewhere and review becomes harder. *"The product becomes something way bigger, which has to cover more than just writing code, what coding agents currently do, but how do I integrate this into the entire software development lifecycle."* [\[01:38:08\]](https://youtube.com/live/ud2WzkKeDZs?t=5888)
+
+That shift makes feedback loops, debug views, shared context, and instruction budget central to the work. Nico's demos keep giving the agent more ways to gather evidence before it writes a fix, while the human decides which parts of the codebase deserve strict review, which repeated errors deserve tools, and which instructions should be removed.
+
+<a href="https://youtube.com/live/ud2WzkKeDZs?t=6830"><img src="images/nico-amp-tmux-focus-debug.png" alt="Nico Gerold showing AMP debugging a focus issue with a Tmux skill and focus inspector" /></a>
+<sub>Nico shows an AMP thread that used the Tmux skill and focus inspector to reproduce an `amp threads continue` focus bug, inspect focus state, apply a fix, and verify it in Tmux. <a href="https://youtube.com/live/ud2WzkKeDZs?t=6830">[01:53:50]</a></sub>
 
 ## On working with agents
 
-### What he loves: faster iteration around code quality
+### What he loves: faster first versions make iteration easier
 
-Nico's answer starts from a software engineering premise: the important quality work often happens before and after initial code writing, not during the first draft. Agents help especially with the after phase because they shorten the path to something inspectable. *"you can get to a first version of the code way quicker and just throw something out there, look at it and actually formulate why you don't like it."* [\[01:40:47\]](https://youtube.com/live/ud2WzkKeDZs?t=6047)
+Nico says code quality usually came before and after the first writing pass: thinking through the problem in advance, then editing over the code repeatedly. Agents speed up the initial writing pass, then make the later critique loop easier because there is code to react to. *"You can get to a first version of the code way quicker and just throw something out there, look at it, and formulate why you don't like it."* [\[01:40:49\]](https://youtube.com/live/ud2WzkKeDZs?t=6049)
 
-He also values agents for codebase exploration, while keeping the human role attached to business context and intent: *"What's really hard is actually understanding the the business logic, the understanding and why it was written behind that."* [\[01:41:08\]](https://youtube.com/live/ud2WzkKeDZs?t=6068)
+Agents also help with research and codebase understanding, but Nico keeps business logic and product intent as human work. *"What's really hard is understanding the business logic, the understanding and why it was written behind that."* [\[01:41:02\]](https://youtube.com/live/ud2WzkKeDZs?t=6062)
 
-### What he finds most frustrating: plausible code that is hard to validate
+### What he finds most frustrating: generated code can look right while missing constraints
 
-Nico names three recurring frustrations: small helper and wrapper functions where inline code would be cleaner, poor placement of logic at the right abstraction level, and validation difficulty. The hardest part is that the code increasingly looks right: *"It's getting harder to validate it because they are generating functioning code, which also looks correct, but which still can have a lot of edge cases or not be correct on the business logic or the specific constraints you have."* [\[01:42:56\]](https://youtube.com/live/ud2WzkKeDZs?t=6176)
+Nico names three daily frustrations. GPT 5.5 adds helper and wrapper functions where inline code would be more sensible, agents misplace logic at the wrong abstraction level, and validation is getting harder because the code now runs and looks plausible. *"They are generating functioning code, which also looks correct, but which still can have a lot of edge cases or not be correct on the business logic or the specific constraints you have."* [\[01:42:56\]](https://youtube.com/live/ud2WzkKeDZs?t=6176)
 
-## Skills
-
-### gcloud skill
-
-Nico showed a skill that tells the agent how Amp's [gcloud](https://docs.cloud.google.com/sdk/gcloud) setup works: which services exist, which components run where, and how to retrieve relevant logs. The point is not generic documentation lookup, but project-specific operational context. *"one of them, for example, is just for gcloud, which basically tells it how to interact with it and what the different components in our systems are. So it actually can pull the logs based on what it is working on."* [\[01:45:37\]](https://youtube.com/live/ud2WzkKeDZs?t=6337)
-
-The skill matters because Amp's system spans multiple pieces: *"Especially for distributed systems, like we have our main engine, is running in one place, the server, which is running another, which is doing the proxy. And then we have our sandboxes, for example."* [\[01:46:04\]](https://youtube.com/live/ud2WzkKeDZs?t=6364)
-
-### tmux skill
-
-One of Nico's favorite skills teaches the agent how to use [tmux](https://github.com/tmux/tmux) in the context of Amp's CLI. The agent can start development versions, send text, trigger shortcuts, inspect logs, and keep iterating until it reproduces the problem. *"one of my favorite skills is like Tmux. And in there, basically can just, we tell it how to use Tmux correctly and spin up dev versions of AMP, like of our CLI in Tmux and send texts, do certain shortcuts."* [\[01:48:04\]](https://youtube.com/live/ud2WzkKeDZs?t=6484)
-
-The skill is part of a broader feedback-loop pattern: *"And then basically it can do that and look at the logs, see whether it reproduced it. And if not iterate, iterate and iterate to actually find a problem, find a bug and reproduce it first and then actually produce a fix."* [\[01:48:29\]](https://youtube.com/live/ud2WzkKeDZs?t=6509)
-
-### Thread postmortem skill
-
-Nico showed a local-only skill called a thread postmortem. He uses it when an agent conversation behaves strangely, asking the agent to inspect the thread and explain why it made a bad decision. *"this is basically a thread postmortem, I call it. So every time when I actually have something weird happen in a thread or in an agent conversation, I actually sit down and try to have the agent analyze or introspect of why it actually did it."* [\[01:59:24\]](https://youtube.com/live/ud2WzkKeDZs?t=7164)
-
-The skill looks for instruction-level causes: wrong system prompt content, bad tool definitions, skill files, outdated docs, or misleading context. *"I just have basically a skill for that, are like a bunch of questions it should ask itself, or it should read the thread and what are like the common causes of failures and the sources for it and what it should do next."* [\[02:00:26\]](https://youtube.com/live/ud2WzkKeDZs?t=7226)
-
-### Failure categorization and instruction-change skill
-
-Within the thread postmortem skill, Nico has the agent categorize the failure and propose instruction changes. The categories include steering, undo, repetition, confusion, wrong tool use, missing context, underagentic behavior, and overagentic behavior. *"And then I basically asked them to categorize it. Like, is it a steering issue, undo, repetition, confusion, wrong tool, missing context, underagentic or overagentic."* [\[02:01:50\]](https://youtube.com/live/ud2WzkKeDZs?t=7310)
-
-He explicitly biases the skill toward deletion rather than accretion: *"I basically tell it to always default to removing because that's usually like agents always like to add new stuff instead of removing things."* [\[02:02:10\]](https://youtube.com/live/ud2WzkKeDZs?t=7330)
-
-### Output-pattern suggestions for skill and instruction changes
-
-The thread postmortem skill also specifies output formats for different kinds of proposed changes. Nico uses it to distinguish when to add a new skill, when to change an agent instruction file, and how to present the patch back to him. *"below this is basically just a pattern of how to output it. So this is basically just a structure of how to feed it to me and how to basically present different things I want to add."* [\[02:02:47\]](https://youtube.com/live/ud2WzkKeDZs?t=7367)
+He reviews different areas with different intensity. Front-end settings pages and CLI widgets can tolerate more cleanup later, while core hot-path logic deserves stricter attention because every user touches it. *"You really have to decide which parts of the code base matter a lot and which don't."* [\[01:43:33\]](https://youtube.com/live/ud2WzkKeDZs?t=6213)
 
 ## Workflows
 
-### Treat skills as capabilities, not slash-command recipes
+### Give coding agents logs, Tmux, and debug views before they fix bugs
 
-Nico frames skills as project-specific capabilities the agent can draw on autonomously, not only user-invoked commands. Skills encode how tools should be used in the local codebase so the agent can start on the task instead of spending early turns discovering the environment. *"for us, our skills more like capabilities we want to give to the agent. And it's usually like often something like a tool and how to use it in the, in our code base."* [\[01:49:23\]](https://youtube.com/live/ud2WzkKeDZs?t=6563)
+Nico's main workflow is to give agents structured access to the data they need before asking them to change code. AMP's distributed system has an engine, a proxying server, sandboxes, and local CLI pieces, so a useful agent has to aggregate logs across services before it can debug one problem. *"How can we make it as easy as possible for the agent to access the relevant data and then just let it crunch and use as much tokens as possible to figure it out?"* [\[01:46:46\]](https://youtube.com/live/ud2WzkKeDZs?t=6406)
 
-The value is token and turn efficiency: *"it just doesn't have to waste tokens in the beginning to actually first figure out how to actually use it and fail first for the first few turns, but actually have all of it in a context like how to use it correctly and then instantly basically move into focusing on the task at hand instead of how the tools work."* [\[01:49:46\]](https://youtube.com/live/ud2WzkKeDZs?t=6586)
+The local codebase stores logs from the locally running server, engine, and CLI, and the root agent file tells the agent where to find them. The agent can reproduce an issue, inspect the logs, and decide whether the reproduction worked. *"When it tries to reproduce something, it can use logs pretty strategically."* [\[01:47:41\]](https://youtube.com/live/ud2WzkKeDZs?t=6461)
 
-### Add feedback loops everywhere
+The same pattern removes human copy-paste from debugging. Nico wants logs, reproduction steps, Tmux sessions, and debug panes inside the agent's own flow so it can keep iterating autonomously. *"How can we bring feedback loops into the agent or ways to gather more data about a problem and get it into the flow of the agent?"* [\[01:48:32\]](https://youtube.com/live/ud2WzkKeDZs?t=6512)
 
-Nico's central workflow is to give agents ways to observe whether their assumptions and fixes are correct. Logs, tmux panes, focus inspectors, Storybooks, debug panes, and structured local state all serve that purpose. *"what we always try to do is like, how can we get feedback loops basically in everything?"* [\[01:45:26\]](https://youtube.com/live/ud2WzkKeDZs?t=6326)
+The focus-inspector demo is the concrete version of the workflow. After the agent reproduced an `amp threads continue` focus bug in Tmux but could not locate the focus state, Nico added a focus inspector to the UI. The agent then compared focus trees before and after keyboard shortcuts, found the focus tree problem, pushed a fix, and retried it in Tmux. *"It realized, the focus tree isn't being set correctly."* [\[01:53:44\]](https://youtube.com/live/ud2WzkKeDZs?t=6824)
 
-The goal is to move relevant data into the agent's flow: *"how can we actually bring feedback loops into the agent or actually raise together more data about a problem and get it into the flow of the agents. So it actually can do a lot more stuff autonomously."* [\[01:48:29\]](https://youtube.com/live/ud2WzkKeDZs?t=6509)
+### Reuse AMP threads so agents can apply fixes across the team
 
-### Tier review effort by code criticality
+AMP threads make a teammate's work available as reusable context. Nico describes a pattern where one person fixes a bug in one thread, another person notices that the same fix applies elsewhere, then gives the thread ID to an agent. *"I can just take the thread ID, give it to the agent and tell it, hey, there was a fix in there. Apply the same fix to this file and just send it off."* [\[01:51:21\]](https://youtube.com/live/ud2WzkKeDZs?t=6681)
 
-Nico does not review all generated code with equal intensity. He reserves stricter scrutiny for core logic on the user hot path, while accepting lower quality in less critical UI or settings code and cleaning it up later. *"you really have to like decide which parts of the code base matter a lot and which don't."* [\[01:43:33\]](https://youtube.com/live/ud2WzkKeDZs?t=6213)
+The agent can pull the thread data, ask questions about the thread, and continue working from the prior context. Nico says Pi has a similar pattern inside a codebase, while AMP aims to make it work across a team or enterprise. *"For us, it's enable that for your entire team, for your entire enterprise to make it more useful across the entire team."* [\[01:51:44\]](https://youtube.com/live/ud2WzkKeDZs?t=6704)
 
-That enables a pragmatic cleanup workflow: *"every now and then I'm probably doing a cleanup pass because I'm noticing, this code is shit. Then just gonna do like a pass over a few pages, prove it and then be done."* [\[01:44:14\]](https://youtube.com/live/ud2WzkKeDZs?t=6254)
+### Run thread postmortems after bad agent conversations
 
-### Manually improve one instance, then ask the agent to fan it out
+Nico uses a local thread postmortem skill when an agent conversation goes wrong. He asks the agent to analyze the thread, identify why it made the bad decision, and connect the failure back to system prompts, tool definitions, skills, agent files, or other context. *"Every time when I have something weird happen in a thread or in an agent conversation, I sit down and try to have the agent analyze or introspect why it did it."* [\[01:59:24\]](https://youtube.com/live/ud2WzkKeDZs?t=7164)
 
-For small tidying and refactoring work, Nico improves one page or component interactively, then asks the agent to apply the same pattern across many others. *"there's also something coding agents are really good at, like these small little tidings or refactorings. which you can just rip out and improve it in one page manually by interacting with the agent and then tell it they apply this to this 50 other components or pages."* [\[01:44:26\]](https://youtube.com/live/ud2WzkKeDZs?t=6266)
+The workflow finds outdated documentation and bad instructions inside the codebase. *"A surprising amount of failures can be found because it's a wrong instruction."* [\[01:59:40\]](https://youtube.com/live/ud2WzkKeDZs?t=7180)
 
-### Use Amp threads as reusable team context
+Nico then chats with the agent about the decision path and asks the postmortem skill to propose removals, edits, or additions. *"When you have something which didn't work, try to figure out why didn't it work and just chat with the agent a bit."* [\[02:00:10\]](https://youtube.com/live/ud2WzkKeDZs?t=7210)
 
-Nico uses shared Amp threads as cross-team working memory. If someone solved a similar problem in one thread, another developer can hand that thread ID to the agent and ask it to reuse the fix elsewhere. *"I can just take the thread ID, give it to the agent and tell it, Hey, there was a fix in there. Apply the same fix to this file and just send it off."* [\[01:51:21\]](https://youtube.com/live/ud2WzkKeDZs?t=6681)
+## Skills
 
-This makes prior agent conversations a reusable asset rather than private chat history: *"it basically can pull all the data down it needs and ask questions about the thread. And then basically continue."* [\[01:51:29\]](https://youtube.com/live/ud2WzkKeDZs?t=6689)
+### G Cloud skill
 
-### Rebuild Amp with Amp
+Nico shows a G Cloud skill that tells the agent how to interact with [Google Cloud](https://cloud.google.com/) and how AMP's distributed system is laid out. *"One of them, for example, is just for G Cloud, which tells it how to interact with it and what the different components in our systems are."* [\[01:45:41\]](https://youtube.com/live/ud2WzkKeDZs?t=6341)
 
-Nico is mostly using Amp itself to build Amp, with skills and validation loops tuned for the product's own development process. *"I'm mostly using AMP to build AMP. And we are very careful with what we add to the system prompt and also how to add it, that we actually do a lot of validations before we do major changes."* [\[02:04:13\]](https://youtube.com/live/ud2WzkKeDZs?t=7453)
+The skill prevents the agent from rediscovering service names and deployment locations every run. It tells the agent which services live in Cloud Run or Kubernetes so it can pull logs quickly and use them during local reproduction. *"It shouldn't figure out all of it for every single thread it's running."* [\[01:46:15\]](https://youtube.com/live/ud2WzkKeDZs?t=6375)
 
-### Prefer removing instructions over adding more
+### Tmux skill
 
-Nico's instruction-maintenance workflow fights prompt bloat. When failures happen, his default is to remove or simplify bad instructions before adding new ones. *"my default is, like in the skill, my default is to remove instructions rather to add them."* [\[02:04:29\]](https://youtube.com/live/ud2WzkKeDZs?t=7469)
+Nico calls [Tmux](https://github.com/tmux/tmux/wiki) one of his favorite skills. The skill teaches the agent how to use Tmux in AMP's codebase, start dev versions of AMP's CLI, send text, trigger shortcuts, inspect logs, and keep iterating. *"We tell it how to use Tmux correctly and spin up dev versions of AMP, of our CLI, in Tmux and send text, do certain shortcuts."* [\[01:48:04\]](https://youtube.com/live/ud2WzkKeDZs?t=6484)
 
-He connects this to instruction budget: *"The main failure pattern is because you have too many instructions. And there is a limited amount of instructions an agent can actually comply with."* [\[02:04:37\]](https://youtube.com/live/ud2WzkKeDZs?t=7477)
+That capability lets the agent reproduce a bug before writing a fix. *"It can do that and look at the logs, see whether it reproduced it, and if not iterate, iterate, and iterate to actually find a problem, find a bug, and reproduce it first."* [\[01:48:22\]](https://youtube.com/live/ud2WzkKeDZs?t=6502)
+
+### Thread postmortem skill
+
+Nico's thread postmortem skill is local to him and exists for agent introspection. He describes it as an `analyze the thread` capability. *"This is a thread postmortem, I call it."* [\[01:59:20\]](https://youtube.com/live/ud2WzkKeDZs?t=7160)
+
+The skill asks the agent which instruction caused a mistake, whether an instruction was missing, conflicting, ambiguous, user-specific, or caused by the system prompt, then categorizes the failure as steering, undo, repetition, confusion, wrong tool, missing context, underagentic, or overagentic. *"I ask them to categorize it."* [\[02:01:50\]](https://youtube.com/live/ud2WzkKeDZs?t=7310)
+
+The skill then proposes instruction changes and defaults toward removal. *"I tell it to always default to removing because agents always like to add new stuff instead of removing things."* [\[02:02:12\]](https://youtube.com/live/ud2WzkKeDZs?t=7332)
+
+Nico scrolls through the visible skill artifact: it includes questions, failure categories, output structure, and guidance for when to add a new skill versus when to change an agent file. *"When I should add a new skill and use when the knowledge is specialized, not always needed, and should be loaded on demand."* [\[02:02:57\]](https://youtube.com/live/ud2WzkKeDZs?t=7377)
 
 ## Tools / projects he showed
 
-### Amp
+### AMP
 
-Nico described Amp as a coding agent for teams and enterprises, comparable to [Codex](https://openai.com/codex/) and [Claude Code](https://docs.claude.com/en/docs/agents-and-tools/claude-code/overview), with emphasis on shared threads and team-visible conversations. *"we are a coding agent like Codex, Claude Code, but our main focus is basically enterprises and teams."* [\[01:50:39\]](https://youtube.com/live/ud2WzkKeDZs?t=6639)
+[AMP](https://sourcegraph.com/amp) is the coding agent Nico builds at Sourcegraph. He describes it as similar to Codex and Claude Code, with an enterprise and team focus. *"We are a coding agent like Codex, Claude Code, but our main focus is basically enterprises and teams."* [\[01:50:39\]](https://youtube.com/live/ud2WzkKeDZs?t=6639)
 
-One key feature is shareable threads: *"a lot of our functionality is actually around sharing threads or sharing conversations with your team. So they are all accessible for other people in your team as well."* [\[01:50:46\]](https://youtube.com/live/ud2WzkKeDZs?t=6646)
+Nico is also using AMP to build AMP. In the model-variation discussion, he says his team validates major system-prompt changes carefully because AMP's own harness depends on those instructions. *"I'm mostly using AMP to build AMP and we are very careful with what we add to the system prompt."* [\[02:04:07\]](https://youtube.com/live/ud2WzkKeDZs?t=7447)
 
-### Amp threads
+The focus inspector is an AMP debug view that shows focus state before and after keyboard shortcuts. Nico added it after a coding agent could reproduce a focus bug but could not locate where focus was going. *"What I did is I added a focus inspector to the UI where it can look at the focus tree."* [\[01:53:21\]](https://youtube.com/live/ud2WzkKeDZs?t=6801)
 
-Amp threads are a project and workflow surface Nico showed directly. They let team members refer back to prior conversations, fixes, and context. *"other people can access it and refer to it."* [\[01:51:01\]](https://youtube.com/live/ud2WzkKeDZs?t=6661)
+### AMP threads
 
-### Amp focus inspector
+AMP threads are shared conversations that can be visible to teammates, private when needed, and accessible in the web store. Nico presents them as a core part of AMP's team value. *"A lot of our functionality is actually around sharing threads or sharing conversations with your team."* [\[01:50:46\]](https://youtube.com/live/ud2WzkKeDZs?t=6646)
 
-Nico added a focus inspector to the Amp UI so the agent could inspect the focus tree, reproduce a CLI focus bug, and validate a fix. *"what I did is I added a focus inspector to the UI. but you can basically look at the focus tree."* [\[01:53:21\]](https://youtube.com/live/ud2WzkKeDZs?t=6801)
+Threads also become agent context. Another person can access a thread, refer to it, and ask an agent to reuse a fix from that thread in another file.
 
-The concrete loop was: launch Amp in tmux, inspect the tree, send shortcuts, inspect again, and repair the focus return path. *"spun it up and looked at the focus tree before, sent some keyboard shortcuts, looked at the focus tree again and could basically see, hey, what is the problem at hand?"* [\[01:53:35\]](https://youtube.com/live/ud2WzkKeDZs?t=6815)
+### Codex
 
-### Local Amp logs
+Nico names [Codex](https://openai.com/codex/) as an example of coding agents moving into cloud and background execution. *"Codex was probably the first completely in the background, completely in the cloud."* [\[01:37:31\]](https://youtube.com/live/ud2WzkKeDZs?t=5851)
 
-Nico described a local logging setup where server, engine, and CLI logs are stored and exposed to the agent through the root agent file. *"So basically the server that is running locally, the engine that is running locally, but also the CLI that's running locally, all produce different logs and all of them are basically stored."* [\[01:47:32\]](https://youtube.com/live/ud2WzkKeDZs?t=6452)
+He later names Codex again as a peer to AMP and Claude Code when explaining AMP's product category. [\[01:50:39\]](https://youtube.com/live/ud2WzkKeDZs?t=6639)
 
-### tmux
+### Claude Code
 
-tmux is central to Nico's agent-debugging setup because it lets the agent run Amp, send interactions, and observe results in a terminal session. *"we tell it how to use Tmux correctly and spin up dev versions of AMP, like of our CLI in Tmux and send texts, do certain shortcuts."* [\[01:48:06\]](https://youtube.com/live/ud2WzkKeDZs?t=6486)
+[Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) is Nico's example of today's local terminal coding-agent shape. He groups it with Pi as the current iteration that mostly runs in the terminal. *"What we use today, like Claude Code, Pi as well, which is mostly in the terminal and it's running."* [\[01:37:13\]](https://youtube.com/live/ud2WzkKeDZs?t=5833)
 
-### gcloud, Cloud Run, and Kubernetes
+He also names Claude Code as a comparable coding agent when describing AMP's product category. [\[01:50:39\]](https://youtube.com/live/ud2WzkKeDZs?t=6639)
 
-Nico named gcloud, [Cloud Run](https://cloud.google.com/run), and [Kubernetes](https://kubernetes.io/) as operational surfaces the agent needs to understand for distributed-system debugging. The gcloud skill prevents the agent from rediscovering service topology each time. *"what are the right services? Is it in Cloud Run? Is it in Kubernetes? But it should know this from a skill and just be able to pull it instantly."* [\[01:46:25\]](https://youtube.com/live/ud2WzkKeDZs?t=6385)
+### Pi
 
-### Codex, Claude Code, Pi, and Warp
+[Pi](https://pi.dev/) appears in Nico's opening comparison as part of the current local-terminal agent category. *"What we use today, like Claude Code, Pi as well, which is mostly in the terminal and it's running."* [\[01:37:13\]](https://youtube.com/live/ud2WzkKeDZs?t=5833)
 
-Nico situated Amp inside a broader product shift away from terminal-only local coding agents. He named [Claude Code](https://docs.claude.com/en/docs/agents-and-tools/claude-code/overview), [Pi](https://pi.dev/docs/latest/usage), [Codex](https://openai.com/codex/), and [Warp](https://www.warp.dev/) while arguing that coding agents are moving toward background and cloud execution. *"what we use today, like Claude Code, Pi as well, which is mostly like in the terminal and it's running. And I think like it will move a lot into a different direction."* [\[01:37:22\]](https://youtube.com/live/ud2WzkKeDZs?t=5842)
+Nico also compares Pi's thread-like context reuse with AMP's team-wide threads. *"Pi is something similar as well, but it's mostly in code base."* [\[01:51:36\]](https://youtube.com/live/ud2WzkKeDZs?t=6696)
 
-### Storybooks and debug panes
+### G Cloud
 
-[Storybook](https://storybook.js.org/) and debug panes appear as examples of structured observability surfaces that agents can use to validate assumptions. *"Just give feedback loops to the model, whether it's like storybooks, debug panes, like this, for example, like give it a way to actually look at more information in a structured way."* [\[01:54:03\]](https://youtube.com/live/ud2WzkKeDZs?t=6843)
+[Google Cloud](https://cloud.google.com/) is the cloud interface behind Nico's G Cloud skill. The agent already has general documentation knowledge, but Nico adds the team's setup details through skills. *"It has base knowledge about every single thing, about Tmux, about G Cloud, but it doesn't know about your specific setups."* [\[01:49:23\]](https://youtube.com/live/ud2WzkKeDZs?t=6563)
 
-## Explainers
+The relevant setup details include service names, Cloud Run, Kubernetes, and where logs live.
 
-### Coding agents are moving beyond local terminal editing
+### Tmux
 
-Nico's ["coding agents are dead"](https://ampcode.com/news/the-coding-agent-is-dead) framing is not that agents disappear, but that the current terminal-centric product shape is too narrow. He expects more work to happen in background and cloud environments, which changes review, validation, and product scope. *"It's like not editing and running locally anymore on your desktop. So the changes are completely somewhere else."* [\[01:37:52\]](https://youtube.com/live/ud2WzkKeDZs?t=5872)
+[Tmux](https://github.com/tmux/tmux/wiki) is the terminal multiplexer Nico uses to let the agent run AMP's CLI, send keystrokes, and inspect behavior. *"One of my favorite skills is Tmux."* [\[01:48:04\]](https://youtube.com/live/ud2WzkKeDZs?t=6484)
 
-That broadens the coding-agent product: *"the product becomes something way bigger, which actually has to cover more than just actually writing code, what coding agents currently do, but actually how do I integrate this into the entire software development lifecycle"* [\[01:38:04\]](https://youtube.com/live/ud2WzkKeDZs?t=5884)
+The focus demo uses Tmux twice: first to run `amp threads continue` in dev and reproduce the bug, then again after Nico adds the focus inspector so the agent can compare focus trees before and after keyboard shortcuts. [\[01:52:46\]](https://youtube.com/live/ud2WzkKeDZs?t=6766)
 
-### Why business logic remains human-heavy
+### AGENTS.md
 
-Nico distinguishes codebase exploration from understanding why code exists. Agents can help read and summarize structure, but the business logic and historical rationale still require human judgment. *"using agents to explore and understand code bases is something that's really easy. What's really hard is actually understanding the the business logic, the understanding and why it was written behind that."* [\[01:41:02\]](https://youtube.com/live/ud2WzkKeDZs?t=6062)
+Nico references the root agent file as the place where AMP's local agents learn about running logs. The file tells the agent where local server, engine, and CLI logs are stored. *"The agent knows about it from the root agent file."* [\[01:47:40\]](https://youtube.com/live/ud2WzkKeDZs?t=6460)
 
-### Validation has two sides: does it work, and was the model's diagnosis right?
+He also uses agent files as part of the thread postmortem skill's failure search. The skill asks whether a mistake came from the system prompt, tools, skills, local agent files, or global agent files. [\[02:01:23\]](https://youtube.com/live/ud2WzkKeDZs?t=7283)
 
-Nico separates validating the result from validating the model's assumption about the bug. A model may patch a downstream symptom while missing the root cause. *"validate that it actually works, but also validate that the assumption the model is making about what the problem is, if you give it a bug, is also correct."* [\[01:54:59\]](https://youtube.com/live/ud2WzkKeDZs?t=6899)
+### Coding Agents are Dead
 
-He frames root-cause tools as a way to remove one major class of agent error: *"you're eliminating one mistake the agent can make completely, and then you only have to care about other ones."* [\[01:56:00\]](https://youtube.com/live/ud2WzkKeDZs?t=6960)
+[`Coding Agents are Dead`](https://ampcode.com/news/the-coding-agent-is-dead) is the AMP team's blog-post title that frames Nico's segment and an upcoming podcast livestream. Nico says the title is a play on the current generation of terminal-first coding agents. *"It was really a play of the current iteration of coding agents."* [\[01:37:13\]](https://youtube.com/live/ud2WzkKeDZs?t=5833)
 
-### Debug tools beat instructions for repeated complex failures
+The title points to a product shift rather than a disappearance of coding agents: agents still write code, but the product has to include design, background execution, review, and validation.
 
-Nico warns that the reflex to put every repeated failure in an agent instruction file is insufficient. For complex patterns, a tool that lets the agent inspect reality works better than a sentence telling it what to do. *"The first instinct is usually, put it in an agent's .md file. But I think if It's a little bit more complex than that. It's hard to basically give it a prompt or write it in a few lines, constructions of how it should act in these cases."* [\[01:57:20\]](https://youtube.com/live/ud2WzkKeDZs?t=7040)
+## Principles and explainers
 
-The alternative is concrete observability: *"it's often better to actually give it tools or ways where it can actually really debug it and figure out what's going on."* [\[01:57:42\]](https://youtube.com/live/ud2WzkKeDZs?t=7062)
+### Coding-agent products now cover the whole development lifecycle
 
-### Model introspection can improve the harness
+Nico expects coding-agent products to handle more than writing code because cloud and background execution change where review and validation happen. *"It's not editing and running locally anymore on your desktop. So the changes are completely somewhere else."* [\[01:37:48\]](https://youtube.com/live/ud2WzkKeDZs?t=5868)
 
-Nico argues that models have become better at introspection, which makes them useful for analyzing their own failed threads. Many failures trace back to bad or stale instructions rather than pure model incapability. *"the models actually got way better in the last year at introspection."* [\[01:58:57\]](https://youtube.com/live/ud2WzkKeDZs?t=7137)
+That creates product work around pulling changes down, reviewing them, making review smooth, designing before the code, and validating after review. *"How do I integrate this into the entire software development lifecycle and include the steps before the design phase and the steps after the review to make sure it's valid?"* [\[01:38:18\]](https://youtube.com/live/ud2WzkKeDZs?t=5898)
 
-The most useful diagnosis is often instruction provenance: *"a surprising amount of failures can be basically found because it's a wrong instruction."* [\[01:59:42\]](https://youtube.com/live/ud2WzkKeDZs?t=7182)
+### Skills are capabilities with local setup knowledge
 
-### Instruction budget is finite
+Nico defines skills as capabilities the team wants to give the agent, usually a tool plus the codebase-specific way to use it. *"For us, our skills are more capabilities we want to give to the agent."* [\[01:49:14\]](https://youtube.com/live/ud2WzkKeDZs?t=6554)
 
-Nico treats prompts and tool instructions as a constrained budget. Too many instructions cause compliance failures, so every line needs a behavioral target. *"when you overload the system prompt and the tools with it, it will fail to comply with some instructions."* [\[02:04:45\]](https://youtube.com/live/ud2WzkKeDZs?t=7485)
+The generic documentation is not enough for AMP's systems. The skill adds service names, local commands, context for AMP's CLI, and correct usage so the agent does not spend its first turns failing at tool setup. *"It just doesn't have to waste tokens in the beginning to first figure out how to use it and fail first for the first few turns."* [\[01:49:46\]](https://youtube.com/live/ud2WzkKeDZs?t=6586)
 
-His standard is strict: *"every line in the system prompt should actually have a clear behavior it is targeting. And if it doesn't, I'm going to rip it out."* [\[02:05:09\]](https://youtube.com/live/ud2WzkKeDZs?t=7509)
+### Validate the agent's theory of the bug, then validate the fix
+
+Nico separates two validation targets: whether the code works, and whether the model's explanation of the bug is true. *"Validate that it works, but also validate that the assumption the model is making about what the problem is, if you give it a bug, is also correct."* [\[01:54:59\]](https://youtube.com/live/ud2WzkKeDZs?t=6899)
+
+He sees the wrong root cause as the bigger problem in many cases. A downstream symptom can look like the bug, so the model needs tools that expose the root cause before it writes code. *"The model assumes something is the problem which isn't the root cause or which isn't the root problem, or maybe also is a red herring."* [\[01:55:16\]](https://youtube.com/live/ud2WzkKeDZs?t=6916)
+
+### Build debug tools for repeated agent failure modes
+
+Nico treats repeated failure patterns as candidates for tools rather than more prompt text. Storybooks, debug panes, and focus inspectors give the model structured information about the system so it can find the root cause, produce a fix, and validate the result. *"Give it a way to actually look at more information in a structured way."* [\[01:54:07\]](https://youtube.com/live/ud2WzkKeDZs?t=6847)
+
+The payoff is narrower review work for humans. Once root-cause guessing is reduced, the remaining review focuses more on code quality, placement, design, and architecture. *"You're eliminating one mistake the agent can make completely, and then you only have to care about other ones."* [\[01:56:02\]](https://youtube.com/live/ud2WzkKeDZs?t=6962)
+
+He argues that an `AGENTS.md` instruction works for simple behavior, but complex repeated mistakes need an artifact the agent can operate. *"It's often better to actually give it tools or ways where it can actually really debug it and figure out what's going on."* [\[01:57:42\]](https://youtube.com/live/ud2WzkKeDZs?t=7062)
+
+### Leave instruction budget for the user
+
+Nico resists adding instructions because agents can only comply with so many. *"The main failure pattern is because you have too many instructions."* [\[02:04:37\]](https://youtube.com/live/ud2WzkKeDZs?t=7477)
+
+He wants AMP's system prompts trimmed so user instructions retain space and priority. *"We want to have as much instruction budget left over for the user as possible."* [\[02:04:55\]](https://youtube.com/live/ud2WzkKeDZs?t=7495)
+
+Every system-prompt line needs a target behavior. *"Every line in the system prompt should actually have a clear behavior it is targeting. And if it doesn't, I'm going to rip it out."* [\[02:05:09\]](https://youtube.com/live/ud2WzkKeDZs?t=7509)
+
+### Remove bad instructions before adding new ones
+
+Nico's postmortem skill pushes against the agent tendency to add more instructions. He defaults proposed changes toward removal because more instruction text can worsen compliance. *"Agents always like to add new stuff instead of removing things."* [\[02:02:18\]](https://youtube.com/live/ud2WzkKeDZs?t=7338)
+
+The same principle drives AMP's system-prompt work. Nico says the team validates major changes and keeps each line tied to a behavior target, which reduces model performance variation in their own usage. *"We don't see a lot of performance variation because usually we are pretty confident that every line in the system prompt actually has a clear behavior we are targeting."* [\[02:05:19\]](https://youtube.com/live/ud2WzkKeDZs?t=7519)
+
+### Code-review effort should follow risk and hot-path usage
+
+Nico does not apply equal code-quality standards to every part of the codebase. He cares more about core logic on the hot path than settings pages or some CLI widgets. *"For a lot of front end stuff, for example, I don't care as much about code quality as I do, for example, in our core logic."* [\[01:43:42\]](https://youtube.com/live/ud2WzkKeDZs?t=6222)
+
+For lower-risk areas, he can run cleanup passes later. Agents are useful for those small repeated tidyings because one improved page can become an instruction to update many similar components. *"Apply this to this 50 other components or pages."* [\[01:44:37\]](https://youtube.com/live/ud2WzkKeDZs?t=6277)
 
 ## Additional quotations
 
-- On what was missing from his generated intro video: *"It's like, yeah, I'm missing the German accent and the Schlager vibes. So a little bit more folky. I would have loved it."* [\[01:39:49\]](https://youtube.com/live/ud2WzkKeDZs?t=5989)
-- On exploratory coding constraints: *"Alright tests, don't care about backwards or forwards compatibility."* [\[01:42:15\]](https://youtube.com/live/ud2WzkKeDZs?t=6135)
-- On giving the agent more useful data: *"how can we make it as easy as possible? for the agent to actually access the relevant data and then just let it crunch and use as much tokens as possible to just basically figure it out."* [\[01:46:46\]](https://youtube.com/live/ud2WzkKeDZs?t=6406)
-- On local log access: *"when it actually tries to reproduce something, it can use logs pretty strategically by actually putting the logs in."* [\[01:47:44\]](https://youtube.com/live/ud2WzkKeDZs?t=6464)
-- On the focus bug demo: *"It can actually like figure out their root cause first and then produce a fix and then validate that it actually works."* [\[01:54:36\]](https://youtube.com/live/ud2WzkKeDZs?t=6876)
-- On targeted debug primitives: *"we want to give it primitives, which it can use to debug a wide range of issues."* [\[01:56:34\]](https://youtube.com/live/ud2WzkKeDZs?t=6994)
-- On when to invest in tools: *"for things which are actually like causing a lot of bugs in the code base or things that the agent is repeatedly doing wrong or producing shit code, I think they're really worse actually sitting down and thinking through it of what could actually give the agents in terms of tools to actually improve in that specific area."* [\[01:58:04\]](https://youtube.com/live/ud2WzkKeDZs?t=7084)
-- On using Markdown instead of HTML to save tokens: *"man I don't want to waste so much tokens"* [\[02:03:27\]](https://youtube.com/live/ud2WzkKeDZs?t=7407)
-- On preserving user instruction budget: *"we want actually to have as much instruction budget left over for the user as possible."* [\[02:04:52\]](https://youtube.com/live/ud2WzkKeDZs?t=7492)
+- On review becoming harder when work moves away from the local desktop: *"This also makes something like review even more challenging. How do you actually decide to really look at the changes?"* [\[01:37:55\]](https://youtube.com/live/ud2WzkKeDZs?t=5875)
+
+- On exploratory agent instructions from Hugo that Nico agrees with: *"Don't write tests. Don't care about backwards or forwards compatibility."* [\[01:42:13\]](https://youtube.com/live/ud2WzkKeDZs?t=6133)
+
+- On cleanup passes in lower-risk code: *"Every now and then I'm probably doing a cleanup pass because I'm noticing, this code is shit."* [\[01:44:14\]](https://youtube.com/live/ud2WzkKeDZs?t=6254)
+
+- On the G Cloud skill's purpose: *"It can pull the logs based on what it is working on."* [\[01:45:49\]](https://youtube.com/live/ud2WzkKeDZs?t=6349)
+
+- On distributed debugging: *"It needs to be able to pull all these logs and aggregate it together to debug a single problem."* [\[01:46:06\]](https://youtube.com/live/ud2WzkKeDZs?t=6366)
+
+- On the agent using more thinking once it has data: *"Usually the output gets better, the more thinking the agent can actually spend on a problem, but it has to find all the relevant data."* [\[01:47:05\]](https://youtube.com/live/ud2WzkKeDZs?t=6425)
+
+- On skills as tool usage context: *"It doesn't know about your specific setups, what services you have, or how to use Tmux in the context of our CLI."* [\[01:49:32\]](https://youtube.com/live/ud2WzkKeDZs?t=6572)
+
+- On AMP's team focus: *"They are all accessible for other people in your team as well. If you want to, you can set them private as well."* [\[01:50:55\]](https://youtube.com/live/ud2WzkKeDZs?t=6655)
+
+- On focus in a CLI: *"Focus means in the CLI which of the active widgets of the active UI on the screen gets the keyboard input."* [\[01:52:05\]](https://youtube.com/live/ud2WzkKeDZs?t=6725)
+
+- On the focus bug: *"When we start up a new thread with continue, it pops up a picker of the different threads and it wouldn't focus correctly."* [\[01:52:34\]](https://youtube.com/live/ud2WzkKeDZs?t=6754)
+
+- On the first reproduction step: *"It can reproduce it. Yes, this was the first step."* [\[01:53:07\]](https://youtube.com/live/ud2WzkKeDZs?t=6787)
+
+- On the focus inspector result: *"It realized, the focus tree isn't being set correctly."* [\[01:53:44\]](https://youtube.com/live/ud2WzkKeDZs?t=6824)
+
+- On validating the fix in Tmux: *"Push the fix, try it again in Tmux, whether it's correct now."* [\[01:53:57\]](https://youtube.com/live/ud2WzkKeDZs?t=6837)
+
+- On the skill shown after the focus demo: *"A lot of my work is the tuning of the harness and the models and the tools to get the most out of them."* [\[01:58:45\]](https://youtube.com/live/ud2WzkKeDZs?t=7125)
+
+- On model introspection: *"The models got way better in the last year at introspection."* [\[01:58:57\]](https://youtube.com/live/ud2WzkKeDZs?t=7137)
+
+- On outdated docs causing failures: *"We had that happen a lot in our code base where we had outdated documentation in there."* [\[02:00:03\]](https://youtube.com/live/ud2WzkKeDZs?t=7203)
+
+- On the postmortem skill's question set: *"What are the instructions that you have in your context window that led you to making these decisions?"* [\[02:01:15\]](https://youtube.com/live/ud2WzkKeDZs?t=7275)
+
+- On system-prompt pain: *"Is the system prompt wrong, which is the biggest pain for me. I always want to get them out."* [\[02:01:42\]](https://youtube.com/live/ud2WzkKeDZs?t=7302)
+
+- On the postmortem output format: *"A bunch of different categories of suggestions it can make and how to do them."* [\[02:03:12\]](https://youtube.com/live/ud2WzkKeDZs?t=7392)
+
+- On token frugality in the skill output: *"I don't want to waste so much tokens."* [\[02:03:27\]](https://youtube.com/live/ud2WzkKeDZs?t=7407)
+
+## Live reactions and follow-ups
+
+### Discord link to AMP's blog post
+
+Hugo posted the AMP team's ["Coding Agents are Dead"](https://ampcode.com/news/the-coding-agent-is-dead) blog post in Discord before Nico's segment, which gave the chat a direct reference for the title Nico unpacked on stream.
+
+### Discord reaction to the postmortem skill
+
+During Nico's thread postmortem walkthrough, Suren called out the removal-first rule: *"cool unlock about **removing** first, in Niclay's postmortem skill."* The chat reaction tracks the same instruction-budget point Nico makes later when he says system prompts should stay trimmed and every line should target a clear behavior.
+
+### Paul's harness follow-up
+
+Paul's later segment connects directly to Nico's coding-agent explanation. He says he is researching how to write coding agents from scratch and that *"that's why Nico's talk was interesting to me"* [\[02:15:13\]](https://youtube.com/live/ud2WzkKeDZs?t=8113). Hugo also points back to Nico while discussing brittle out-of-the-box tools: *"to Nico's point, they build their own harness around frontier models"* [\[02:12:18\]](https://youtube.com/live/ud2WzkKeDZs?t=7938).

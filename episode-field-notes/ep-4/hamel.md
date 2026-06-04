@@ -1,214 +1,274 @@
-# Hamel Husain - Episode 4 field notes
+# Hamel Husain - Fuck Your Skills And Fuck Mine Too - Episode 4 field notes
 
-[Hamel Husain](https://hamel.dev/) is a machine learning engineer with over 20 years of experience, with work at Airbnb, GitHub, and DataRobot. Hugo introduces him as having done early LLM research used by OpenAI for code understanding, and as working to bring data science back to AI by helping teams debug, analyze, and measure their systems through evals.
+[Hamel Husain](https://hamel.dev/) is a machine learning engineer with more than 20 years of experience across Airbnb, GitHub, DataRobot, and early code-understanding research. His Episode 4 segment is the "Fuck Your Skills" segment: a direct warning that public agent skills can be useful, but they can also compress too much judgment, make people feel done, and hide whether the author is still using the thing they published.
 
-His segment was a skeptical tour of agent skills: when they help, when they mislead, how to inspect them, and when a higher-fidelity tool such as an MCP is a better fit.
+He opens the screen-share portion with a slide titled "Fuck Your Skills" and the subtitle "(And mine too)." The lead is not just "be skeptical of other people's skills." It is fuck your skills and fuck mine too: every shared skill, including Hamel's own, has to earn trust after inspection. Near the end of the talk, he makes the spoken rule just as blunt: *"When you see a skill, you should whisper to yourself, maybe fuck your skills, including my skills."* [[00:32:20]](https://youtube.com/live/XaYQFtca798?t=1940)
+
+He puts his own eval skills on blast first. After teaching more than 4,500 people, accumulating thousands of hours of office hours and Q&A, and publishing skills for eval audit, RAG evaluation, error analysis, and LLM-judge calibration, he says the skill bundle created the wrong incentive: *"Publishing these skills may be leading lots of people in the wrong direction."* [[00:24:17]](https://youtube.com/live/XaYQFtca798?t=1457)
+
+The alternative he shows is higher-fidelity context: a course chatbot and MCP that search the underlying course materials instead of compressing every eval edge case into a skill. His rule for other people's skills is equally blunt: read the prompt, check whether the author iterates, look for real constraints, and treat one-commit prompt bundles as suspect until they prove otherwise.
+
+Related workflow: [`skill-scepticism`](../../workflows/skill-scepticism/) turns Hamel's "fuck your skills and fuck mine too" argument into an intake loop for deciding whether to trust, adapt, replace, or reject a shared agent skill.
+
+<a href="https://youtube.com/live/XaYQFtca798?t=1325"><img src="images/hamel-fuck-your-skills.png" alt="Hamel Husain showing a slide titled Fuck Your Skills with the subtitle And mine too" /></a>
+<sub>Hamel opens his screen share with the title slide: "Fuck Your Skills," and underneath it, "(And mine too)." <a href="https://youtube.com/live/XaYQFtca798?t=1325">[00:22:05]</a></sub>
 
 ## On working with agents
 
-### What he loves: agents make things easier
+### What he loves: agents make many things easier
 
-Hamel's answer is terse and unqualified: *"just makes a lot of things easier."* [\[00:06:02\]](https://youtube.com/live/XaYQFtca798?t=362)
+Hamel's answer is intentionally short: *"It just makes a lot of things easier."* [[00:06:02]](https://youtube.com/live/XaYQFtca798?t=362) He spends the rest of the segment showing where ease comes from for him now: polished harness UX, remote sessions, mobile access, proof-of-work screenshots, and skills that can turn repetitive browser work into semi-programmatic workflows.
 
-### What he finds most frustrating: steering, especially for long writing
+### What he finds most frustrating: steering writing without making slop
 
-Hamel says he rarely gets frustrated with agents themselves. The frustration is usually his own steering problem, and it shows up most painfully in writing. *"If anything, I get frustrated with myself, not the agent, but."* He names the concrete failure mode as *"steering the agent sometimes,"* especially when he tries long-form AI writing, because *"it's really difficult for AI not to sound like slop unless you're, you are super in the loop."* [\[00:06:14\]](https://youtube.com/live/XaYQFtca798?t=374)
+Hamel says he rarely gets frustrated with agents themselves. The frustration lands on the steering burden, especially in long-form writing. *"It's just steering the agent sometimes."* [[00:06:44]](https://youtube.com/live/XaYQFtca798?t=404)
 
-For long writing, he keeps the model in a narrower role: *"I use it more like an editor or like something that checks my writing rather than something that wholesale does the writing, especially long writing."* [\[00:07:11\]](https://youtube.com/live/XaYQFtca798?t=431)
-
-## Skills
-
-### Eval audit skill
-
-Hamel showed a set of [eval-related skills](https://github.com/hamelsmu/evals-skills) distilled from his course materials, then argued that publishing them may have been the wrong abstraction. One of the skills audits eval setups for common mistakes: *"have a skills at one skill that had doesn't eval audit. So it will go through and will see if you're making any of the common mistakes that students make"* [\[00:23:18\]](https://youtube.com/live/XaYQFtca798?t=1398)
-
-### RAG evaluation skill
-
-The same skills collection includes a RAG-focused skill. Hamel describes it as *"another skill that's like. You know, trying to help you evaluate rag. like, you know, trying to help you put, make sure you have the right things in place."* [\[00:23:33\]](https://youtube.com/live/XaYQFtca798?t=1413)
-
-### Error analysis skill
-
-Hamel lists error analysis as another skill in the collection: *"There's another one for error analysis."* It is presented as part of a broader attempt to compress course knowledge into agent-invokable skill files. [\[00:23:42\]](https://youtube.com/live/XaYQFtca798?t=1422)
-
-### LLM judge validation skill
-
-Another skill checks whether an LLM judge is calibrated to human judgment. Hamel describes *"another one for validating that your LM judge is like calibrated to human and so on and so forth."* [\[00:23:43\]](https://youtube.com/live/XaYQFtca798?t=1423)
-
-### Browser-internal-API skill for Maven work
-
-Hamel's favorite use of skills is turning painful browser workflows into reusable agent procedures. He has skills for Maven tasks where the first run uses a browser extension and dev console access to discover internal routes, then later runs can act semi-programmatically. *"So yeah, have skills that basically, like I have skill that can just fill out a lightning lesson or like create a course page, like pseudo programmatically very quickly"* [\[00:43:12\]](https://youtube.com/live/XaYQFtca798?t=2592)
+For long writing, he avoids asking AI to produce large blocks wholesale because the output needs heavy human steering to avoid generic prose. *"It's really difficult for AI not to sound like slop unless you are super in the loop."* [[00:06:57]](https://youtube.com/live/XaYQFtca798?t=417) He uses AI more as an editor or checker than as the main writer.
 
 ## Workflows
 
-### Use AI as an editor for long writing
+### Choose agent harnesses that make remote work and review cheaper
 
-Hamel avoids delegating long-form prose wholesale. When writing, he keeps the agent close to review and editing instead of authorship: *"Like I just sort of am very careful. I use it more like an editor or like something that checks my writing rather than something that wholesale does the writing, especially long writing."* [\[00:07:11\]](https://youtube.com/live/XaYQFtca798?t=431)
+Hamel has moved more work into Codex Desktop because the interface, remote sessions, mobile behavior, and billing shape reduce the work around the work. *"I never thought I would leave the terminal. And then I tried Codex Desktop app, and I was like, 'Wow, this is actually better.'"* [[00:08:34]](https://youtube.com/live/XaYQFtca798?t=514)
 
-### Prefer polished harnesses over maintaining your own orchestration
+The details matter to him as product mechanics. Codex can run headless on a Mac Mini while showing the sessions in the desktop sidebar, SSH through the app, work well on phone, and trigger fast mode inside the subscription. Those pieces add up because the slowest frontier model settings make interaction latency part of the user experience.
 
-On [OpenClaw](https://openclaw.ai/), Hamel says he was spending more effort maintaining the harness than benefiting from it. *"I was spending more time making tools for OpenClaw and debugging OpenClaw than I was like using OpenClaw."* His conclusion was to use the harnesses he already uses elsewhere, because the vendor apps had closed much of the gap. [\[00:12:47\]](https://youtube.com/live/XaYQFtca798?t=767)
+He gives the broader pattern as harness absorption. Loops, goals, workflows, scheduling, and remote control used to require more homegrown orchestration. *"The harnesses are absorbing them."* [[00:15:39]](https://youtube.com/live/XaYQFtca798?t=939)
 
-### Read the prompt and the skill before trusting it
+Hamel changed his mind about [Devin](https://devin.ai/) from [Cognition](https://cognition.ai/) because the product consistently tries to show demo videos and screenshots of what it did. He connects that to eval speed: *"The agent doing it, giving you a proof of work that you can super easily verify is huge."* [[00:17:17]](https://youtube.com/live/XaYQFtca798?t=1037)
 
-Hamel repeatedly emphasizes inspection over hype. A lot of public skills, in his view, are just AI-written prompt dumps. *"Indeed those situations sometimes the skill is just a decompressed version of their prompt and It would be better just to have the prompt because I don't need all the slop of like this like skill"* [\[00:20:55\]](https://youtube.com/live/XaYQFtca798?t=1255)
+The same product expectation applies to Cursor on cloud and Slack integrations. He values agent systems that reduce debugging, show visible evidence, and make review cheaper than rerunning the whole task in his head.
 
-His operating rule is simple: *"look at the prompt and Look at the skill"* [\[00:21:08\]](https://youtube.com/live/XaYQFtca798?t=1268)
+### Inspect prompts and AI-facing code before trusting behavior
 
-### Judge shared skills using code-review-like signals
+Hamel still opens Cursor when he needs to inspect changed files, edit markdown, or read the AI-facing parts of a workflow. The hard rule is prompt review: *"You always have to look at the prompts if it's being changed."* [[00:18:39]](https://youtube.com/live/XaYQFtca798?t=1119)
 
-Hamel treats skills like code from GitHub. Signals include whether the author uses it, whether it is being iterated on, who published it, how stale it is, and whether it constrains the agent with actual tools or code. *"It's kind of like how you would judge code on GitHub in a lot of ways. It's like, I try to see like, what are some signals, you know, that you should take this skill seriously."* [\[00:35:22\]](https://youtube.com/live/XaYQFtca798?t=2122)
+That practice connects his day-to-day editing workflow to his critique of public skills. A skill can be a decompressed prompt, a stale artifact, or a code-backed constraint system. Reading the prompt is the first check before trusting the agent behavior it creates.
 
-### Keep memory and skills in a scoped monorepo
+### Replace broad eval skills with searchable course knowledge
 
-Hamel's personal setup is intentionally simple: a monorepo with directories for different activity areas, each with contained skills and markdown memory. He uses the directory structure itself to avoid context pollution. *"I just write to markdown files and I sort of curate the skills very carefully in a directory structure."* [\[00:36:56\]](https://youtube.com/live/XaYQFtca798?t=2216)
+Hamel published [eval skills](https://github.com/hamelsmu/evals-skills) for common student problems, then decided the skill format was too compressed for the knowledge base he actually has. Evals questions include multimodal cases, PII constraints, RAG evaluation, golden data, and LLM-judge calibration. He says, *"It's unreasonable to just push them all into a skill."* [[00:25:34]](https://youtube.com/live/XaYQFtca798?t=1534)
 
-He is explicit that the setup is not fancy: *"It's just a giant directory of just stuff that's organized."* [\[00:37:28\]](https://youtube.com/live/XaYQFtca798?t=2248)
+His replacement is a chatbot and MCP that query the course sources directly. A student can ask a nuanced eval question, the system searches course materials, and the MCP gives the agent the same higher-fidelity access without forcing that person into a web app. *"There's no reason for me to compress all of that knowledge into a skill."* [[00:27:12]](https://youtube.com/live/XaYQFtca798?t=1632)
 
-### Point agents at your own writing
+When Doug suggests that agents may need better research over blog posts rather than more skills, Hamel agrees from his own writing practice. *"I often end up pointing my agent at just my own blog post when I try to do things."* [[00:38:46]](https://youtube.com/live/XaYQFtca798?t=2326)
 
-When Doug suggests that blog posts may be the right form for reusable knowledge, Hamel agrees. He already uses his own posts as distilled instructions for agents. *"Like I often end up pointing my agent at just my own blog post when I try to do things. super handy. It's like I already distilled the information in like the best way I can think of in this post."* [\[00:38:45\]](https://youtube.com/live/XaYQFtca798?t=2325)
+The reason is reuse of distillation. A blog post can be the best version of how he has already explained a problem, and the agent can use that explanation directly instead of relying on a compressed skill.
 
-### Turn browser clicking into a skill by capturing internal APIs
+### Evaluate skills by iteration, ownership, and constraints
 
-For sites without APIs or MCPs, Hamel has the agent use a browser extension, inspect the dev console, observe routes and network requests, then create a skill. The first run is slower because the agent must navigate manually, but later runs can use cookies and internal routes. *"I tell it to do a task, but while it's doing that task, I tell it to introspect. the internal API of that site and like pay attention to what the routes are and how to programmatically like do all the things."* [\[00:42:32\]](https://youtube.com/live/XaYQFtca798?t=2552)
+Hamel's skill-review workflow looks like code review. He asks whether the author is using the skill, whether it is being iterated on, how old it is, whether it is mostly prompt text, and whether it contains code or tools that constrain the agent. *"Look at if the skill is being iterated on. Look at the commit history, the age of the skill."* [[00:27:49]](https://youtube.com/live/XaYQFtca798?t=1669)
 
-### Use a walkthrough video as agent input
+The constraint test is practical. A single prompt in one file may only be someone else's prompt. A skill with code, tools, scripts, or other hard structure shows that someone found constraints useful enough to package. *"The more constraints that your skill imposes, it's some signal that is good."* [[00:28:21]](https://youtube.com/live/XaYQFtca798?t=1701)
 
-When John asks where to get the Maven skill, Hamel points to a video rather than a packaged artifact. *"so you just like, have a YouTube video actually that walks through it. You can just point your agent at the YouTube video and just say, just do what Hamel did here."* [\[00:44:11\]](https://youtube.com/live/XaYQFtca798?t=2651)
+The slogan is not anti-skill. Fuck your skills and fuck mine too means every shared skill still has to pass an intake loop: read it, inspect the provenance, check the maintenance trail, decide what applies, and adapt it before it becomes policy. That loop is captured separately as the [`skill-scepticism`](../../workflows/skill-scepticism/) workflow.
+
+### Keep memory and skills in a curated monorepo
+
+Hamel describes his own setup as simple: a monorepo with directories for writing, course work, eval memes, and other recurring domains. He navigates into the relevant directory so only the local skills and markdown context shape the agent. *"That's basically my memory system as well. I just write to markdown files and I sort of curate the skills very carefully in a directory structure."* [[00:36:53]](https://youtube.com/live/XaYQFtca798?t=2213)
+
+The directory layout is his context-management mechanism. He sometimes asks an agent to clean it up, but he avoids a giant always-on memory surface because too much context can make the agent behavior weird.
+
+### Turn painful browser tasks into skills that learn internal APIs
+
+Hamel's favorite skill use is for websites that still require manual clicking and do not expose public APIs or MCPs. He uses a browser extension, asks the agent to perform the task once, and tells it to inspect the site's internal API while it works. *"I tell it to do a task, but while it's doing that task, I tell it to introspect the internal API of that site."* [[00:42:37]](https://youtube.com/live/XaYQFtca798?t=2557)
+
+The first pass may require clicking through the UI. The resulting skill captures routes, network requests, cookie handling, and programmatic calls so later runs can fill a [Maven](https://maven.com/) lightning lesson or create a course page without thousands of clicks. *"The skill has access to the dev console and can listen to all the network traffic."* [[00:43:26]](https://youtube.com/live/XaYQFtca798?t=2606)
+
+## Skills
+
+### evals-skills bundle
+
+Hamel names several skills inside his published [evals-skills](https://github.com/hamelsmu/evals-skills) bundle, then uses the bundle as his cautionary example. The eval audit skill checks systems for common mistakes his students make: *"One skill does an eval audit. It will go through and see if you're making any of the common mistakes that students make."* [[00:23:05]](https://youtube.com/live/XaYQFtca798?t=1385)
+
+The bundle also includes skills for RAG evaluation, error analysis, and LLM-judge calibration. Hamel describes one as *"trying to help you evaluate RAG"* and another as *"validating that your LLM judge is calibrated to human."* [[00:23:18]](https://youtube.com/live/XaYQFtca798?t=1398)
+
+The skills can encode common checks, but they cannot answer every nuanced course question about multimodal systems, privacy constraints, golden data, and evaluation tradeoffs. Hamel's "and mine too" matters here: he is not only dunking on other people's public skills, he is using his own eval bundle as the object lesson.
+
+### Maven browser skill
+
+Hamel has skills for Maven workflows that inspect internal browser APIs. One can fill out a lightning lesson, and another can create a course page semi-programmatically. *"I have skills that basically can just fill out a lightning lesson or create a course page pseudo-programmatically very quickly."* [[00:43:12]](https://youtube.com/live/XaYQFtca798?t=2592)
+
+These are literal skills because they package a repeatable agent behavior with browser-extension access, dev-console visibility, route discovery, and cookie reuse.
+
+### Front-end design skill
+
+Hamel inspects the popular [Anthropic front-end design skill](https://github.com/anthropics/skills/tree/main/skills/frontend-design) as a prompt-only skill he used for a while and then stopped using. *"I just got tired of my websites looking the same, so I stopped using it."* [[00:30:54]](https://youtube.com/live/XaYQFtca798?t=1854)
+
+He does not say the skill is necessarily bad. He uses it to show why age, commit history, prompt-only structure, and observed output sameness all belong in the trust evaluation.
+
+### GitHub Actions skill
+
+Hamel uses a GitHub Actions skill as another example from skills.sh. He says it has three commits, then looks at the contents and concludes it is basically a sitemap for the [GitHub Actions](https://docs.github.com/actions) docs. *"That's all this skill is."* [[00:31:14]](https://youtube.com/live/XaYQFtca798?t=1874)
+
+His practical judgment is that he battles GitHub Actions often and does not think he needs that skill if he is already using the GitHub CLI.
 
 ## Tools / projects he showed
 
 ### Codex Desktop
 
-Hamel says [Codex Desktop](https://openai.com/index/introducing-the-codex-app/) pulled him away from the terminal because of its polish and integrated workflow. *"I never thought I would leave the terminal. And then I tried Codex Desktop app and I was like, wow, this is actually better. It like shocked me."* [\[00:08:23\]](https://youtube.com/live/XaYQFtca798?t=503)
+Codex Desktop is the harness Hamel says pulled him away from the terminal. He likes the UI polish, native Mac computer use, scheduling, high-fidelity remote sessions, mobile behavior, and fast mode inside the subscription. *"That sort of polish just makes this really compelling."* [[00:08:58]](https://youtube.com/live/XaYQFtca798?t=538)
 
-He highlights computer use, scheduling, high-fidelity remote sessions, phone use, and fast mode within the subscription. On remote work: *"they have the best remote. system that I've used. you can run Codex headless on your Mac Mini, and then you can see all the sessions on your Mac Mini in the sidebar."* [\[00:09:21\]](https://youtube.com/live/XaYQFtca798?t=561)
-
-### Codex fast mode
-
-Hamel calls out a billing and UX distinction: Codex lets him use faster inference inside the monthly subscription rather than paying outside it. *"Codex will allow you to trigger fast within your billing, within your subscription. So like your $200 a month subscription, you can just, you can just toll your subscription at 1.5 X."* [\[00:10:27\]](https://youtube.com/live/XaYQFtca798?t=627)
+He contrasts it with Claude's remote-control edge cases on mobile and external fast-mode billing. Product UX changes whether he actually uses the agent everywhere.
 
 ### OpenClaw
 
-[OpenClaw](https://openclaw.ai/) is a counterexample in Hamel's workflow. He tried it, then gave up because the tool required too much maintenance. *"I got frustrated with OpenClaw. Like I found that I was, I was spending more time making tools for OpenClaw and debugging OpenClaw than I was like using OpenClaw."* [\[00:12:47\]](https://youtube.com/live/XaYQFtca798?t=767)
+OpenClaw appears as the tool Hamel stopped using after spending too much time maintaining the tool layer. *"I was spending more time making tools for OpenClaw and debugging OpenClaw than I was using OpenClaw."* [[00:13:11]](https://youtube.com/live/XaYQFtca798?t=791)
+
+He says the gap between OpenClaw and Codex or other harnesses was shrinking, while vendor automations and integrations were absorbing more of the work he used to orchestrate himself.
 
 ### Devin from Cognition
 
-Hamel now likes [Devin from Cognition](https://cognition.ai/), despite previously disliking it enough to write a critical blog post. The product shift is about proof of work: *"It's just super polished. Like the UX is so good. it does, so it's like wired up to always try to show you a demo video and screenshots of what it's done."* [\[00:16:55\]](https://youtube.com/live/XaYQFtca798?t=1015)
+[Devin](https://devin.ai/) is the coding harness Hamel says he changed his mind about. He used to dislike it and wrote critically about it early on, then came back because the UX had become polished. *"It's wired up to always try to show you a demo video and screenshots of what it's done."* [[00:17:00]](https://youtube.com/live/XaYQFtca798?t=1020)
 
-He connects this to eval ergonomics: *"the agent doing it, giving you a proof of work that you can super easily verify is huge."* [\[00:17:17\]](https://youtube.com/live/XaYQFtca798?t=1037)
+He also praises its Slack integration and treats its expense as acceptable when it reduces human coordination or review cost.
 
 ### Cursor
 
-Hamel still opens [Cursor](https://www.cursor.com/) when he wants to inspect files, edits, markdown, and prompts. The reason is especially strong for AI-facing code: *"It's helpful to see what files are being changed and just be able to look at things, especially when I'm trying to touch prompts or the AI part of the workflow, especially prompts. I believe you always have to look at the prompt if it's being changed."* [\[00:18:31\]](https://youtube.com/live/XaYQFtca798?t=1111)
+[Cursor](https://cursor.com/) remains Hamel's visual inspection and editing environment. He opens it to see changed files, inspect prompts, edit markdown, and read AI workflow code. [[00:18:16]](https://youtube.com/live/XaYQFtca798?t=1096)
 
-### Claude and Claude Code
+He also expects Cursor cloud to follow the proof-of-work pattern where the agent returns screenshots or demos that are easy to evaluate.
 
-Hamel still uses [Claude](https://claude.ai/) for writing and creative work, mainly because he knows its behavior: *"I still use Claude for like writing and like creative tasks. just because I'm used to it, just cause like, I don't know, like I kind of understand it"* [\[00:11:31\]](https://youtube.com/live/XaYQFtca798?t=691)
+### Claude Code
 
-He also notes that orchestration is moving into harnesses. Claude has loops, Codex has goals, and Claude Code has workflows, so increasingly *"you don't have to like orchestrate it yourself anymore."* [\[00:16:01\]](https://youtube.com/live/XaYQFtca798?t=961)
+[Claude Code](https://www.anthropic.com/product/claude-code) appears throughout the segment as a comparison point for loops, fast mode, workflow support, browser extension use, and skill generation. Hamel says Claude Code has loop support and workflow support, which means users no longer have to orchestrate as much manually. [[00:15:47]](https://youtube.com/live/XaYQFtca798?t=947)
 
-### Evals course skills collection
+He still uses Claude for writing and creative tasks because he knows its behavior, but he says Codex has pulled him away for much of his agent work.
 
-Hamel showed a collection of skills derived from his [evals course](https://maven.com/parlance-labs/evals), student Q&A, office hours, and book material. The [collection](https://github.com/hamelsmu/evals-skills) included eval audit, RAG evaluation, error analysis, and LLM-judge validation. He now treats the collection as a cautionary example because users may over-trust it. *"Publishing these skills may be leading lots of people in the wrong direction."* [\[00:24:17\]](https://youtube.com/live/XaYQFtca798?t=1457)
+### Claude
 
-### Course chatbot and MCP, name not given on stream
+Claude is the system Hamel still uses for writing and creative tasks. *"I still use Claude for writing and creative tasks, just because I'm used to it."* [[00:11:18]](https://youtube.com/live/XaYQFtca798?t=678)
 
-Hamel replaced the static skill idea with a higher-fidelity course chatbot and a related installable MCP over the same course knowledge. The names were not given on stream. *"I ended up making this MCP"* because *"And just what it does is it just queries all of the knowledge. Like it queries the course."* [\[00:25:51\]](https://youtube.com/live/XaYQFtca798?t=1551), [\[00:26:25\]](https://youtube.com/live/XaYQFtca798?t=1585)
+It also appears as the comparison point for remote control, fast-mode billing, and browser-extension workflows.
+
+### Eval course chatbot and MCP
+
+Hamel shows a course chatbot that can search the course sources and answer nuanced eval questions. The MCP exposes the same underlying course-search behavior to an agent, so users do not have to open the web app. *"There's an MCP that you can install that will do the same thing."* [[00:26:43]](https://youtube.com/live/XaYQFtca798?t=1603)
+
+The tool replaces his own eval skills as the preferred interface because it preserves more source knowledge than a compressed skill file.
 
 ### skills.sh
 
-Hamel used [skills.sh](https://skills.sh/) to analyze public skills. He describes it as *"a way to discover skills and install skills"* and says it is useful, then uses its download-ranked data to show how many popular skills have only one commit. [\[00:29:04\]](https://youtube.com/live/XaYQFtca798?t=1744)
+Hamel uses [skills.sh](https://skills.sh/) as the discovery surface for his small data analysis of popular skills. He describes it as *"a way to discover skills and install skills."* [[00:28:57]](https://youtube.com/live/XaYQFtca798?t=1737)
 
-### Anthropic front-end design skill
-
-In the skills.sh analysis, Hamel points to a popular prompt-only [front-end design skill](https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md). *"one of the most popular ones is like this anthropic one front end design. Only one commit six months ago."* He says he used it for a long time, then stopped because his websites started looking the same. [\[00:30:27\]](https://youtube.com/live/XaYQFtca798?t=1827)
-
-### GitHub Actions skill
-
-Hamel also inspects a GitHub Actions skill with three commits and argues that it is essentially a sitemap of the docs. *"if you come to this GitHub actions, one is basically the site map of the GitHub actions docs."* [\[00:31:10\]](https://youtube.com/live/XaYQFtca798?t=1870)
-
-### Browser extension, name not given on stream
-
-For internal-API discovery, Hamel uses a browser extension. The specific extension name was not given on stream. *"use the Chrome extension, Claude has one, Codex has one"* and then ask the agent to inspect routes while doing the task. [\[00:42:32\]](https://youtube.com/live/XaYQFtca798?t=2552)
+He took the top 300 skills by downloads and counted commits. The finding drives his skepticism: *"About a third of all those skills only have one commit."* [[00:29:15]](https://youtube.com/live/XaYQFtca798?t=1755)
 
 ### Maven
 
-[Maven](https://maven.com/) is Hamel's concrete example of a pre-AI web product with too much clicking. *"Maven doesn't like you to do anything on Maven, you have to click like thousands of buttons, right?"* He uses skills to fill out lightning lessons and create course pages more quickly. [\[00:43:01\]](https://youtube.com/live/XaYQFtca798?t=2581)
+[Maven](https://maven.com/) is Hamel's example of a pre-AI web product where repetitive course operations still require too many clicks. He says Maven makes users click thousands of buttons for course work such as lightning lessons and course pages. [[00:43:01]](https://youtube.com/live/XaYQFtca798?t=2581)
 
-### YouTube walkthrough video
+His Maven skills use browser-extension access and internal API discovery to fill out lightning lessons and create course pages faster.
 
-Hamel mentions a [YouTube video](https://www.youtube.com/watch?v=rOaaibIFf8o) that walks through the internal-API skill workflow. *"have a YouTube video actually that walks through it."* [\[00:44:11\]](https://youtube.com/live/XaYQFtca798?t=2651)
+### Browser extension
 
-## Explainers
+The browser extension is the bridge between manual web UI and repeatable agent skill. Hamel says both Claude and Codex have one, and he uses it to let the agent perform a browser task while inspecting network calls and internal routes. [[00:42:32]](https://youtube.com/live/XaYQFtca798?t=2552)
 
-### Skills can create the illusion of completeness
+The extension matters because many websites still lack public APIs or MCPs. It gives the agent enough access to discover how the site works and later bypass slow clicking.
 
-Hamel's strongest critique of his own eval skills is that users will treat them as comprehensive. Even if the author says to customize them, users often will not. *"I tried to say like, don't just use these skills, like customize it for yourself. But like no one, if you release skills, no one is going to customize it. No one's going to look at it. Okay. There's just human nature."* [\[00:24:31\]](https://youtube.com/live/XaYQFtca798?t=1471)
+## Principles and explainers
 
-The result is false confidence: *"people will feel like they're done. Like you have this eval skill, you must be doing it right."* [\[00:24:42\]](https://youtube.com/live/XaYQFtca798?t=1482)
+### Skills can create false completion
 
-### A skill is a lossy compression of knowledge
+Hamel's strongest warning is about user behavior. Even when he tells people to customize a skill, he expects many users to install it, trust the author's name, and stop thinking. *"People will feel like they're done. Like you have this eval skill, you must be doing it right because you have Hamel's eval skill."* [[00:24:42]](https://youtube.com/live/XaYQFtca798?t=1482)
 
-The reason Hamel moved toward an MCP is fidelity. His course contains thousands of hours of instruction, office hours, Q&A, and nuanced eval situations. Compressing all of that into markdown skills throws away too much. *"it's unreasonable to just push them all into a skill. Because a skill is like a compression, right? And like, like I said, people over-rely on the skill."* [\[00:25:34\]](https://youtube.com/live/XaYQFtca798?t=1534)
+The same failure can happen with any public skill. A named skill can make the workflow look comprehensive even when it is only a thin compression of one person's current instructions.
 
-### MCPs can answer nuanced questions better than static skills
+That is why the segment's line has to include both sides: fuck your skills and fuck mine too. Hamel's own skills create the false-completion risk precisely because his name and evals course give them authority.
 
-Hamel's MCP searches the course knowledge rather than trying to encode it all in advance. In his golden-dataset example, the system searches the course sources, produces an answer, and can be installed into the user's harness. *"The reason this is better, because now you have more fidelity for like the kind of information I'm trying to give people. I'm like, okay, this is higher fidelity. You can actually get answers to your nuance question and you can go like way further."* [\[00:26:56\]](https://youtube.com/live/XaYQFtca798?t=1616)
+### A skill is a compression of context
 
-### Code and tools are stronger skill signals than prompt-only files
+Hamel's eval example turns into a general rule: a skill compresses knowledge, and compression can destroy the nuance the user actually needs. *"The skill is like a compression, right?"* [[00:25:39]](https://youtube.com/live/XaYQFtca798?t=1539)
 
-Hamel frames a skill's value as the degree to which it usefully constrains the agent. Prompt-only skills are often just someone else's prompt, while code and tools can encode concrete constraints. *"If it's just a single prompt in a single file, that seems a little bit less useful, honestly. If it's like a bunch of code tools, things like that, that's more of a signal that is like trying to constrain your agent more and thus maybe more useful because someone has found. useful constraints."* [\[00:28:25\]](https://youtube.com/live/XaYQFtca798?t=1705)
+That is useful when the task is narrow and the constraints are known. It is dangerous when the domain has many edge cases, such as multimodal evals, PII, RAG systems, golden datasets, and human-calibrated judges.
 
-### Commit history is a weak but useful smell test
+### Iteration is a trust signal
 
-Hamel does not claim one commit means a skill is bad in every case, but he uses it as a skepticism trigger. In his skills.sh sample, about a third of the top 300 skills had only one commit. *"If you're to use a skill, if it's not being iterated on, you have to tune up your skepticism a little bit and say, maybe this skill is very shallow and the ceiling might be very low in terms of what the skill is imparting to you because it's not being iterated on."* [\[00:29:27\]](https://youtube.com/live/XaYQFtca798?t=1767)
+Hamel treats stale skills as a reason to increase skepticism. If the author is not using or updating the skill, the ceiling may be low. *"If it's not being iterated on, you have to tune up your skepticism a little bit."* [[00:29:22]](https://youtube.com/live/XaYQFtca798?t=1762)
 
-### Prompt-only skills need adaptation, not wholesale adoption
+The one-commit statistic is not a universal condemnation. He notes that some comedy skills may only need one commit. His point is contextual: the more serious the workflow, the more commit history, ownership, and usage should matter.
 
-Hamel warns that most skills are prompts, which makes them highly contextual. Before using one, read it and decide what applies. *"if you're gonna just adopt someone else's prompts wholesale, okay, you have to think like, you should be reading the prompt and figuring out like, what applies to you and what doesn't."* [\[00:30:02\]](https://youtube.com/live/XaYQFtca798?t=1802)
+### Prompt-only skills are often someone else's prompt
 
-### Blog posts may be better long-lived knowledge than skills
+Hamel says most skills are prompts, which means adopting them wholesale is adopting someone else's instructions without understanding fit. *"Most skills are just prompts. They're someone else's prompts."* [[00:29:52]](https://youtube.com/live/XaYQFtca798?t=1792)
 
-Responding to Doug's suggestion that agents should be better at web research, Hamel argues that writing for yourself still matters. If a post already contains your best explanation, the agent can use that directly. *"the first person you want to be useful is yourself. And so like, absolutely. I think you should. Like I often end up pointing my agent at just my own blog post when I try to do things."* [\[00:38:42\]](https://youtube.com/live/XaYQFtca798?t=2322)
+His recommendation is to read the prompt and decide what applies. A skill can be less useful than the author's original prompt when the skill file is just a decompressed version of someone else's instructions.
 
-### Browser skills are a bridge for pre-AI websites
+### Code and tools can constrain the agent better than prose
 
-For websites without APIs or MCPs, Hamel turns manual clicks into repeatable procedures by making the first run investigative. The agent watches routes, traffic, requests, and cookies, then uses that knowledge later. *"the skill has access to the dev console and can listen to all the network traffic and can see like what requests are being sent, what requests are, you know, how to do like, how to hit the internal API routes."* [\[00:43:26\]](https://youtube.com/live/XaYQFtca798?t=2606)
+Hamel distinguishes prompts from executable constraints. A skill with code, tools, scripts, and browser mechanics can narrow the agent's behavior in ways plain prose may not. *"If it's like a bunch of code, tools, things like that, that's more of a signal that it's trying to constrain your agent more."* [[00:28:31]](https://youtube.com/live/XaYQFtca798?t=1711)
 
-This is how he handles older web tools: *"this is like a lot of websites are still pre-AI, like lot of tools. And so that's how I get over that frustration."* [\[00:43:54\]](https://youtube.com/live/XaYQFtca798?t=2634)
+The Maven browser skill shows that principle in practice. The useful constraint is not a paragraph saying "use Maven well." It is dev-console access, route discovery, cookie handling, and repeatable API calls.
+
+### Judge skills the way you judge code
+
+When Hugo asks whether shared skills can become personalized instructional memory, Hamel agrees with the sharing value but keeps the trust frame. *"It's kind of like how you would judge code on GitHub in a lot of ways."* [[00:35:41]](https://youtube.com/live/XaYQFtca798?t=2141)
+
+The publisher matters. A skill from someone he trusts carries a different prior than a viral prompt bundle, but he still looks for concrete signals that the skill is useful for his workflow.
+
+### Skills can transmit expert practice when users adapt them
+
+Hugo pushes back on the idea that skills are only prompt slop by naming their best use as instructional memory: *"the ability of skills to encode instructional memory so we can see how experts do things and then adapt that to our workflows."* [[00:45:35]](https://youtube.com/live/XaYQFtca798?t=2735)
+
+Chris Fonnesbeck makes the same useful-skill case from PyMC. He agrees with Hamel's warning about loading every skill or MCP that looks relevant, then draws the boundary around current, domain-specific practice. *"There are really useful applications of skills,"* he says, because a PyMC modeling skill can help when model pretraining and public examples lag a new PyMC release by months. [[00:53:32]](https://youtube.com/live/XaYQFtca798?t=3212)
+
+That counterargument fits Hamel's thesis rather than weakening it. A useful skill is not an authority object to install and forget. It is a cached, inspectable version of expert practice that the user still has to read, adapt, and keep current.
+
+### Blog posts can be reusable agent context
+
+Hamel connects agent context to the old habit of writing for your future self. People search for a problem, find their own blog post or Stack Overflow answer, and benefit from their past distillation. *"That's kind of why you wrote it in the first place, because the first person you want to be useful is yourself."* [[00:38:39]](https://youtube.com/live/XaYQFtca798?t=2319)
+
+For agents, that means a blog post can serve as durable, high-quality context. It can be easier to point the agent at the best explanation than to maintain a separate skill for the same knowledge.
+
+### Browser agents matter because many tools still lack APIs
+
+Hamel's browser-skill example is also an explanation of the web's transition state. *"A lot of websites are still pre-AI."* [[00:43:54]](https://youtube.com/live/XaYQFtca798?t=2634)
+
+Those sites may not expose APIs or MCPs, but browser agents can still observe the internal routes that power the UI. Skills can preserve that discovery so later runs operate closer to programmatic automation.
 
 ## Additional quotations
 
-- On Codex Desktop's UI: *"I think it's unparalleled, meaning, you know, it's just super polished and very impressive."* [\[00:08:25\]](https://youtube.com/live/XaYQFtca798?t=505)
-- On the user-experience gap created by fast mode: *"Because the best models at high thinking is quite slow. So it just makes a huge difference."* [\[00:11:12\]](https://youtube.com/live/XaYQFtca798?t=672)
-- On vendor harnesses absorbing orchestration: *"I think a lot of the orchestration that you had to do is like disappearing and going, you know, the harnesses are like absorbing them."* [\[00:16:02\]](https://youtube.com/live/XaYQFtca798?t=962)
-- On Devin's price: *"It is expensive though, it's very expensive. But you know, some less more is less expensive than a human, I think. So it's fine."* [\[00:17:30\]](https://youtube.com/live/XaYQFtca798?t=1050)
-- On his own skills becoming suspect: *"Also, if you look at my skills, like, okay, like I haven't updated in two months. So was like, am I using the skill? No, because I'm using this other thing."* [\[00:27:27\]](https://youtube.com/live/XaYQFtca798?t=1647)
-- On the overall warning: *"When you see a skill, you should whisper to yourself, maybe fuck your skills, including my skills. Don't trust anyone's Even if they're my skills, just be careful."* [\[00:32:20\]](https://youtube.com/live/XaYQFtca798?t=1940)
-- On using agents to clean the memory directory: *"sometimes I'll use an agent to clean up my directory as well."* [\[00:37:21\]](https://youtube.com/live/XaYQFtca798?t=2241)
-- On the future of YouTube in an agentic world: *"I also don't know what's gonna happen to YouTube eventually, because I don't know who's gonna, like lot of videos, maybe people won't watch, I don't know."* [\[00:44:50\]](https://youtube.com/live/XaYQFtca798?t=2690)
+- On OpenClaw maintenance: *"I was spending more time making tools for OpenClaw and debugging OpenClaw than I was using OpenClaw."* [[00:13:11]](https://youtube.com/live/XaYQFtca798?t=791)
+
+- On vendor harnesses absorbing custom orchestration: *"You don't have to orchestrate it yourself anymore."* [[00:16:01]](https://youtube.com/live/XaYQFtca798?t=961)
+
+- On Devin's review surface: *"That's what a good product is, if you can eval it quickly."* [[00:17:21]](https://youtube.com/live/XaYQFtca798?t=1041)
+
+- On prompt inspection: *"You always have to look at the prompts if it's being changed."* [[00:18:39]](https://youtube.com/live/XaYQFtca798?t=1119)
+
+- On Twitter skills: *"A lot of skills that you see out there, I believe, are made for Twitter."* [[00:19:54]](https://youtube.com/live/XaYQFtca798?t=1194)
+
+- On one-commit skills: *"Is the author using it?"* [[00:20:29]](https://youtube.com/live/XaYQFtca798?t=1229)
+
+- On his own eval skills: *"I ended up hating my own skill."* [[00:24:53]](https://youtube.com/live/XaYQFtca798?t=1493)
+
+- On course-search fidelity: *"You can actually get answers to your nuanced question and you can go way further."* [[00:27:05]](https://youtube.com/live/XaYQFtca798?t=1625)
+
+- On skills.sh: *"I love looking at data, and I think it's useful even outside evals."* [[00:28:50]](https://youtube.com/live/XaYQFtca798?t=1730)
+
+- On checking a skill's contents: *"You have to see, what is this?"* [[00:31:07]](https://youtube.com/live/XaYQFtca798?t=1867)
+
+- On trusted publishers: *"If John gave me a skill or Brian gave me a skill, it's like, okay, yeah, I'll trust this skill."* [[00:35:30]](https://youtube.com/live/XaYQFtca798?t=2130)
+
+- On his memory setup: *"It's not fancy. It's just a giant directory of stuff that's organized."* [[00:37:28]](https://youtube.com/live/XaYQFtca798?t=2248)
+
+- On writing for agents and humans: *"People should write more blog posts."* [[00:38:58]](https://youtube.com/live/XaYQFtca798?t=2338)
+
+- On browser skills: *"That's how I get over that frustration. It's my absolute favorite thing in the whole world."* [[00:44:00]](https://youtube.com/live/XaYQFtca798?t=2640)
+
+- On the segment thesis: *"When you see a skill, you should whisper to yourself, maybe fuck your skills, including my skills. Don't trust anyone's."* [[00:32:20]](https://youtube.com/live/XaYQFtca798?t=1940)
 
 ## Live reactions and follow-ups
 
-### Hugo's pushback: skills as shareable instructional memory
+### Discord surfaced Hamel's eval skills and browser walkthrough
 
-Hugo pushed back on one piece of Hamel's argument: the value of a shared skill is not necessarily that someone installs it unchanged. It can be a way to transmit a workflow, then let another builder adapt it. His example was Anthropic's skill creator skill: *"the way they've done their skill doesn't quite work for me for a number of reasons. And I want to make sure that then I can test the skill in a variety of ways. And so I have my own version of their skill."* [\[00:34:29\]](https://youtube.com/live/XaYQFtca798?t=2069)
+Hugo posted Hamel's [evals-skills](https://github.com/hamelsmu/evals-skills) repo while Hamel was discussing why his own eval skill bundle had become a cautionary example. John later posted Hamel's [Turn Any Website Into an API With Claude Code](https://www.youtube.com/watch?v=rOaaibIFf8o) walkthrough when the conversation turned to browser agents learning internal APIs.
 
-Hamel accepted the sharing point, but kept the evaluation frame: *"it's kind of like how you would judge code on GitHub in in a lot of ways."* He still wants signals before trusting a skill. [\[00:35:22\]](https://youtube.com/live/XaYQFtca798?t=2122)
+### Hugo and Chris kept the useful-skill counterweight in view
 
-### Chris's follow-up: customize, do not hoard
+Hugo's live pushback is that skills can preserve expert workflow, not just instructions. His PyMC example is about learning how Chris approaches Bayesian modeling and then adapting that practice to his own work, with human judgment still in the loop. Chris then sharpens the practical case: a maintained PyMC skill can be useful when models and public examples are stale relative to the current library.
 
-Chris picked the thread back up in the next segment. He said he agreed with *"a fair bit of what Hamel had to say"* and described backing away from downloading piles of skills or MCP servers just because they exist. The failure mode is context bloat and stale or irrelevant instructions. [\[00:52:50\]](https://youtube.com/live/XaYQFtca798?t=3170)
+That makes the debate more precise. Hamel's rule is fuck your skills and fuck mine too, not "skills never help." Hugo and Chris both point to the cases where a skill is useful because it carries fresh expert practice, current API usage, or a narrow workflow that would be expensive to reconstruct from generic model knowledge.
 
-But Chris also named the useful version of the pattern: write or adapt skills for your own harness and your own work. For PyMC, a version-specific skill can help agents avoid old PyMC3 patterns when PyMC6 has just shipped. For Pi, he prefers asking the harness to write the skill he needs, then iterating it locally.
+### The chat turned Hamel's warning into a skill-quality debate
 
-### Discord reaction: skill slop has entered the chat
-
-The Discord picked up Hamel's critique immediately. A few representative reactions:
-
-- *"Haha, skill as twitter hype is 100% correct"*
-- *"most skills need to prune 60-80% of their lines"*
-- *"I feel somewhat confused by folks going round going 'I have like 200 skills!' - surely less but more high quality is better?"*
-- *"So we are in the age of 'skill slop'? This is a very interesting discussion"*
-- *"Yeah! Perhaps it is about finding a good enough starting-point skill so you can customize it to your own needs."*
+The live chat reacted directly to Hamel's critique. One viewer wrote, *"skill as twitter hype is 100% correct,"* another wrote that *"most skills need to prune 60-80% of their lines,"* and another asked whether the community was entering the age of *"skill slop."* Hugo also replied *"he said it"* when the title-slide joke became the explicit spoken line. Those reactions tracked the segment's main tension: shared skills are useful only when the user reads, adapts, and constrains them instead of installing them as authority.

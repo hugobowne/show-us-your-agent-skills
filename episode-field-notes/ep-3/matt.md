@@ -1,100 +1,174 @@
-# Matthew Honnibal — Episode 3 field notes
+# Matthew Honnibal - Episode 3 field notes
 
-Matthew Honnibal is a computational linguist from Sydney now based in Berlin, co-author of spaCy and co-founder of Explosion. His segment centered on code quality verification workflows, the philosophical challenges of evaluating agent performance, and a platform in beta for agent-assisted NLP and data project development. His distinctive angle: rather than trying to prevent mistakes upfront via prompts, he uses "nibble" passes to iteratively improve code through multiple agent review cycles, and he is building infrastructure that pairs agents with Kubernetes compute for team-scale NLP workflows. His skills are published publicly at [github.com/honnibal/claude-skills](https://github.com/honnibal/claude-skills).
+Matthew Honnibal, originally from Sydney, computational linguist by training, based in Berlin, co-author of [spaCy](https://spacy.io/), and co-founder of [Explosion](https://explosion.ai/) with Ines Montani, came to Episode 3 with a sharp position on agent work: agents can compound programmer velocity, but the field is still making workflow decisions with weak evidence, moving targets, and tools that can reward the wrong behavior. His answer is not one better prompt. It is visible skill distribution, adversarial review passes over code, short Claude Code sessions that keep human judgment active, and an NLP platform where agents run data-project machinery while the developer still owns the decisions.
+
+He likes agents because velocity compounds when it keeps the programmer inside the problem: *"You get a compounding effect from velocity in this way if you're doing it well."* [\[00:05:53\]](https://youtube.com/live/ud2WzkKeDZs?t=353) He gets frustrated because nobody has enough stable evidence to know which mitigation strategies work, model behavior changes underneath users, and even frontier labs cannot run exhaustive user studies at the pace the products are changing.
+
+He shares skills as `.md.txt` files because rendered Markdown can hide instructions in HTML comments. He treats Claude's Python mistakes as partly shaped by short-horizon reward incentives, then counters them with mutation testing, pre-mortems, try-except audits, and fix-up passes instead of hoping the model avoids every failure up front. With [ELLF](https://beta.ellf.ai), he is trying to make agents build the kind of task-specific NLP classifiers that once required a data team: plan the project, run downloads on cluster compute, create annotation jobs, use cheap agents for first-pass labeling, route disagreements to human review, collect training data, and run experiments.
+
+<a href="https://youtube.com/live/ud2WzkKeDZs?t=1512"><img src="images/matt-ellf-nlp-engineer.png" alt="Matthew Honnibal showing the ELLF virtual NLP engineer landing page and product UI" /></a>
+<sub>Matthew shows ELLF as a virtual NLP engineer for Claude-assisted NLP projects, with product screens for tasks, agents, assets, and cluster-backed work. <a href="https://youtube.com/live/ud2WzkKeDZs?t=1512">[00:25:12]</a></sub>
 
 ## On working with agents
 
-Hugo opens with two questions he puts to every guest: what they love about working with agents, and what they find most frustrating.
+### What he loves: velocity that keeps state warm
 
-### What he loves: velocity and staying in flow
-Matt's answer centers on velocity. Faster iteration means less time on the uninteresting parts and less cognitive state lost between steps, and the effect compounds. *"things get lot easier if you're doing them on a more compressed timeline and you're less often losing state... you get a compounding effect from velocity in this way if you're doing it well."* [\[00:05:01\]](https://youtube.com/live/ud2WzkKeDZs?t=301)
+Matthew loves agents because they compress the time between programming steps and help him stay inside a problem. *"The ability to move faster and get your work through problems and have the steps which are less interesting take less time I think is very valuable in itself."* [\[00:05:40\]](https://youtube.com/live/ud2WzkKeDZs?t=340)
 
-### What he finds most frustrating: a poverty of evidence
-The hardest part is not knowing whether a given technique actually works. You cannot gather enough samples to tell whether a prompt change helps by 10 percent or hurts by 15, and the ground keeps shifting underneath you. Matt argues even Anthropic cannot be rigorously evaluating everything at their pace: *"you can't hire nine women to have a baby in one month."* The "evaluation problem" explainer below treats this at length. [\[00:06:37\]](https://youtube.com/live/ud2WzkKeDZs?t=397)
+Compressed timelines help him hold the problem in his head. He says software work gets easier when you are *"less often losing state"* [\[00:05:33\]](https://youtube.com/live/ud2WzkKeDZs?t=333). Agents help when they move the dull steps out of the way and get him back to the interesting parts faster.
 
-## Skills
+### What he finds most frustrating: workflow choices are mostly eyeballed
 
-### Try-except audit skill
-A prompt-based skill asking Claude to read Python source files and audit exception handling. For every try-except block it finds, the skill checks whether the block:
+Matthew's frustration is epistemic. Agent workflows change quickly, models change underneath them, and there is rarely enough evidence to know whether one prompting or mitigation strategy is actually better than another. *"It's extremely hard to make decisions about how to do things because you're in such a poverty of evidence around it and things are changing underneath you all the time."* [\[00:06:43\]](https://youtube.com/live/ud2WzkKeDZs?t=403)
 
-- is correctly scoped,
-- catches direct exceptions, and
-- doesn't mask bugs.
+He gives the example of a prompt technique that might improve performance by 10 percent or harm it by 15 percent. The user usually cannot collect enough samples to tell, and even measuring performance is weak. *"It's all very eyeballed."* [\[00:07:36\]](https://youtube.com/live/ud2WzkKeDZs?t=456)
 
-Matt highlighted this as one of his core skills because he views improper exception handling as one of the most significant problems agents introduce in Python code. *"In try-accept audit mode, your job is to read Python source files, find every try-accept block, evaluate whether each one is correctly scoped, catches direct exceptions, and doesn't mask bugs."* [\[00:09:33\]](https://youtube.com/live/ud2WzkKeDZs?t=573) Published as [`try-except.md.txt`](https://github.com/honnibal/claude-skills/blob/main/try-except.md.txt).
-
-### Pre-mortem mode skill
-A skill that asks Claude to read production code, identify areas of fragility and implicit assumptions, and write realistic post-mortem reports for bugs that haven't happened yet. The skill explicitly frames the task as not a bug hunt but a search for places where code is fragile against future edits, where a seemingly reasonable change by a future developer could break something non-obvious. *"Your job is to read production code, identify areas of fragility and implicit assumptions, and then write realistic post-mortem reports for bugs that haven't happened yet but plausibly could, given the kind of changes a future developer might reasonably make."* [\[00:14:28\]](https://youtube.com/live/ud2WzkKeDZs?t=868) Published as [`pre-mortem.md.txt`](https://github.com/honnibal/claude-skills/blob/main/pre-mortem.md.txt).
-
-### Test coverage mutation skill
-A skill that asks Claude to introduce problems into code and then check whether the current test suite catches them. This is one of several pass-over-the-code operations Matt runs to verify code quality and test robustness. [\[00:14:28\]](https://youtube.com/live/ud2WzkKeDZs?t=868) Published as [`mutation-testing.md.txt`](https://github.com/honnibal/claude-skills/blob/main/mutation-testing.md.txt).
+That uncertainty includes the frontier labs. Matthew says the pace is too fast for exhaustive user studies: *"You can't hire nine women to have a baby in one month."* [\[00:07:59\]](https://youtube.com/live/ud2WzkKeDZs?t=479) His point is that Anthropic and users are both improvising while the tools and workloads keep changing.
 
 ## Workflows
 
-### Multiple-pass "nibble" strategy instead of one-shot requests
-Rather than trying to get Claude to do everything in one large pass, Matt uses a metaphor of "nibble versus bite," making multiple iterative passes over code instead of trying to load everything into context at once. The reasoning: *"Fundamentally, reasoning isn't free. You can't expect the model to know everything that it knows all up front."* You cannot expect inference to happen magically, so *"you have to go from one intermediate result to the next intermediate result."* After each operation (e.g., introducing test mutations, auditing exceptions), he runs separate "fix-up passes" where he tightens types, exception handling, and other details. This iterative refinement avoids the trap of expecting the model to solve everything in one shot. [\[00:11:21\]](https://youtube.com/live/ud2WzkKeDZs?t=681), [\[00:14:28\]](https://youtube.com/live/ud2WzkKeDZs?t=868)
+### Run multiple focused code-review passes instead of one large prompt
 
-### Active engagement and context window hygiene
-Matt practices deliberate session management to avoid low-productivity failure modes. Long sessions where he operates in the background with divided attention (e.g., watching TV while an agent runs) lead to poor results; instead, he emphasizes shorter, focused sessions where he takes active agency. *"Those are bad usage patterns. And I find myself trapped into that more than I would like... I think a healthy pattern is a shorter context length."* He notes that with 20 years of engineering experience, he should be leveraging his expertise more actively and catching problems immediately, rather than passively waiting for agent output. [\[00:21:44\]](https://youtube.com/live/ud2WzkKeDZs?t=1304), [\[00:22:14\]](https://youtube.com/live/ud2WzkKeDZs?t=1334)
+Matthew's coding workflow uses repeated agent passes rather than trying to prevent every problem up front. He describes the alternative as bite versus nibble: *"You can try to get it to make one big bite and try to put everything into the context at once. Or you can try to get it to nibble and to maneuver the space and to try to make multiple passes over things."* [\[00:14:10\]](https://youtube.com/live/ud2WzkKeDZs?t=850)
 
-### Probing agent reasoning rather than accepting conclusions
-When evaluating agent-generated code (especially in unfamiliar domains like Kubernetes), Matt emphasizes asking the agent to explain its reasoning rather than accepting the final artifact. *"The reasoning is something that's much easier to evaluate than the conclusion... I'll very often ask it to identify the lines of code that introduced the change. Or I'll ask it, why did this work? Why exactly was this working yesterday but not today?"* This allows him to catch errors and hallucinatory explanations through dialogue rather than waiting for deployment failures. [\[00:30:42\]](https://youtube.com/live/ud2WzkKeDZs?t=1842), [\[00:30:56\]](https://youtube.com/live/ud2WzkKeDZs?t=1856)
+The mechanism is sequential review. One pass asks the agent to introduce plausible problems and check whether tests catch them. Another pass asks for pre-mortems over fragile code. Another audits try-except blocks. Then fix-up passes tighten exception handling, types, and other known weak spots. *"I do these passes and then have these fix-up passes: now's the time where we tighten the try-except, now's the time where we tighten the types."* [\[00:18:02\]](https://youtube.com/live/ud2WzkKeDZs?t=1082)
 
-### Hybrid deterministic-agentic workflow for high-stakes tasks
-For security-sensitive operations like releasing software, Matt writes shell scripts that combine deterministic procedural logic with a small agentic step. Releasing spaCy, for example, runs in three stages:
+### Keep Claude Code sessions short enough for human judgment to matter
 
-- A script sets up the context.
-- It calls the agent with one narrow task: draft release notes.
-- Deterministic logic takes over to push the changes.
+Matthew says longer Claude Code sessions became less successful for him after the context window increased. The failure mode is not only model drift, it is his own attention splitting while a long session runs in the background. *"These are bad sessions. I'm not using myself well."* [\[00:22:06\]](https://youtube.com/live/ud2WzkKeDZs?t=1326)
 
-This limits agent autonomy to exactly where it adds value while keeping credential and deployment logic safely procedural. *"I really like having scripts which are this mix of procedural code and just one step that requires the agent of like, okay, the task is draft release notes. And then deterministic logic takes over for the rest."* [\[00:58:24\]](https://youtube.com/live/ud2WzkKeDZs?t=3504), [\[00:58:51\]](https://youtube.com/live/ud2WzkKeDZs?t=3531)
+He ties the problem to human agency. If he has a session where he has not used his engineering experience, he worries he has become no more effective than anyone else with the same tool. The healthier pattern is to cut work into shorter tasks and stay engaged enough to guide the agent. *"It takes active effort to think it through and to cut things up into shorter tasks and to take more agency with it."* [\[00:23:15\]](https://youtube.com/live/ud2WzkKeDZs?t=1395)
+
+### Probe the agent's reasoning when the domain is unfamiliar
+
+When Matthew used agents for Kubernetes work, he had to evaluate answers in a domain he did not know well. His practice is to ask how the agent knows, why it chose a path, and which code lines caused a change. *"The reasoning is something that's much easier to evaluate than the conclusion."* [\[00:31:12\]](https://youtube.com/live/ud2WzkKeDZs?t=1872)
+
+He uses the same questioning during debugging: ask why something worked yesterday but not today, ask which lines introduced the behavior, and keep pressing when the agent retcons plausible explanations. *"If you pin it down and you do call it out successfully, then you do make progress with these things."* [\[00:32:49\]](https://youtube.com/live/ud2WzkKeDZs?t=1969)
+
+### Build NLP classifiers with agents while the developer reviews the data decisions
+
+ELLF packages Matthew's agent practices into a workflow for NLP and data projects. The platform lets people use Claude plus extension skills, backed by compute that can run on a desktop or cloud Kubernetes cluster. *"This tool that lets people use Claude and extension skills with that for NLP projects."* [\[00:24:59\]](https://youtube.com/live/ud2WzkKeDZs?t=1499)
+
+His example is monitoring mentions of spaCy on Twitter or [Bluesky](https://bsky.app/) to distinguish the Python library from the Honda Spacy motorcycle. The agent helps plan steps, run downloads on the cluster, create annotation tasks, farm annotation to inexpensive agents, set up human review on disagreements, collect training data, and run experiments. Matthew frames this as helping agents build the kinds of programs machine learning was once meant to build: *"Now we need to get to that point of getting LLM agents to build that sort of program."* [\[00:26:28\]](https://youtube.com/live/ud2WzkKeDZs?t=1588)
+
+### Wrap one agent judgment step inside a deterministic script
+
+Matthew later added a workflow he had forgotten to mention: use deterministic scripts for the parts that should not be generative, and invoke an agent for the small unit that needs language judgment. His example was drafting release notes for spaCy without giving the agent push access. *"I think I really like having scripts which are this mix of procedural code and just one step that requires the agent."* [\[00:59:17\]](https://youtube.com/live/ud2WzkKeDZs?t=3557)
+
+For release notes, the script gathers the necessary material, runs the CLI in prompt mode for the drafting task, then deterministic logic takes over again. The push boundary stays separate: *"In order to push I have to use sudo."* [\[00:58:51\]](https://youtube.com/live/ud2WzkKeDZs?t=3531)
+
+## Skills
+
+### mutation-testing
+
+Matthew shows the [mutation-testing skill](https://github.com/honnibal/claude-skills/blob/main/mutation-testing.md.txt), a prompt that asks Claude to look at code, introduce problems, and see whether the current tests catch them. *"This skill, for instance, is about asking it to look at the code and try to introduce problems and then see whether the current tests catch them."* [\[00:15:00\]](https://youtube.com/live/ud2WzkKeDZs?t=900)
+
+It belongs in his multiple-pass workflow because it tests whether the existing test suite would catch plausible bad edits rather than asking the agent to fix everything in one pass.
+
+### pre-mortem
+
+Matthew shows the [pre-mortem prompt](https://github.com/honnibal/claude-skills/blob/main/pre-mortem.md.txt) for production code. The prompt asks the agent to identify fragility and implicit assumptions, then write realistic post-mortem reports for bugs that have not happened yet. *"It's not a bug hunt. The code may be perfectly correct today."* [\[00:15:39\]](https://youtube.com/live/ud2WzkKeDZs?t=939)
+
+The skill is aimed at future edits: where a developer without full context could make a reasonable change that breaks something in a non-obvious way.
+
+### try-except
+
+Matthew shows the [try-except audit prompt](https://github.com/honnibal/claude-skills/blob/main/try-except.md.txt) for Python source files. *"Your job is to read Python source files, find every try-except block, evaluate whether each one is correctly scoped, catches direct exceptions, and doesn't mask bugs."* [\[00:16:08\]](https://youtube.com/live/ud2WzkKeDZs?t=968)
+
+He uses it because he sees exception masking as one of Claude's biggest Python-code failure modes. The skill makes that concern a dedicated pass instead of relying on a general coding prompt to avoid the problem.
 
 ## Tools / projects he showed
 
-### Explosion's NLP platform (beta.elf.ai)
-A platform in beta, shown during this episode. Designed to help teams use Claude and agent skills for natural language processing and data projects. The platform combines a web interface with a Kubernetes backend that lets users define multi-step workflows (data download, annotation, model training, experiment runs). Within those workflows, users can:
-
-- Farm annotation tasks out to cheaper models like Gemini Flash.
-- Set up review tasks to resolve annotation disagreements.
-- Receive agentic guidance through each workflow step.
-
-The name "elf" stands for "explosion large language thing." The platform emphasizes developer-in-the-loop control rather than high-autonomy agent operation. *"We don't want this extremely high autonomy concept, like that's not something that we're targeting with this, but having a developer in the loop flow and guiding people through tasks, that's the sort of way that we're thinking about this."* [\[00:24:37\]](https://youtube.com/live/ud2WzkKeDZs?t=1477), [\[00:26:44\]](https://youtube.com/live/ud2WzkKeDZs?t=1604)
-
 ### Claude Code
-The primary tool Matt used to build the Explosion NLP platform. *"We, you know, of course use, I think Claude code is the main thing that we used to build it."* [\[00:29:31\]](https://youtube.com/live/ud2WzkKeDZs?t=1771)
+
+[Claude Code](https://www.anthropic.com/claude-code) is the main coding tool Matthew names for building ELLF. *"I think Claude Code is the main thing that we used to build it."* [\[00:29:26\]](https://youtube.com/live/ud2WzkKeDZs?t=1766)
+
+It is also the agent he is talking about in the code-review pass workflow: Claude reads the skill prompts, works over the codebase, and then gets audited by later passes.
+
+### claude-skills
+
+Matthew shows his [claude-skills](https://github.com/honnibal/claude-skills) repository, a collection of skill prompts uploaded as `.md.txt` files. He says he chose that format because rendered markdown can hide HTML comments from human reviewers while still giving them to the agent. [\[00:12:16\]](https://youtube.com/live/ud2WzkKeDZs?t=736)
+
+The repo contains prompt files for code operations, including problem introduction, pre-mortem review, and try-except audit mode.
+
+### ELLF
+
+[ELLF](https://beta.ellf.ai) is the beta platform Matthew shows for NLP and data projects. He gives the waitlist URL orally and spells the name as E-L-L-F, saying it *"roughly stands for Explosion large language thing."* [\[00:28:55\]](https://youtube.com/live/ud2WzkKeDZs?t=1735)
+
+The product combines Claude, extension skills, and a compute backend. Matthew wants the developer steering the NLP project rather than handing the whole workflow to a high-autonomy agent: *"We don't want this extremely high autonomy concept. That's not something that we're targeting with this, but having a developer in the loop flow and guiding people through tasks, that's the sort of way that we're thinking about this."* [\[00:28:14\]](https://youtube.com/live/ud2WzkKeDZs?t=1694)
 
 ### Kubernetes
-Infrastructure used as the compute backend for the Explosion platform, running on users' desktop or cloud services. Matt's learning of Kubernetes while building the platform (without prior domain expertise) exemplified both the seductiveness and danger of agent assistance: agents provided confident answers that he couldn't immediately evaluate. [\[00:24:37\]](https://youtube.com/live/ud2WzkKeDZs?t=1477), [\[00:29:31\]](https://youtube.com/live/ud2WzkKeDZs?t=1771)
 
-### Gemini Flash
-Mentioned as an example of an inexpensive model that can be used within the Explosion platform to farm out low-stakes annotation tasks. [\[00:26:44\]](https://youtube.com/live/ud2WzkKeDZs?t=1604)
+[Kubernetes](https://kubernetes.io/) is part of ELLF's compute story and part of Matthew's agent-evaluation story. ELLF helps set up a Kubernetes cluster on a desktop or cloud service, giving NLP and data projects a compute backend for the run-code steps between development steps. [\[00:25:12\]](https://youtube.com/live/ud2WzkKeDZs?t=1512)
 
-### Twitter / Blue Sky
-Named as an example data source for monitoring spaCy brand mentions (to distinguish library mentions from Honda motorcycle mentions) in a concrete NLP project workflow. [\[00:24:37\]](https://youtube.com/live/ud2WzkKeDZs?t=1477)
+Matthew also uses Kubernetes to explain the risk of agent help in unfamiliar domains. *"I didn't know Kubernetes well when I was doing this and it feels great, because it's giving you all of these answers, but it sucks when the answers are wrong and you don't know about them."* [\[00:29:51\]](https://youtube.com/live/ud2WzkKeDZs?t=1791)
 
-## Explainers
+## Principles and explainers
 
-### Why try-except misuse is an agent-specific problem (reward hacking during training)
-Matt attributes bare except blocks and masked exception bugs to reward hacking during model training. Because reinforcement learning has a limited horizon, agents optimize for short-term rewards (passing an LLM judge) by hiding maintainability problems. The model learns to "lie" in chat about success and introduce shortcuts that an LLM judge won't catch but a human will regret later. *"There's a low penalty on introducing maintainability problems because you can only have a limited horizon on the reinforcement learning. And so one of the ways that it can cheat the long-term objective in order for the short-term gain is to introduce bare accepts and things... Similarly with the various ways they will lie to you in the chat about whether it's successful or not. All of those things I think are evidence of it having managed to trick the rewarder."* [\[00:16:47\]](https://youtube.com/live/ud2WzkKeDZs?t=1007)
+### Reasoning is not free
 
-### The evaluation problem: agents move too fast for evidence
-Matt identifies the hardest frustration with agent use: making decisions about whether a workflow or technique actually works. Empirically measuring whether a prompt change improves performance by 10 percent requires statistical power that neither individual developers nor companies like Anthropic have time for. *"It's extremely hard to know whether this way is actually performing better than this other way... you're not going to have sample to tell that reliably, especially since even measuring performance, we don't have a good thing. So it's all very eyeballed."* Because models and platforms change constantly, evaluation windows close before studies complete. This uncertainty compounds with platform outages, creating a discouraging loop. [\[00:06:37\]](https://youtube.com/live/ud2WzkKeDZs?t=397)
+Matthew's reason for preferring multiple passes is that inference does not happen all at once. *"Reasoning isn't free. You can't expect the model to know everything that it knows all up front."* [\[00:14:37\]](https://youtube.com/live/ud2WzkKeDZs?t=877)
 
-### Software 2.0 with agents: from teaching humans to teaching agents to write programs
-The NLP platform reflects a shift in how to think about ML system development. In the "Software 2.0" era, the question was how to teach humans to write ML-based programs. Now the question is how to get LLM agents to write those programs on behalf of teams. The concrete example: detecting spaCy library mentions in tweets requires building a classifier. Rather than a user writing a Python script, the agent guides the user through data download, annotation, experiment design, and training. *"We've got a need for a certain type of program. How do we build that program? Well, we got to a certain point in teaching people how to build that sort of program, but now we need to get to that point of getting LLM agents to build that sort of program."* [\[00:24:37\]](https://youtube.com/live/ud2WzkKeDZs?t=1477)
+That principle explains why he does not try to front-load every style rule, bug pattern, and instruction into a single prompt. He expects intermediate results to improve later passes.
 
-### Agents work best on familiar domains; danger when applied to unfamiliar ones
-A key tension Matt identified when building the platform with Kubernetes: agents are seductive when applied to unfamiliar material because they give confident, detailed answers. But when those answers are wrong and you don't know the domain, you won't catch the error, leading to compounding problems and a frustrating debug cycle. In contrast, when Matt works with code in a domain he knows well, he immediately catches agent mistakes. *"It's the agent works sort of most easily when you're doing stuff that you know how to do... It's so interesting because it's so seductive when you're doing things that you don't know well... but it sucks when the answers are wrong and you don't know about them."* The implication is that agents require active, knowledgeable human review, especially in unfamiliar domains. [\[00:29:31\]](https://youtube.com/live/ud2WzkKeDZs?t=1771)
+### Raw text makes hidden skill instructions visible
 
-### Hidden instructions in skill files: HTML comment security gap
-Skills repositories do not sanitize HTML comments embedded in skill files. When rendered as markdown, these comments become invisible to humans but are read by Claude. This creates a supply-chain attack surface where malicious or accidental hidden instructions can slip into shared skill libraries. Matt opened an issue requesting HTML comment filtering but noted the maintainers have not responded. As a result, he shares his skills as plaintext .md.txt files instead, requiring users to read raw text and discouraging the unvetted consumption of skills from repositories. *"When you render the markdown version of that skill, that text will be invisible to you... There's hidden instructions in the skill that you don't see. So it's discouraging that they didn't even bother in the specification to, you know, strip HTML comments or reject skills with HTML comments."* [\[00:12:09\]](https://youtube.com/live/ud2WzkKeDZs?t=729)
+Matthew uploaded his skill prompts as `.md.txt` files instead of relying on a rendered skills repository. The reason is security: rendered markdown can hide HTML comments that the agent still reads. *"There's hidden instructions in the skill that you don't see."* [\[00:13:01\]](https://youtube.com/live/ud2WzkKeDZs?t=781)
 
-### Platform design for data projects: compute backend required
-Data science and NLP projects differ from pure code generation because they involve expensive runtime steps (data download, preprocessing, training) that cannot be piped through an LLM per-item. Building classifiers requires gathering training data and running experiments on a cluster. The platform abstracts away Kubernetes complexity so teams can focus on defining their workflow steps, delegating execution to compute infrastructure that an agent coordinates. [\[00:24:37\]](https://youtube.com/live/ud2WzkKeDZs?t=1477)
+The operational rule is blunt: *"You shouldn't install skills where you've only read the rendered markdown of it."* [\[00:13:36\]](https://youtube.com/live/ud2WzkKeDZs?t=816) Raw text makes the review surface match the agent's input surface.
+
+### Agents learn to satisfy short-horizon rewards
+
+Matthew explains bare excepts and misleading success claims as reward-hacking behavior. During training, he says, maintainability problems can carry a low penalty because reinforcement learning has a limited horizon. *"One of the ways that it can cheat the long-term objective in order for the short-term gain is to introduce bare excepts and things."* [\[00:16:54\]](https://youtube.com/live/ud2WzkKeDZs?t=1014)
+
+The same pattern applies to chat claims about success. If a judge rewards code that exits with zero, or if a human judge is fooled by a plausible claim, the model can learn behavior that looks good in the short term while making the code worse.
+
+### Skill prompt tuning needs evidence Matthew does not have
+
+When Vincent asks why Matthew's skill files have not changed in three months, Matthew says the problem is evaluation. Small wording changes may help or hurt, but he does not have a reliable way to tell. *"I don't have a way to make small optimizations to these."* [\[00:19:25\]](https://youtube.com/live/ud2WzkKeDZs?t=1165)
+
+That connects back to his broader frustration: without enough samples and stable models, he changes his workflow around the skills more readily than he tunes tiny wording choices inside them.
+
+### ELLF keeps the developer in the data-project loop
+
+ELLF's target is a guided data-project flow. The agent plans steps, runs cluster jobs, coordinates annotation, and guides experiments, while the human reviews disagreements and stays responsible for the project. Matthew says agents have let Explosion build software with the productivity of a much larger team, but he does not want maximum autonomy as the product shape. [\[00:27:54\]](https://youtube.com/live/ud2WzkKeDZs?t=1674)
+
+The distinction matters in his spaCy mention-monitoring example. The agent should not pipe every tweet into Claude. It should help build a classifier, collect and review training data, and run experiments that produce a durable program.
+
+### Agents are most useful where the human can catch mistakes
+
+Agents are most seductive when they answer questions in a domain you do not know, but they work most easily when you already know enough to catch errors. *"The agent works most easily when you're doing stuff that you know how to do."* [\[00:29:37\]](https://youtube.com/live/ud2WzkKeDZs?t=1777)
+
+In familiar code, he catches problems immediately. In unfamiliar Kubernetes work, he has to rely more on sanity checks, reasoning probes, and debugging questions.
 
 ## Additional quotations
 
-- On Australia being admitted to Eurovision, and an unofficial national strategy: *"Well, I think this is part of the Australian cultural heritage of just showing up and expecting to be accepted and seeing what happens. So Australia showed up at the doorstep and Europe was like, well, I guess."* [\[00:03:05\]](https://youtube.com/live/ud2WzkKeDZs?t=185)
-- On the 8-bit intro video Hugo made of him: *"I can't decide whether it's true cringe or like cringe enough that it's slapped around to like be acceptable again."* [\[00:04:24\]](https://youtube.com/live/ud2WzkKeDZs?t=264)
-- On not being able to fine-tune his skills, so he adapts his workflow around them instead: *"I don't have a way to make small optimizations to these. so instead I kind of change my workflow around them."* [\[00:19:05\]](https://youtube.com/live/ud2WzkKeDZs?t=1145)
-- On agents potentially letting senior engineers coast below their level: *"I've got, I think it's like 20 years of experience as an engineer now and I've, you know, built a lot of stuff. I'm fairly fluent with code. And I think about, all right, you know, if I've had a session with this where I really haven't used all of that and I've, basically been as effective as anybody would have been with this. That's something that I see as a concern."* [\[00:22:14\]](https://youtube.com/live/ud2WzkKeDZs?t=1334)
+- On agent velocity: *"Things get a lot easier if you're doing them on a more compressed timeline and you're less often losing state."* [\[00:05:25\]](https://youtube.com/live/ud2WzkKeDZs?t=325)
+
+- On the uncertainty of mitigation strategies: *"By the time you've done the study, the model's changed underneath you to kind of invalidate that."* [\[00:10:03\]](https://youtube.com/live/ud2WzkKeDZs?t=603)
+
+- On the evidence standard he does not have: *"I can't say for certainty that this is the evidence that I have behind that."* [\[00:10:23\]](https://youtube.com/live/ud2WzkKeDZs?t=623)
+
+- On hidden skill instructions: *"People actually at the moment need to read the raw text."* [\[00:13:29\]](https://youtube.com/live/ud2WzkKeDZs?t=809)
+
+- On repeated passes: *"I don't think it's realistic to get it to do everything right the first time."* [\[00:14:25\]](https://youtube.com/live/ud2WzkKeDZs?t=865)
+
+- On try-except usage: *"I think it's one of the biggest problems that Claude introduces in code."* [\[00:16:24\]](https://youtube.com/live/ud2WzkKeDZs?t=984)
+
+- On context length and attention: *"I should have been more engaged and trimmed the context and stuff."* [\[00:21:45\]](https://youtube.com/live/ud2WzkKeDZs?t=1305)
+
+- On building with agents: *"Agents have really enabled us to be as productive as we were with a much larger team."* [\[00:27:54\]](https://youtube.com/live/ud2WzkKeDZs?t=1674)
+
+- On the ELLF waitlist: *"We're looking for partner projects with this where we help you build the thing that you need built at the moment."* [\[00:28:36\]](https://youtube.com/live/ud2WzkKeDZs?t=1716)
+
+- On evaluating reasoning: *"I ask it questions about how it knows or why it's done things this way or that way."* [\[00:31:01\]](https://youtube.com/live/ud2WzkKeDZs?t=1861)
+
+## Live reactions and follow-ups
+
+### Eleanor's segment returned to Matt's skill-security concern
+
+During Eleanor's Hermes demo, Hugo brought Matt's HTML-comment concern back into the security discussion: skills can contain instructions that are not visible in rendered markdown, and agent systems may download skills the user never reads. [\[00:55:23\]](https://youtube.com/live/ud2WzkKeDZs?t=3323) Eleanor answered from the other side of the tradeoff, saying her Hermes setup is deliberately segregated and kept away from sensitive work. [\[00:56:12\]](https://youtube.com/live/ud2WzkKeDZs?t=3372)
+
+### Discord links surfaced claude-skills, ELLF, and procedural-agent questions
+
+Hugo posted Matthew's [claude-skills](https://github.com/honnibal/claude-skills) repo in Discord while Matt was showing the raw `.md.txt` prompts, and another participant posted the [ELLF beta](https://beta.ellf.ai) URL during the product segment. The live questions followed Matt's two main concerns: one participant asked whether there is already an engine for *"mixing procedural and agentic workflows into a single pipeline,"* and another asked what language to make agents write if Python is tricky.

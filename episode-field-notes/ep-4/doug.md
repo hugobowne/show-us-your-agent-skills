@@ -1,155 +1,204 @@
 # Doug Turnbull - Episode 4 field notes
 
-Doug Turnbull is introduced as a search specialist who has led search teams at Shopify, Reddit, and Wikipedia, authored AI-Powered Search, advised over a hundred organizations, and teaches search-heavy agent courses. His segment is an auto-research walkthrough: can an agent modify BM25-style ranking code, evaluate patches on MS MARCO, avoid overfitting, and learn useful search heuristics through a structured optimization loop?
+Doug Turnbull led search teams at [Shopify](https://www.shopify.com/), [Reddit](https://www.reddit.com/), and [Wikipedia](https://www.wikipedia.org/), wrote [*Relevant Search*](https://www.manning.com/books/relevant-search) and [*AI-Powered Search*](https://www.manning.com/books/ai-powered-search), advised more than 100 organizations, teaches [Maven courses](https://maven.com/softwaredoug/build-enterprise-agents), and works on search, retrieval, agentic search, and auto research. His Episode 4 segment turns that search background into a live agent workflow: use agents to propose ranking-code changes, let evals measure them, and keep validation data hidden so the agent cannot simply overfit the visible examples.
+
+Doug says agents are useful because he can point one at work and it will usually move the work forward: *"I can just point that at a problem and it generally solves a problem."* [\[01:20:55\]](https://youtube.com/live/XaYQFtca798?t=4855) In search optimization, that same capability needs constraints. His auto-research setup asks whether an agent can find *"a slightly better way of doing the keyword matching"* [\[01:35:52\]](https://youtube.com/live/XaYQFtca798?t=5752) on [MS MARCO](https://microsoft.github.io/msmarco/) by patching a [BM25](https://en.wikipedia.org/wiki/Okapi_BM25)-like reranker, running evals, and accepting changes only when they improve holdout validation.
+
+Doug explains the search substrate while he shows the agent loop: keyword search, vector databases, Elasticsearch-style backends, BM25, inverse document frequency, term-frequency saturation, MS MARCO, OpenCode model switching, custom patch tools, and LLM-judge feedback for agentic search. Agents try known human-corpus ideas, and Doug keeps the search engineer's work in eval design, holdout structure, and scale.
+
+<a href="https://youtube.com/live/XaYQFtca798?t=4978"><img src="images/doug-auto-research-setup.png" alt="Doug Turnbull showing his auto-research setup with reranker code, agent configuration, and live agent output" /></a>
+<sub>Doug shows the auto-research setup: reranker code, a codegen configuration, live agent output, and validation activity around a BM25-style search experiment. <a href="https://youtube.com/live/XaYQFtca798?t=4978">[01:22:58]</a></sub>
+
+Related workflow: [`auto-research-agentic-search`](../../workflows/auto-research-agentic-search/) turns Doug's BM25 demo into a reusable loop for giving an agent bounded patch tools, exposing training-query feedback, and accepting changes only when hidden validation improves.
 
 ## On working with agents
 
-### What he loves: agents do useful work with compressed human knowledge
+### What he loves: agents bring compressed human knowledge to work
 
-Doug likes agents because they usually follow instructions, do real work, and bring a broad prior over human knowledge to the problem. *"I love the fact that they mostly do what I tell them to do. They get a lot of work done and they come with an encyc they basically come with a pre-built encyclopedia of the entire of a compressed version of the entire entire human knowledge."* [\[01:20:35\]](https://youtube.com/live/XaYQFtca798?t=4835)
+Doug loves agents because they usually follow his instructions, do useful work, and bring a broad prior into a problem. *"They mostly do what I tell them to do. They get a lot of work done and they come with a pre-built encyclopedia of a compressed version of the entire human knowledge."* [\[01:20:38\]](https://youtube.com/live/XaYQFtca798?t=4838)
 
-The practical version is simple: *"I can just point that at a problem and it generally does the solves a problem."* [\[01:20:55\]](https://youtube.com/live/XaYQFtca798?t=4855)
+Auto research uses that compressed prior to try ideas the model may already know, then relies on evaluation machinery to decide whether an idea helped.
 
-### What he finds most frustrating: inconsistent autonomy
+### What he finds most frustrating: agents swing between timidity and overconfidence
 
-Doug's daily frustration is not that agents are useless. It is that they are hard to calibrate. Some days they ask permission for tiny steps, other days they become dangerously confident. *"there are some days where it's like that agent wants to beg permission to do any minor thing."* [\[01:21:12\]](https://youtube.com/live/XaYQFtca798?t=4872)
+Doug's frustration is inconsistency. Some days the agent asks permission for tiny steps, and other days it acts too confidently inside the codebase. *"It can't decide if it's very timid, it needs to walk on eggshells around me, or if it needs to go crazy and just remove and go hog wild in my code base."* [\[01:21:34\]](https://youtube.com/live/XaYQFtca798?t=4894)
 
-The opposite mode is worse: *"there are other days where it's just like completely overconfident and thinks the human is stupid and is just gonna like delete all all of my code and go crazy."* [\[01:21:24\]](https://youtube.com/live/XaYQFtca798?t=4884)
-
-His real job is keeping the agent inside the right boundary: *"okay, yes, you can do that, you're okay, but don't go farther than this line."* [\[01:21:51\]](https://youtube.com/live/XaYQFtca798?t=4911)
+His day-to-day work is steering that boundary: *"Okay, yes, you can do that, you're okay, but don't go farther than this line."* [\[01:21:51\]](https://youtube.com/live/XaYQFtca798?t=4911)
 
 ## Workflows
 
-### Auto-research a better BM25 for one dataset
+### Run auto research as an eval-gated patch loop
 
-Doug's central workflow asks whether an agent can improve a BM25-style retrieval function on a specific dataset. He is careful not to claim a universal replacement for BM25. The aim is local and eval-driven: *"could I find a basically a better retrieval function? A slightly better way of doing the keyword matching."* [\[01:35:47\]](https://youtube.com/live/XaYQFtca798?t=5747)
+Doug's main workflow asks an agent to improve a BM25-like ranking function against MS MARCO. The agent proposes code patches, runs search evals, inspects query behavior, and tries to save code changes. Doug describes the question as: *"Could I ask an agent to propose patches to this code? And given I have an eval set, can I then evaluate whether or not that change produces a higher eval score on this MS MARCO dataset?"* [\[01:34:55\]](https://youtube.com/live/XaYQFtca798?t=5695)
 
-He links the work to his [Autoresearching BM25 on MSMarco](https://softwaredoug.com/blog/2026/05/17/autoresearching-a-better-msmarco-bm25) post and the [search-experiments notebook](https://github.com/softwaredoug/search-experiments/blob/main/notebooks/codegen/codegen_minimarco.ipynb).
+Doug keeps the code-editing interface small. One tool call finds a snippet of code, finds the other end of the code, deletes that region, and replaces it with new text. *"It's not that hard if you've played around with agents and you feel comfortable building an MCP or your own tools."* [\[01:36:57\]](https://youtube.com/live/XaYQFtca798?t=5817)
 
-The loop has a few moving parts:
+The agent gets a few core actions:
 
-- **Give the agent code-editing tools, not vague permission.** Doug says the code-editing part of a coding agent is not the hard part. The tool can be a structured search-and-replace operation over code. *"You're basically designing a tool call that does a search and replace that says like find this snippet of code, go to find the another end of the code and delete all that and replace it with this new text I gave you."* [\[01:36:40\]](https://youtube.com/live/XaYQFtca798?t=5800)
-- **Separate training queries from holdout validation.** Doug's most important workflow detail is ML-shaped: let the agent inspect training queries deeply, but judge proposed changes on data it did not see. Otherwise it will overfit ranking code. *"So if you just tell Claude Code to make search better, here's some evals, that's that's what's gonna happen. So you need to actually think really carefully about the the optimization flow."* He frames the split as progressive disclosure: training data lets the agent introspect, validation data decides whether a patch survives. [\[01:38:52\]](https://youtube.com/live/XaYQFtca798?t=5932)
-- **Let the agent try patches before committing them.** Doug gives the agent a `tryout patch` tool as a sandbox. It edits a reranker function, evaluates on training queries, and receives detailed feedback. *"What happens is the agent calls this tool tryout patch. That's its like little sandbox way of evaluating things."* Only after the agent finds a change it likes does it call the apply step. [\[01:39:41\]](https://youtube.com/live/XaYQFtca798?t=5981)
-- **Accept or reject patches on holdout performance.** The apply step is gated by validation data. The system accepts or rejects the patch based on holdout performance: *"I will either accept it or reject it based on whether this change improved the whole the holdout validation or didn't improve the holdout validation."* Doug's reason is blunt: *"that helps to prevent most of the stupid overfitting that agents tend to do to ranking code."* [\[01:41:11\]](https://youtube.com/live/XaYQFtca798?t=6071)
-- **Serialize auto-research rounds.** Doug does not expect one long agent run to solve everything. Each run knows the code and tools, makes one round of changes, summarizes what changed, and produces a new reranker. Doug then starts a new round from that output: *"I take the output of that round and then I start a new round. So I I I've been just serializing these rounds."* [\[01:48:05\]](https://youtube.com/live/XaYQFtca798?t=6485)
+- `run rerank` to evaluate ranking behavior.
+- Single-query inspection with labeled top results when eval labels exist.
+- `revert` to undo changes.
+- `tryout patch` to sandbox a reranker edit.
+- `apply patch`, also named around commit semantics, to submit a candidate change.
 
-### Feed judged search results back as user feedback
+Doug lets the agent explore visible training queries, then tests candidate patches against holdout validation. *"I will either accept it or reject it based on whether this change improved the holdout validation or didn't improve the holdout validation."* [\[01:41:16\]](https://youtube.com/live/XaYQFtca798?t=6076)
 
-For agentic search, Doug finds that even a simple LLM judge can improve behavior when its judgment is returned to the agent as a user message. *"A single like naive LM judge labeling results after a single pass of that and t sending it back into the agent as a user message saying, I did I like this, I didn't like this"* can improve search more than expected. [\[01:56:13\]](https://youtube.com/live/XaYQFtca798?t=6973)
+Doug uses progressive disclosure because a naive coding-agent prompt overfits ranking code. He says students in his agentic search course often want to open Claude Code and ask it to make search better, but that tends to produce brittle query-specific behavior: *"What almost always happens with that is you get this overfit if it's this query, return this set of results."* [\[01:38:35\]](https://youtube.com/live/XaYQFtca798?t=5915)
 
-The surprising part is behavioral: *"the agent really adjusts its behavior to to to to account for that in a way it doesn't adjust its behavior from its own reasoning."* [\[01:57:02\]](https://youtube.com/live/XaYQFtca798?t=7022)
+Doug splits the data like a machine-learning problem. The agent can dig deeply into training queries and see detailed before-and-after behavior, while the validation set remains hidden until a patch is applied. *"Training data exists to let the agent really, really introspect on the behavior of those specific queries."* [\[01:39:29\]](https://youtube.com/live/XaYQFtca798?t=5969)
+
+Doug gives the agent room to work until a metric increases, then uses evals, guardrails, and process to decide what survives. He calls auto research *"an extreme example of trusting agents to go nuts and just work on a problem until some metric increases."* [\[01:45:03\]](https://youtube.com/live/XaYQFtca798?t=6303)
+
+### Run auto-research rounds serially, then branch or combine promising ideas
+
+Doug does not expect one long agent run to solve the whole ranking problem. One round runs with code, tools, and measurement, then returns a summary and a new reranker. Doug takes that output and starts another round: *"I don't expect the agent to go and do everything in one pass."* [\[01:47:43\]](https://youtube.com/live/XaYQFtca798?t=6463)
+
+He currently serializes rounds, but the live discussion points toward a more genetic workflow. *"Could you fork them somehow? Could you go in different directions? It's a very genetic aspect to it, too, of could you get the best part of different ideas to combine?"* [\[01:48:15\]](https://youtube.com/live/XaYQFtca798?t=6495)
+
+### Feed LLM-judge feedback to a search agent as a user message
+
+Doug's agentic search experiments use a search agent, search tools, and feedback from an LLM judge. He defines the setup directly: *"Agentic search loosely defined is an agent using some search tools to solve a user's search problem."* [\[01:55:24\]](https://youtube.com/live/XaYQFtca798?t=6924)
+
+After one search pass, a naive LLM judge labels whether returned products are relevant, then that judgment goes back to the agent as a user message. Doug finds the feedback surprisingly effective: *"It's oddly amazing how much that improves search."* [\[01:56:36\]](https://youtube.com/live/XaYQFtca798?t=6996)
+
+The agent adjusts more strongly to feedback delivered as a user message than to its own private reasoning. Doug asks, *"Will agents take reasoning more seriously if it comes in the form of a user message?"* [\[01:57:20\]](https://youtube.com/live/XaYQFtca798?t=7040)
 
 ## Tools / projects he showed
 
 ### OpenCode
 
-Doug uses OpenCode for his setup because he likes switching between models and trying open models. *"I use open code a lot. So open code is a coding agent."* [\[01:22:52\]](https://youtube.com/live/XaYQFtca798?t=4972)
+Doug runs the demo inside [OpenCode](https://opencode.ai/) and uses it heavily. He says, *"OpenCode is a coding agent"* [\[01:23:04\]](https://youtube.com/live/XaYQFtca798?t=4984), then explains why it fits his setup: he likes switching among model types and trying open models. [\[01:23:12\]](https://youtube.com/live/XaYQFtca798?t=4992)
 
-### Auto-research harness
+OpenCode is the visible agent harness around the auto-research session: the screen shows a task description, agent activity, and a live cost counter while Doug explains the ranking experiment.
 
-The main project Doug shows is his auto-research harness around BM25. It can expose ranking code to an agent, let it propose patches, evaluate those patches against MS MARCO, and accept or reject changes. *"that's what I have here. So I have a whole auto research setup."* [\[01:35:58\]](https://youtube.com/live/XaYQFtca798?t=5758)
+### Autoresearching BM25 on MSMarco
+
+[Autoresearching BM25 on MSMarco](https://softwaredoug.com/blog/2026/05/17/autoresearching-a-better-msmarco-bm25) is the article Doug uses for the visible ranking-code example. The search target is dataset-specific: Doug is not claiming to beat BM25 universally. He says, *"For this dataset, which almost every search team just cares about their dataset that they work with at their job, could I find a better retrieval function?"* [\[01:35:39\]](https://youtube.com/live/XaYQFtca798?t=5739)
+
+The article contains the visible reranker code and the auto-research experiment Doug is explaining. Doug uses that experiment to work through agent workflow design: *"I find auto research such an amazing place to learn about this stuff."* [\[01:42:49\]](https://youtube.com/live/XaYQFtca798?t=6169)
+
+### search-experiments repo
+
+Doug says the bulk of his [search-experiments repo](https://github.com/softwaredoug/search-experiments/blob/main/notebooks/codegen/codegen_minimarco.ipynb) is about hacking agentic search. *"That is the other side and probably the bulk of that search experiments repo is hacking agentic search."* [\[01:55:10\]](https://youtube.com/live/XaYQFtca798?t=6910)
+
+The repo puts his agentic search work beside the BM25 and auto-research ideas: agents call search tools, inspect results, receive judge feedback, and adapt their behavior.
 
 ### BM25
 
-BM25 is the retrieval baseline Doug uses as the test bed. He describes it as keyword search that scores documents by term occurrence and term importance. *"I take a query like red shoes and I need to find the item in this corpus that has the most occurrence of red, the most occurrence of shoes, weighed by what's most important"* [\[01:25:35\]](https://youtube.com/live/XaYQFtca798?t=5135)
+[BM25](https://en.wikipedia.org/wiki/Okapi_BM25) is the ranking baseline Doug uses as the code substrate. He explains it as keyword matching over terms such as `red shoes`: *"It's the optimal way that people figured out decades ago for doing keyword matching."* [\[01:26:06\]](https://youtube.com/live/XaYQFtca798?t=5166)
 
-He calls BM25 *"still a very compelling baseline"* and says it remains fast and powerful. [\[01:26:14\]](https://youtube.com/live/XaYQFtca798?t=5174)
+Doug still treats BM25 as a serious baseline because it is fast and strong. *"You can spin up a lexical index and get BM25 search working really fast."* [\[01:26:25\]](https://youtube.com/live/XaYQFtca798?t=5185)
 
 ### MS MARCO
 
-Doug uses [MS MARCO](https://microsoft.github.io/msmarco/) as the evaluation dataset. He describes it as a question-answering dataset with questions, a large passage corpus, and identifiers for the answer passages. *"all MS MARCO is, is a set of questions in a corpus of like I think it's like 10 million passages."* [\[01:31:17\]](https://youtube.com/live/XaYQFtca798?t=5477)
+[MS MARCO](https://microsoft.github.io/msmarco/) is the question-answering dataset Doug uses for the ranking experiment. He describes it as *"a set of questions"* [\[01:31:17\]](https://youtube.com/live/XaYQFtca798?t=5477) in a corpus that he estimates at roughly 10 million passages, with each question tied to an answer passage identifier.
+
+Doug uses it as both a training and evaluation substrate. *"This test set exists, which is great. It's an amazing corpus that helps us evaluate question answering systems."* [\[01:32:07\]](https://youtube.com/live/XaYQFtca798?t=5527)
 
 ### SearchArray
 
-Doug's BM25 code uses a lexical-search pandas extension he calls SearchArray. In the snippet, it handles corpus description, stemming, and arrays used in the scoring function. *"This corpus description, snowball array, this is all part of like a lexical search pandas extension that I use called search array."* [\[01:33:27\]](https://youtube.com/live/XaYQFtca798?t=5607)
+Doug's BM25 code uses [SearchArray](https://pypi.org/project/searcharray/), which he describes as *"a lexical search pandas extension that I use called search array."* [\[01:33:27\]](https://youtube.com/live/XaYQFtca798?t=5607)
 
-### Elasticsearch and vector databases
+In the shown snippet, SearchArray provides the corpus representation and term statistics around the reranker code that the agent edits.
 
-Doug frames search as a set of retrieval backends, not one winner. Traditional search engines such as Elasticsearch and vector databases such as Turbopuffer, Pinecone, Weaviate, and Qdrant all remain useful. *"there's a couple of families of those, and they're all none of them are obsolete, they're all really important."* [\[01:24:52\]](https://youtube.com/live/XaYQFtca798?t=5092)
+### Desmos
+
+Doug opens [Desmos](https://www.desmos.com/calculator) while explaining BM25 term-frequency saturation. He shows a curve he says he probably made 10 years earlier while learning the math. [\[01:29:19\]](https://youtube.com/live/XaYQFtca798?t=5359)
+
+The curve shows why raw TF-IDF is not enough: five matches of `Skywalker` are not suddenly much more relevant than four, while the zero-to-one jump matters more.
 
 ### Vespa
 
-Doug closes the auto-research section by mentioning Vespa, a search engine company that was preparing a post improving further on his BM25/MS MARCO work. *"Vespa is a well known search engine company, Vespa dot AI"* and their upcoming work improves on his result using features such as term closeness in phrases. [\[01:54:10\]](https://youtube.com/live/XaYQFtca798?t=6850)
+Doug mentions [Vespa.ai](https://vespa.ai/) near the end as a search engine company with a forthcoming post that improves further on his BM25 work. *"They have a blog article coming out that improves further on what I did using some of their own features and auto-researching some of the cool things you can do."* [\[01:54:20\]](https://youtube.com/live/XaYQFtca798?t=6860)
 
-### Building AI Agents for the Enterprise
+He points to proximity-style features, such as how close matching terms are in a passage or phrase, as examples of search features that can be auto-researched.
 
-Hugo links Doug's course, [Building AI agents for the enterprise](https://maven.com/softwaredoug/build-enterprise-agents), in Discord during the episode. The segment itself makes the course theme obvious: agents grounded in search, retrieval, evals, and enterprise knowledge bases.
+## Principles and explainers
 
-## Explainers
+### Retrieval systems come in multiple families
 
-### Retrieval systems are like databases
+Doug explains search systems by analogy to databases. Different backends serve different retrieval needs, and none of the major families are obsolete. *"We have these different backends, these different ways of retrieving information from potentially petabytes of information out there."* [\[01:24:41\]](https://youtube.com/live/XaYQFtca798?t=5081)
 
-Doug explains retrieval backends by analogy to databases. Redis is good at key-value storage, Postgres is good at joins, and search systems have similar families. The point is to stop treating vector search as the only serious retrieval story. *"we have these these different backends, these different ways of retrieving information from potentially petabytes of information out there."* [\[01:24:41\]](https://youtube.com/live/XaYQFtca798?t=5081)
+He names keyword search, [Elasticsearch](https://www.elastic.co/elasticsearch)-style search engines, vector databases, embeddings, and RAG-era vector search as retrieval families that still matter.
 
-### BM25 still matters because embeddings are trained artifacts
+### BM25 is a fast lexical baseline because it makes fewer training assumptions
 
-Doug pushes back on vector-only thinking. Embedding models are trained artifacts, so you need to know their training data and task bias. BM25 is a cruder baseline, but it has fewer hidden assumptions. *"Those are always trained. You have to know what data they're trained on. You have to understand that they're optimized for a specific task. BM25, you don't have to assume that at all. It just kinda works."* [\[01:27:38\]](https://youtube.com/live/XaYQFtca798?t=5258)
+Doug contrasts BM25 with embedding models. Embeddings are trained artifacts, and users need to know what data and task shaped them. BM25 is not trained in the same way: *"BM25, you don't have to assume that at all. It just works."* [\[01:27:39\]](https://youtube.com/live/XaYQFtca798?t=5259)
 
-### BM25 is TF-IDF plus saturation and document frequency
+He explains BM25 as a TF-IDF-like method that scores matches by term frequency and document frequency. That makes it a fast, strong lexical baseline for search work.
 
-Doug gives a compact BM25 explanation: score matches by term frequency, weight rarer terms more heavily, and saturate the value of repeated matches. *"What BM25 basically figured out was like the the importance like more having more matches occur in a document saturates."* [\[01:29:58\]](https://youtube.com/live/XaYQFtca798?t=5398)
+### Inverse document frequency captures term specificity
 
-His example is Luke Skywalker: "Skywalker" is more specific than "Luke" because it appears in fewer documents. That inverse document frequency is what makes the term more useful for intent.
+Doug uses `Luke Skywalker` to explain document frequency. `Skywalker` appears mainly in Star Wars contexts, while `Luke` appears across many contexts. *"Skywalker is way more specific to the user's intent."* [\[01:28:27\]](https://youtube.com/live/XaYQFtca798?t=5307)
 
-### Agents need ML-style process, not just a metric
+That specificity becomes inverse document frequency: terms that occur in fewer documents carry more ranking weight because they reveal more about what the user meant.
 
-Doug's auto-research lesson is that agent freedom only works when the process is designed. If you let an agent see evals and optimize directly, it overfits. Training, validation, holdout data, and patch gates are the boring machinery that makes the agent useful. *"all the gotchas are really about process. They're not necessarily about they're not necessarily about like some s the the idea that the agent had."* [\[01:45:38\]](https://youtube.com/live/XaYQFtca798?t=6338)
+### Term frequency should saturate
 
-### Auto-research mostly tries known human ideas faster
+Doug uses a Desmos curve to explain why raw term counts are not enough. BM25's term-frequency insight is saturation: a document does not become dramatically more relevant because it has a fifth match instead of a fourth. *"That zero to one step change is actually what's really important."* [\[01:30:15\]](https://youtube.com/live/XaYQFtca798?t=5415)
 
-Doug is not selling auto-research as magic theorem proving. In his BM25 run, the useful ideas were familiar search tactics: remove stop words and add phrase or bigram boosts. *"for 99.9999. Percent of the work that we're doing, what it's really doing is it's these are like somewhat obvious things that it that probably are in its training data."* [\[01:43:07\]](https://youtube.com/live/XaYQFtca798?t=6187)
+People found useful search heuristics by trying them against open datasets, and Doug now lets agents try similar corpus-grounded ideas under eval constraints.
 
-The value is trying the existing human corpus of ideas quickly against your actual metric, not expecting the agent to invent a universal search breakthrough.
+### Agents can rediscover obvious search ideas that still score better
 
-### Agentic memory is another search problem
+Doug's auto-research agent found stop-word removal and a small bigram boost. He does not present those as magical discoveries. *"Removing stop words from question answering is a very common thing to do in lexical search, and probably also doing little phrase or bigram boosts."* [\[01:43:28\]](https://youtube.com/live/XaYQFtca798?t=6208)
 
-When John asks about giving auto-research a knowledge base or lab journal, Doug says he has tried giving agents search over logs and traces from past runs, but it has not yet had dramatic impact. *"I did experiment with like giving it a search tool over the logs and traces of the past agentic runs."* [\[01:49:23\]](https://youtube.com/live/XaYQFtca798?t=6563)
+Doug asks whether an optimization loop can try ideas from the existing human corpus rather than waiting for a breakthrough: *"Could I set up an optimization process that is more or less trying ideas that are in some ways existing?"* [\[01:43:39\]](https://youtube.com/live/XaYQFtca798?t=6219)
 
-His conclusion is unsentimental: *"I think this gets to why agentic memory is like why grep probably isn't great agentic memory finder. And why people are building actual agentic memory architectures."* [\[01:49:41\]](https://youtube.com/live/XaYQFtca798?t=6581)
+### Auto research forces process, evals, and guardrails
 
-### Agent plus grep is a real baseline
+Doug says auto research forced him to think about the full process. The agent idea is not the hard part by itself. *"All the gotchas are really about process. They're not necessarily about the idea that the agent had."* [\[01:45:38\]](https://youtube.com/live/XaYQFtca798?t=6338)
 
-Doug does not dismiss simple tools. On relatively small datasets, an agent with grep can match or slightly beat BM25 alone in his benchmarking. *"if you have an agent and grep, it will perform at or slightly better than if you were to just use BM twenty five directly with no agent."* [\[01:58:08\]](https://youtube.com/live/XaYQFtca798?t=7088)
+That process includes choosing training examples, deciding what the agent can inspect, preserving holdout validation, and making acceptance depend on an eval rather than the agent's confidence.
 
-He puts a rough scale on that claim: *"the general threshold is a hundred thousand documents or less."* [\[01:58:27\]](https://youtube.com/live/XaYQFtca798?t=7107)
+### Memory is another search problem
+
+When the discussion turns to memory, Doug makes the search connection explicit: *"It's yet another search problem."* [\[01:50:24\]](https://youtube.com/live/XaYQFtca798?t=6624)
+
+His own logs-and-traces experiment did not solve memory. He still has to decide what to store, how to retrieve it, and how to feed it back into the next run.
+
+Doug has tried giving the auto-research agent search over logs and traces from previous runs. The experiment has not yet produced dramatic results. *"I did experiment with giving it a search tool over the logs and traces of the past agentic runs."* [\[01:49:23\]](https://youtube.com/live/XaYQFtca798?t=6563)
+
+He does not think raw grep is enough for durable agent memory. Doug says *"grep probably isn't great"* [\[01:49:41\]](https://youtube.com/live/XaYQFtca798?t=6581) as an agentic memory finder, which is why people are building actual agentic memory architectures.
+
+### Grep plus an agent can be competitive on small corpora
+
+Doug has benchmarked agents with grep against BM25. On relatively small datasets, he says the pairing can work surprisingly well: *"If you have an agent and grep, it will perform at or slightly better than if you were to just use BM25 directly with no agent."* [\[01:58:14\]](https://youtube.com/live/XaYQFtca798?t=7094)
+
+He adds the scale limit: around 100,000 documents or fewer, he is not worried that everyone will simply grep everything. Grep becomes more appealing when an agent is already in the loop and can use it cheaply. [\[01:58:31\]](https://youtube.com/live/XaYQFtca798?t=7111)
 
 ## Additional quotations
 
-- On his search obsession: *"I'm still in that labyrinth trying to find my way out."* [\[01:19:47\]](https://youtube.com/live/XaYQFtca798?t=4787)
-- On OpenCode: *"I just like being able to switch between different kinds of models and play around with some of the open models and that kind of thing."* [\[01:23:12\]](https://youtube.com/live/XaYQFtca798?t=4992)
-- On BM25 speed: *"It's very fast. Like you can spin up a lexical index and get BM twenty five search working really fast."* [\[01:26:20\]](https://youtube.com/live/XaYQFtca798?t=5180)
-- On search heuristics: *"there are insights like this that have come out through honestly, people dorking around with heuristics against open data sets."* [\[01:30:21\]](https://youtube.com/live/XaYQFtca798?t=5421)
-- On code-editing agents: *"the coding part is actually not that hard."* [\[01:36:31\]](https://youtube.com/live/XaYQFtca798?t=5791)
-- On the BM25 experiment result: *"The code is kind of a nightmare. But what it actually did that was kind of interesting"* [\[01:42:00\]](https://youtube.com/live/XaYQFtca798?t=6120)
-- On auto-research as a learning environment: *"I find auto research such an amazing place to learn about this stuff."* [\[01:42:49\]](https://youtube.com/live/XaYQFtca798?t=6169)
-- On memory: *"Yeah, totally. It's yet another search problem."* [\[01:50:24\]](https://youtube.com/live/XaYQFtca798?t=6624)
-- On agentic search: *"just adding an agent to any search is a instant ten percent boost."* [\[01:55:59\]](https://youtube.com/live/XaYQFtca798?t=6959)
-- On the meta-question: *"Will agents take take reasoning more seriously if it's like comes in the form of a user message?"* [\[01:57:13\]](https://youtube.com/live/XaYQFtca798?t=7033)
+- On still learning search: *"I was bit by the bug in 2012. I'm still in that labyrinth trying to find my way out."* [\[01:20:11\]](https://youtube.com/live/XaYQFtca798?t=4811)
+
+- On the day's demo: *"I'm going to talk about auto research and some of the fun stuff I do."* [\[01:22:04\]](https://youtube.com/live/XaYQFtca798?t=4924)
+
+- On the demo screen: *"This is what we're going to talk about today, this matrix concoction I have going on here."* [\[01:22:40\]](https://youtube.com/live/XaYQFtca798?t=4960)
+
+- On retrieval families: *"None of them are obsolete. They're all really important."* [\[01:24:52\]](https://youtube.com/live/XaYQFtca798?t=5092)
+
+- On BM25 speed: *"It's very fast."* [\[01:26:23\]](https://youtube.com/live/XaYQFtca798?t=5183)
+
+- On MS MARCO: *"It's the original chunked dataset when we talk about RAG and chunking."* [\[01:31:26\]](https://youtube.com/live/XaYQFtca798?t=5486)
+
+- On ranking-code overfit: *"You need to actually think really carefully about the optimization flow."* [\[01:38:56\]](https://youtube.com/live/XaYQFtca798?t=5936)
+
+- On the agent's sandbox tool: *"`tryout patch`: that's its little sandbox way of evaluating things."* [\[01:39:41\]](https://youtube.com/live/XaYQFtca798?t=5981)
+
+- On the first auto-research result: *"It came up with the idea of removing stop words."* [\[01:42:11\]](https://youtube.com/live/XaYQFtca798?t=6131)
+
+- On future genetic workflows: *"Could you get the best part of different ideas to combine?"* [\[01:48:30\]](https://youtube.com/live/XaYQFtca798?t=6510)
+
+- On agent memory: *"I haven't cracked that nut yet."* [\[01:50:07\]](https://youtube.com/live/XaYQFtca798?t=6607)
+
+- On agentic search feedback: *"The agent really adjusts its behavior to account for that in a way it doesn't adjust its behavior from its own reasoning."* [\[01:57:02\]](https://youtube.com/live/XaYQFtca798?t=7022)
 
 ## Live reactions and follow-ups
 
-### Discord links: blog, notebook, and course
+### Discord links: post, notebook, and agent course
 
-The Discord supplied the main links for Doug's segment:
+During Doug's segment, Hugo linked the [BM25 auto-research post](https://softwaredoug.com/blog/2026/05/17/autoresearching-a-better-msmarco-bm25), the [search-experiments notebook](https://github.com/softwaredoug/search-experiments/blob/main/notebooks/codegen/codegen_minimarco.ipynb), and the [Building AI agents for the enterprise](https://maven.com/softwaredoug/build-enterprise-agents) course he is teaching with Doug. The post and notebook point directly to the BM25 experiment Doug showed, while the course link gives the episode's search-heavy agent-course context.
 
-- [Autoresearching BM25 on MSMarco](https://softwaredoug.com/blog/2026/05/17/autoresearching-a-better-msmarco-bm25)
-- [search-experiments notebook](https://github.com/softwaredoug/search-experiments/blob/main/notebooks/codegen/codegen_minimarco.ipynb)
-- [Building AI agents for the enterprise](https://maven.com/softwaredoug/build-enterprise-agents)
-- [How to Build a General-Purpose AI Agent in 131 Lines of Python](https://www.oreilly.com/radar/how-to-build-a-general-purpose-ai-agent-in-131-lines-of-python/)
+### Discord reaction: git, markdown, and grep as memory
 
-### Discord reaction: Git, grep, and memory
-
-The chat picked up the memory/search thread and pushed on simple baselines:
-
-- *"grep+git gets relatively far for autoresearch"*
-- *"would be interesting to see <@1089660766094893126> 's second brain setup  , given how Search is an important component of it"*
-- Doug replied: *"I hadn't thought of git!"*
-- *"git + markdown + grep as a dumb memory system for your autoresearch approacges"*
-- Doug replied: *"Absolutely"*
-
-### Hugo's follow-up: verification before scope
-
-Hugo's question after the demo sharpens the central lesson. Auto-research gives agents more freedom, but the trust comes from verification. He asks how Doug thinks about *"building trust with the agent to then give it more and more scope and more and more time or space to do things and bring you back results."* [\[01:44:45\]](https://youtube.com/live/XaYQFtca798?t=6285)
-
-Doug's answer is the thesis of the segment: more autonomy means better process, not fewer constraints.
+Marius suggested *"grep+git gets relatively far for autoresearch"* and later proposed git, markdown, and grep as a memory substrate for auto research. Doug answered *"I hadn't thought of git!"* and then *"Absolutely."* The live thread added files, diffs, and grep as a possible baseline before more elaborate agent-memory systems.

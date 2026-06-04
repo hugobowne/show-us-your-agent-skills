@@ -1,139 +1,300 @@
-# Paul Iusztin — ep-3 field notes
+# Paul Iusztin - Episode 3 field notes
 
-Paul Iusztin is the author of the bestselling [LLM Engineer's Handbook](https://www.pauliusztin.ai/book), lead instructor of an Agentic AI Engineering course teaching AI engineering end to end, and creator of the [Decoding AI Magazine](https://www.decodingai.com/) on Substack. One of his stated goals is to help others escape proof of concept purgatory.
+Paul Iusztin, author of the bestselling [LLM Engineer's Handbook](https://www.pauliusztin.ai/book), lead instructor of the [Agentic AI Engineering course](https://www.pauliusztin.ai/course), creator of [Decoding AI Magazine](https://www.decodingai.com/), and builder focused on helping people escape proof-of-concept purgatory, used his Episode 3 segment to show a content and knowledge workflow rather than another coding-agent demo. He walked through a personalized second brain in [Zed](https://zed.dev/ai) and [Obsidian](https://obsidian.md/), a research skill built around a custom knowledge base, a writing pipeline that turns research into machine-readable guidelines, and a feedback loop that updates writing profiles from the difference between AI output and human edits.
 
-His segment centered on his second brain and agent-powered workflows for research and content creation. He demonstrated a customized knowledge base built on top of [Karpathy's LLM knowledge base](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f), multiple research skills, a multi-pass writing process anchored by agent-generated guidelines, and a curated reading and sourcing infrastructure using [Readwise](https://readwise.io/), [Obsidian](https://obsidian.md/), and RSS feeds.
+The segment is about making agents useful for a small publishing and AI-engineering team without letting the output drift into generic AI voice. Paul says agents let him write more code, test more ideas, and publish more, but the demo keeps returning to one constraint: agents need different amounts of freedom for different kinds of work. *"For coding, you need to be precise, but you don't need to be that precise because agents have seen a lot of code. So as long as you pin down the architectural decisions really well, they work to some extent."* [\[02:11:12\]](https://youtube.com/live/ud2WzkKeDZs?t=7872)
+
+His research and writing system gives the agent access to repositories, Obsidian notes, [Readwise](https://readwise.io/) highlights, RSS feeds, [NotebookLM](https://notebooklm.google/), writing profiles, article outlines, and [MCP](https://modelcontextprotocol.io/)-backed writing tools. Paul still decides the article's argument, order, point of view, and final edits. The agents gather, distill, plan, draft, and look for reusable correction signals.
+
+<a href="https://youtube.com/live/ud2WzkKeDZs?t=8189"><img src="images/paul-research-knowledge-base.png" alt="Paul Iusztin showing his Zed-based research knowledge base for coding agent architecture" /></a>
+<sub>Paul shows the coding-agent research wiki in Zed, with Claude Code architecture notes, topic pages, and a graph view over the knowledge base. <a href="https://youtube.com/live/ud2WzkKeDZs?t=8189">[02:16:29]</a></sub>
 
 ## On working with agents
 
-### What he loves: unlocking full potential and experimentation
+### What he loves: agents unlock small-team output
 
-Paul emphasizes velocity and the ability to finally explore ideas at scale. Working at Decoding AI (a very small team), he values that agents *"allow him for the first time in my life to write a ton of code, experiment with a ton of ideas, write a lot of articles, posts. Basically it allows me like to go on the full, to get my full potential basically, because up to this point I was just, time was a big issue for me to actually like building stuff, writing, creating content, so I never had time for all of this."* The broader freedom to automate boring tasks multiplies this effect. [\[02:09:15\]](https://youtube.com/live/ud2WzkKeDZs?t=7755)
+Paul works with a small Decoding AI team that has to experiment constantly. Agents expand what he can build and publish: *"For the first time in my life, I can write a ton of code, experiment with a ton of ideas, write a lot of articles, posts."* [\[02:09:17\]](https://youtube.com/live/ud2WzkKeDZs?t=7757)
 
-### What he finds most frustrating: balancing precision and freedom
+He frames the change as a capacity shift rather than a convenience feature. *"It allows me to get my full potential, because up to this point time was a big issue for me to actually build stuff, write, create content."* [\[02:09:28\]](https://youtube.com/live/ud2WzkKeDZs?t=7768)
 
-The core frustration centers on the tension between how prescriptive instructions must be and how much autonomy agents should receive. For coding, *"you need to be precise, but you don't need to be that precise because agents have seen a lot of code. So as long as you pin down the architectural decisions really well, they work to some extent."* For writing, the problem inverts: too much freedom introduces AI voice and filler, but too much specificity chokes the output. Finding the middle ground is exhausting, especially when waiting an hour for results only to find *"it's crap."* Additionally, he struggles with lack of control over model changes from upstream providers, which can unexpectedly break workflows. [\[02:11:12\]](https://youtube.com/live/ud2WzkKeDZs?t=7872)–[\[02:12:40\]](https://youtube.com/live/ud2WzkKeDZs?t=7960)
+The automation loop has become its own work. *"Now I spend more time on my automations than doing that myself, probably."* [\[02:10:15\]](https://youtube.com/live/ud2WzkKeDZs?t=7815)
 
-## Skills
+### What he finds most frustrating: the right amount of freedom changes by task
 
-### Research skill (core)
+Paul uses agents for content creation and coding, and the frustrating part is deciding how much structure each task needs. *"The most frustrating part is this balance between how precise you need to be and how much freedom you should give them."* [\[02:10:57\]](https://youtube.com/live/ud2WzkKeDZs?t=7857)
 
-A foundational skill that ingests new data and repositories into his knowledge base, then queries it dynamically. Paul can feed it the path to a repository and receive a side-by-side comparison with existing knowledge, a deep dive into the repo itself, plus cross-pollinated concepts and comparisons. *"And probably after, I don't know, 10, 15, 20 minutes, it depends on the repository. I will get like side by side comparison with this new harness and basically a deep dive into the repository itself plus comparisons and concepts and all of this."* [\[02:19:52\]](https://youtube.com/live/ud2WzkKeDZs?t=8392)
+Coding can tolerate more autonomy when the architecture is pinned down. Writing breaks differently: *"If you leave them too much interpretation and gaps, the LLM and AI voice immediately pops out."* [\[02:11:31\]](https://youtube.com/live/ud2WzkKeDZs?t=7891)
 
-### Obsidian ingestion skill
+The cost of a bad long-running agent task is emotional and practical. *"Hitting that sweet spot between how much input should I give it and how much they can do on their own is very frustrating, especially after you waited an hour or so to get the task done and you see that it's crap."* [\[02:11:52\]](https://youtube.com/live/ud2WzkKeDZs?t=7912)
 
-Extends his research capability by hooking into Obsidian (where his knowledge base lives), letting the research skill pull context directly from his personal notes and thought process rather than relying solely on external sources.
+### What he would trade off for control: open-source models and a custom harness
 
-### Readwise integration skill
+When Hugo describes brittle behavior in out-of-the-box tools, Paul says he has considered moving toward open-source models. *"Then you have your own harness and you know that it works."* [\[02:12:42\]](https://youtube.com/live/ud2WzkKeDZs?t=7962)
 
-Connects his Readwise archive (where he logs highlights and notes from articles, books, and videos) to his research pipeline, so the research skill can search his personal library of curated resources when building context for a project.
-
-### Notebook LM integration skill
-
-Allows him to plug external resources into [Notebook LM](https://notebooklm.google.com/) for deep research on unfamiliar topics, expanding the research process beyond his own knowledge base to cover truly novel ground.
-
-### Article guideline skill
-
-Takes his research wiki and outline, then generates a machine-readable article plan containing metadata: what the article covers, why, who it is for, the ratio of theory to practice, point of view, special instructions, and section structure. Paul emphasized this is not meant to be human-readable but *"to be machine readable like to contain all kinds of metadata that I want to put into the article."* [\[02:26:17\]](https://youtube.com/live/ud2WzkKeDZs?t=8777)
-
-### Article create skill
-
-Transforms the machine-readable article guideline into prose that matches his voice and style. It uses [MCP](https://modelcontextprotocol.io/) servers to access his profiles (domain knowledge encoded as markdown files describing his writing preferences) and produces a finished, human-readable article. [\[02:28:11\]](https://youtube.com/live/ud2WzkKeDZs?t=8891)
-
-### Article diff and improvement skill
-
-Compares the agent-generated article against his edited version, identifies what he changed and why, and produces a plan for how to update his writing profiles based on the corrections. Paul treats this as a feedback loop to keep his system aligned with his evolving preferences and the underlying model changes. *"So after every article, I apply this skill and try to find, how can I improve my work? What rules do not apply anymore or what rules apply now and I should update my profiles."* [\[02:31:15\]](https://youtube.com/live/ud2WzkKeDZs?t=9075)
+He also names the resource cost: building and hosting everything yourself takes money, time, and infrastructure. *"Claude Code and out-of-the-box systems are a lot more convenient in many ways, starting from money to time to everything you can think of."* [\[02:13:00\]](https://youtube.com/live/ud2WzkKeDZs?t=7980)
 
 ## Workflows
 
-### Coupled research and outline exploration
+### Build a personal research wiki from repositories, notes, and trusted feeds
 
-Paul conducts research and outline creation in parallel or near-parallel rather than strictly sequentially. Because his wiki is built from his own questions and thoughts, the outline emerges naturally from the research, so *"when the research is done, the outline is almost done"* or 80-90 percent complete. This reduces rework and keeps the creative momentum alive. [\[02:25:24\]](https://youtube.com/live/ud2WzkKeDZs?t=8724)
+Paul's first live workflow is a custom version of [Karpathy's LLM Knowledge Base](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) on top of his second brain. He built it from scratch because the structure needs to match his own processes: *"Personally, I think that's where the magic is, because every knowledge base should be to some extent personalized on your own processes."* [\[02:14:43\]](https://youtube.com/live/ud2WzkKeDZs?t=8083)
 
-### Quick outline sketching with explicit narrative structure
+The example topic is coding agents from scratch. Paul has been researching [Claude Code](https://www.claude.com/product/claude-code), [OpenCode](https://opencode.ai/), and [Pi](https://pi.dev/) so he can understand coding-agent architecture by reading systems directly. *"I think that the best way to do this is just to jump straight into the code. It's so much faster and so much more rewarding."* [\[02:15:35\]](https://youtube.com/live/ud2WzkKeDZs?t=8135)
 
-Paul spends about 15 minutes sketching an outline in prose, laying out the big ideas in the order he wants to teach them. He explicitly focuses on the narrative: *"the problem, the solution. Basically the core of the article, which comes from me."* The outline is mostly references to what should be brought from research, not the full prose. This keeps it fast and leaves the elaboration to the agent. [\[02:24:16\]](https://youtube.com/live/ud2WzkKeDZs?t=8656)
+The knowledge base exposes architecture, memory systems, permission systems, sandboxing, core entities, core concepts, comparisons, and question logs. *"By doing this, I can really quickly scan through the overall architecture, through the memory system, permission system, REPL sandbox, or whatever makes sense to me and I want to dive deeper."* [\[02:16:23\]](https://youtube.com/live/ud2WzkKeDZs?t=8183)
 
-### Personalized knowledge base as the foundation
+Paul runs the research skill against a repository and points it at the knowledge base. The run takes repository-specific context, adds it to the knowledge base, and produces comparisons across systems. *"After 10, 15, 20 minutes, it depends on the repository, I will get side-by-side comparison with this new harness and basically a deep dive into the repository itself, plus comparisons and concepts."* [\[02:19:49\]](https://youtube.com/live/ud2WzkKeDZs?t=8389) He uses prior questions as scaffolding for the next repository, so new code can be compared against concepts already extracted from other codebases.
 
-Rather than treating the knowledge base as a generic repository, Paul has built it coupled to his own processes and way of thinking. *"Because every knowledge base should be to some extent personalized on your own processes."* He sources from Obsidian, Readwise, RSS feeds of trusted sources, and imported repositories, so his research always grounds in his own curated context. This gives *"that special magic"* that he says is missing in many systems. [\[02:14:54\]](https://youtube.com/live/ud2WzkKeDZs?t=8094)–[\[02:36:18\]](https://youtube.com/live/ud2WzkKeDZs?t=9378)
+Paul's research workflow is not limited to code repositories. He can ingest Obsidian material because Obsidian has a CLI, and he logs what he reads into Readwise with highlights and notes. *"It has access basically to my personal thoughts."* [\[02:20:32\]](https://youtube.com/live/ud2WzkKeDZs?t=8432)
 
-### Profile-driven writing with living rules
+NotebookLM extends the workflow when he wants deep research on external resources he does not already know. *"I can just put a lot of context and have a very dynamic research process to understand topics."* [\[02:20:51\]](https://youtube.com/live/ud2WzkKeDZs?t=8451)
 
-Paul maintains a set of markdown-based writing profiles that encode his style, voice, and domain rules (shared profiles for all articles, plus article-specific profiles for unique structure or constraints). Rather than updating these manually, he uses his diff skill to identify what changed in each iteration, then applies data-driven improvements. *"I try as much as possible to find like signals in what I do to one way or another optimize my skills. It's similar to a loss function that, this is how I want to look like and this is the bot version. Do a diff between them and find what signal I can use to improve my skills instead of the model's weight."* [\[02:30:45\]](https://youtube.com/live/ud2WzkKeDZs?t=9045)
+Readwise and RSS also work as a trusted resource repository. Paul collects links from YouTube, LinkedIn, and feeds, then reads them when a project needs them. *"When I actually have a project that I need to focus on, I do that deep research and instead of looking all over the internet, which usually doesn't find good stuff, I usually treat this as a high-signal resource."* [\[02:35:20\]](https://youtube.com/live/ud2WzkKeDZs?t=9320)
 
-### Lazy but versioned skill development
+### Turn a human outline and distilled research into an article draft
 
-Paul favors "vibe coding" skills rather than hand-crafting every detail upfront. His philosophy: *"If it works, it works, if it doesn't, I try to make it work, reduce and then I kind of manually go into it and fix stuff only when things break, not when bootstrapping stuff."* He versions everything and iterates only when necessary, avoiding premature optimization. [\[02:17:11\]](https://youtube.com/live/ud2WzkKeDZs?t=8231)–[\[02:18:06\]](https://youtube.com/live/ud2WzkKeDZs?t=8286)
+Paul does not pass the whole research repository to a writing agent. He writes or sketches the article first, then asks an agent to pull only relevant ideas from the wiki. *"I ask an agent just to bring from all this wiki ideas that I actually covered into that article."* [\[02:21:35\]](https://youtube.com/live/ud2WzkKeDZs?t=8495)
 
-### Symbiosis rather than control
+The output is a smaller research packet for the piece. *"I compiled it into a very distilled version of my research relevant to what I care about."* [\[02:21:44\]](https://youtube.com/live/ud2WzkKeDZs?t=8504)
 
-Paul believes in working with LMs rather than trying to fight or fully control them. *"I personally think that you shouldn't fight LMs. You should find new ways of not like to get into some symbiosis with them, but this is just my point of view, guess."* This philosophy drives his tolerance for vibe coding and his openness to letting agents invent approaches he didn't explicitly specify. [\[02:18:40\]](https://youtube.com/live/ud2WzkKeDZs?t=8320)
+Paul starts writing by dumping his own ideas into an outline in a particular order. The outline carries the argument, teaching goal, narrative, problem, solution, and idea sequence. *"I mostly think about what I want to teach, how the ideas should be connected, the narrative of the piece, the problem, the solution, basically the core of the article, which comes from me."* [\[02:24:32\]](https://youtube.com/live/ud2WzkKeDZs?t=8672)
+
+The outline stays fast because Paul treats it as a set of references for later research retrieval. *"It takes me 15 minutes to sketch this outline if the problem itself is clear to me after I do the research, and very often I do the research and outline in parallel."* [\[02:25:09\]](https://youtube.com/live/ud2WzkKeDZs?t=8709)
+
+The article guideline create skill takes the outline and the queryable research wiki, then creates a plan for the article. Paul says the point is machine readability: *"The intent of this is not necessarily to be human-readable. It is to be machine-readable, to contain all kinds of metadata that I want to put into the article."* [\[02:26:14\]](https://youtube.com/live/ud2WzkKeDZs?t=8774)
+
+The guideline includes the what, why, and who of the article, theory-to-practice ratios, point of view, special instructions, and sections. Paul's review focus at this stage is order and completeness, not prose polish. *"My core focus at this step is just to put the right thoughts, the right ideas into the right order."* [\[02:26:49\]](https://youtube.com/live/ud2WzkKeDZs?t=8809)
+
+After the guideline exists, Paul runs an article create skill that compiles it into the human version. *"It cares a lot on how it sounds, actually to be very nice to read, to follow my voice on how I would do things."* [\[02:27:22\]](https://youtube.com/live/ud2WzkKeDZs?t=8842)
+
+The skill uses an MCP server and a local marketplace of plugins and MCP servers for writing. Paul describes the skill's role as choosing the right pieces and calling the MCP server. [\[02:27:48\]](https://youtube.com/live/ud2WzkKeDZs?t=8868)
+
+### Update writing profiles from human edits
+
+Paul keeps writing profiles as living instructions for how the final piece should look. After the agent writes an article, he keeps the original version, edits it, diffs the two, and asks an LLM to interpret the diff. *"See actually what I corrected from it, what I didn't like from the article, and then create basically a plan of attack on how I could apply those corrections to my profiles."* [\[02:31:16\]](https://youtube.com/live/ud2WzkKeDZs?t=9076)
+
+The update loop exists because models and harnesses change. Paul cannot manually keep every prompt and profile current, so he looks for signals in his own work. *"I try as much as possible to find data-driven ways to keep my system on top of it, update it as much as possible and as easy as possible."* [\[02:32:01\]](https://youtube.com/live/ud2WzkKeDZs?t=9121)
+
+His analogy is model training without touching model weights: *"It's similar to a loss function: this is how I want it to look, and this is the bad version. Do a diff between them and find what signal I can use to improve my skills instead of the model's weight."* [\[02:32:28\]](https://youtube.com/live/ud2WzkKeDZs?t=9148)
+
+## Skills
+
+### research skill
+
+Paul's core [research skill](https://github.com/hugobowne/show-us-your-agent-skills/tree/main/skills/research) ingests new data into the knowledge base and queries it. The skill includes a [`SKILL.md`](https://github.com/hugobowne/show-us-your-agent-skills/blob/main/skills/research/SKILL.md), [data contract](https://github.com/hugobowne/show-us-your-agent-skills/blob/main/skills/research/CONVENTIONS.md), [subagent briefs](https://github.com/hugobowne/show-us-your-agent-skills/tree/main/skills/research/agents), and [supporting scripts](https://github.com/hugobowne/show-us-your-agent-skills/tree/main/skills/research/scripts). He introduces it after opening the coding-agent research project: *"I have this research skill that allows me to ingest new data into the knowledge base and also query it."* [\[02:18:46\]](https://youtube.com/live/ud2WzkKeDZs?t=8326)
+
+He says the skill itself was vibe coded and then versioned. *"I was really lazy and this is vibe coded, so the skill itself is vibe coded."* [\[02:17:25\]](https://youtube.com/live/ud2WzkKeDZs?t=8245)
+
+Paul's maintenance rule is pragmatic: *"If it works, it works. If it doesn't, I try to make it work, and then I manually go in and fix stuff only when things break, not when bootstrapping."* [\[02:17:39\]](https://youtube.com/live/ud2WzkKeDZs?t=8259)
+
+### research distillation skill
+
+Paul has a skill that distills a large research repository into article-relevant context. It sits on top of the research phase and keeps the writing agent from receiving the whole wiki. *"For writing, I don't want to pass all of this into my writing agent."* [\[02:21:24\]](https://youtube.com/live/ud2WzkKeDZs?t=8484)
+
+The skill pulls ideas that match the article sketch and compiles them into a smaller research artifact for the writing pipeline.
+
+### wiki introspection skill
+
+Paul also uses a research-linked introspection skill to inspect the wiki for quality problems. *"It's an introspection skill to find errors into the wiki, for example, if some ideas are repeated or there are some clashes into ideas."* [\[02:21:54\]](https://youtube.com/live/ud2WzkKeDZs?t=8514)
+
+The same skill can extract more ideas from the research base when the existing wiki is incomplete.
+
+### render skill
+
+Paul briefly shows a render-related capability for visualizations. *"For render, to see some beautiful visualizations, which I haven't played that much with those, to be honest."* [\[02:22:12\]](https://youtube.com/live/ud2WzkKeDZs?t=8532)
+
+He does not demo the render output deeply, so it remains a supporting capability in the research environment.
+
+### article guideline create skill
+
+The article guideline create skill turns Paul's outline and research wiki into a structured article plan. *"This article guideline create skill takes my research, my wiki research, which is queryable right through the research skill."* [\[02:25:38\]](https://youtube.com/live/ud2WzkKeDZs?t=8738)
+
+The skill lets the agent dynamically query the wiki as it needs and then place the required research into the outline's order.
+
+### article create skill
+
+The article create skill compiles the machine-readable guideline into a prose draft. *"I have an article create skill which transforms this, compiles this into the human version of it."* [\[02:27:12\]](https://youtube.com/live/ud2WzkKeDZs?t=8832)
+
+The skill uses an MCP server and Paul's writing tools marketplace to pick the right writing resources and produce a draft in his voice.
+
+### profile update skill
+
+Paul shows a skill that compares the original agent-written article with his edited version and proposes profile updates. *"After every article, I apply this skill and try to find, how can I improve my work?"* [\[02:31:37\]](https://youtube.com/live/ud2WzkKeDZs?t=9097)
+
+It looks for rules that should be removed, rules that now apply, and profile changes that keep the system aligned with Paul's current edits.
 
 ## Tools / projects he showed
 
+### Personalized LLM knowledge base
+
+Paul's custom knowledge base is the main project in the research demo. It is modeled after Karpathy's LLM Knowledge Base and built on top of Paul's second brain. *"Everything is from scratch because it's very coupled with my way of doing things, with my processes."* [\[02:14:37\]](https://youtube.com/live/ud2WzkKeDZs?t=8077)
+
+The knowledge base stores repository research, questions, concepts, comparisons, and cross-pollinated ideas. It is personal enough to support Paul's writing later instead of producing generic internet summaries.
+
+### Zed
+
+Paul shares his screen from [Zed](https://zed.dev/ai) and says he switched a couple of weeks before the episode. *"I just switched to Zed a couple of weeks ago and I'm still figuring out how everything works."* [\[02:13:51\]](https://youtube.com/live/ud2WzkKeDZs?t=8031)
+
+Zed is where he codes and writes when he wants a snappy, minimal interface. *"Zed is mostly I use it for coding and writing."* [\[02:33:13\]](https://youtube.com/live/ud2WzkKeDZs?t=9193)
+
 ### Obsidian
 
-The core of his second brain, where he maintains notes, highlights, and thought process. The knowledge base is built within Obsidian and feeds into his research and writing workflows. Paul appreciates Obsidian for platform independence and clean visuals, especially when working across devices. [\[02:33:08\]](https://youtube.com/live/ud2WzkKeDZs?t=9188)
+[Obsidian](https://obsidian.md/) is the core of Paul's second brain and one source for the research pipeline. He can ingest from Obsidian because it has a CLI. [\[02:20:21\]](https://youtube.com/live/ud2WzkKeDZs?t=8421)
 
-### Zed editor
-
-His primary [editor](https://zed.dev/) for coding and writing. Recently switched (a couple weeks before the episode). He values Zed for its speed and snappy interface, which matters when doing almost everything agentically and wanting a minimalistic, fast tool. [\[02:14:00\]](https://youtube.com/live/ud2WzkKeDZs?t=8040)
+Paul keeps Obsidian because it works well across devices and has stronger visuals. *"Obsidian is really good if you want to use it on your phone, on your iPad, or whatever. It's more platform independent and the visuals are nicer."* [\[02:33:28\]](https://youtube.com/live/ud2WzkKeDZs?t=9208)
 
 ### Claude Code
 
-His second brain setup uses [Claude Code](https://www.anthropic.com/product/claude-code) for both research and writing. He relies on it for running his skills and workflows. [\[02:33:08\]](https://youtube.com/live/ud2WzkKeDZs?t=9188)
+Paul uses [Claude Code](https://www.claude.com/product/claude-code) in the demo and as one of the coding-agent systems he is studying. He has ingested the Claude Code repository into his knowledge base, and he also names Claude Code as the convenient out-of-the-box path compared with running open-source models yourself. [\[02:16:14\]](https://youtube.com/live/ud2WzkKeDZs?t=8174)
+
+He also uses Claude with his second-brain setup for research and writing. *"I use Claude and my second brain setup to also research a lot and then also for writing."* [\[02:14:02\]](https://youtube.com/live/ud2WzkKeDZs?t=8042)
+
+### OpenCode repository
+
+Paul has also ingested the [OpenCode](https://opencode.ai/) repository into the same coding-agent research knowledge base. [\[02:16:17\]](https://youtube.com/live/ud2WzkKeDZs?t=8177)
+
+The repository gives him another implementation to compare against Claude Code and Pi as he studies coding-agent architecture.
+
+### Pi harness
+
+Paul starts a live research run on the [Pi](https://pi.dev/) harness during the segment. *"Today I wanted to start digging into the Pi harness and how it works."* [\[02:16:53\]](https://youtube.com/live/ud2WzkKeDZs?t=8213)
+
+The run does not finish before the segment ends. Paul later says, *"I have this deep research on Pi, which is not done yet."* [\[02:36:35\]](https://youtube.com/live/ud2WzkKeDZs?t=9395)
 
 ### Readwise
 
-A service for ingesting and curating articles, books, and highlights from multiple sources. Paul uses Readwise as a high-signal repository: he aggregates interesting content as he finds it (from YouTube, LinkedIn, etc.), then when starting a project, runs a deep research query against his Readwise archive to surface already-read material rather than re-searching the web. *"And the beautiful part is that I have like my own repository here. And when I do the research, I actually have also a deep research algorithm on top of it that looks inside my readwise repository and finds all the resources that I already read."* [\[02:34:30\]](https://youtube.com/live/ud2WzkKeDZs?t=9270)
+[Readwise](https://readwise.io/) is Paul's capture layer for things he reads, highlights, and notes. *"I also log everything that I read into Readwise and do highlights and notes."* [\[02:20:32\]](https://youtube.com/live/ud2WzkKeDZs?t=8432)
 
-### Karpathy's LLM knowledge base
+He also uses it as a project-specific research source. A deep research algorithm looks inside the Readwise repository, finds archived or unread resources, and moves relevant items into the project context. [\[02:34:49\]](https://youtube.com/live/ud2WzkKeDZs?t=9289)
 
-The foundation of Paul's custom knowledge base. He built a personalized version of this system tailored to his own processes and workflows. [\[02:14:31\]](https://youtube.com/live/ud2WzkKeDZs?t=8071)
+### RSS feed repository
 
-### Notebook LM
+Paul keeps an RSS feed repository with trusted feeds and sources. *"I create a living repository of everything, of resources that I trust, and sources that I trust."* [\[02:35:45\]](https://youtube.com/live/ud2WzkKeDZs?t=9345)
 
-Google's tool for deep research on external materials that Paul is not yet familiar with. He hooks it into his research pipeline for exploring novel resources. [\[02:20:44\]](https://youtube.com/live/ud2WzkKeDZs?t=8444)
+When the research system finds something there, he treats it as a stronger source than a broad web search result.
 
-### MCP (Model Context Protocol) servers
+### NotebookLM
 
-Paul uses custom MCP servers to expose his writing profiles and other domain knowledge to his article create and article guideline skills, letting them access the rules and preferences he has encoded as markdown files. [\[02:28:11\]](https://youtube.com/live/ud2WzkKeDZs?t=8891)
+[NotebookLM](https://notebooklm.google/) is attached to Paul's research process for external resources. *"When I want to do deep research on external resources that I'm not really aware about, I can plug that into as well."* [\[02:20:44\]](https://youtube.com/live/ud2WzkKeDZs?t=8444)
 
-### RSS feed aggregation
+It acts as another context source the research phase can pull from when Paul's own notes are not enough.
 
-Paul maintains a curated collection of RSS feeds as a living repository of trusted sources. When researching, he treats content from these feeds as high-signal, so he can avoid the noise of broad web search and focus on sources he already trusts. [\[02:35:26\]](https://youtube.com/live/ud2WzkKeDZs?t=9326)
+### Writing profiles
 
-## Explainers
+Paul shows writing profiles that explain how a final piece should look. The profiles are markdown-backed domain knowledge and style knowledge for different content types. *"Here I have these shared profiles where everything is content type dependent. They're good rules on how you actually want to write in your style."* [\[02:29:09\]](https://youtube.com/live/ud2WzkKeDZs?t=8949)
 
-### Personal knowledge bases should be shaped by your own processes
+He also has article-specific profiles with instructions for article guidelines, article structure, and introductions. *"I'm super specific on how I want an article to look."* [\[02:29:51\]](https://youtube.com/live/ud2WzkKeDZs?t=8991)
 
-Paul is explicit that generic knowledge bases miss the magic. The real power comes from building a system that reflects how you already think and work. *"Because every knowledge base should be to some extent personalized on your own processes."* This means ingesting your highlights from Readwise, your notes from Obsidian, your trusted RSS feeds, and your imported code repositories, all together. The system becomes not just a reference but a reflection of your mind. [\[02:14:54\]](https://youtube.com/live/ud2WzkKeDZs?t=8094)
+### Writing plugin and MCP server marketplace
 
-### Writing should be anchored in your research, not generic internet content
+Paul maintains his own repository of plugins and MCP servers for writing. *"This repository is my own marketplace of plugins and MCP servers that I use for writing."* [\[02:28:05\]](https://youtube.com/live/ud2WzkKeDZs?t=8885)
 
-Paul contrasts two approaches: anchoring articles in a personal research wiki (derived from your own questions) versus pulling from generic static internet sources. The former produces writing that reflects your thought process; the latter produces generic, derivative content. *"Basically, then your articles will be anchored in your thought process and not in something super generic from the internet."* [\[02:23:46\]](https://youtube.com/live/ud2WzkKeDZs?t=8626)
+The article create skill uses this marketplace through an MCP server so the agent can call the right writing resources.
 
-### Separate the machine-readable planning phase from the human-readable prose phase
+### Article outline
 
-Paul deliberately splits the writing process into two stages. The first generates a machine-readable article guideline full of metadata (structure, sections, ratios, POV); the second transforms that into human prose. By making the guideline machine-readable rather than human-readable, he can encode the exact logic he wants while leaving style and voice to the second pass. This also makes the guideline easier to debug and improve iteratively. [\[02:26:17\]](https://youtube.com/live/ud2WzkKeDZs?t=8777)
+The live writing demo starts with a test outline for an article Paul is working on that day. The outline is Paul's human-authored structure for what the piece should teach and how the ideas should connect. [\[02:24:07\]](https://youtube.com/live/ud2WzkKeDZs?t=8647)
 
-### Data-driven profile improvement using diff feedback
+The outline can ignore typos and final wording because later steps handle research retrieval, structure metadata, and prose.
 
-Rather than manually tuning writing profiles, Paul uses each completed article as a training signal. He diffs his edited version against the agent version, extracts what changed, and turns that into a structured plan for updating his profiles. This treats the writing system like a machine learning model: the profiles are the parameters, each article is a data point, and the diffs are the gradients. *"It's similar to a loss function that, this is how I want to look like and this is the bot version. Do a diff between them and find what signal I can use to improve my skills instead of the model's weight."* [\[02:31:15\]](https://youtube.com/live/ud2WzkKeDZs?t=9075)
+### Machine-readable article guideline
 
-### Embracing symbiosis with LMs rather than fighting them
+The article guideline is the machine-readable plan produced from the outline and research wiki. It includes metadata, sections, point of view, theory-practice ratios, and special instructions. [\[02:26:14\]](https://youtube.com/live/ud2WzkKeDZs?t=8774)
 
-Paul argues against the instinct to lock down and control agents through increasingly restrictive prompts. Instead, he finds value in letting them explore and even invent approaches. *"I personally think that you shouldn't fight LMs. You should find new ways of not like to get into some symbiosis with them."* This mindset allows faster iteration and often produces better results, because the agent can propose solutions the human wouldn't have thought to specify. [\[02:18:40\]](https://youtube.com/live/ud2WzkKeDZs?t=8320)
+Paul uses it to separate idea order from prose quality, so the drafting step can focus on sounding like him.
+
+### Decoding AI Magazine
+
+[Decoding AI Magazine](https://www.decodingai.com/) is the publishing surface behind Paul's writing workflow. Hugo introduces it as the magazine Paul created to help builders escape proof-of-concept purgatory, and Paul then shows the research, outline, guideline, drafting, and profile-update machinery behind that content work. [\[02:07:43\]](https://youtube.com/live/ud2WzkKeDZs?t=7663)
+
+## Principles and explainers
+
+### Personal research systems should fit the builder's process
+
+Paul argues that a useful knowledge base should be personalized. The point is not only storing more files, but structuring research around the questions, comparisons, and concepts that match the builder's own workflow. *"Every knowledge base should be to some extent personalized on your own processes."* [\[02:14:52\]](https://youtube.com/live/ud2WzkKeDZs?t=8092)
+
+That principle explains why he built the knowledge base from scratch rather than treating Karpathy's knowledge-base structure as a drop-in fit.
+
+### Coding and writing need different instruction density
+
+Paul's frustration answer becomes a rule of thumb. Coding agents can fill in details when the architecture is clear because they have seen enough code. Writing agents need much tighter guidance because ambiguity produces generic AI phrasing.
+
+He describes the writing failure as empty compliance with a prompt's shape: *"You can see these phrases that have no meaning and they're just there to be there, just to comply with word count requirements that you added."* [\[02:11:39\]](https://youtube.com/live/ud2WzkKeDZs?t=7899)
+
+### Adapt the workflow to the model instead of fighting it
+
+Paul's response to brittle agent behavior is to adapt the workflow instead of treating the model as an adversary. *"You shouldn't fight LLMs. You should find new ways to get into some symbiosis with them."* [\[02:18:33\]](https://youtube.com/live/ud2WzkKeDZs?t=8313)
+
+His system reflects that stance: agents do research, distillation, plan creation, drafting, diff interpretation, and profile updates, while Paul supplies taste, article intent, and correction signals.
+
+### Research anchored in personal questions produces less generic writing
+
+Paul contrasts his wiki-backed writing workflow with dumping static internet files into a writing agent. The research base is built from his questions and thoughts, so the article starts from his understanding. *"Then your articles will be anchored in your thought process and not in something super generic from the internet."* [\[02:23:41\]](https://youtube.com/live/ud2WzkKeDZs?t=8621)
+
+That is why the research phase comes before and beside outlining, and why distillation is tied to the article sketch.
+
+### Machine-readable plans can separate content quality from prose quality
+
+Paul's guideline step deliberately avoids optimizing for reader-facing prose. It stores what belongs in the piece, why it belongs there, how theory and practice should balance, and how sections should fit together.
+
+The separation lets him judge one thing at a time. At the guideline stage, he cares about research and ordering. At the article-create stage, the agent works on voice, readability, and style.
+
+### Writing systems have to keep changing with models and harnesses
+
+Paul treats profiles as living artifacts because models and harnesses change. *"Those harnesses and LLMs on themselves are a living being and they constantly get updated."* [\[02:31:50\]](https://youtube.com/live/ud2WzkKeDZs?t=9110)
+
+He uses diffs between generated drafts and edited drafts to keep the profiles current without manually revisiting every rule after every model change.
+
+### Keep the second-brain stack simple when agents do the heavy lifting
+
+Paul answers the stack question by keeping the surface small: Obsidian plus an IDE he likes. *"You need Obsidian plus an IDE that you love and enjoy using."* [\[02:33:52\]](https://youtube.com/live/ud2WzkKeDZs?t=9232)
+
+Because he does almost everything agentically, he cares about speed and simplicity more than decorative tooling. *"The thing that I care most about is have a minimalistic interface and everything to be snappy fast."* [\[02:34:00\]](https://youtube.com/live/ud2WzkKeDZs?t=9240)
+
+### Live agent demos can go sideways
+
+Paul's two live workflows do not finish cleanly before handoff. The Pi deep research run is still running, and the writing workflow behaves unexpectedly by writing the article during the demo. Paul names the failure directly: *"Of course on the demo, it went rogue and somehow it wrote the article."* [\[02:36:44\]](https://youtube.com/live/ud2WzkKeDZs?t=9404)
+
+He closes by giving the system a current-confidence estimate rather than claiming completion. *"They're not yet there, but 80-90%, I think. I'm very bullish on this."* [\[02:37:29\]](https://youtube.com/live/ud2WzkKeDZs?t=9449)
 
 ## Additional quotations
 
-- On the specific challenge of writing with agents: *"For example, for writing and other things, always if you leave them too much interpretation and gaps, like the LLM and AI voice immediately pops out and you can see like the these phrases that have no meaning and they're just there to be there just to comply with other work count requirements that you added and so on and so forth."* [\[02:11:36\]](https://youtube.com/live/ud2WzkKeDZs?t=7896)
+- On the intro song: *"I never sang so good in my life."* [\[02:08:46\]](https://youtube.com/live/ud2WzkKeDZs?t=7726)
 
-- On the value of letting agents invent skills: *"I would never refer to myself in the third person, but it's just I asked very briefly in the chat and it invented this way to do it."* [\[02:18:40\]](https://youtube.com/live/ud2WzkKeDZs?t=8320)
+- On the segment choice: *"I just assumed that you had a few agentic coding use cases so far, so I would like to show you my content creation and knowledge workflows."* [\[02:13:17\]](https://youtube.com/live/ud2WzkKeDZs?t=7997)
 
-- On his second brain stack philosophy: *"Basically you need Obsidian plus an ID that you love and enjoy using. That is great because it's super snappy and now because I do almost everything agentively. The thing that I care most about is have like a minimalistic interface and everything to be snappy fast."* [\[02:33:08\]](https://youtube.com/live/ud2WzkKeDZs?t=9188)
+- On adapting to agents: *"We have to wire our brains a lot to adapt to this new way of building things."* [\[02:09:53\]](https://youtube.com/live/ud2WzkKeDZs?t=7793)
 
-- On the advantage of sourcing from trusted feeds: *"I usually treat this as a high signal resource. And also I have this RS feed where I have all kinds of feeds put here, where basically I create a living repository of everything, of resources that I trust."* [\[02:35:26\]](https://youtube.com/live/ud2WzkKeDZs?t=9326)
+- On automation uncertainty: *"You're not sure if you're doing more good than bad at some point."* [\[02:10:37\]](https://youtube.com/live/ud2WzkKeDZs?t=7837)
 
-- On the state of his workflows: *"Yeah, they're not yet there, but 80-90 % I think. I'm very bullish on this."* [\[02:37:23\]](https://youtube.com/live/ud2WzkKeDZs?t=9443)
+- On the coding-agent research topic: *"Now I'm deep into the rabbit hole and understanding how they work."* [\[02:15:13\]](https://youtube.com/live/ud2WzkKeDZs?t=8113)
+
+- On repository-specific research output: *"Here are cross-pollinated ideas, and here you go into that particular repository."* [\[02:20:11\]](https://youtube.com/live/ud2WzkKeDZs?t=8411)
+
+- On watching agent thought streams: *"You can learn a lot yourself on all of this. Unfortunately, when you have eight terminals running parallel, it's a bit harder."* [\[02:23:08\]](https://youtube.com/live/ud2WzkKeDZs?t=8588)
+
+- On article sketches: *"These are more like references on what then should be brought from the research."* [\[02:24:51\]](https://youtube.com/live/ud2WzkKeDZs?t=8691)
+
+- On domain-specific writing profiles: *"It's very baked into my particular domain knowledge."* [\[02:30:00\]](https://youtube.com/live/ud2WzkKeDZs?t=9000)
+
+- On profile upkeep: *"To be honest, for me, it's impossible to do that manually all the time."* [\[02:32:14\]](https://youtube.com/live/ud2WzkKeDZs?t=9134)
+
+- On the second-brain stack: *"I try to keep it as simple as possible, but sometimes it's hard with so many tools around there."* [\[02:33:01\]](https://youtube.com/live/ud2WzkKeDZs?t=9181)
+
+- On trusted feeds: *"If you find something here, good to go. Let's just move on with this."* [\[02:35:51\]](https://youtube.com/live/ud2WzkKeDZs?t=9351)
+
+- On Readwise: *"I'm not sponsored by Readwise."* [\[02:36:10\]](https://youtube.com/live/ud2WzkKeDZs?t=9370)
+
+## Live reactions and follow-ups
+
+### Discord question: Zed and the second-brain stack
+
+Suren asked whether Paul's "Z" meant Zed and whether it worked with Obsidian. Hugo replied in Discord with the [Zed AI page](https://zed.dev/ai), and another viewer described it as a text editor written in Rust. The question anticipated Paul's later stack answer: Obsidian is the durable knowledge base, while Zed is the snappy editor where he codes and writes.
+
+### Discord question: where the agent actually runs
+
+Suren also asked whether Paul's second-brain stack was "all inside Claude Code," naming Zed, Obsidian, Hermes, OpenClaude, and local-file access. Paul answered on stream with the simple version: he uses Obsidian plus an IDE he likes, Claude Code, Readwise, and trusted feeds, with the notes accessible through his local research workflow. [\[02:33:01\]](https://youtube.com/live/ud2WzkKeDZs?t=9181)
+
+### Discord reaction: thorough and cool
+
+After Paul's segment, Suren wrote, "thanks to Paul, very thorough (and cool setup)." The reaction fits the shape of the demo: the Pi research run and article run did not finish cleanly, but the audience still got a detailed look at the stack, source flow, writing profiles, and correction loop.

@@ -1,6 +1,8 @@
-# agentic-eda
+# Agentic data science
 
-A human-in-the-loop workflow for exploratory data analysis with a coding agent. The agent renders the next plot, the human picks the next question, and every claim is backed by an artifact. Captured from Eric Ma's episode 2 demo, where he ran a full protein engineering analysis this way in roughly twenty minutes.
+Eric Ma's workflow is not "ask an agent to analyze a dataset." It is a way for a scientist to stay in charge of exploratory analysis while a coding agent handles the notebook mechanics: loading data, rendering plots, wiring widgets, correcting cells, and keeping the notebook readable.
+
+The agent renders the next plot, the human picks the next question, and every claim is backed by an artifact. Captured from Eric's episode 2 demo, where he ran a full protein engineering analysis this way in roughly twenty minutes.
 
 This is Eric's workflow. The agent skill Eric uses to make it fluid (Marimo Pair) is described in [`skills/marimo-pair/`](../../skills/marimo-pair).
 
@@ -15,6 +17,15 @@ Eric splits data science work into two buckets:
 > *"Data science activities usually get split up into one of two big buckets. One is the load the data context into my head kind of activity, and then the other is I just got this routine optimization thing that I need a machine to automate... the latter is where you go Karpathy mode or auto research mode, where you just go, 'Hey, go optimize this for me in a loop and let it run for 14 hours.' But that's an extremely small fraction of what needs to be done, right?"* [\[00:24:19\]](https://youtube.com/live/l37PR-OkYKA?t=1459)
 
 Exploratory data analysis sits firmly in the first bucket. Loading context into a human head is not something you delegate. The workflow below is what Eric does instead.
+
+## why it works
+
+- The agent removes notebook friction: creating cells, wiring controls, rendering plots, and keeping the notebook readable.
+- The human keeps the scientific question: what to ask next, what would count as evidence, and what interpretation is justified.
+- Each artifact changes the next question. The heatmap leads to a correlation plot, the correlation plot leads to per-position effects, and the position plot leads to the protein structure.
+- The workflow can jump from CSVs to custom scientific interfaces in the same session, because the agent makes the JavaScript and widget layer cheap enough to use live.
+
+The goal is not to generate a dashboard. The goal is to shorten the time between "I have a question" and "I can see the evidence that changes my next question."
 
 ## principles
 
@@ -69,7 +80,7 @@ Pick a dataset you actually want to understand. Open a reactive notebook with an
 
 Eric's notebook from the episode 2 demo is vendored at [`reference/demo.py`](reference/demo.py): the finished artifact from a session of this shape, with the heatmap, scatter, line plot, and 3D structure viewer in one Marimo app. For the texture of how a session actually unfolds, every ask, every response, every correction, see Eric's [Cursor session log](https://github.com/ericmjl/2026-pydata-boston-cursor-hackathon/blob/main/demos/live-run/session-log.md) from a parallel run on the same dataset.
 
-The discovery that came out of his demo was specifically a product of this loop: by coloring the 3D structure by per-position mutational effect (a question that only got asked after the line plot raised it), it became visible that the best-performing mutations cluster outside the active site, far from the substrate.
+The discovery that came out of his demo was specifically a product of this loop. Eric did not just ask for another chart; he moved to a representation that matched the biology. By coloring the 3D structure by per-position mutational effect (a question that only got asked after the line plot raised it), it became visible that the best-performing mutations cluster outside the active site, far from the substrate.
 
 > *"are the best performing mutations happening near where the substrates are, or are they happening outside? That's an important protein engineering decision that we might want to be able to make..."* [\[00:35:18\]](https://youtube.com/live/l37PR-OkYKA?t=2118)
 

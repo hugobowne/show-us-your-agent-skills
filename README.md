@@ -100,9 +100,7 @@ Field notes: [Matthew Honnibal](episode-field-notes/ep-3/matt.md), [Eleanor Berg
 |----------|--------------|-------|-------|
 | [personal-agent-harness](workflows/personal-agent-harness) | Run a personal agent on isolated spare hardware, reachable through Discord or WhatsApp, with autonomy granted gradually. | Eleanor Berger (Jimini Health) | [00:47:50](https://youtube.com/live/ud2WzkKeDZs?t=2870) |
 
-Still to come from this episode:
-
-- **Vincent Warmerdam** showed notebooks as a shared canvas for humans and agents; his Marimo Pair skill already shipped in Episode 2 ([marimo-pair](skills/marimo-pair)).
+Vincent Warmerdam's segment uses notebooks as a shared canvas for humans and agents; his Marimo Pair skill shipped in Episode 2 ([marimo-pair](skills/marimo-pair)).
 
 ## Episode 4: Hamel Husain, Chris Fonnesbeck, Doug Turnbull
 
