@@ -114,13 +114,34 @@ Field notes: [Hamel Husain](episode-field-notes/ep-4/hamel.md), [Chris Fonnesbec
 | [plan-review-implementation-review](workflows/plan-review-implementation-review) | Ask an agent for a plan, audit it with `review plans`, implement only after the plan is clean, then audit the finished code with `review implementation`. | Chris Fonnesbeck (PyMC Labs) | [01:05:53](https://youtube.com/live/XaYQFtca798?t=3953) |
 | [auto-research-agentic-search](workflows/auto-research-agentic-search) | Let an agent experiment with search-code patches while hidden validation decides what survives. | Doug Turnbull | [01:41:07](https://youtube.com/live/XaYQFtca798?t=6067) |
 
-## Upcoming Episode 5: John Berryman, Isaac Flath, Matt Palmer
+## Episode 5: John Berryman, Isaac Flath, Matt Palmer
 
-[Register on Luma](https://luma.com/0t8kiodw)
+[Watch on YouTube](https://youtube.com/live/6zju7hyCFl0)
 
-Friday, June 19, 2026, 9:00 AM - 10:30 AM AEST (GMT+10), live on YouTube.
+Field notes: [John Berryman](episode-field-notes/ep-5/john.md), [Isaac Flath](episode-field-notes/ep-5/isaac.md), [Matt Palmer](episode-field-notes/ep-5/matt.md).
 
-Joined by John Berryman (Arcturus Labs, early engineer on GitHub Copilot, O'Reilly author), Isaac Flath (Kentro Tech, ex-Answer.AI), and Matt Palmer (Conductor, ex-Replit).
+| Skill | What it does | Guest | Watch |
+|-------|--------------|-------|-------|
+| [wikipedia-discovery](skills/wikipedia-discovery) | Opens and searches the current Wikipedia page from a page-local agent affordance, then highlights the requested passage. | John Berryman (Arcturus Labs) | [00:24:13](https://youtube.com/live/6zju7hyCFl0?t=1453) |
+| [formatting-notion-pages](skills/formatting-notion-pages) | Augments the Notion MCP with Matt's preferences for page structure, callouts, toggles, tables, and color. | Matt Palmer (Conductor) | [01:41:31](https://youtube.com/live/6zju7hyCFl0?t=6091) |
+| [project-planning](skills/project-planning) | Stub for Matt's private project-planning skill, kept as a placeholder for the authoritative version. | Matt Palmer (Conductor) | [01:38:45](https://youtube.com/live/6zju7hyCFl0?t=5925) |
+| [writing-revision](skills/writing-revision) | Routes ordinary writing and technical writing through separate references, drawing on Williams and Bizup's sentence-level clarity principles. | Matt Palmer (Conductor) | [01:43:03](https://youtube.com/live/6zju7hyCFl0?t=6183) |
+| [writing-style](skills/writing-style) | Pushes agent prose toward Zinsser-first plainness, deletion, and critique before the human adds taste. | Isaac Flath | [01:30:51](https://youtube.com/live/6zju7hyCFl0?t=5451) |
+
+| Workflow | What it does | Guest | Watch |
+|----------|--------------|-------|-------|
+| [agents-that-follow-you](workflows/agents-that-follow-you) | Move a portable agent harness with the human across apps, websites, and physical places, picking up each environment's local affordances. | John Berryman (Arcturus Labs) | [00:17:56](https://youtube.com/live/6zju7hyCFl0?t=1076) |
+| [agent-editable-video-timelines](workflows/agent-editable-video-timelines) | Edit video through a human timeline while exposing the same tracks, timestamps, transcripts, and tools to an agent. | Matt Palmer (Conductor) | [00:54:20](https://youtube.com/live/6zju7hyCFl0?t=3260) |
+| [personal-tools-that-dont-die](workflows/personal-tools-that-dont-die) | Keep personal tools alive by versioning them, running them in agent workspaces, fixing them in worktrees, and moving skills between projects. | Matt Palmer (Conductor) | [00:49:06](https://youtube.com/live/6zju7hyCFl0?t=2946) |
+| [human-editable-ai-artifacts](workflows/human-editable-ai-artifacts) | Generate rich artifacts such as HTML reports, markdown presentations, diagrams, and drafts while preserving a manual editing surface. | Isaac Flath | [01:15:10](https://youtube.com/live/6zju7hyCFl0?t=4510) |
+
+## Upcoming Episode 6: Matt Rocklin, Skylar Payne
+
+[Register on Luma](https://luma.com/znkfnbtz)
+
+Friday, July 3, 2026, 9:00 AM - 10:30 AM AEST (GMT+10), live on YouTube.
+
+Guests will include Matt Rocklin (Dask, Coiled) and Skylar Payne (Wicked Data, ex-Google, ex-LinkedIn).
 
 ## More from us
 
