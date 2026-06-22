@@ -73,6 +73,8 @@ Use clean relative paths from that nested page:
 
 Build an authored guest dossier, not a generic bio page, notes digest, or transcript dump.
 
+The hero deck must lead with what the guest actually showed, built, or made newly possible. Do not lead with biography, background, or episode chronology unless that context immediately sharpens the demo.
+
 The house structure is:
 
 - Hero: guest name, avatar chip when available, identity/topic chips, long deck paragraph, primary CTAs, and 8-bit video or one strong episode still.
@@ -112,6 +114,8 @@ Use interstitials for the lines a reader should remember:
 ```
 
 Do not stack all quotes at the bottom. Place them between narrative sections so the page has the same rhythm as the current guest dossiers.
+
+Do not use a cute or minor quote as the hero/portrait caption unless it carries the page thesis. Prefer a line that states the demo's ambition, tension, or payoff.
 
 ### Step section rules
 
