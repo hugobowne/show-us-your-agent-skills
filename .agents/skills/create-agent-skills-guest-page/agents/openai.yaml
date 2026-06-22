@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Guest Page"
+  short_description: "Build guest dossier pages."
+  default_prompt: "Use $create-agent-skills-guest-page to create a Show Us Your Agent Skills guest dossier page from field notes and guest media."
