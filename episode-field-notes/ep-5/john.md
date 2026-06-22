@@ -35,6 +35,8 @@ John's recent operating pattern starts with a small task, asks an agent to do it
 
 The maintenance burden is real. *"After it makes it a skill, I'll spend like two days trying to fix the skill so it actually works."* [\[00:14:41\]](https://youtube.com/live/6zju7hyCFl0?t=881)
 
+John makes the cost funny rather than theoretical. Once every small job becomes a candidate skill, the task list turns into its own agent-maintenance board. *"My life has become kind of like an agentic nightmare."* [\[00:14:20\]](https://youtube.com/live/6zju7hyCFl0?t=860)
+
 ### Co-produce content while keeping ownership of the outline and prose
 
 John has agentified parts of content production. He records a video, turns the transcript into an outline, guides the prose, then uses the agent to help with title, thumbnail, and social posting. *"I still own it. I want to make sure it's my prose and my outline. But we're working together."* [\[00:15:05\]](https://youtube.com/live/6zju7hyCFl0?t=905)
@@ -92,6 +94,8 @@ John frames it as the agent merging his personal context with local place contex
 ### Rook
 
 Rook is John's personal agent companion and demo project. He shows it on the right side of his screen and calls it his little buddy. *"Rook is what I'm calling it."* [\[00:16:29\]](https://youtube.com/live/6zju7hyCFl0?t=989)
+
+The demo also keeps the rough edge of personal software visible. When Hugo asks John to zoom in, John says the current client cannot do that yet. *"I made it and I don't know how to zoom with Swift."* [\[00:16:40\]](https://youtube.com/live/6zju7hyCFl0?t=1000)
 
 Rook wraps multiple agent runtimes behind one interface. *"Effectively it's a wrap around any agent runtime that you'd please."* [\[00:16:55\]](https://youtube.com/live/6zju7hyCFl0?t=1015)
 
@@ -169,6 +173,8 @@ John's Obsidian integration works locally because Obsidian has a CLI and the ski
 
 That distinction keeps the mechanism concrete: a known local app can be driven through a skill and CLI, while unknown systems need a protocol or tool bridge.
 
+John does not present that as solved product design. The security surface is still raw. *"Safety is kind of the wild west."* [\[00:20:36\]](https://youtube.com/live/6zju7hyCFl0?t=1236)
+
 ### Skill transparency is necessary but hard for users to read
 
 When Rook enters the Obsidian vault, John says the skills are visible, but he also compares the experience to end-user license agreements. *"It's all very transparent. So if you're concerned you can read the skill."* [\[00:19:10\]](https://youtube.com/live/6zju7hyCFl0?t=1150)
@@ -201,9 +207,13 @@ The moment shows a skill-making agent recovering from a missing capability durin
 
 - On life after turning tasks into skills: *"All my tasks have exploded at this point."* [\[00:14:45\]](https://youtube.com/live/6zju7hyCFl0?t=885)
 
+- On the skill-maintenance loop: *"My life has become kind of like an agentic nightmare."* [\[00:14:20\]](https://youtube.com/live/6zju7hyCFl0?t=860)
+
 - On the cost of making everything agentic: *"Everything in my life has become kind of this web of stuff. But it's very time consuming."* [\[00:15:21\]](https://youtube.com/live/6zju7hyCFl0?t=921)
 
 - On Rook's purpose: *"I made a new thing which is trying to unharness the agent. Pull it out of the agent harness."* [\[00:15:31\]](https://youtube.com/live/6zju7hyCFl0?t=931)
+
+- On Rook's live-demo rough edge: *"I made it and I don't know how to zoom with Swift."* [\[00:16:40\]](https://youtube.com/live/6zju7hyCFl0?t=1000)
 
 - On making the agent personal: *"I can very, very, very, very, very, very much make it my agent."* [\[00:17:39\]](https://youtube.com/live/6zju7hyCFl0?t=1059)
 

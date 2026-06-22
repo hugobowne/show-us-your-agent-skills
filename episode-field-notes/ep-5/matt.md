@@ -79,6 +79,8 @@ He built it because agents can call the MCP but still produce poor formatting. T
 
 Matt uses Thermonuclear code review as a Cursor skill from Eric Z and people on the Cursor team. He likes invoking it with a dramatic slash command, but he also says he read the skill and found it useful for catching code quality problems. *"It's good for making sure that you don't get spaghetti code or files that are over a thousand lines long."* [\[01:42:24\]](https://youtube.com/live/6zju7hyCFl0?t=6144)
 
+The name is part of why he remembers and uses it. *"It's kind of humorous because I like just writing slash thermonuclear code quality review in my projects."* [\[01:42:24\]](https://youtube.com/live/6zju7hyCFl0?t=6144)
+
 ### Transitions dev
 
 Matt names Transitions dev as a designer-authored skill he has read and likes. The reason he trusts it is intentionality: a designer made choices, and the skill carries those choices into the agent's design work. *"Transitions dev is another one, it's come from a designer that I've read through that's really good."* [\[01:42:46\]](https://youtube.com/live/6zju7hyCFl0?t=6166)
@@ -209,6 +211,8 @@ He sees loop engineering language as a preview of likely near-future practice. P
 
 - On MCP frustration: *"What is going on? Why is this so difficult?"* [\[00:37:38\]](https://youtube.com/live/6zju7hyCFl0?t=2258)
 
+- On MCP reliability: *"The shit just doesn't work half the time."* [\[00:37:10\]](https://youtube.com/live/6zju7hyCFl0?t=2230)
+
 - On Codex detours: *"Sometimes you're like, wow, that was genuinely interesting. Other times I come back and I'm like, what just happened here?"* [\[00:39:01\]](https://youtube.com/live/6zju7hyCFl0?t=2341)
 
 - On the demo plan: *"Really what I want to show y'all is how I go about my day to day and the types of things that I build."* [\[00:39:29\]](https://youtube.com/live/6zju7hyCFl0?t=2369)
@@ -220,6 +224,10 @@ He sees loop engineering language as a preview of likely near-future practice. P
 - On persistent personal tools: *"You can build these apps in real time as you use them."* [\[00:49:41\]](https://youtube.com/live/6zju7hyCFl0?t=2981)
 
 - On browser video editing: *"This is a full video editor."* [\[00:52:53\]](https://youtube.com/live/6zju7hyCFl0?t=3173)
+
+- On Remotion overlays and agents: *"I have a professional video editor making stuff for me, but it's really just AI and code."* [\[00:51:04\]](https://youtube.com/live/6zju7hyCFl0?t=3064)
+
+- On Thermonuclear code review: *"I like just writing slash thermonuclear code quality review in my projects."* [\[01:42:24\]](https://youtube.com/live/6zju7hyCFl0?t=6144)
 
 - On future open source models: *"What happens when open source models are as good as Frontier models today and you can get them really cheap and they're really fast?"* [\[00:56:35\]](https://youtube.com/live/6zju7hyCFl0?t=3395)
 

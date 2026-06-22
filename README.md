@@ -17,6 +17,14 @@ This repo turns each episode into browsable, forkable artifacts: markdown
 skills, workflow writeups, and tool references you can read, copy, and
 adapt to your own setup.
 
+## Upcoming Episode 6: Matt Rocklin, Skylar Payne
+
+[Register on Luma](https://luma.com/znkfnbtz)
+
+Friday, July 3, 2026, 9:00 AM - 10:30 AM AEST (GMT+10), live on YouTube.
+
+Guests will include Matt Rocklin (Dask, Coiled) and Skylar Payne (Wicked Data, ex-Google, ex-LinkedIn).
+
 ## Installation (npx skills)
 
 You can install the skills in this repo with:
@@ -124,7 +132,7 @@ Field notes: [John Berryman](episode-field-notes/ep-5/john.md), [Isaac Flath](ep
 |-------|--------------|-------|-------|
 | [wikipedia-discovery](skills/wikipedia-discovery) | Opens and searches the current Wikipedia page from a page-local agent affordance, then highlights the requested passage. | John Berryman (Arcturus Labs) | [00:24:13](https://youtube.com/live/6zju7hyCFl0?t=1453) |
 | [formatting-notion-pages](skills/formatting-notion-pages) | Augments the Notion MCP with Matt's preferences for page structure, callouts, toggles, tables, and color. | Matt Palmer (Conductor) | [01:41:31](https://youtube.com/live/6zju7hyCFl0?t=6091) |
-| [project-planning](skills/project-planning) | Stub for Matt's private project-planning skill, kept as a placeholder for the authoritative version. | Matt Palmer (Conductor) | [01:38:45](https://youtube.com/live/6zju7hyCFl0?t=5925) |
+| [project-planning](skills/project-planning) | Matt's private project-planning skill, shown as part of the portable skill library he installs where a project needs it. | Matt Palmer (Conductor) | [01:38:45](https://youtube.com/live/6zju7hyCFl0?t=5925) |
 | [writing-revision](skills/writing-revision) | Routes ordinary writing and technical writing through separate references, drawing on Williams and Bizup's sentence-level clarity principles. | Matt Palmer (Conductor) | [01:43:03](https://youtube.com/live/6zju7hyCFl0?t=6183) |
 | [writing-style](skills/writing-style) | Pushes agent prose toward Zinsser-first plainness, deletion, and critique before the human adds taste. | Isaac Flath | [01:30:51](https://youtube.com/live/6zju7hyCFl0?t=5451) |
 

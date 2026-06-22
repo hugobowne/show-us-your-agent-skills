@@ -29,6 +29,8 @@ Isaac's writing loop usually starts in markdown, then uses [Codex](https://opena
 
 The mechanism solves a practical review problem. When Isaac creates something for a presentation or something he plans to share, he often wants to manually fix labels, numbers, or text after the agent has produced the layout. *"I often want to at some point start manually fixing labels and text."* [\[01:15:23\]](https://youtube.com/live/6zju7hyCFl0?t=4523)
 
+He contrasts that with flat generated assets, where the agent can get close but leave him no handles for the finish. *"I can generate an image and then I'll just upload it as a flat image to you. And I'm like, well, now I can't move anything."* [\[01:25:52\]](https://youtube.com/live/6zju7hyCFl0?t=5152)
+
 ### Let agents generate diagrams, then make them pass visual checks
 
 Isaac uses agents for [D3](https://d3js.org/) because he wants the benefit of D3 slides without writing D3 by hand. He describes the desired visual result, lets Codex create the code, and gives feedback on what the slide should look like. *"I really don't want to write D3 code."* [\[01:17:06\]](https://youtube.com/live/6zju7hyCFl0?t=4626)
@@ -59,6 +61,8 @@ Isaac's writing style skill is personal. It encodes his preference for cuts, cla
 
 When John asks how Isaac handles taste, Isaac says he does not try to make the model produce the finished style. He wants the agent to simplify the draft enough that he can take over. *"I'm trying to get it to cut as much out as possible and be as plain as possible, because I'm gonna add the taste in."* [\[01:52:02\]](https://youtube.com/live/6zju7hyCFl0?t=6722)
 
+He names the failure mode plainly: when the model tries too hard to sound stylish, it starts producing clever-sounding phrases that do not mean much. *"The retrieval that is the harness. And I'm like, I don't even know what that means."* [\[01:52:26\]](https://youtube.com/live/6zju7hyCFl0?t=6746)
+
 ### Presentation build skill
 
 Isaac's presentation workflow includes a build skill that turns a markdown presentation into a deployable presentation. The source markdown can contain talking points, D3 diagrams, links, and code, while the built output is a single HTML file that can be published as a static site. *"There's a skill that does build step basically, and that build step turns the presentation into a presentation."* [\[01:18:19\]](https://youtube.com/live/6zju7hyCFl0?t=4699)
@@ -86,6 +90,8 @@ The skill includes simple scripts that provide constraints and report common err
 ### Marimo Pair
 
 Isaac names [Marimo Pair](https://marimo.io/blog/marimo-pair) as a shareable skill that improved through real use. He says the first attempt at using skills to run Marimo was poor, but iteration made it his favorite AI notebook workflow. *"They iterated and it got better and now it's really good. It's my favorite way of using AI in a notebook."* [\[01:49:46\]](https://youtube.com/live/6zju7hyCFl0?t=6586)
+
+He is blunt about the first version. *"It sucked. I'm not gonna lie."* [\[01:49:46\]](https://youtube.com/live/6zju7hyCFl0?t=6586)
 
 He uses it as an example of a skill that can become broadly useful because the shared task is concrete. Even then, it still took real-world iteration to handle the live environment and back-and-forth communication. *"It just takes a lot of iteration on real world use."* [\[01:50:00\]](https://youtube.com/live/6zju7hyCFl0?t=6600)
 
@@ -173,11 +179,17 @@ That rule matches the rest of his app design. Codex, skills, rendering checks, a
 
 - On editable generated assets: *"It's not always generated and created in a way where that last ten percent is seamless for me to jump in and start doing the final tweaks."* [\[01:25:52\]](https://youtube.com/live/6zju7hyCFl0?t=5152)
 
+- On flat generated assets: *"Now I can't move anything."* [\[01:25:52\]](https://youtube.com/live/6zju7hyCFl0?t=5152)
+
 - On AI writing bloat: *"You can cut a lot."* [\[01:29:48\]](https://youtube.com/live/6zju7hyCFl0?t=5388)
 
 - On popular skills: *"If you're using a skill that everyone else uses and that's where primarily your design thinking is coming from, then your designs probably aren't gonna stand out."* [\[01:35:13\]](https://youtube.com/live/6zju7hyCFl0?t=5713)
 
 - On public app complexity: *"It's like night and day difference in terms of how difficult and how much time that takes."* [\[01:48:31\]](https://youtube.com/live/6zju7hyCFl0?t=6511)
+
+- On early Marimo Pair: *"It sucked. I'm not gonna lie."* [\[01:49:46\]](https://youtube.com/live/6zju7hyCFl0?t=6586)
+
+- On AI writing trying to sound clever: *"I don't even know what that means."* [\[01:52:26\]](https://youtube.com/live/6zju7hyCFl0?t=6746)
 
 ## Live reactions and follow-ups
 
