@@ -70,6 +70,7 @@
       <div>
         <div class="crumb"><a href="../../../agent-skills#past">Show Us Your Agent Skills</a> / EP 05 / guest dossier</div>
         <div class="eyebrow">
+          <span class="mini-avatar"><img src="../../../show/avatars/isaac.png" alt=""></span>
           <span class="chip cyan">ISAAC FLATH</span>
           <span class="chip">RAW2DRAFT</span>
           <span class="chip">CODEX</span>
@@ -78,7 +79,7 @@
         </div>
         <h1>ISAAC <span>FLATH</span></h1>
         <p class="dek">
-          Isaac's demo is the 90/10 handoff: let AI get a report, slide, diagram, or draft most of the way there, then keep the last ten percent human. He built Raw2Draft so Codex can do the first pass and leave him something he can still touch. He can double-click a sentence, fix a label, point at a bad paragraph, and finish it himself.
+          Isaac built Raw2Draft as a local writing and communication workbench powered by his own skills: editable HTML reports, markdown-to-presentation builds, D3/D2/Mermaid diagram generation, visual critique, transcription, voice review, and writing-style passes all feed back into the active file. AI gets the artifact close while preserving the handles Isaac needs for taste, judgment, and the last ten percent.
         </p>
         <div class="hero-actions">
           <a class="btn cyan" href="https://www.youtube.com/watch?v=6zju7hyCFl0&t=4437s" target="_blank" rel="noopener">&#9654; WATCH SEGMENT</a>
@@ -126,7 +127,7 @@
   <section class="interstitial">
     <div class="page iq">
       <p>"I can have it create HTML, I can have it create this nice interface, but I can also manually edit it."</p>
-      <div class="cap">The generated artifact is not a dead render. Isaac can double-click text, change it, save it back to HTML, and keep moving. <a href="https://youtube.com/live/6zju7hyCFl0?t=4510" target="_blank" rel="noopener">01:15:10</a></div>
+      <div class="cap">The generated artifact still has handles. Isaac can double-click text, change it, save it back to HTML, and keep moving. <a href="https://youtube.com/live/6zju7hyCFl0?t=4510" target="_blank" rel="noopener">01:15:10</a></div>
     </div>
   </section>
 
@@ -195,7 +196,31 @@
         </figure>
         <figure class="figure">
           <a href="https://youtube.com/live/6zju7hyCFl0?t=5210" target="_blank" rel="noopener"><img src="images/writing-style-voice-review.png" alt="Isaac showing the writing-style adjacent voice review loop"></a>
-          <figcaption>The writing-style skill is not the final voice. It pushes drafts toward cuts, clarity, and a plain base Isaac can finish himself. <a href="https://youtube.com/live/6zju7hyCFl0?t=6722" target="_blank" rel="noopener">[01:52:02]</a></figcaption>
+          <figcaption>The writing-style skill pushes drafts toward cuts, clarity, and a plain base Isaac can finish himself. <a href="https://youtube.com/live/6zju7hyCFl0?t=6722" target="_blank" rel="noopener">[01:52:02]</a></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="interstitial">
+    <div class="page iq">
+      <p>"Instead of just returning a chat, it returns like a widget."</p>
+      <div class="cap">Isaac's frustration is agent-app UX: a booking flow wants a calendar button, a writing flow wants editable text, and a diagram flow wants a rendered object the human can inspect. <a href="https://youtube.com/live/6zju7hyCFl0?t=4318" target="_blank" rel="noopener">01:11:58</a></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="page">
+      <h2>PERSONAL SOFTWARE, <span>PRODUCT LATER</span></h2>
+      <div class="sub">why Raw2Draft works for Isaac before it becomes something anyone else can use</div>
+      <div class="split">
+        <div class="panel">
+          <p>Raw2Draft is powerful because it is allowed to be specific. It knows Isaac's blog folders, presentation folders, environment variables, fonts, and local habits. A blog post and a community presentation can open in the same app and reveal different affordances because the directory already tells Raw2Draft what Isaac is doing.</p>
+          <p>That same specificity is the product gap. A public version would need explicit permissions for local files and secrets, a discoverable voice-review interface, setup for transcription keys, and enough configuration to support other people's writing and publishing structures.</p>
+        </div>
+        <figure class="figure">
+          <a href="https://youtube.com/live/6zju7hyCFl0?t=6431" target="_blank" rel="noopener"><img src="images/raw2draft-local-writing-app.png" alt="Isaac showing Raw2Draft as a local writing app built around his own workflow"></a>
+          <figcaption>Raw2Draft works because it is his local workbench: idiomatic folders, local secrets, hidden controls, and skills tuned to the artifacts Isaac actually ships. <a href="https://youtube.com/live/6zju7hyCFl0?t=6431" target="_blank" rel="noopener">[01:47:11]</a></figcaption>
         </figure>
       </div>
     </div>
@@ -211,7 +236,7 @@
   <section class="sec">
     <div class="page">
       <h2>THE HANDOFF <span>KIT</span></h2>
-      <div class="sub">one workflow, one skill stub, and the local tools that keep the last pass human</div>
+      <div class="sub">one workflow, one skill, and the checks Isaac uses before taking the final pass</div>
       <div class="cards">
         <article class="card">
           <span class="tag">workflow</span>
@@ -239,9 +264,24 @@
           <p>Screenshots and diagrams go to Gemini for feedback on overlaps, clutter, and visual problems before Isaac reviews them.</p>
         </article>
         <article class="card">
+          <span class="tag">skill-shaped</span>
+          <h3><a href="https://youtube.com/live/6zju7hyCFl0?t=5451" target="_blank" rel="noopener" style="color:var(--cyan)">semantic color</a></h3>
+          <p>His diagram skill tells the agent that color should carry meaning, with small scripts checking common failures instead of relying only on prose.</p>
+        </article>
+        <article class="card">
+          <span class="tag">practice</span>
+          <h3><a href="https://youtube.com/live/6zju7hyCFl0?t=5583" target="_blank" rel="noopener" style="color:var(--cyan)">skill skepticism</a></h3>
+          <p>He reads broad public skills before trusting them, especially when they give one design recipe for invoices, landing pages, dashboards, and tools.</p>
+        </article>
+        <article class="card">
           <span class="tag">practice</span>
           <h3><a href="https://youtube.com/live/6zju7hyCFl0?t=5798" target="_blank" rel="noopener" style="color:var(--cyan)">read the prompt</a></h3>
           <p>Isaac's rule for public skills is blunt: if you are going to use a prompt or skill, read it first.</p>
+        </article>
+        <article class="card">
+          <span class="tag">shareable skill</span>
+          <h3><a href="https://marimo.io/blog/marimo-pair" target="_blank" rel="noopener" style="color:var(--cyan)">Marimo Pair</a></h3>
+          <p>A broadly useful skill took real notebook use to get good: live environment access, back-and-forth communication, and repeated iteration.</p>
         </article>
       </div>
     </div>
