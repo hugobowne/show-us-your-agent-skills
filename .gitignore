@@ -1,6 +1,7 @@
 .claude/skills/extracting-guest-proposals-from-transcript/
 .DS_Store
 .env
+.agents/
 scratch/
 local-drafts/
 __pycache__/
