@@ -131,10 +131,10 @@ Field notes: [John Berryman](episode-field-notes/ep-5/john.md), [Isaac Flath](ep
 | Skill | What it does | Guest | Watch |
 |-------|--------------|-------|-------|
 | [wikipedia-discovery](skills/wikipedia-discovery) | Opens and searches the current Wikipedia page from a page-local agent affordance, then highlights the requested passage. | John Berryman (Arcturus Labs) | [00:24:13](https://youtube.com/live/6zju7hyCFl0?t=1453) |
-| [formatting-notion-pages](skills/formatting-notion-pages) | Augments the Notion MCP with Matt's preferences for page structure, callouts, toggles, tables, and color. | Matt Palmer (Conductor) | [01:41:31](https://youtube.com/live/6zju7hyCFl0?t=6091) |
-| [project-planning](skills/project-planning) | Matt's private project-planning skill, shown as part of the portable skill library he installs where a project needs it. | Matt Palmer (Conductor) | [01:38:45](https://youtube.com/live/6zju7hyCFl0?t=5925) |
-| [writing-revision](skills/writing-revision) | Routes ordinary writing and technical writing through separate references, drawing on Williams and Bizup's sentence-level clarity principles. | Matt Palmer (Conductor) | [01:43:03](https://youtube.com/live/6zju7hyCFl0?t=6183) |
-| [writing-style](skills/writing-style) | Pushes agent prose toward Zinsser-first plainness, deletion, and critique before the human adds taste. | Isaac Flath | [01:30:51](https://youtube.com/live/6zju7hyCFl0?t=5451) |
+| [formatting-notion-pages](skills/formatting-notion-pages) | Formats Notion pages through the Notion MCP with block types, rich text, tables, callouts, colors, and API constraints. | Matt Palmer (Conductor) | [01:41:31](https://youtube.com/live/6zju7hyCFl0?t=6091) |
+| [project-planning](skills/project-planning) | Plans MVP-first software projects, researches libraries with subagents, and prefers official scaffolds, Bun, shadcn/ui, and prebuilt tools. | Matt Palmer (Conductor) | [01:38:45](https://youtube.com/live/6zju7hyCFl0?t=5925) |
+| [writing-revision](skills/writing-revision) | Revises general and technical writing through shared references for clarity, structure, reader fit, and factual preservation. | Matt Palmer (Conductor) | [01:43:03](https://youtube.com/live/6zju7hyCFl0?t=6183) |
+| [writing-style](skills/writing-style) | Cuts throat clearing, clutter, weak prose, and AI tells with Isaac's Zinsser-first style rules while keeping personality. | Isaac Flath | [01:30:51](https://youtube.com/live/6zju7hyCFl0?t=5451) |
 
 | Workflow | What it does | Guest | Watch |
 |----------|--------------|-------|-------|
@@ -143,13 +143,22 @@ Field notes: [John Berryman](episode-field-notes/ep-5/john.md), [Isaac Flath](ep
 | [personal-tools-that-dont-die](workflows/personal-tools-that-dont-die) | Keep personal tools alive by versioning them, running them in agent workspaces, fixing them in worktrees, and moving skills between projects. | Matt Palmer (Conductor) | [00:49:06](https://youtube.com/live/6zju7hyCFl0?t=2946) |
 | [human-editable-ai-artifacts](workflows/human-editable-ai-artifacts) | Generate rich artifacts such as HTML reports, markdown presentations, diagrams, and drafts while preserving a manual editing surface. | Isaac Flath | [01:15:10](https://youtube.com/live/6zju7hyCFl0?t=4510) |
 
-## Upcoming Episode 6: Matt Rocklin, Skylar Payne
+## Episode 6: Matt Rocklin, Skylar Payne
 
-[Register on Luma](https://luma.com/znkfnbtz)
+[Watch on YouTube](https://youtube.com/live/UwAGIkWFQ78)
 
-Friday, July 3, 2026, 9:00 AM - 10:30 AM AEST (GMT+10), live on YouTube.
+Field notes: [Matt Rocklin](episode-field-notes/ep-6/matt.md), [Skylar Payne](episode-field-notes/ep-6/skylar.md).
 
-Guests will include Matt Rocklin (Dask, Coiled) and Skylar Payne (Wicked Data, ex-Google, ex-LinkedIn).
+| Skill | What it does | Guest | Watch |
+|-------|--------------|-------|-------|
+| [hermes-workflows-creating](skills/hermes-workflows-creating) | Creates Hermes workflows with agent steps, human review checkpoints, artifacts, parallel work, and trigger-driven execution. | Skylar Payne (Wicked Data) | [01:04:49](https://youtube.com/live/UwAGIkWFQ78?t=3889) |
+
+| Workflow | What it does | Guest | Watch |
+|----------|--------------|-------|-------|
+| [agent-feedback-systems](workflows/agent-feedback-systems) | Plan long agent turns by defining feedback before work starts, giving agents observability, and closing with fresh-agent review. | Matt Rocklin (Dask, Coiled) | [00:22:34](https://youtube.com/live/UwAGIkWFQ78?t=1354) |
+| [company-context-agents](workflows/company-context-agents) | Give agents legal, accounting, customer, product, and engineering context so they can reason across company functions. | Matt Rocklin (Dask, Coiled) | [00:14:23](https://youtube.com/live/UwAGIkWFQ78?t=863) |
+| [personal-agent-operations](workflows/personal-agent-operations) | Run an always-on personal agent for community operations, artifacts, memory, and admin work that can continue away from the laptop. | Skylar Payne (Wicked Data) | [00:45:36](https://youtube.com/live/UwAGIkWFQ78?t=2736) |
+| [hermes-dynamic-workflows](workflows/hermes-dynamic-workflows) | Make agent procedures executable with Python workflow code, typed outputs, human `ask(...)` checkpoints, artifacts, and triggers. | Skylar Payne (Wicked Data) | [01:03:48](https://youtube.com/live/UwAGIkWFQ78?t=3828) |
 
 ## More from us
 
