@@ -30,7 +30,7 @@ This is a clean example of a skill as taste over a tool server. The tool server 
 
 ## status
 
-Stub. Not yet ported from Matt's own files. Matt demoed `formatting-notion-pages` on the show, but the original skill file was not shown on camera or was not legible enough to reconstruct. If Matt publishes an authoritative version or opens a PR, it will replace this stub.
+Ported from the files Matt shared after the episode. The skill includes `SKILL.md` plus `blocks-reference.md`.
 
 <a href="https://youtube.com/live/6zju7hyCFl0?t=6086"><img src="images/hero.png" alt="Matt Palmer showing his private skills workflow on Episode 5 of Show Us Your Agent Skills" /></a>
 <sub>Matt shows his private skills workflow before discussing `formatting-notion-pages`. <a href="https://youtube.com/live/6zju7hyCFl0?t=6086">[01:41:26]</a></sub>

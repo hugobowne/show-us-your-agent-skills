@@ -33,7 +33,7 @@ He also frames the skill as something that should improve over time as the agent
 
 ## status
 
-Stub. Not yet ported from Matt's own files. Matt demoed `writing-revision` on the show, but the original skill file was not shown on camera or was not legible enough to reconstruct. If Matt publishes an authoritative version or opens a PR, it will replace this stub.
+Ported from the files Matt shared after the episode. The skill includes `SKILL.md`, `references/writing.md`, `references/technical-writing.md`, and `agents/openai.yaml`.
 
 <a href="https://youtube.com/live/6zju7hyCFl0?t=6176"><img src="images/hero.png" alt="Matt Palmer showing his writing-revision skill on Episode 5 of Show Us Your Agent Skills" /></a>
 <sub>Matt opens the `writing-revision` skill and describes its references. <a href="https://youtube.com/live/6zju7hyCFl0?t=6176">[01:42:56]</a></sub>

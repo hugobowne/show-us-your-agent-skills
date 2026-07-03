@@ -1,0 +1,4 @@
+interface:
+  display_name: "Writing Revision"
+  short_description: "Drafts and revises writing for clarity, structure, audience, and voice."
+  default_prompt: "Use $writing-revision to draft or revise this writing so it is clearer, better structured, and better matched to the audience while preserving facts, intent, and voice."

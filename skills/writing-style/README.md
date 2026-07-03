@@ -26,7 +26,7 @@ He treats style as partly universal and partly personal. Universal rules catch e
 
 > *"I'm trying to get it to cut as much out as possible and be as plain as possible, even if it's like whatever, because I'm gonna add the taste in."* [\[01:52:02\]](https://youtube.com/live/6zju7hyCFl0?t=6722)
 
-That makes this a good repo stub rather than a reconstructed skill: we know the philosophy and trigger, but not Isaac's authoritative instruction file.
+The repo now includes Isaac's shared `SKILL.md`, so the folder carries both the episode context and the actual writing-style instructions.
 
 ## watch it
 
@@ -39,7 +39,7 @@ That makes this a good repo stub rather than a reconstructed skill: we know the 
 
 ## status
 
-Stub. Not yet ported from Isaac's own files. Isaac demoed and described `writing-style` on the show, but the original skill file was not shown on camera or was not legible enough to reconstruct. If Isaac publishes an authoritative version or opens a PR, it will replace this stub.
+Ported from the file Isaac shared after the episode. The skill includes `SKILL.md`.
 
 <a href="https://youtube.com/live/6zju7hyCFl0?t=5210"><img src="images/hero.png" alt="Isaac Flath demoing voice review and writing-style adjacent editing on Episode 5 of Show Us Your Agent Skills" /></a>
 <sub>Isaac demos the Raw2Draft voice-review loop that pairs with his writing-style and critique skills. <a href="https://youtube.com/live/6zju7hyCFl0?t=5210">[01:26:50]</a></sub>
