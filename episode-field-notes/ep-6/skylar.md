@@ -1,8 +1,8 @@
 # Skylar Payne - Episode 6 field notes
 
-Skylar Payne is the founder of Wicked Data, spent ten years building AI systems at Google, LinkedIn, and startups, and helps engineering teams build AI systems they can understand and improve. His Episode 6 segment shows the personal version of that same problem: an always-on [Hermes](https://hermes-agent.nousresearch.com/) assistant named Palmer runs community operations, wedding planning, HTML artifact sharing, and coding workflows, but the useful autonomy depends on structured handoffs, review queues, memory boundaries, and human feedback.
+Skylar Payne is the founder of Wicked Data, spent ten years building AI systems at Google, LinkedIn, and startups, and helps engineering teams build AI systems they can understand and improve. His Episode 6 segment shows the personal version of that same problem: an always-on [Hermes](https://hermes-agent.nousresearch.com/) assistant named Palmer runs community operations, wedding planning, HTML artifact sharing, and coding workflows. The repo captures that operating model as [`personal-agent-operations`](../../workflows/personal-agent-operations/). The useful autonomy depends on structured handoffs, review queues, memory boundaries, and human feedback.
 
-The segment turns on the cost of parallelism. Skylar can use agents to run work he did not have time to run before, including a local tech community with weekly events, but he also describes the review burden when vague tasks multiply. *"I often realize, okay, I have 30 things running coming back with garbage I need to review."* [\[00:46:31\]](https://youtube.com/live/UwAGIkWFQ78?t=2791) His answer is a Hermes workflow plugin that makes agents write Python against structured primitives, asks humans for typed decisions at checkpoints, and saves traces that can later become prompt optimization or open-weight model distillation.
+The segment turns on the cost of parallelism. Skylar can use agents to run work he did not have time to run before, including a local tech community with weekly events, but he also describes the review burden when vague tasks multiply. *"I often realize, okay, I have 30 things running coming back with garbage I need to review."* [\[00:46:31\]](https://youtube.com/live/UwAGIkWFQ78?t=2791) His answer is a Hermes workflow plugin that makes agents write Python against structured primitives, asks humans for typed decisions at checkpoints, and saves traces that can later become prompt optimization or open-weight model distillation. The repo captures this part of the demo as [`hermes-dynamic-workflows`](../../workflows/hermes-dynamic-workflows/) and vendors Skylar's upstream [`hermes-workflows-creating`](../../skills/hermes-workflows-creating/) skill.
 
 <a href="https://youtube.com/live/UwAGIkWFQ78?t=4130"><img src="images/skylar-hermes-workflow-review-queue.png" alt="Skylar Payne showing a Hermes workflow review queue during Episode 6" /></a>
 <sub>Skylar shows a Hermes workflow review queue, where human approval cards keep agent work on structured rails. <a href="https://youtube.com/live/UwAGIkWFQ78?t=4130">[01:08:50]</a></sub>
@@ -25,7 +25,7 @@ The management comparison matters because agent work can scale past the human re
 
 ### Run a local tech community with an always-on personal assistant
 
-Skylar uses Palmer, a Hermes agent, to manage a tech community in his hometown. The agent sets up events, sends notifications, replies when people email Skylar, and helped run a hackathon. *"We have weekly events now, and it's all mostly just managed. I don't have to think about it."* [\[00:45:36\]](https://youtube.com/live/UwAGIkWFQ78?t=2736)
+Skylar uses Palmer, a Hermes agent, to manage a tech community in his hometown. The repo captures this always-on operations pattern as [`personal-agent-operations`](../../workflows/personal-agent-operations/). The agent sets up events, sends notifications, replies when people email Skylar, and helped run a hackathon. *"We have weekly events now, and it's all mostly just managed. I don't have to think about it."* [\[00:45:36\]](https://youtube.com/live/UwAGIkWFQ78?t=2736)
 
 That workflow depends on an assistant that is always available through a channel, not a coding tool Skylar has to open at a workstation. *"It was really important for me to have something that's always on, first of all, and that I could reach through some channel."* [\[00:52:10\]](https://youtube.com/live/UwAGIkWFQ78?t=3130)
 
@@ -37,7 +37,7 @@ The same setup tracks relationships from his CRM and infers wedding roles from e
 
 ### Encode agent work as Hermes workflows with human checkpoints
 
-Skylar built a Hermes workflow plugin because prompts and skills did not reliably enforce the procedural steps he needed. His repeated coding failure was simple: when multiple agents modified the same repo, they sometimes skipped the worktree or separate-checkout step. *"One of the problems is that prompts and skills are effectively suggestions."* [\[01:03:48\]](https://youtube.com/live/UwAGIkWFQ78?t=3828)
+Skylar built a Hermes workflow plugin because prompts and skills did not reliably enforce the procedural steps he needed. The repo captures the workflow demo as [`hermes-dynamic-workflows`](../../workflows/hermes-dynamic-workflows/) and the published authoring skill as [`hermes-workflows-creating`](../../skills/hermes-workflows-creating/). His repeated coding failure was simple: when multiple agents modified the same repo, they sometimes skipped the worktree or separate-checkout step. *"One of the problems is that prompts and skills are effectively suggestions."* [\[01:03:48\]](https://youtube.com/live/UwAGIkWFQ78?t=3828)
 
 The plugin lets a Hermes agent write Python code against primitives such as `agent`, `parallel`, `pipeline`, and `ask`. Skylar uses it for coding, content creation, and trip planning. *"I started thinking about how really the thing we want here is maybe a workflow that has agent steps in it."* [\[01:04:13\]](https://youtube.com/live/UwAGIkWFQ78?t=3853)
 
@@ -85,7 +85,7 @@ The painful failure mode was self-configuration. OpenClaw could change its own c
 
 ### hermes-workflows
 
-Skylar's second open source repo, [hermes-workflows](https://github.com/skylarbpayne/hermes-workflows), is a Hermes dashboard plugin for workflow execution, review, artifacts, and human feedback. He took inspiration from Claude Dynamic Workflows, [DSPy](https://dspy.ai/), and RLMs, then implemented the system for Hermes. *"This is an open source project, it's a Hermes plugin."* [\[01:04:49\]](https://youtube.com/live/UwAGIkWFQ78?t=3889)
+Skylar's second open source repo, [hermes-workflows](https://github.com/skylarbpayne/hermes-workflows), is a Hermes dashboard plugin for workflow execution, review, artifacts, and human feedback. The repo vendors its [`hermes-workflows-creating`](../../skills/hermes-workflows-creating/) skill as the agent-facing authoring instructions. He took inspiration from Claude Dynamic Workflows, [DSPy](https://dspy.ai/), and RLMs, then implemented the system for Hermes. *"This is an open source project, it's a Hermes plugin."* [\[01:04:49\]](https://youtube.com/live/UwAGIkWFQ78?t=3889)
 
 The dashboard shows runs as DAGs, saved artifacts as step outputs, and a review queue for human decisions. *"You can see the DAG that's created."* [\[01:08:36\]](https://youtube.com/live/UwAGIkWFQ78?t=4116)
 
