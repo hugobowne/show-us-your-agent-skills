@@ -17,13 +17,13 @@ This repo turns each episode into browsable, forkable artifacts: markdown
 skills, workflow writeups, and tool references you can read, copy, and
 adapt to your own setup.
 
-## Upcoming Episode 6: Matt Rocklin, Skylar Payne
+## Upcoming Episode 7: Greg Ceccarelli, Han-Chung Lee
 
-[Register on Luma](https://luma.com/znkfnbtz)
+[Register on Luma](https://luma.com/y4hylb82)
 
-Friday, July 3, 2026, 9:00 AM - 10:30 AM AEST (GMT+10), live on YouTube.
+Friday, July 17, 2026, 9:00 AM - 10:30 AM AEST (GMT+10), live on YouTube.
 
-Guests will include Matt Rocklin (Dask, Coiled) and Skylar Payne (Wicked Data, ex-Google, ex-LinkedIn).
+Guests will include Greg Ceccarelli (SpecStory, ex-GitHub) and Han-Chung Lee (Moody's Analytics, author of "Evaluation and Alignment: The Seminal Papers").
 
 ## Installation (npx skills)
 
