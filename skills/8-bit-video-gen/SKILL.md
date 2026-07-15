@@ -53,7 +53,7 @@ uv run <skill-dir>/scripts/make_video.py <input_image> [output_mp4] \
 - `<input_image>` is normally the 8-bit PNG from step 1, but any image works (used as the first frame).
 - This call costs Replicate credits and takes ~30 to 90s.
 - Output is an MP4 plus a `replicate.delivery` URL printed to stdout. The URL expires; the local file is the durable artifact.
-- Occasionally Replicate returns `ModelError: ... sensitive (E005)` on benign inputs. Rerun the same command before changing the prompt or image; it usually clears on retry.
+- Never retry a Replicate call automatically. A timeout may mean the remote job is still running. Any retry requires explicit user approval.
 
 ## End-of-run
 
