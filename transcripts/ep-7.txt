@@ -1,0 +1,1507 @@
+SKILLZ-ep-7
+===
+
+greg: [00:00:00] [00:00:05] Hey there 
+
+hugo: Hey, [00:00:10] Greg. What's up, man? 
+
+greg: It's been a while. 
+
+hugo: It has. You're [00:00:15] looking, you're looking well, dude.
+
+greg: As well- Where- ... as [00:00:20] you can look. 
+
+hugo: Where's, where's the stock ticker though? 
+
+greg: Uh, [00:00:25] I'm like lazy. I'm sitting in like a chair. N- yeah, I have a good [00:00:30] memory. Uh- How 
+
+hugo: can I forget- ... it's over here somewhere ... you know? Um- [00:00:35] Let's just make sure you can share your screen, and then [00:00:40] I'll actually make you co-host so that's possible.
+
+greg: There it is. 
+
+hugo: Hey, there we go. [00:00:45] That's what I'm talking about. I'm excited to hear what you're up to, [00:00:50] dude. 
+
+greg: Uh, yeah, me too. I'm excited to [00:00:55] share my skills. 
+
+hugo: It is... Man, I'm, I'm about to change the title of this [00:01:00] fucking thing, just because it's a joke, but, but everyone's like- It's 
+
+greg: a thing ... "
+
+hugo: Do [00:01:05] I have to show skills?"
+
+And I'm like, "It isn't about fucking markdown, bro." [00:01:10] 
+
+greg: I literally thought it was. 
+
+hugo: Uh, yeah, I know. That... 'Cause I'm dumb. [00:01:15] 'Cause I'm like, "Show us your agent, your skills," and then it's a pun. But [00:01:20] 
+
+greg: clearly- I literally thought it was about, like, sharing your skills. That's why I was like... I emailed you and I was like, "I have [00:01:25] this cool skill that makes skills."
+
+hugo: I love that. But 
+
+greg: I mean, it's all- 
+
+hugo: But it's all skills ... relevant, 
+
+greg: [00:01:30] relevant to... 
+
+hugo: I mean, workflow skills, like, [00:01:35] whatever, right? Yeah. That's why when Hamel came on, he was like, "I'm gonna talk about [00:01:40] fuck your skills." And I was like, "Okay, dude, whatever."[00:01:45] 
+
+Um, and then we've had a bunch of y- [00:01:50] your old GitHub dudes. John Berryman came on recently. 
+
+greg: [00:01:55] I know. A little band, happy merry band, huh? 
+
+hugo: Yeah. I've... I [00:02:00] mean, I know what I'm gonna generate af- after- afterwards. 
+
+greg: Shoot, 
+
+I 
+
+hugo: can- What are you gonna generate? [00:02:05] Well, uh, maybe, like, all of you dudes as, you [00:02:10] know, like Robin Hood and his merry little [00:02:15] dudes.
+
+Um- 
+
+greg: What? 
+
+hugo: Yeah. 
+
+greg: I [00:02:20] don't know if that was, like, a complete thought. 
+
+hugo: Yeah, no, it wasn't. Sorry, I'm, I'm, I'm distracted now as well. Hey, I [00:02:25] just, um, reposted on Twitter and LinkedIn if you wanna- 
+
+greg: Perfect ... 
+
+hugo: share them. And I'm just gonna [00:02:30] make sure we can actually hook into YouTube, because it's not always-[00:02:35] 
+
+Possible. It's not always obvious. Yeah, there [00:02:40] aren't many co- complete thoughts at the moment[00:02:45] 
+
+Um, okay, what am I doing?[00:02:50] 
+
+Yeah, live stream. See it, [00:02:55] you motherf-[00:03:00] [00:03:05] [00:03:10] [00:03:15] [00:03:20] [00:03:25] [00:03:30] [00:03:35] [00:03:40] [00:03:45] [00:03:50] [00:03:55] [00:04:00] 
+
+Now I'm gonna click go [00:04:05] live, and it's gonna say it's going live, but it actually isn't. What it means is it's going into YouTube [00:04:10] Studio. And after that, we'll, we'll truly go live. I thought Thomas and [00:04:15] Han would be here by now, but whatever. We'll just... [00:04:20] You and I have no problems talking. 
+
+greg: No, they're fine.
+
+hugo: Awesome[00:04:25] [00:04:30] 
+
+[00:04:35] Hey, Han. Oh- Hey there ... K- hey, how are you, man?[00:04:40] 
+
+Oh, we can't hear you [00:04:45] 
+
+han: Uh, is this better? 
+
+hugo: [00:04:50] Yeah. 
+
+han: Yeah. 
+
+hugo: Try again just so we can confirm. One 
+
+han: second. 
+
+hugo: Yeah, yeah, that's good.[00:04:55] [00:05:00] [00:05:05] 
+
+Okay. Right. I think we should- Awesome. So what I'm gonna get us to do is turn our cameras off as we go live, and I, I just play a little [00:05:10] trailer as we, as we go live. [00:05:15] Um, if I can find it, [00:05:20] which I-[00:05:25] 
+
+Can[00:05:30] 
+
+Huh.[00:05:35] 
+
+Seems to have fucking [00:05:40] disappeared. Okay, 1, 2[00:05:45] [00:05:50] [00:05:55] [00:06:00] 
+
+[00:06:05] Is there[00:06:10] [00:06:15] [00:06:20] [00:06:25] [00:06:30] [00:06:35] 
+
+All right, we're gonna go live in[00:06:40] [00:06:45] 
+
+[00:06:50] Agents. Skills. Show? [00:06:55] Show us your agent skills. [00:07:00] What are people at the top of the game building with AI agents, and how are they [00:07:05] doing it? Are they Claude maxing with eight terminals open at once, or [00:07:10] adversarially testing Opus 4.7 generated code with Codex? [00:07:15] Do they define suites and swarms of sub-agents, or use agent markdown 
+
+greg: and [00:07:20] agent skills?
+
+We are on a mission to find out. [00:07:25] 
+
+hugo: All right. Welcome everybody to [00:07:30] mid-July's Show Us Your Agent Skills. I'm here with Han and [00:07:35] Greg. What is up, guys? 
+
+han: Hey. [00:07:40] Hey, Hugo. How are you? 
+
+hugo: I'm, I'm so well. Great to have you both here, and [00:07:45] really excited to see what you're up to with, with agents today. Also, just love to welcome [00:07:50] everyone who's, uh, tuning in on YouTube or watching afterwards.
+
+Um, join our [00:07:55] Discord. Uh, link's in the comments. Um, and ask any questions there, just so we can continue the conversation [00:08:00] afterwards. And the obligatory hit Like and Subscribe, share with a friend. Check out [00:08:05] other things we're up to, um, in the description in YouTube. We've got workshops coming up. We have some [00:08:10] livestreams with Sebastian Raschka, Chip Huyen, and Hamel Hussein as well, people we all know a- [00:08:15] and love.
+
+Um, but that is enough on what we're up to here. [00:08:20] Um, Greg, you're gonna show us what you're up to with [00:08:25] agents first, so I might just introduce you and maybe get it, [00:08:30] get it somewhat right, but Greg is co-founder and CPO of Spec Story. [00:08:35] Um, his work focuses on how teams communicate intent to coding agents and within [00:08:40] teams preserving, uh, the reasoning behind their work and verifying what agents produce.
+
+Before Spec Story, [00:08:45] Greg was CPO at Pluralsight, has worked at GitHub, Dropbox, Google. [00:08:50] Um, and Greg really got- [00:08:55] Greg was part of the, the group of people who, like, really AI pilled me initially. [00:09:00] Greg was, like, at the forefront of diving super deep into how wild and [00:09:05] wacky the world of AI and agents can be, right, Greg?
+
+greg: Yeah. I r- I [00:09:10] think... We talked like back in April of last year, and I remember that was, [00:09:15] like, the distinction you made between, um, the difference between, like, building LLM [00:09:20] products and building with LLMs, right? We talked about all that, and I think that that day, [00:09:25] uh, we were vibe coding before it was really even called vibe [00:09:30] coding.
+
+Um, like the JFK files had released, and we built like some, [00:09:35] uh, 
+
+hugo: sort of like- Exactly, a viewer for them ... 
+
+greg: yeah, viewer on top of them. Yeah. 
+
+hugo: That wa- and I'll- [00:09:40] It's amazing 
+
+greg: how much... Yeah 
+
+hugo: It is, it is wild, and to, to your point, now we have terms like [00:09:45] AI engineering and agentic engineering where as... like I try to help people understand if you're building with [00:09:50] LLMs, like building, you know, agentic search systems or what- whatever it may be, you're, you're doing [00:09:55] AI engineering.
+
+If you're using AI assisted software development, [00:10:00] that's agentic engineering. But of course once you separate them, you kind of need to merge them again, 'cause anyone [00:10:05] doing AI engineering is using agentic systems to help them build. [00:10:10] And when you're doing like serious agentic engineering, you are actually really building your own [00:10:15] harness at the same time on top of whatever harness you have through skills, workflows, [00:10:20] agent markdown, Cronjobs, hooks, whatever it may be, right?[00:10:25] 
+
+greg: That's right. Um, I've gone so far... I, I wasn't actually thinking about sharing this, but [00:10:30] maybe depending on time. Um, I've gone so far as building a harness around harnesses. [00:10:35] It gets really meta. 
+
+hugo: I would... I mean, this really does... We are quote, [00:10:40] unquote "building f- the bicycle for the mind," but using the bicycle of the mind to do that.[00:10:45] 
+
+Um, Han, um, how are you, man? [00:10:50] 
+
+han: Good. Good, good. It's sunny out there in California, so [00:10:55] life is, life is good. 
+
+hugo: Fantastic. So we're actually gonna have Greg, um, up, up [00:11:00] first to show us what he's up to with agents, in particular for skills he's working on at, at [00:11:05] Spec Story. Um, but please feel free, this is [00:11:10] intended as like just a group discussion about what, what everyone's up to.
+
+Um, I... Greg did send me [00:11:15] a demo video of how he likes to work beforehand, which I'd, I, I'd like to show. [00:11:20] Um, can you see, can you see my screen everyone? 
+
+greg: I definitely didn't send this video, but I'm, [00:11:25] 
+
+hugo: I'm in for it. This is definitely, this is definitely Greg's video that he's clearly sent me [00:11:30] of how he works with agents.
+
+Look at him go. Collecting all [00:11:35] those markdowns, all those YAML front loaded. He's got a... Ah, combining them all. [00:11:40] Oh. Look at that now. [00:11:45] Big thumb up. Greg for the win there. And, and, and Greg, I, I think what you [00:11:50] tried to tell me you were doing there, um, was going and, and [00:11:55] collecting all variety of information about what the builders who are building are [00:12:00] actually doing in their projects so we make sure that's preserved.
+
+Um, we don't [00:12:05] wanna preserve whole conversations or, or threads necessarily, um, although that can be useful. [00:12:10] But we don't actually only wanna preserve the artifacts of what's built, we wanna preserve why it's built, [00:12:15] right? We... So in- intent is actually a first order principle here [00:12:20] 
+
+greg: It is. But I, I do-- I would say storing transcripts, [00:12:25] storing your traces, whatever you wanna call them, your agent sessions, uh, is really important [00:12:30] because to do useful things, like if you were going to try and extract, you [00:12:35] know, decisions or the why, you kinda need that raw material.
+
+I also think, and this [00:12:40] is a very good tip for myself because it's the premise of what I wanted to share, [00:12:45] um, it, it just so happens if you think about your day, right, if you're [00:12:50] managing many, many agent sessions, maybe parallel across multiple projects, a [00:12:55] lot of the, like, patterns and heuristics that you use are actually in those agent session logs.[00:13:00] 
+
+Uh, and so the, the sort of premise of what I'm gonna share, uh, [00:13:05] is how you can mine them with a skill that makes new skills, [00:13:10] uh, all from your agent transcripts. 
+
+hugo: Amazing. So what I'm hearing is [00:13:15] stuff that I do that I may not necessarily be [00:13:20] super-- like patterns that emerge in my workflows, this helps to extract them and [00:13:25] encode them in natural language so we can include them in future context, um, to [00:13:30] help me and agents work better together.
+
+greg: Yeah. I mean, as the, like, simplest [00:13:35] example, uh, if you-- let's say you use an agent to, uh, run a bunch of Git commands or, or, [00:13:40] or something, right? You've probably done that, like, umpteen times, like 20,000 times at this point, [00:13:45] right? Uh, there might be patterns latent or, like, obvious around [00:13:50] when, uh, y-you do that. So for, for example, for me, um, I [00:13:55] have, like, a preference, uh, a-around, you know, I'll, I'll do a big batch of [00:14:00] work, accumulate ins- uh, like, a lot of, of local commits, but I, I [00:14:05] don't want the agent to push it.
+
+This is, like, a super simple example. Uh, and I've found myself sort of [00:14:10] repeating that pattern of telling the agent what to do. And of course, you could, like, go in and encode that in, like, a [00:14:15] doc- like, Claude MD or Agents MD. But there's probably many more patterns and [00:14:20] preferences, things that you do in terms of how you verify work that the agents are doing [00:14:25] that's just, like, in your transcript.
+
+And so i- what, what [00:14:30] this, this skill that's called LoRA does is look at all of that, [00:14:35] um, fantastic exhaust, and then, uh, it has an engine, [00:14:40] part deterministic and part based on your sort of local model, to pull out those patterns and then, [00:14:45] like, provide you with an opportunity to codify them into skills that will [00:14:50] then get installed into your .skills directory.
+
+hugo: Awesome. And I don't wanna [00:14:55] answer this yet, but I wanna just foreshadow. People, Greg thinks a lot and works a lot on about how [00:15:00] people collaborate with agents as well, and can work together effectively on teams, and I presume this plays into, [00:15:05] um, how we could work together with, with similar, similar workflows.
+
+Um, but before we [00:15:10] jump in, Greg, um, two questions we ask every guest. First is, what, what do you love [00:15:15] most about working with agents? 
+
+greg: I mean, I think the, like, obvious [00:15:20] thing is just how productive you can be. Uh, uh, like, that's the obvious thing. Uh, [00:15:25] so I do love the fact that I don't really have to think about, uh, [00:15:30] program- programming languages and, and, and sort of s- like, syntax [00:15:35] anymore, and I can just express, you know, m- my sort of desires well thought out, [00:15:40] uh, architected in English language and, and get out- outcomes and output.
+
+Which is especially [00:15:45] important if you're trying to, like, build stuff that people might want to use because, you know, the whole [00:15:50] goal is, you know, uh, to, to get that out in the world and, and get feedback [00:15:55] and iterate, and not to sort of, like, myopically think about, like, how you can m- [00:16:00] make something that, you know, would, would've taken you, you know, months if not years before, so.[00:16:05] 
+
+hugo: Totally. 
+
+greg: Productivity. 
+
+hugo: Did you say get feedback or Git feedback? I'm n- n- [00:16:10] I'm not sorry. Um, the, uh, the other thing w- I mean, that came to mind then [00:16:15] was, and we've been talking about Git already, and of course you, you worked at G- GitHub, but the [00:16:20] ability of agents to do most of the Git stuff for me, um, [00:16:25] 98% of the time.
+
+The other one in 50 I end up in some sort of, like, rebase nightmare. [00:16:30] Um, but, you know, the ability for it to... And for it to make sensible commit messages. [00:16:35] Um, and also to help people I work with understand what my pull requests are, working with [00:16:40] agents that, that way as well. Um- 
+
+greg: Oh, see, that's, that's your, that's your problem.
+
+You still use pull [00:16:45] requests. I wouldn't even do that anymore. Just push it straight to trunk, have your agent [00:16:50] summarize it. It works only if you're on a sort of small high-trust team. But [00:16:55] sorry, that was a digression. 
+
+hugo: That's... I, well, I, I, I, I definitely wanna get there. My... The, the other question [00:17:00] is the kind of a, a flip side of it in some ways.
+
+Um, what, what do you find most frustrating about [00:17:05] working w- with agents? 
+
+greg: Okay, I'll... Well, one, [00:17:10] the isolation, right? It's easy to get, uh, sort of en- like entranced, [00:17:15] uh, in your sessions. Um, but I think the thing, [00:17:20] it's frustrating in a more meta sense. I think the, like, [00:17:25] dopamine reward that comes, like that's the counter to the productivity sort of like gain, [00:17:30] is actually really, uh, annoying.
+
+Meaning it, it's [00:17:35] very easy to get sort of lost in... I think there was this like podcast where like Marc Andreessen talked about becoming [00:17:40] an AI vampire. I don't like the, uh, the sort of like [00:17:45] attention, um, addiction that comes with, uh, working with agents. So I, I would say that's my [00:17:50] biggest frustration, is these things are so powerful and so good that it's hard to sort of put them down.[00:17:55] 
+
+hugo: Totally. And I do... When you were talking about productivity, like clearly we can be more productive with agents. But there [00:18:00] is a productivity fallacy or something, particularly with respect to the dopamine hit. [00:18:05] So I can get my agent to build another Kanban board, and it feels good, but [00:18:10] is it moving the needle for me in any other way?
+
+It, it feels up and to the right in some way. But, [00:18:15] um, it, it, it definitely isn't all the time. 
+
+greg: Yeah, [00:18:20] exactly 
+
+hugo: Let's jump in. Let's look at Lore, man. 
+
+greg: All right. So I have, [00:18:25] like, a small set of slides just to kind of like- 
+
+hugo: Yeah, 
+
+greg: great ... uh, have ground. Uh, [00:18:30] some diagrams really. Uh, I'm not even gonna show all of them, so I'm gonna share those first really [00:18:35] briefly.
+
+I actually am not gonna share all of the slides, so I made this little [00:18:40] HTML slide thing. I'm gonna go here. Um, here, I'll go back. [00:18:45] So this is just to reiterate what I, I sort of said at the, the front end of this conversation. Can you 
+
+hugo: full [00:18:50] screen your slides as well just? 
+
+greg: Oh, um, yeah. I think, I think it has that ability.
+
+It [00:18:55] does. Look at that. Yeah. Okay. So, um, okay, you're working with agents, right? Whether it's [00:19:00] Claude Code, Codex, Cursor, Gemini, I don't know. That's just because Spec Story supports it. I don't think anyone [00:19:05] uses the Gemini CLI anymore. Um, so you're working with agents all day, every day, right? You're, [00:19:10] you're, y- you just are doing your work, and then what happens is, um, if you use Spec [00:19:15] Story, which is, uh, like the VS Code plus terminal CLI program that [00:19:20] we've produced, it's all open source, um, it makes it really easy to get all of those session logs into [00:19:25] one common format and mark down into your project repo, right?
+
+So you get those transcripts and [00:19:30] you download them. Where Lore comes in is right after that. So there's a [00:19:35] skill, and I'll show the GitHub repo in a moment, that you can install, and [00:19:40] whenever you run it, it produces a little Lore DB that parses all of your [00:19:45] sessions because you know how large those sessions can get in terms of tokens.
+
+I mean, they're massive. [00:19:50] Um, and it labels all of your conversation turns, right? [00:19:55] So basically, it's trying to detect, like, if a thing that you did was something that you [00:20:00] accepted or rejected, and it adds a little bit of metadata to it, and that's important because then it uses [00:20:05] that, um, whenever it does the mining and corroboration of [00:20:10] patterns, uh, from your chat transcripts.
+
+So that's what I wanna start with, but [00:20:15] I'm much more of a fan of demos, so there's more slides here. But just, just to understand [00:20:20] this flow, like what's required to get this working, I'm gonna pivot to, um, [00:20:25] an IDE, uh, and then I'm gonna show you this in action. Awesome. It's way more fun to work with. But okay, [00:20:30] so let me get out of this, then I'll bring up this.
+
+Uh, that's not what I wanted to [00:20:35] show. Okay. So- I already have it installed. Um, and while [00:20:40] this is loading, I'll just show you. If you go to our, our GitHub repo, it's Git SpecStory, SpecStory [00:20:45] AI, um, you can go here, and this is where you get the actual skill. [00:20:50] Uh, and so you can install it with NPX skills add, you know, the skill lore.[00:20:55] 
+
+So I've already done that, obviously. Coming back here, uh, it's [00:21:00] actually very, uh, interactive, this skill. So once you have it installed... And you can use it [00:21:05] in Codex or, you know, Cursor CLI or wherever, you know, you're, you're, you [00:21:10] fancy. You can use it in Cursor IDE. Um, I can just, like, write help. Uh, I'll do [00:21:15] this.
+
+Oh, great, an API error. Awesome. All right, I might have to move to a different model. [00:21:20] Is Claude down? That's really fun. Let's try again. Okay, cool. The 
+
+hugo: demo [00:21:25] gods, uh, occasionally strike four. 
+
+greg: Oh, look, it's doing it. Okay, great. [00:21:30] Um- 
+
+hugo: Great. And I ju- can I just mention that you're still using an IDE, which is [00:21:35] nice to see 
+
+greg: I only use the IDE to manage [00:21:40] all of my terminal sessions.
+
+And also, uh, who, who can forget, [00:21:45] uh, the wonderful, uh, i- integration with Git over here? I do love this as a [00:21:50] sort of, uh, like, GUI view. Mm. But that's really the only reason, uh, primarily. [00:21:55] Um, but yeah, so okay. I, I just wrote help, right? [00:22:00] And you can, you can see all of the different sort of commands that you can just, like, give this skill.[00:22:05] 
+
+Um, and so in this case, before I actually rerun it, 'cause it actually takes a little [00:22:10] long, um, I've already synced all of my sort of sessions for this project [00:22:15] into this directory. So, um, what that means, if you're not familiar with Spec Story, it'll just [00:22:20] write, like, all of the session logs from all of, like, what you've done across [00:22:25] all your agents into markdown for you.
+
+Remember, this is, like, the prime matter. This is, like, [00:22:30] what you need for this skill to work. So that's all in here, and it can be... [00:22:35] This happens to be a shared repo. This is actually for our cloud product. This is, like, the repo for our cloud product. [00:22:40] This has, like, not just my histories, but histories from my teammates too.
+
+[00:22:45] Okay. So push that aside. Now, what I'm gonna [00:22:50] show you here is, like, uh, like, what skills do I have first? And [00:22:55] this is gonna actually tell me, like, what have I made with Lore, and then also what are all the other [00:23:00] skills that are installed, like, on my machine? Uh, which is nice just to understand so [00:23:05] that whenever we generate some more, hopefully we can do that and it actually finishes, 'cause it, sometimes it takes a [00:23:10] little long.
+
+Um, you c- you kinda understand what's there, right? H- how many times, [00:23:15] Hugo or Yuhan, have you installed a skill, completely forgotten about it, and been like, [00:23:20] "Wait, why is the LLM doing this thing?" Whenever I've just- Mm ... written some English [00:23:25] language, right? Because that's how skills work. They, like, look for, you know, like, in your prompt, [00:23:30] uh, something to trigger them.
+
+Um, so this thing gives you a little bit of output. [00:23:35] Um, you can see I actually have some forge skills [00:23:40] from Lore that I use, you know, whenever they get triggered all the [00:23:45] time. And you can understand kind of a, like, a high level view, um- You know, [00:23:50] like what, what they do. Of course, I could go look at the skills, but this is just like a way to get the inventory.[00:23:55] 
+
+And then I have all these other skills that I've installed, uh, through different means, um, over time. [00:24:00] I, I tend not... I tend to be pretty choosy about the skills, uh, that I install, [00:24:05] but you see I have at least, I don't know, 30 or so. 
+
+hugo: I also love, um, [00:24:10] that you have Impeccable, which we've seen several times on, on, on this series already.
+
+Eleanor Berger actually gave a really [00:24:15] nice demo of how she uses it with her, uh, uh, Hermes agent. Um, and for those who haven't checked out I- [00:24:20] Impeccable, it really helps you with design stuff, and it, it engages you in [00:24:25] Socratic dialogue a- as well, which is one of the most important aspects of working, [00:24:30] um, with, with agents.
+
+It'll ask you what you're trying to do, what your goals are, and, and several other [00:24:35] things, uh, to help understand, and then it will get to work. 
+
+greg: Yeah. It's great. I just [00:24:40] pulled this up for you. Um, I use it all the time, obviously for front-end stuff, but also, like, [00:24:45] for presentations and things like that. Like, anything that's HTML, it's amazing at.[00:24:50] 
+
+hugo: Mm. 
+
+greg: Um, okay, back here. So I'm just gonna do the guided setup. Um, and we'll, like, go through the [00:24:55] process, and if this is really slow, I'll choose a different model. [00:25:00] 
+
+hugo: Um- And I've, I've shared the links to your GitHub and Spec Story on, uh, Discord as well. People [00:25:05] can Google it, but anyone there can check it out.
+
+greg: Yeah. So, um, the skill [00:25:10] actually tells Claude how to, like, interact with you. So you get this guided setup, [00:25:15] uh, using some of the built-ins, uh, in terms of, like, this menu picker and whatnot that Claude natively supports. [00:25:20] Um, other harnesses similar. So, okay, I wanna mine the [00:25:25] skills for this project. I haven't actually done that yet, so I'm gonna do this.
+
+And [00:25:30] then let's just do last 30 days so that maybe it will [00:25:35] complete, 'cause it takes a little while. Um, and then yeah, I'm gonna find and [00:25:40] forge skills. Let's just do that. And then an API [00:25:45] error. Cool. Claude was having some problems today. Oh, there it's going. [00:25:50] Earlier this afternoon, I saw Claude, um, Claude status was very red.
+
+hugo: [00:25:55] Mm. 
+
+han: It's, it's Kimi launch day. 
+
+greg: Yeah. [00:26:00] It is, it was Kimi 3 launch day today. Um, so you can kinda read this, but, [00:26:05] uh, like, w- what's happening, there's actually two parts to this. So there's a deterministic part, [00:26:10] and then there's a non-deterministic part. Uh, the reason there's a deterministic part is, one, to [00:26:15] support, like, multiple independent runs on the same directory, [00:26:20] right?
+
+And the second part of that is it is actually looking at these [00:26:25] 516 sessions that is probably, I don't know, [00:26:30] some very large number of tokens. Some of these, like, files, um, are very [00:26:35] long, right? Uh, so, like, uh, some of these are... This is, like, all this, there's all this, like, [00:26:40] security stuff that gets triggered with this, uh, sort of pre-prompt [00:26:45] hook.
+
+But li- like, some of these, you can see how long these are. So if you were actually trying to, [00:26:50] like, actually push this all to an LLM, it would not be very [00:26:55] happy, and it would consume all of your usage very quickly. Mm. So the first part, deterministic mining process, it [00:27:00] indexes all the skills, and then it actually pulls out patterns.
+
+[00:27:05] Um, that's just, like, the first step. So this is gonna, like, work for a while, [00:27:10] because what it has to do is actually parse every single one of, um, your user agent [00:27:15] turns, and then convert them into beats. [00:27:20] Beats was just- A word, um, that was different than an exchange that [00:27:25] I chose, uh, to say it's the, it's the user [00:27:30] prompt, the agent response, the user prompt.
+
+That's a beat instead of just a user prompt [00:27:35] agent response. Because what it tries to do is see, like, did you actually, like, [00:27:40] accept, you know, what came out of the response from your prior prompt and label it. [00:27:45] Once it does that, um, it actually will start to invoke, uh, a [00:27:50] workflow. So for example, if you're using like a op- uh, sorry, an [00:27:55] Anthropic like sort of model harness, if you're familiar with like the [00:28:00] dynamic workflows, uh, see, it actually spawned it there.
+
+It's... Oh, God. [00:28:05] Okay, so there's all this stuff like running in the background. So at this point, we're just gonna have [00:28:10] to like wait because it's actually doing a theme sweep and like deep mining everything that [00:28:15] it found. Um, and then it's gonna present a bunch of like candidate skills. [00:28:20] I have no idea how long this will take, so let's pray that it [00:28:25] finishes.
+
+hugo: Yeah. And I just do... You just mentioned Claude dynamic workflows, which are super cool. And funnily, uh, Skyler Payne came [00:28:30] on recently and showed us how he's built his own version of that, once again with his Hermes [00:28:35] agent. But it allows... His workflow essentially allows his agent to just, whenever it needs [00:28:40] something that he can provide, um, come in and say, "Hey, I, I, I need this now."
+
+And he actually has [00:28:45] certain deterministic parts of the workflow to make sure he can provide input at, at, at certain points in these dynamic [00:28:50] workflows. 
+
+greg: Yeah. So this is just like running in the background. You can see it's, it's working. [00:28:55] Um- I think one of the things that [00:29:00] maybe we can do while this is working 
+
+hugo: I- can you just tell us a bit more about your stack as well?
+
+So y- [00:29:05] we're in Cursor now. Um, you don't use IDEs so much. Do you, do you use [00:29:10] command line tools or do you use, like, desktop? 'Cause I'm, [00:29:15] I'm loving Codex Desktop at the moment actually. 
+
+greg: You know, I have all those installed. Like, you can see my dock [00:29:20] down here. Um, I've used them- Yeah, it's good to know ... but I don't use them regularly.
+
+[00:29:25] I- it's actually funny, I was talking to my co-founder, Jake, this morning about this. Um, [00:29:30] uh, so I tried to use C Mux, uh, but the thing I didn't like about C Mux, if you're [00:29:35] familiar with it, it's sort of like a terminal multiplexer, um, was that, [00:29:40] like, to get the Git information I had to install, I think this is, like, Lazy Git or something, and I was like, [00:29:45] I don't...
+
+I just like the, like, I like the GUI version in VS Code, whether it's Cursor [00:29:50] or, you know, Copi- like, what- whatever version of VS Code you're using. And so I was like, I couldn't [00:29:55] get around that. I do like the idea of not having to tab [00:30:00] between, like, window instances. Mm. So that's the thing that, like, I don't like about, [00:30:05] like, using an IDE, is because I'm using it to basically manage a bunch of terminal sessions, and then, [00:30:10] like, off, uh, case that you wanna, like, look at, I don't know, a, like, [00:30:15] a, a code file or, like, a markdown doc, it's nice to have that editor there.
+
+Um, it's all there. So it [00:30:20] didn't have that, so I kinda said no, uh, okay, I'm gonna go back to my, my old habits here. [00:30:25] Um, I think the thing that I don't like about, like, the Codex app like [00:30:30] this is I was, like, looking at this, 'cause I had used it. Like, you know, I have used it. [00:30:35] Um, it's like, it's basically just VS Code, but it presents you a different entry point, [00:30:40] right?
+
+Mm-hmm. Because if you, if you start to, like, look at this thing, um, you know, [00:30:45] everything that you can do in VS Code, outside of editing files directly, you can do [00:30:50] in this. And so I'm like, this doesn't really help me that much anyway either. The only nice thing is it has, like, all your [00:30:55] projects, you know, kinda like on the side here.
+
+hugo: And that's, like, the only thing different. It could do that... Yeah. It could [00:31:00] do that better as well. I, it- It shows me... I mean, it can display [00:31:05] all types of artifacts, um, that I want it to there. Okay. And like when it's doing [00:31:10] browser automation for me, I have good visibility into that. Also, I think... [00:31:15] And you can get this from the, from the client, but, um, the steering is, is getting really [00:31:20] nice, like the, the ergonomics and then the ability to go from here to [00:31:25] mobile really easily, um, when using, um, Codex desktop.
+
+Maybe that works in [00:31:30] with the client as, as well. Um, I also just- See- Yeah, please go on. 
+
+greg: Go. Oh, that's- I was gonna say, [00:31:35] you said go to mobile. That's another thing. Back to the thing that frustrates me, it's like I'm so addicted [00:31:40] to these, uh, agents, like I never want to use it on my phone. So that for me, [00:31:45] that's not something I'm missing.
+
+Not good. I actually like the fact that like I've set up my, my sort of [00:31:50] stack in, in a way that like I, I, I know if I close my laptop, I'm not gonna be looking at my phone 'cause I don't [00:31:55] use whatever the like Claude version is, like Teleport or, you know, whatever. Mm. [00:32:00] I, I don't wanna do it on my phone, but keep going.
+
+I 
+
+hugo: do, I do just wanna show you both, [00:32:05] um, this is something I saw the other day. Can you see this? This was a, a [00:32:10] book wheel, a mechanical device that allowed scholars to read and compare multiple open texts simultaneously, [00:32:15] and I feel like that's what we're doing, like with all the tools to try and have all our, you know, Claude [00:32:20] code sessions open at the same time or whatever it may be.
+
+And there's Composer and a variety of other, um, [00:32:25] super interesting things, but I think that's essentially what you're using Codec... Uh, sorry, uh, Cursor [00:32:30] for. I also, one thing we've seen on this series is a lot of people are hand-rolling [00:32:35] their own artifacts and viewers that they can draw on [00:32:40] and type into.
+
+Like Isaac, our, our mutual friend and, and colleague- Mm-hmm ... is like, he gets [00:32:45] his agent to, um, create editable HTML. Um, the people at [00:32:50] Marimo and people who use Marimo Notebooks are, you know, having interactive notebooks that allow you to use a slider or [00:32:55] whatever it may be to communicate back to your a- agent.
+
+And I, I do a lot of this type of stuff, and I, [00:33:00] I do think the future of having canvases where our... we can work with our agents [00:33:05] together, and multiple ones kind of looking like this. I don't think you put the agent on a plate like this, which [00:33:10] was my first joke, is that you stand back and work on multiple canvases with an agent [00:33:15] together.
+
+Um, and a lot of us are hand-rolling stuff like that at the moment. [00:33:20] 
+
+greg: Indeed. Is my screen sh- no, mine, 
+
+hugo: no it is not No, it isn't. I, I kicked you off by doing it, so let's jump back into [00:33:25] yours and see- 
+
+greg: We're making progress. We got 
+
+hugo: to- And what agents, what harnesses do you like? What [00:33:30] models do you dig? What's your stack?
+
+Y- 
+
+greg: I'm pretty much, like, Claude [00:33:35] Code and Codex. So interchangeably, like, I'll, I'll, I'll use either or, uh, [00:33:40] depending on, like, what I'm doing. Um, or, like, you know, I, I'm a, [00:33:45] a, a s- a subscription aficionado. So, like, obviously I have subscriptions to, like, all, [00:33:50] all the Max or Pro plans. Um, so I, I ping-pong between Codex and Claude [00:33:55] Code primarily.
+
+hugo: And this week, are you using a lot of Fable and, like, Sol 5.6 in, [00:34:00] like, super thinking mode? Or, like, what, what's the vibe? Uh, 
+
+greg: yes. So that's... I, I should have [00:34:05] probably changed the model, like, for this Lore run. It, it's using Fable right now- Oh, do you? Yeah ... which is [00:34:10] probably another reason why it's, like, a little slow.
+
+Uh, but it... I think it's about to spit something out, uh, 'cause [00:34:15] it finished 
+
+hugo: the most part. Also though, Fable's actually quite... If you tell Fable, um, [00:34:20] to decide when to use, um, faster sub-agents and [00:34:25] whatever it may be, it, it, it's pretty good at that. So I'm, I, I'm playing around with that quite a bit at the moment.
+
+[00:34:30] 5.6 doesn't seem as great at that, but... 
+
+greg: Yeah. The one benefit of [00:34:35] Fable for what we're doing right now is you actually want to have a lot of reasoning, and you [00:34:40] want to use the workflow- Yeah ... because you're trying to pull out, like, all these, like, latent themes in, like, what [00:34:45] you've done. And so for f- y- you don't need to do these Lore runs, like, that [00:34:50] often.
+
+Like, I would say, like, you know, once a month or something, uh, to see what comes out. [00:34:55] Like, it's nice to use a really, like, extra high reasoning model, um, so you get something that [00:35:00] might actually be something you wanna install. Uh, when I was building it, um, [00:35:05] I was testing it on, uh, like, the code base for [00:35:10] this, like, interactive web RTC collaboration environment that we've also built, which [00:35:15] is not really, like, core Spec Story, you know, save, sync, share your chats.
+
+But [00:35:20] it was a lot of sessions. Like, I don't know, [00:35:25] 1,600 or something at least. Um, I tend [00:35:30] to also, like, use the same session for a very long time since compaction has gotten so much better. [00:35:35] A- and that was, like, a massive run, and I only shipped Lore [00:35:40] once I actually was like, "I wanna actually install one of these skills that it's produced."
+
+'Cause- [00:35:45] No ... you know, there's a lot of cruft, but... So yeah. Okay. All right. We're, we're almost there. [00:35:50] 
+
+hugo: And just while we're waiting as well, let... You mentioned compaction's gotten so much better, and [00:35:55] it's so true, particularly, um- Codex compaction. [00:36:00] I find it f- at the moment far superior to what I can get with Claude.
+
+But Claude [00:36:05] has an, a context window that's way too long for what you would even... After like [00:36:10] 150,000 tokens it craps out on me completely. But I do wanna say, like previously I was being [00:36:15] far more mindful of, you know, ending conversations myself, um, restarting them, [00:36:20] having to-do lists with ch- things checked off, whatever it may be.
+
+I still do that to token [00:36:25] min, uh, occasionally, but you really don't need to in order to get the model to [00:36:30] not be, the harness to not be stupid now. Compaction has really gotten so much better. [00:36:35] 
+
+greg: Okay. I can't believe this actually worked like on this live demo. So, [00:36:40] uh, in time at least. So w- what happened now- Can you zoom in a 
+
+hugo: bit as well?
+
+greg: Uh, yeah, I'll try [00:36:45] to. Uh, let me move this zoom control a little bit. Uh [00:36:50] Oh, it's gonna... See, the problem, though, is it's gonna, like, mutate this... [00:36:55] I might- 
+
+hugo: Yeah, yeah, that's fine. That's good. 
+
+greg: You know, like, when you change your [00:37:00] window size- Uh, yeah, yeah ... it kinda, like, messes with the font of the terminal. Um, so [00:37:05] w- what, what's happened now is when...
+
+So, um, the sort of like corroboration engine [00:37:10] worked. It did all this, like, latent theme analysis. It did some adjudication to kind of [00:37:15] understand if that pattern was one worth presenting. And then what it does is it writes, like, [00:37:20] dossiers, right? And so, uh, the reason this has so many more sessions here [00:37:25] than, like, what's actually in this particular project is because it...
+
+I've run it on [00:37:30] other projects, and so all the other saved sessions, um, from those runs are in here, [00:37:35] and then it, like, corroborates across the full corpus. So, like, you know, I- I'm [00:37:40] working on Specstory Cloud here. The other product I mentioned, Stoa, is a separate project. [00:37:45] We have CLI, we have VS Code extension, so there's all this history.
+
+Now, [00:37:50] um, you know, th- these new skills are, are sort of relevant [00:37:55] to this particular project. So you can see that it mined something about Supabase [00:38:00] p- SQL surgery, and I pro... This is, like, [00:38:05] a very specific skill that's probably not something I, I would actually want to [00:38:10] install, but it's a pattern that's come out of, you know, the, the transcripts it mined.
+
+[00:38:15] Um, so let's just go down. I don't like that [00:38:20] one. That... But it, it is a very involved one. So this define problem before [00:38:25] implementing, um, is another skill, and you see that this one's, like, a [00:38:30] latent practice where it's, it's seen this before. See, it says [00:38:35] evidence unchanged, and it's presenting it to me again because it's something that, like, I [00:38:40] often do.
+
+Uh, or at least within the transcripts that are, are [00:38:45] being mined, uh, it's a pattern that's being, um, picked out, right? And so it... You'll see [00:38:50] that the skill in, in this engine will actually present you kind of the, the [00:38:55] citations of where in your history files it found this pattern for you. [00:39:00] Um, and so it, it could be that this is something I want to do now, and I [00:39:05] might just pick it so we can see how it installs a skill.
+
+Report bugs with the artifact, [00:39:10] um, bring the falsifying observation, and I don't know. [00:39:15] This is hygiene gate afterwards. Oh, actually, this might be good. [00:39:20] So You can see what it's saying [00:39:25] about me i- in terms of, like, what I do, like, often, uh, to sort of call back to the front end of this [00:39:30] conversation, right? Like, functional success never closes the loop.
+
+Immediately after confirming a feature [00:39:35] works or before letting anything ship, the user, me, runs a distinct second gate of [00:39:40] non-functional checks. Now lint, staging build, type check, re-render artifacts, refresh [00:39:45] audits, full build, test push. This sequence is consistent, behavior first, then this separate sweep for [00:39:50] quality regressions.
+
+Now, that could be something that, like, you have built in your CI, right? [00:39:55] Obviously. But it's also something that, depending on the type of app you're building or what you're shipping, [00:40:00] you might also be just doing or having your agent do over and over again, like, before you push, [00:40:05] right? Because you don't wanna push something that you just know is gonna break in CI.
+
+So that is something that I do [00:40:10] do, like, all the time. Um, let's, like, just pick this one just [00:40:15] so we can move forward. So then it skips a bunch of stuff that it couldn't [00:40:20] advers- uh, like, adversarially adjudicate as being, like, relevant or, uh, [00:40:25] important enough because it hadn't found it in enough evidence. So there's a lot of [00:40:30] text on the page here, I realize.
+
+Um, okay. So I [00:40:35] could, like, approve everything, or I can just say, like, um, forge [00:40:40] this So it, it prompted me in plan [00:40:45] mode. And, um, well, if the API errors stop, uh, we'll [00:40:50] see if it... We'll forge that and install it. And that's, like, the whole flow. So assumingly, assuming this [00:40:55] actually installs the thing, uh, you've seen it sort of soup to nuts.
+
+You get all [00:41:00] your SpecStory histories, you run Lore, just press Enter, you walk through this guided workflow. It [00:41:05] presents stuff for your review. It will never install anything unless you actually approve it. Uh, you can [00:41:10] also, uh, like, not approve things. Um, dossier's above one. Okay, [00:41:15] sweet. So this is the one it's gonna do.
+
+Okay. Yes. Um, and [00:41:20] then you can also uninstall things too. You could say, like, "Uninstall X," and it will go do that. [00:41:25] 
+
+hugo: Super cool. And I... O- one thing that I'm getting out of this is, you know, we have [00:41:30] masses o- of conversations a- and workflows, and it's just... trying to extract signal and, and [00:41:35] patterns from them. And one thing I really appreciate about it is you said this is a [00:41:40] lot of words, but it's far less words than you usually get, and I can see there's work being [00:41:45] done to des- deslopify m- the responses, and also to [00:41:50] make it as concise as, uh, as possible.
+
+Um, because the amount you just [00:41:55] showed us, if you naively ask an LLM or an agent to do something like this, it, it would give [00:42:00] you pages and pages. 
+
+greg: Yeah, that's the nice thing. Like, if [00:42:05] anyone's interested, like, on the live stream or just after the fact, if you happen to, like, watch the recording of this, [00:42:10] um, if you go into the Lore source code, um, which I'm sure Hugo will, like, [00:42:15] present, uh, one of the cool patterns is, again, this, like, deterministic [00:42:20] engine, and using that a- as well as a lot of, like, skill [00:42:25] fu to make it such that the, the presentation of the results are [00:42:30] something, um, that you can actually comprehend.
+
+Like, y- you'll notice, [00:42:35] like, some of the menus and stuff that you're presented with, like, I tried to put a lot of effort [00:42:40] into making it such that it was easy to parse because y- you're right, Hugo. [00:42:45] Like, you know, if you're just using vanilla Claude code or Codex all day, um, [00:42:50] it... the amount of information and the way it's presented to you, it becomes, like, very hard [00:42:55] to, to parse after you've looked at, you know, the- Yeah.
+
+hugo: And the amount of throat clearing and scaffolding. So [00:43:00] there's a, there's an absolute lack of things like, "The point I'm making is concrete," [00:43:05] and "That was, that was the only l- load-bearing hypothesis," and, and, and [00:43:10] stuff like that. Like, there's- Oh, yeah ... there's none of that there, right? And you need to, you need to prompt that stuff [00:43:15] away horribly.
+
+greg: Yep. So this is the skill that it produced. [00:43:20] Again, I'm kinda looking... I, I wasn't looking this with the most critical lens. [00:43:25] Um, but, uh, yeah, so it produced this. I don't know if this is actually [00:43:30] something that I want. Uh, and so in that case, you know, you can, um, you know, obviously just [00:43:35] delete it here. But I think, uh, let me remember the command, like, I think you can just, like, say, [00:43:40] like, uninstall.
+
+Let's just get this name and see if, see if that [00:43:45] will, if it will do it appropriately[00:43:50] 
+
+And the nice thing about this too is when it installs it, it, like, installs it across all your [00:43:55] agents too. 
+
+hugo: Mm-hmm. 
+
+greg: Uh, so it, you know, it symlinks for the, the [00:44:00] holdout Claude MD, right? 'Cause that's different than, like, every single other har- harness. Uh- Don't, don't get me started ... [00:44:05] and, and it will, you know, remove it from all the other directories that, that it installs it [00:44:10] for 
+
+hugo: This is super cool, Greg.
+
+Yeah. Thanks for [00:44:15] coming and showing us your eminently useful skills that I'm gonna, I'm gonna test out, um- Yeah ... [00:44:20] afterwards. And I do... I- if we have time a, a bit later, I'd, I'd love [00:44:25] to hear more about building harnesses on, on top of [00:44:30] harnesses, which is something near and dear to my heart. But, um, without further ado, I'm excited to [00:44:35] introduce Han Lee.
+
+And just to remind, remind everyone, um, if you're watching and have any [00:44:40] questions, let us know in Discord, and we're here, here to answer and help as well. You know, we've got two wonderful builders [00:44:45] who've been building in the space for, uh, decades now, um, and we're all [00:44:50] learning about agents together. So Han, uh, Chung Lee is director of [00:44:55] machine learning at Moody's, where he leads teams building custom LLMs, gen AI applications, [00:45:00] search and discovery systems for financial data.
+
+Um, previously led [00:45:05] data science work at WalletHub, held engineering roles at Workhuman, AMD, Ericsson. Uh, [00:45:10] writes about machine learning e- engineering evaluation, um, and is the [00:45:15] author of Evaluation and Alignment, the, the seminal papers. [00:45:20] Um, so really excited to have you here today, Han. Is there anything you'd add to your bio or anything I've, [00:45:25] I've, I've left out?
+
+han: Thank you for having me. Yeah. Yeah, I mean, if people are [00:45:30] interested, I also ran my own quant fund before, managed some tech mutual funds, uh, [00:45:35] for that, that spent about a decade in my life. Uh, and now I am returning to the [00:45:40] dark side and, and writing code using black screens, uh, everything dark [00:45:45] mode . 
+
+hugo: Fantastic.
+
+So we have prepared a little video for you as, uh, as [00:45:50] well, um, of the, the kind of work you do. So let's, let's check it out. Ah.[00:45:55] [00:46:00] [00:46:05] 
+
+So [00:46:10] that wa- that wasn't the final version sadly, but there was a lot of alignment and red teaming happening [00:46:15] there. I, I'll have to share you, with you the af- afterwards the one where you remained 8-bit throughout. [00:46:20] Um... 
+
+han: Yeah, I, I, I like the chin line on, on, on that video. It [00:46:25] definitely, uh, made me lo- uh, look a lot better than I do.
+
+hugo: Fantastic. Well, I, I'm glad [00:46:30] you, you feel it's a, a compliment. Um- 
+
+han: I'm flattered. 
+
+hugo: Before we jump in, I'd, I'd [00:46:35] love to know what, what do you love most about working with, with agents? 
+
+han: Yeah. I [00:46:40] think it, uh, what I found, right, af- after, uh, a couple years working with [00:46:45] agents, uh, you using the Claude Code, first Cursor, and now everything's Claude [00:46:50] Code for, I don't know, it seems like forever, right?
+
+Uh, one of the things I found that- [00:46:55] It became the control plan for all of my [00:47:00] work. 
+
+greg: Mm. 
+
+han: Let's say for, for AWS. I rarely visit AWS [00:47:05] dashboard, control dashboard. It's usually AWS CLI, remote control this, remote control that. [00:47:10] And if I need to look for information on Jira, I never go to Jira, I just ask Claude [00:47:15] Code and ask it to pull information from Jira.
+
+So all, all this integration so that [00:47:20] the data is now actually in my fingertips instead of me [00:47:25] needing to scroll through 200 different tabs to, to, to extract and find [00:47:30] data for myself. So I think that's the, that's the biggest benefit, right? And, and now [00:47:35] I am, um, going through a phase of [00:47:40] minimalist. As in I just use bare minimum Claude Code with the default model.[00:47:45] 
+
+I don't want to spend time set up because whatever I set up, it's, it's [00:47:50] Codex and who knows if, uh, I think it's a co-work, right? Claude has the co-works, [00:47:55] OpenAI, Codex, and ChatGPT merged. Who knows what's gonna change next day? And, [00:48:00] and, and it's, it's, it's a lot of fun playing with the to- playing with the tools, but it's more [00:48:05] fun using the tools for me.
+
+hugo: Totally. And I... The unlock you mentioned with [00:48:10] respect to connecting it to stuff and having it as the control plane, you of course mentioned Jira [00:48:15] and, and AWS. I, I do encourage people to... You know, I'm using Codex at the moment. I [00:48:20] connected it to my Google Calendar for the first time. Um, and I work in [00:48:25] multiple time zones, right?
+
+With people in Europe, the US, and Australia, and like especially around daylight saving, that's [00:48:30] mind, mind-breaking stuff. I mean, I joke that time zones, you know, are the, the hardest thing [00:48:35] in computer science. But the ability for Codex [00:48:40] to... I'm like, "Can you tell me when it is in Berlin at this time, and send a calendar invite [00:48:45] and invite these people, add the Zoom link?"
+
+It does it immediately. Um, on [00:48:50] top of that, connecting it to your Gmail, for example, um, and being like, "Oh, [00:48:55] can you... What, what did Greg say yesterday in an email about X?" And it will just pull [00:49:00] Greg's email. So I don't need to go through searching through email, um, which is absolutely, in [00:49:05] terms of reducing friction in my life, it does feel more like having an executive assistant now as well, which is wild.[00:49:10] 
+
+han: Yeah, it is. And but one, one big, big caveat [00:49:15] is please do not have... Please only have [00:49:20] very limited permission for your AWS or your- Yeah ... infrastructure [00:49:25] COI because that's, that's my biggest fear, right? I don't know what Claude is doing [00:49:30] because nowadays it's, it's usually I'd only use auto mode. 
+
+hugo: Yep.
+
+han: Previously, [00:49:35] I will, I, I only use dangerou- dangerously skip permissions. Yeah. [00:49:40] 'Cause, I mean, if you ask me for permissions, it's always gonna be a tab, tab, tab, tab, tab, always [00:49:45] approve. You don't read and it's so it's just always approve, right? But please don't [00:49:50] use... Uh, so, so one of the caveats, do not have to- do not have over permission keys on [00:49:55] your local drive.
+
+That, that spooks me out because I don't want to bring down some of [00:50:00] my services just because- Codex or, uh, uh, Opus [00:50:05] decided it's, uh, necessary to, uh, fix. 
+
+hugo: Without a doubt. So what's one [00:50:10] of the things you, you, you find most frustrating about working with agents? 
+
+han: One of the biggest [00:50:15] thing... One of the big- biggest frustration is the steerability of [00:50:20] agents.
+
+It's not the... So it works fine, but once you have... [00:50:25] y- you accumulated enough context and you want to steer it the other way, [00:50:30] it doesn't... It's not r- very steerable, especially for writing or [00:50:35] for, for research type of task, or even sometimes triage [00:50:40] in some of the informations. And, and, and it, it's, it's usually a [00:50:45] dilemma at that point, where, like, agent doesn't ex- exactly do what I want, [00:50:50] and I already have too much context saved in there to just delete [00:50:55] and to, to just restart another session.
+
+And, and mining the [00:51:00] actual useful information out of the context is also, also, also, also [00:51:05] challenging. Um, so I, I mean, I, I found, like, for compassion, right, you... [00:51:10] Greg, Greg was talking about compassion is getting better. Uh, I find it that [00:51:15] usually my issue happens before compassion gets better, 
+
+greg: right? 
+
+han: The, the, [00:51:20] the issue is the steerability, ch- the change of information, change of flow [00:51:25] during, during, during one single session.
+
+I think that's- I- ... that's still very [00:51:30] challenging for me. 
+
+hugo: I would love the idea of... Oh, just imagine... Have [00:51:35] you thought about this, Greg? Some sort of context monitor in... I'm... Just 'cause I use Codex [00:51:40] Desktop all the time at the moment. Right. It'd be so great to have a, a context management dashboard where I [00:51:45] can, I can actually, you know, see what's in context, um- Right[00:51:50] 
+
+currently, and, and actively edit it and, uh, and manage it. 
+
+greg: Yes. [00:51:55] Yes. But, like, would you... Like, how would you do that? How would you, like, actively edit everything in the context window of a [00:52:00] session? 
+
+hugo: I'd use another agent with, with a different context a- actually. Oh. And I'd, I'd have it [00:52:05] visualized probably as, like, a m- a mind map of some sort with, like, topics [00:52:10] and drop-downs that then I could kind of dive into quite quickly.[00:52:15] 
+
+I think the economics is, is a good question. 
+
+greg: Yeah. 
+
+han: I- i- [00:52:20] it's s- a lot of times it's, is I sometimes... So for, for Claude Co, I'm COI, [00:52:25] it's not probable, right? But f- on Codex or Cowork, [00:52:30] you can go up a few conversation before it goes [00:52:35] into the deep end and start forking that conversation from that point. That is [00:52:40] still, like, that, that part is super useful.
+
+Um, but that does [00:52:45] require manual control. So now instead of tabbing through or using Tmux, I have [00:52:50] to, like, keep track of 50, uh, uh, Codex conversations, [00:52:55] which is sometimes fun and not fun. 
+
+hugo: Hmm. But I, I [00:53:00] totally agree that once you get to a, a certain context, like, like, you have [00:53:05] over- overloaded it already and it's really challenging to turn, turn the [00:53:10] wheel.
+
+So what do you wanna, what do you wanna show us today, Han? 
+
+han: Sure. So, so [00:53:15] I've been working on, uh, uh, with a co- a few collaborators with these things called s- [00:53:20] skills bench. So I mean, everybody can write code on skills, right? [00:53:25] And it, it... But the efficacy of those skills is [00:53:30] usually in question, right? And sometimes there's, there's, there's gonna be overlaps and sometimes some [00:53:35] skills are useful but not quite there yet, and [00:53:40] sometimes some skills they, you know, s- if we treat skills like programs, some skills do [00:53:45] not fail, uh, gracefully, and it will end up having a, [00:53:50] a bunch of hallucinated results at the end if it doesn't, if it doesn't fail gracefully [00:53:55] and you use all its internal knowledge to complete a task or to hallucinate a task [00:54:00] away.
+
+Hmm. So, so I've been... I, I, I work on that. Uh, let me, uh, [00:54:05] let me share my window, if you don't mind. 
+
+hugo: Yeah, please do. So, so- And it's, is it [00:54:10] skill- skillsbench.ai? 
+
+han: Skillsbench.ai, yes. 
+
+hugo: Great. I've linked to that in the [00:54:15] Discord as well. Skillsbench.ai. Check it out, everyone. 
+
+han: So, [00:54:20] uh, allow... Let me share this desktop. Share. [00:54:25] All right, so skill bench, right?
+
+So we define agents, right? So, uh, [00:54:30] well, so we define agents as having the harness plus a [00:54:35] model, right? 'Cause the model you need, you need hands and feet to connect it to different tools and [00:54:40] whatnot. So what we found is we created, we created this, uh, benchmark called [00:54:45] Skill Bench that measure the efficacy or the e- e- the effectiveness of [00:54:50] different agents and different, different model and harness combinations.[00:54:55] 
+
+So you can see that, uh, we, we create this with, uh, with Frontier in mind, [00:55:00] so it's, uh, so it... F- the score is going to be biased to very low, right? [00:55:05] So GPT-5 five with Open Hands actually op- [00:55:10] outperforms Codex by, uh, by a bit, right? And different... The [00:55:15] same skill by different model and harness combination together- Mm-hmm
+
+could [00:55:20] perform very, very differently. So, so this is, this is one of the things [00:55:25] that people don't talk enough about, but coming from a data, data science or [00:55:30] machine learning background, it's like, all right, yes, there's a new model. [00:55:35] Yes, you can always just swap in the new model. The model is always gonna work.
+
+The model is always [00:55:40] gonna spit out something. But- Well, 
+
+hugo: also- 
+
+han: Mm-hmm ... 
+
+hugo: I was just gonna say, interestingly, I mean, [00:55:45] Greg mentioned earlier that Claude and other harnesses and products have [00:55:50] different specs, so you need your Claude skills and your general agent skills and agent's Markdown, Claude, [00:55:55] Claude Markdown.
+
+Oftentimes Claude, depending on the model, won't even recognize the skill when I s- [00:56:00] express it in natural language, so I default now to using slash commands to access skills in, i- [00:56:05] in Claude Code, whereas I don't need to with every other harness. 
+
+han: Oh, yes. And, and, and [00:56:10] the slash command is also awesome because when you write a slash command, um, [00:56:15] in some form of Markdown file, you can also use that slash command [00:56:20] as part of the callback, right?
+
+So you, uh, so Greg and you were just, uh, talking about like, all [00:56:25] right, before I do a pull request, I have to sanitize or, or do a sanity [00:56:30] check of my input, make sure it's not overly verbose, right? We, we always see, [00:56:35] um, Claude Code, they love adding tons of [00:56:40] comments between the, in, in between the code, right? If it's, if it's YAML file, the, the comment [00:56:45] is gonna be like 20 pages long with- Totally
+
+for a five-line YAML, right? So that, [00:56:50] they love comments 'cause that's the, their thinking traces. So, so, so, so, so that's... [00:56:55] You know, the slash commands are also, like, pretty good for, uh, if you're managing a [00:57:00] project that you're sharing with others. So, so this is, this is [00:57:05] Scalebench. And, and what, how we run it, uh, we, I use a call, I use a tool [00:57:10] called Benchflow, which is basically an orchestrator.
+
+So [00:57:15] orchestrator, a control plan of how, how things work. So let me find... Sorry, I'm [00:57:20] just going to... All right. So [00:57:25] let's do this demo. So how we do it is we manage it as a task, [00:57:30] right? So in this, in this scenario, because we're talking about agents, [00:57:35] which is more of a reinforcement learning type of framing, so every input or every input prompt [00:57:40] is a task.
+
+So we can formulate the, uh, so this is sample task, [00:57:45] and we can go in here. The task definition is [00:57:50] Here, so there's a, there's a certain [00:57:55] schema. We're using Benchflow, making it easy, and it's a quick demo that we, [00:58:00] we, we, we, uh, we conjured. Uh, there's skills, [00:58:05] XL, different tags, blah, blah, blah. So this is like, okay, right, build a quantitative [00:58:10] sales report workbook from CSV in this category, and you have this [00:58:15] skills available, blah, blah, blah, right?
+
+So everything is set up [00:58:20] inside an environment because an agent works in a, in, in reinforcement learning [00:58:25] setting, an agent interacts with an environment to produce a result. [00:58:30] So the environment, in this case, is a Docker file, which is [00:58:35] basically, all right, we have this set up. We get... we copy in the skills, right?
+
+'Cause [00:58:40] skills are living in the local directories, right? So they have, have Claude code. [00:58:45] The skills is liv- either living in your project directory or, or living [00:58:50] in your, uh, .claude/skills or somewhere there, right? [00:58:55] So this is how everything gets set up, and we can run it, uh, [00:59:00] run. So I'm just going to use Claude code because this is my, uh-[00:59:05] 
+
+This is my orchestration engine, [00:59:10] right? So while we run, um Okay, talk a [00:59:15] little bit about how, how we, how we are thinking, right, in terms of evaluation these [00:59:20] skills or how we are evaluating agents. So for agents, like if we look [00:59:25] at the actual traces, typically you see an input, and you will go through some reasoning, tool [00:59:30] use, reasoning tool, uh, reasoning, tool use, result, tool use, result, tool use, [00:59:35] result, blah, blah, blah, until it finishes.
+
+Right? And, and, and [00:59:40] in that sense, in, in this type of scenario, there is... [00:59:45] Like in the old days of ChatGPT, it's usually, okay, you have an input, you have the output. [00:59:50] You, you, you look at the input, you, and the output, and you evaluate them as, you evaluate them as [00:59:55] a pair, right? So the, the surface is quite limited, but nowadays [01:00:00] the evaluation surface just grows so big in the agent world, right?
+
+[01:00:05] Because no longer... No- you o- not only have the output, but you have the traces [01:00:10] as how the agent, what the a- agent actually do to [01:00:15] complete its task. Mm. The trace. You can evaluate. You can [01:00:20] evaluate memories, right? If the agent is writing down some markdown file, adjusting the [01:00:25] skills.md live or not live, if it went into sleeping mode [01:00:30] and tried to rewrite the memory, like rewrite the memory.md or [01:00:35] whatever MD the, uh, so.md, i- if it's, you know, I guess [01:00:40] OpenClaw, if people are still using that, right?
+
+And then there's the environment, like did the agent [01:00:45] change some databases? Did the agent add or delete a file? Blah, blah, blah, [01:00:50] right? And then one of the more maybe esoteric, maybe not so esoteric now, [01:00:55] is the mechanic- mechanistic interpretability of it. Can, can you monitor the [01:01:00] agent's thought process, right?
+
+I guess nowadays it's called J-space for, uh, due [01:01:05] to the paper that, uh, Anthropic just published. Like you can, you can, you can get... take, uh, [01:01:10] take, uh, some of the hidden layers in and, and, and, and, um, [01:01:15] make a model out of it for interpretability basis, right? So you... the evaluation surface [01:01:20] just grows so big, right?
+
+So we, so the evalu- the way we [01:01:25] evaluate becomes quite different, where now let's see if it does anything. All right, it's, it's running. [01:01:30] Sometimes it, it takes a while. Uh, but here is a pre prior run. [01:01:35] So at after each run, it will produce certain artifact, right? So there's JSONL [01:01:40] for results, ADP, so these are the agent trajectories.
+
+So, [01:01:45] uh, before that, because [01:01:50] we need to, we need a way to evaluate the agent, [01:01:55] so we need to have test, which means we set up a [01:02:00] very interesting cadet, very short evaluation [01:02:05] task to make a verifier of some sort. Right. So a [01:02:10] deterministic, this could be a LLM as a judge if it needs to be, but typically a [01:02:15] deterministic, it's short, short one, so we can quickly spot check if the agent [01:02:20] is doing the right thing, uh, for the final result.
+
+So then here, [01:02:25] after it's done, we can then, uh, let's say results[01:02:30] 
+
+Look at this [01:02:35] and see the actual full trajectory of what the agent is doing, right? So the input is [01:02:40] exactly the same as what is in test.md. Like, hey, build a quarterly sales [01:02:45] report, blah, blah, blah, blah, blah. The formatting is way, uh, it's, it's way off. It's gonna look better on VS [01:02:50] Code, but, you know, whatever.
+
+This is, this is fine. We can survive. And then the first [01:02:55] one, it ran into an error. Dr. Compose command failed for environment, blah, blah, blah. All [01:03:00] right, so this is, this is an issue, right? But then it still continued to run. [01:03:05] Username, sheet, blah, blah, blah, and then you get a completion, a system [01:03:10] prompt, done.
+
+The quarterly sales report. Bl- so, like, you can see, like, [01:03:15] okay, user, assistant, user, and then it start the function calls. [01:03:20] Some of the calls, some of the... what happened during, during the trajectory are the function calls. You have the [01:03:25] function call agent, or you have a u- it uses a, a function call agent, which is [01:03:30] a sub-agent probably, right?
+
+You launch a new agent to han- handle complex multi-step [01:03:35] task, like all this. So I'm just gonna quickly scroll through. Different [01:03:40] function. It use- used Bash and, and, and, and, and, uh, [01:03:45] Chrome ... it created a Chrome job for whatever reason, right? So s- [01:03:50] And then you get, uh, at the end you get a score out, which is one, zero- Mm-hmm
+
+or [01:03:55] whatever score. But what is, what is important when we are evaluating in, for the [01:04:00] agent stuff, especially for the traces, we have to make sure the agent [01:04:05] doesn't go out of bound. As in, if we are not expecting this [01:04:10] agent using, when using this tool to use Chrome, but it did, [01:04:15] then it's something that we have to look out for, right?
+
+So sometimes [01:04:20] people say it jailbreaked or it, uh, it reward hacked. Like, it [01:04:25] could just delete a file, uh, from, from your test suite here using a, [01:04:30] using a file delete function to delete a file and make the test pass, [01:04:35] right? So those are some of this jailbreaking or alignment or [01:04:40] the type of issues that we're looking for.
+
+So yeah, 
+
+hugo: and- Fascinating. And I am interested- Yes ... [01:04:45] one thing I'm seeing in here is that we don't want determinism in everything, but there are [01:04:50] certain parts of the workflow which are deal breakers, and it's binary. So we do wanna, like, check [01:04:55] for de- some deterministic processes, right? 
+
+han: Correct. There, there are some, [01:05:00] some processes has to be de- deterministic, right?
+
+And, and, and [01:05:05] there, there's this concept called reinforcement learning from verifiable results, [01:05:10] which is, you know, all the rage, right? That's how a lot of things get smarter, [01:05:15] learn how to reason. When they say verifiable result is can we create or can we [01:05:20] find from the eventual correct output enough signals [01:05:25] deterministically to say, to give it a grade, says yes or no.
+
+hugo: Mm. 
+
+han: [01:05:30] Yeah. And this is also very helpful when you have the traces where you will be [01:05:35] able to, uh, in certain domains, you'll be able to penalize the [01:05:40] agent for either thinking too long or spend too much [01:05:45] tokens doing thinking to achieve the same task. 
+
+hugo: Can I ask as well- 'Cause now I think- ... what, [01:05:50] what ski- what type of skills are appropriate to use this for?
+
+[01:05:55] 'Cause you, I mean, do you need it to be verifiable, or can we [01:06:00] test it on things that require some more form of, uh, of judgment or taste? [01:06:05] 
+
+han: So for taste, you can definitely use this. Um, [01:06:10] but then at the end, your- Your, your, [01:06:15] your script, your verification script will then will have to be a LLM as a judge [01:06:20] 
+
+hugo: Yeah. And you'll want to align that in s- in some way with your human preferences.
+
+And- 
+
+han: You want to align that with, in some case, [01:06:25] right? And, and so, so this is especially u- it... I don't use this for my personal stuff. [01:06:30] As I said, I am a minimalist. I, I have some skills, but it's, it's [01:06:35] nothing, like, fancy to brag about. I don't spend that, even that much time working on them. [01:06:40] Um, but if you are building services to service your customers or [01:06:45] a, a wider set of audiences, then evaluating them properly to [01:06:50] ensure that they, they are functional is extraordinarily important, right?
+
+Mm-hmm. Same [01:06:55] thing with MCP servers as well, right? Because MCP server have different prompt. But to [01:07:00] ensure your customer have the right, uh, e- experience, or [01:07:05] ensure your customer's agent have the right experience, you might want to, [01:07:10] let's say, if you have a, a, a Gmail server and then you have a Yahoo [01:07:15] Mail MCP, Gmail MCP, you have a couple mail MCP, you have to...
+
+You, you [01:07:20] might need to, uh, couple them together to see how they, how they conflict or how they co- [01:07:25] cooperate or, or, or, or intervene with each other, or how the model gets [01:07:30] confused, right? So like- Yeah ... so, so the, the, the testing surface for [01:07:35] this becomes, all right, it's not just MCP server that, that, that runs.
+
+It's not just [01:07:40] a agent skills that runs to the end, but it's actually how the agent would [01:07:45] use it successfully. And you can... You have to test it somewhere, [01:07:50] somewhere systematically in a m- more, uh, scientific manner, [01:07:55] if, if, uh, for a lack of be- lack of better words. 
+
+hugo: Fantastic. Uh- So [01:08:00] yeah, what's happening here now?
+
+han: So, so, so if the result is done, it [01:08:05] fails, score is 01. Okay. So OAuth password, Claude [01:08:10] Haiku, blah, blah, blah, fail. All right, so there's, there's some failures, blah, blah, blah. And then, AI can [01:08:15] also inspect the traces. Instead of looking directly on, on JSON, you, I can, [01:08:20] I can, uh, have-[01:08:25] 
+
+So I, now I, I [01:08:30] know I can, you know, tab to another tab and just type in the command, it runs probably faster. [01:08:35] But nowadays we're all in the habit of, uh, prompting, [01:08:40] prompting, uh, Claude, uh, Fable to, uh, change a file name and spend [01:08:45] $10, right? That, that's- Yeah ... that's the name of the game today. Uh, but, uh, [01:08:50] this takes too long.
+
+I'm just gonna copy, paste that[01:08:55] [01:09:00] 
+
+All right. Let's see[01:09:05] 
+
+[01:09:10] Probably I can run it here Uh.[01:09:15] [01:09:20] 
+
+Where do the jobs go?[01:09:25] 
+
+Sorry 
+
+hugo: It's a question I ask all the time. One thing I, I love, and this wasn't, [01:09:30] wasn't planned when I invited you both to today, but that, you know, a through line here [01:09:35] is there's just such a mass of information in what LLMs [01:09:40] generate, and for, for der- very different purposes. But you're, you're both demonstrating [01:09:45] how we extract signal in order to get that mass condensed in a [01:09:50] fashion that communicates to us what we need to know in order to verify things and, and, and build [01:09:55] things.
+
+Um, which is pretty cool, huh? 
+
+greg: I noticed the same thing, [01:10:00] Hugo 
+
+han: All right. 
+
+hugo: Really interesting [01:10:05] 
+
+han: All right, so yeah, I guess, uh, running a shell command is [01:10:10] too hard for me now. I have to rely on the agent. I'm totally lobotomized. Uh 
+
+hugo: [01:10:15] I love it. 
+
+han: I, I, I'm dependent on Claude now to do anything. But, uh, yeah, so, [01:10:20] so, like, you can also see the actual prompt, uh, on the job that we just run, [01:10:25] prompt, uh, and then the thought, the thinking traces, right?
+
+You [01:10:30] have the thinking traces, and then, uh, blah, blah, blah. Use a skill, da, da, [01:10:35] da, da, da, go through the end and, and, and yeah. So, so, so, so that's, [01:10:40] so that's that. And, and, and, and, and the trick for some of this is imagine you [01:10:45] run this across, uh, 100 or 1,000 different [01:10:50] tasks. Mm-hmm. Send it to different sandboxes, running a scale, running a full [01:10:55] evaluation, burn all your tokens and all your credits, and that's, that's the, that's the fun part, right?
+
+How do [01:11:00] we incinerate enough tokens faster? 
+
+hugo: A ma- well, that, yeah, that's, that's [01:11:05] the game, right? And I mean, there's the joke that, you know, [01:11:10] we incinerate tokens to generate slop, and then we incinerate more tokens to de-slopify [01:11:15] it, um, as, uh, uh, as well. I, I also love... And this is [01:11:20] something we've seen a bunch and, and we know is happening now, but we're all so sick of...
+
+Look, [01:11:25] actually, Matt Rocklin on the show a couple of weeks ago, who created Dask am- among other things, [01:11:30] when I asked him, "What's the most frustrating?" A w- at one point he said, "Just how much I have to [01:11:35] read." It's re- like, the amount of text is so exhausting. Um, [01:11:40] and, and that really speaks to something we've seen here is, like, reducing output and extracting the [01:11:45] signal.
+
+But also you were just showing some HTML, which we're all... We've all rediscovered HTML [01:11:50] 'cause it helps us work w- with our agents, and it... we don't have to read M- M- Markdown all the time [01:11:55] as well, and we can have some nice visuals, right? 
+
+han: Yes, yes. And, and, and [01:12:00] I, I, I think there's something interesting to say about taste, right?
+
+Taste is really [01:12:05] when you read enough slop, you recognize, all right, this is something that's AI [01:12:10] generated, right? So I'm not gonna be shy, I'm not gonna be shameful. This chart is AI [01:12:15] generated, pretty standard. You can, you can tell it's AI generated- Yeah ... because e- [01:12:20] every, every Claude generated thing, they favor some, like, rounded box, [01:12:25] very tan, like, re- very warm color at the background, uh, and slight, like...
+
+[01:12:30] Yeah, you have a top tab that's a, that's a title. You can, you can tell [01:12:35] only when you consume enough slop. 
+
+hugo: Without a doubt. And there are some [01:12:40] really interesting studies that I was messaging with Hamel about actually, 'cause he's on a, a lot about, um, [01:12:45] AI slop in writing at, at, at the moment. But there are studies that show, like, s- [01:12:50] the best AI detectors are people who use AI a lot.
+
+han: [01:12:55] Yes. That, that's the only way you learn. We, uh, there, there's a quote somewhere, it says, like, [01:13:00] "We, we, we shape our tools and our tools shape us." 
+
+hugo: Without a doubt. 
+
+han: [01:13:05] So, so like- Without a doubt ... all, all the AI writing, you see like, "If this is not this, it's... It, it [01:13:10] is not a, it, it's not, it is, it is not blah, blah, blah.
+
+It [01:13:15] is." Right? And then, or, like, you have a lot of, uh, staccato sentences where [01:13:20] you have very, a lot of very short punchy sentences concatenated together, [01:13:25] or, or em dashes, or back in, uh, two years ago it [01:13:30] was delve. Beautiful. And this, this is a distribution shift too, [01:13:35] because this AI slop distribution shift- Like, on [01:13:40] a quarterly, yearly basis where their training distribution shifted [01:13:45] or their post-training distribution shifted, which caused the, the model behavior shifted, to [01:13:50] shift, and the, the SLOP generated shift.
+
+So it's, it's, it's, it's not [01:13:55] too dissimilar to us humans, right? Whatever that was hot back in [01:14:00] the, uh, the, the, the '90s, it's, uh, it's now fashionable again. [01:14:05] So- Totally ... there is all this, uh, c- circle of life. 
+
+hugo: It really [01:14:10] is. Hakuna matata, and Hana's made the, the load-bearing and concrete [01:14:15] points, um, e- e- explicit.
+
+Yeah, it's the 
+
+han: soundtrack. 
+
+hugo: Exactly. 
+
+han: The soundtrack of our [01:14:20] conversation. 
+
+hugo: Um, amazing. Is there anything else you, you... [01:14:25] Not that this isn't enough. I mean, my mind's still, you know, overflowing. Um, yeah, is there [01:14:30] anything else you wanted to chat on or, or, or show us? 
+
+han: Yeah, sure. So, so, so, [01:14:35] so just in case, right, just in case people haven't seen enough [01:14:40] of...
+
+So one of the things I, I do with my personal work [01:14:45] is, is, is I use Obsidian for [01:14:50] my knowledge, right? So previous... I still have thousands of tabs open, [01:14:55] uh, or hundreds of thousands of tab open. And so what I do now, right, [01:15:00] one of my workflow is I use Obsidian as my, my augmented memory. [01:15:05] And- Only the article I [01:15:10] read.
+
+I will clip them, store them obsi- um, in Obsidian. [01:15:15] Again, I, I don't want to clip something I don't remember. Uh, what ... My, my biggest challenge for [01:15:20] myself is sometimes I remember I read something somewhere, but [01:15:25] I couldn't find it. It's what we in, like, reinfor- in, in search call, like, [01:15:30] uh, tip of the tongue search, where you roughly know the concept, but you [01:15:35] don't know the exact term or the keyword to get it out.
+
+So, so I clip all of the [01:15:40] articles I read, put them into Obsidian, and on a nightly [01:15:45] basis I am using Codex. Uh, you can use Claude Code as well, that's all the [01:15:50] same, um, to sift through all of the documents [01:15:55] and get all of the entity names and [01:16:00] concept names tagged and linked together. So it's a [01:16:05] nightly job, sort of, I guess this is my, uh, second brain's [01:16:10] sleep time when it, when it does the agglomeration and tagging of, uh, uh, [01:16:15] of the, of the subject.
+
+hugo: And- Awesome. And do you have that set up as a, a cron [01:16:20] job, some sort of pulse, or? 
+
+han: It's, it's a... [01:16:25] Let me see if I can share my ChatGPT [01:16:30] It, it's a set scheduled task 
+
+hugo: Scheduled task. Amazing. 
+
+han: Yeah, it's a scheduled [01:16:35] task, so basically something like this, right? I have a scheduled task. Notes, uh, it's in my [01:16:40] notes folder, my Obsidian vault.
+
+Basically, and, and let me blow this up [01:16:45] so people can see it. 
+
+hugo: So while Han's doing that, I just wanna say, like, [01:16:50] scheduling tasks, like deterministic workflows with agentic stuff embedded in [01:16:55] them, all of these things are so powerful. So when you're getting agent pilled, just [01:17:00] remember there's stuff we've been doing in software for a long time.
+
+Hooks, as in [01:17:05] triggers, and symlinks for our Claudes and, and, and, and agent [01:17:10] stuff and cron jobs and work- dynamic workflows using all the agent stuff, which [01:17:15] is, it really important to know, I think. 
+
+han: Yeah, you're, you're absolutely right. This is... Sorry, I'm [01:17:20] talking to, like, Claude. But this is, this is amazing because the, the, the reason I said [01:17:25] this is amazing because if it's three years ago- Mm
+
+this would have cost one [01:17:30] full engineering team for what... You have to have a, a, a someone that does, [01:17:35] that knows how to do NLP to do entity extraction. You have to find someone who knows [01:17:40] NLP to, to do entity linking, and then there's some machine translation 'cause I clip [01:17:45] from both English, simplified Chinese or Ch- traditional Chinese sources, right?
+
+[01:17:50] 'Cause there is a lot of, uh, uh, good research and, and content coming out of China on AI. [01:17:55] So I clip all of them, and I want to also get aliases, [01:18:00] right? The, the, between... So I can, if I click in, uh, click on [01:18:05] transformers, I can find all of the content that's not only in English but also in [01:18:10] Chinese, whatever, like, that I clip from, like, Weibo or Zhihu or [01:18:15] something like that, right?
+
+So this, this, this job is, this, this is just so amazing, [01:18:20] right? And, and yeah, so now, and now I have this, this running, uh, every [01:18:25] night. Um, I mean, I can run it sooner, but I don't see any, any reason [01:18:30] why. Um, so this is one of the, you know, nice, nice thing that I, that I [01:18:35] have. And, and at the end, let me see. Oh, yeah, you can, you can see some, [01:18:40] like, outputs, like a big, big fancy globe.
+
+I don't know. I mean, it's [01:18:45] pretty, but you can go in, and you can see, all right, uh, Uber. There, [01:18:50] there, I can cl- I can connect to Uber and, and, or, like, different... Or [01:18:55] you can see how different concept group together, right? And of course, because it's entity [01:19:00] naming, you will have a lot of, a lot of, uh- Uh, name of [01:19:05] the company being the, uh, being this, being the big cluster.
+
+But like right here you can [01:19:10] see... All right. Sorry, I, I'm gonna point to the top right-hand side. I don't think it's [01:19:15] e- very easy, but right. All right, so like top right it says like [01:19:20] AI chip. Uh, like every, every large companies are turning to AI chip [01:19:25] and, and, and, and Amazon is one of them, and this are... That's the list.
+
+There's a [01:19:30] article probably from, uh, from Digitimes or something that talks about who in [01:19:35] Taiwan are manufacturing these AI chips. Yeah, so- 
+
+hugo: Awesome ... [01:19:40] 
+
+han: so, so yeah, it's, it's, it's really, really, um, it's an amazing way to process information. [01:19:45] 
+
+hugo: I also wanna index on the fact that... So firstly, if people haven't explored like LLM [01:19:50] wikis, uh, which Kaparthy m- popularized, go, go and check it out.
+
+Um, [01:19:55] I... When doing it, I love Han's approach. I wanna say a few things. [01:20:00] Firstly, be mindful of what you ingest into it and how to, and decisions you make [01:20:05] early on will propagate, so be really mindful of how you're constructing it. Be really active in the [01:20:10] process, uh, e- early on. It will set the stage for what happens later as you g- give [01:20:15] your agent more, more rope.
+
+Um, the other thing Han mentioned is he [01:20:20] puts things in it that he reads, and I... Like feel free to do some- something else, but just know [01:20:25] what you're doing. Your, your agent is getting a lot of context that you don't even know, uh, what, what's [01:20:30] in there as well. Um, and it actually reminds me of the early days of iPods [01:20:35] when it was the first time I could like get like [01:20:40] 20 gigs of music from a friend that I'd never listened to and put it on an iPod and then just [01:20:45] listen to...
+
+And it, it's such a different paradigm of interacting with in- i- [01:20:50] information a- a- and media that it's actually can be quite m- dissociating. So [01:20:55] after the, the iPods first came out, I actually got an iPod Mini or whatever it was and just put a [01:21:00] few albums on it because that's all I, like had the space to really [01:21:05] emotionally connect with and all of, a- a- all of these things.
+
+So we do wanna... It's a very exciting time. [01:21:10] But when new information technology e- emerge, we wanna be mindful of what we give to them and allow them to [01:21:15] inject into our consciousness as well, I think. 
+
+han: Yeah, 100%, [01:21:20] 100%. I- I- I think all these [01:21:25] models learn all this... They learn and gain all these capabilities [01:21:30] by reading the whole internet, by completing a lot of, a lot of the [01:21:35] task.
+
+And we are learning, and we should be learning the same way just so that we don't [01:21:40] completely outsource our understanding, our comprehension, uh, to the models. 'Cause at, at [01:21:45] some point if we do that, uh- We will have to pay [01:21:50] the debt. And that is- Without a doubt ... that is, that is pretty heavy. 
+
+hugo: The hidden [01:21:55] cost of technical debt in agent AI psychosis mode.[01:22:00] 
+
+han: Yes. 3 A- 
+
+hugo: 3:00 AM surrounded by Claude code terminals. [01:22:05] Um, dude, this is such, such interesting work you're up to, and I can't wait to [01:22:10] build more skills and workflows using Law and then going and evaluating them with all the different [01:22:15] systems I play around with, um, with Skills Bench. So if you wanna stop sharing your [01:22:20] screen, um, maybe we can just have a, a, a bit of a [01:22:25] chat.
+
+I am interested... Uh, Greg, before we were talking [01:22:30] about harnesses on, on harnesses, and I, I'm interested in your thoughts on this, Hun. But something I try to help [01:22:35] people understand is for people who use... [01:22:40] I almost hesitate to call them, like, coding agent assistants now. It's like general purpose computer use [01:22:45] agentic assistants or something, something like that, right?
+
+But for people who use those, I try to help them [01:22:50] understand that a lab, a frontier lab doesn't just ship a harness and you use it. You're [01:22:55] actually constantly, by writing skills, by setting up scheduled tasks, by constructing [01:23:00] agents.md, you're continually building the harness with it. I do [01:23:05] a lot of work in agentic data science as well, where Claude is really bad at data science.
+
+Um, [01:23:10] well, it's better than you might expect, actually, but it's still pretty dumb about a lot of things. So you build up your data [01:23:15] science harness a- around it. So that, that is prelude to just thinking through [01:23:20] how we're active in building and rebuilding harnesses. Greg? [01:23:25] 
+
+greg: Yeah. Um, so I- I- I'll, I'll give a [01:23:30] little exposition on what I was, uh, intimating before.
+
+So, um, the ... [01:23:35] You know, after I built this one collaborative product for Spec Story, uh, [01:23:40] it's again, this sort of... Think of- think like Zoom meets like collaborative, like, uh, Google [01:23:45] Docs meets like shareable agents. Um, I had accumulated like, [01:23:50] again, like all those sessions, like thousands of them, and I, I used, [01:23:55] uh, a workflow to mine a lot of patterns that I then turned into like a book actually, [01:24:00] and then that book became sort of the premise for this course I'm gonna deliver, yada, [01:24:05] yada.
+
+But the sort of through line to all of that is, and this actually kind of bleeds [01:24:10] into to the reason why I made Laura in the first place, is that like we repeat [01:24:15] ourselves many, many, many, many, many times in these conversations we're having with these agents, whether it be for, you [01:24:20] know, the, the purpose of creating code or product, or it's for general research or like, you know, Han, you [01:24:25] shared, it's like your control plane for everything, right?
+
+When it comes to building product, [01:24:30] um, the thing that I also don't like, and you mentioned this as Han was presenting, is [01:24:35] the amount of reading that you have to do. Like it's just, it- No. [01:24:40] Maybe I'll revise my prior frustration. I also share that sentiment. Like the amount of [01:24:45] walls of text that I read a day pivoting between many different terminals across many [01:24:50] projects is like just, it's mind-numbing.
+
+Um, and I also don't love the [01:24:55] fact that no matter how good that these models get, we're spending the vast [01:25:00] majority of our time just verifying if it actually did the thing that we intended it to [01:25:05] do. And so- That led me to say, "Well, [01:25:10] what's the meta around the stuff that I do?" Uh, whether it be s- something [01:25:15] that I can consolidate into a skill so I can save myself some time.
+
+Uh, and the [01:25:20] thing that even in today's models like Codex, you know, and Claude have like the [01:25:25] /goal command, right? Which allows for like more unattended runs, these specified criteria [01:25:30] like invariance and sort of acceptance, uh, checks. Uh, i- is that ... [01:25:35] That's all great. I actually love the goal functionality, but there's not
+
+Like, the [01:25:40] model is doing the verifying, right? So if you actually like look at how the goal command works, for example, [01:25:45] you know, the model will go in there and it'll have like, uh, an adjudication run, and [01:25:50] it's gonna use its same model family to sort of like test. It's better than what it did before. So [01:25:55] the premise of this harness I've been building, uh, wraps whatever CLI [01:26:00] you use, and it can wrap multiple at the same time.
+
+The core of it is that it [01:26:05] has a gate, uh, a sort of definition-of-done check that you can [01:26:10] define in like a deterministic manner. It actually all does this for you. And then [01:26:15] whenever you give, uh, you know, a prompt to it, like a goal or it [01:26:20] can be much more robust than like a goal, it can be like a whole orchestrated plan, [01:26:25] uh, the, the harness will keep either Claude Code, Cursor, Codex running [01:26:30] until it passes these hidden, um, definition of done [01:26:35] checks.
+
+So think about like the Ralph Wiggum loop, right? That everyone knows. It was like the precursor to [01:26:40] goals, right? There's just like very, very naive. It's like run 20 iterations, right? [01:26:45] This is like don't stop running, uh, until you actually pass these [01:26:50] deterministic checks that, oh, by the way, are in a different place than the model has access to.[01:26:55] 
+
+So the m- the model will not be the one determining it, its end run. It's called [01:27:00] Dead Reckon. You can go to like deadreckon.sh. That's, there's like a page- I, 
+
+hugo: I noticed that in your, in [01:27:05] your terminal in some cool ASCII- 
+
+greg: Yeah ... 
+
+hugo: different vibe or something. 
+
+greg: Yeah. I've been ... I... [01:27:10] So I've been working on it for a while, just like in my spare time, um, because [01:27:15] it's not f- fit for purpose for everything.
+
+It's like more for like you wanna do a very long unattended run, [01:27:20] and you wanna come back, and you wanna know that basically, you know, if it's been running for 20 hours or [01:27:25] something, like that it's, uh, that it's passed what you've predefined as the thing that's gonna [01:27:30] allow the, the harness to break the loop.
+
+Um, because I don't know if you [01:27:35] both know this, like what stops... Like why does, why do the harnesses, [01:27:40] uh, stop? Do, do you know? 
+
+hugo: So- What do you mean by stop? 
+
+greg: Like when you give a [01:27:45] prompt, right? You give a prompt to do a thing, right? And, and then eventually the harness will like stop, [01:27:50] right? Oh. Like 
+
+hugo: the Yeah. I mean, essentially it's part of the reasoning, right?
+
+han: [01:27:55] There, there, there's, there's two parts. One is for, uh, most harnesses there i- [01:28:00] there could be a setting that limits the number of turns, right? So let's say if I run Claude [01:28:05] Code in my, uh, PR review, I can give it, uh, like, [01:28:10] 10 or 15 turns to make sure it doesn't run forever And [01:28:15] the other part is- Yeah, so that's one way, yeah
+
+when the, when the... Right. And then the other part is when the model decides [01:28:20] it's done, it's done. 
+
+greg: It, it's actually when the... So if you look at the [01:28:25] source code of, like, Codex, which is open source, or go look at Pi, they all share the same [01:28:30] behavior. Of course, it depends on the LLM's reasoning, but it's whenever the model- Mm-hmm
+
+[01:28:35] stops calling tools- 
+
+hugo: Yeah ... 
+
+greg: right, that it finishes. When 
+
+hugo: it returns the completion endpoint. But [01:28:40] that, and that's what I meant- Yeah ... with respect to re... Like, that's why we call it react, right? Yeah. It will reason until [01:28:45] it, quote unquote, "thinks" it has enough information. But you're right, it's when the [01:28:50] input, and to Han's point, there may be, like, a limit in the number of turns it can take.
+
+There might be a limit. [01:28:55] But it's when the input triggers the output being a completion endpoint and not [01:29:00] a tool call. 
+
+han: There- 
+
+greg: Yeah ... 
+
+han: there is also this [01:29:05] phenomenon, like, if you try to do a very long horizon task, [01:29:10] where you ask it to, uh, transpile, let's say, [01:29:15] Postgres into Rust or into Zig for that matter, right?
+
+[01:29:20] Um, it will try to do that as long as possible [01:29:25] until it's done. So let's go transpile this to blah, blah, blah. [01:29:30] Uh, ver- and verify until it's done. And what would happen is certain models, [01:29:35] like some of the older, older models like Kimi 2.5, which is... [01:29:40] I- it's older, but it's, like, two quarters old. It will give up once it cannot achieve...[01:29:45] 
+
+Once, once the model realize it couldn't achieve the task. But some [01:29:50] models are very eager, as in it will try for as long as probable unt- [01:29:55] and until it, it, it... E- even if fail, it'll keep on trying. So, [01:30:00] so some mo- different model have different personalities. I think that's, uh, a training [01:30:05] artifact, where the, the models were literally trained for [01:30:10] extraordinarily long horizon task, so they have the persistence to try, where some [01:30:15] models will fail.
+
+It, it doesn't say... It, it, it does not say that if... Or, [01:30:20] it, that the task did not fail. The model will try until it doesn't feel [01:30:25] like it's, uh, it, it... U- until it doesn't... It could... [01:30:30] It, it will try until it d- it realize it couldn't complete a task, and it will output a [01:30:35] end of, e- end, end of text token, says, "Hey, I'm done."
+
+hugo: Yeah. And [01:30:40] you can also, like, in the context, whether that's in the system prompt or Agents MD or your [01:30:45] instructions or the skill or whatever, be like, "Try lots of different things. If the first [01:30:50] thing fails, then try and give it examples of the m- m- the types of things to try," right? [01:30:55] 
+
+han: Yeah. I mean, I, I think with, with, now with dynamic workflow you [01:31:00] can just tell Claude, "Launch as many, uh, sub-agents as possible."
+
+Yeah. Try different [01:31:05] things and just incinerate your tokens. 
+
+hugo: Yeah. And I've just linked in the Discord actually [01:31:10] to two lightning lessons I'm teaching soon. They're free lessons on building effective harnesses. First building the [01:31:15] loop, and then using SDKs to build effective harnesses. Um, and also one on, that I've [01:31:20] called Loop Engineering Without the BS, 'cause a lot of people are trying loop engineering for all types of [01:31:25] nonsense.
+
+I think it can be really powerful, um, when... Like auto research is a, a wonderful [01:31:30] example, and applying that to certain things. Doug Turnbull came on and, uh, applied it to, um, you know, [01:31:35] improving, uh, a- agentic search, um, techniques- Yeah ... and, [01:31:40] and that type of stuff. When you have a really good objective function, you can hill climb and can figure out how to not over-fit.
+
+[01:31:45] Loop engineering plus plus can be great, but if the objective's... Sometimes the objective [01:31:50] function is for the human to understand something as well, right? In exploratory data analysis. So [01:31:55] you don't wanna do loop engineering for certain things. So I am giving a, a lightning lesson on that as [01:32:00] well. But I am, I am wondering if you...
+
+Are you guys, are you guys looping much? I don't do that much [01:32:05] work which requires being that loopy. 
+
+greg: I mean, [01:32:10] I think goal... Like, if you use a lot of goal commands, that's a, that's a variation of a loop. 
+
+hugo: Yeah. [01:32:15] And, and you do that? Um, 
+
+greg: yeah, all the time. Like, I actually built the Dead [01:32:20] Reckon harness purely with, like, Codex goals.
+
+And now I'm- Can you 
+
+hugo: give me a few examples of [01:32:25] what type of goals you'd, you'd set and that you found it was effective in meeting? 
+
+greg: I mean, [01:32:30] they're very long, but I can show you them. Like, and- Yeah ... so, yeah. Um, [01:32:35] whoops. Ah. Oh, my God, everything just popped up. Um, [01:32:40] okay. So... 
+
+hugo: Shout out to Isaac Flaff in the Discord, [01:32:45] and to Manus I saw as well.[01:32:50] 
+
+greg: Okay. So this is the repo for this dead reckon harness, right? Mm-hmm. Um, [01:32:55] and all, all of the source intent if you will, is [01:33:00] in the goals directory. Um- I got so [01:33:05] enamored with goals when they first came out, I, uh, created a skill and did, like, a little writeup, [01:33:10] um, on what I was calling just, like, goal engineering, not that we need any more, like, [01:33:15] goal loop context whatever engineering.
+
+But so this was the very first [01:33:20] goal that I gave it, uh, and it's built with a skill. And so [01:33:25] y- you can kind of get a sense... The goal's in here, but actually all the context is in a [01:33:30] writer document, and you'll see there's, like, a goal writer pair for every single one, [01:33:35] um, with sort of like a theme. This was before it was even, like, a release candidate piece of [01:33:40] software.
+
+Uh, but you can, you can see kind of like the format of these goals. They [01:33:45] all follow the same format. All the reference context is the important bit. [01:33:50] Like, so, you know, it'll break down from this high level goal a [01:33:55] series of sort of phase tasks to execute, and then it won't break [01:34:00] the, quote-unquote, "loop" until each of these independent verification steps, um, [01:34:05] are, are sort of, uh, verified, if you will, right?
+
+But 
+
+hugo: this is [01:34:10] so important because it needs to be... When you have a goal, when you're doing this type of loop engineering, [01:34:15] it needs to be verifiable in some sense, right? Um, [01:34:20] computationally. So can you talk us through just one of the verification, um, [01:34:25] sections so we can understand a bit more? 
+
+greg: Yeah. Um, let's, let's, like, find like [01:34:30] a...
+
+Like, there's a lot. Uh, let's find a later one that [01:34:35] I kind of remember. Uh, I don't know. We can just go through... Oh, this is when I was building [01:34:40] campaign. 
+
+hugo: While you're doing that, I'll just... In, in the Discord, Sep Tam has written, [01:34:45] "Please explain in the most basic way what loop engineering is." And [01:34:50] the way I would explain it is if you've got a way to verify something [01:34:55] computationally, whether that's via code checks, artifact checks, [01:35:00] um, LLM as a judge agentic checks, uh, then you get your agent to [01:35:05] just keep doing it and doing it until all those checks, uh, are, are met.[01:35:10] 
+
+Um, so hill climbing is, a- a- an obvious e- example. So that's why [01:35:15] Carpathy's getting an agent to rewrite PyTorch code over and over again in five-minute [01:35:20] whatevers in order to hill climb towards their objective function, um, is, is an example of this. [01:35:25] But Greg Han, would you correct my definition or phrase it differently?[01:35:30] 
+
+han: Um, I think that's, that's right, but there are [01:35:35] a little bit of caveats in terms of the reward or the objective [01:35:40] definition, right? Mm. So the, the, the... a lot of the loop engineering, the trick is how do you [01:35:45] define the reward so that the model produce a result or the agent produce a result [01:35:50] that you want.
+
+Let's say if you just say, "Hey, hey, hey, slash Gold Claw please [01:35:55] help my, uh, PR pass all the test." Then there might [01:36:00] be some in, uh, unintentional effect as in [01:36:05] Claude go out and delete your test cases to make it pass, right? So, [01:36:10] so there are, there are some caveats in terms of the objective design. [01:36:15] So if we use Go, uh, one thing we do need to make sure is throughout the [01:36:20] trajectory, it doesn't go out of bound to do something that's unintended [01:36:25] or crazy or- 
+
+hugo: Absolutely
+
+han: um- 
+
+hugo: I mean, Goodhart's law applies to, like, any [01:36:30] metric will be hacked- Yeah ... in the end, right? And the, the silly sci-fi example [01:36:35] is you tell your AI robots or whatever to create world peace, and they [01:36:40] kill all humans, and they're like, "Hey, peaceful world now." 
+
+han: It, it worked. So that's [01:36:45] why- Yeah ... uh, in, in, in Claude, agents, agent.md, uh, you, [01:36:50] you have this, like, allow tool list, right?
+
+'Cause the, the model, you, you might [01:36:55] not be able to control its behavior completely, so you have to harness, acting [01:37:00] literally as a harness, to constrain the model from doing certain things. Yeah. [01:37:05] So it's only allowed to use read, write, but no delete [01:37:10] or something, something like that. 
+
+greg: I'll give a super simple example of how I like to think [01:37:15] about loop engineering.
+
+Uh, okay, if, if a agentic coding [01:37:20] harness runs an LLM in a loop, the goal of loop engineering then is [01:37:25] to run your agentic coding harnesses in a loop. So it's just one step meta [01:37:30] up, right? Like, and so, you know, however you do that, however you invoke [01:37:35] it, is the sort of, like, premise behind this very buzzword-y sort of phrase right now.[01:37:40] 
+
+Um, I think a couple weeks ago it was, like, if you were on Twitter, like, all you saw was people [01:37:45] talk about loop engineering, I think after Pete Steinberger talked about it. Um, [01:37:50] it's, it's basically like, look, we have these agents that can do very long hor- [01:37:55] horizon things. We don't wanna be the catalyst continuing to prompt them [01:38:00] manually over and over and over again.
+
+So how do you build, like you both talked [01:38:05] about, a set of conditions in an environment to keep the agents running to [01:38:10] achieve some, you know, objective? 
+
+hugo: Yeah. That's all I... And to, to be... I love it. And [01:38:15] to be clear, I mean, one reason Pete Steinberger is able to do this is, you know, he uses, [01:38:20] like, a, a million bucks in subsidized tokens per month or whatever, right?
+
+Um, look- [01:38:25] Yeah ... Seth has actually pushed in Discord, can you please try to define what a goal is? And [01:38:30] I, I... a goal is something you, you want to achieve, but I, I think behind the question [01:38:35] is, I'd, I'd love to hear from both of you some goals that you would set [01:38:40] that you think are appropriate for loop engineering, and goals that you might have which aren't [01:38:45] appropriate for looping, that you probably need to be more in the loop for 
+
+greg: [01:38:50] Um, so like, like a goal in the context of, like, [01:38:55] agent coding harnesses right now is, has a very specific meaning, and then it also has the general [01:39:00] meaning, which, you know, we've touched on.
+
+It, like, it's actually a type of command that you can run [01:39:05] to get the harness to run in a loop for a unspecified amount of [01:39:10] time. Um, and it, it requires you to [01:39:15] write something that is going to have something that can be ev- evaluated, [01:39:20] right? Like, uh, an exit or stopping condition or an objective function. [01:39:25] Um, so I think, like, the difference is, you know, when a lot [01:39:30] of these, uh, products first came out, people were trying to figure out, like, you know, [01:39:35] how can I have the agent stay the course?
+
+How can I break down the work? How can I, you know, do s- like [01:39:40] speccing, right? Like, how can I write a spec that's gonna enumerate a list of tasks [01:39:45] and, and, like, put a lot of effort up front? I think the, like, mental mindset shift [01:39:50] that you should have if you want to, you know, use goals, which is again, a, [01:39:55] a, a way of making the agent sort of operate in a loop, is to not try to [01:40:00] specify all of the implementation steps like you might have in the past, and [01:40:05] let the agent, uh, you know, make, quote-unquote, "decisions" [01:40:10] based on the sort of outcome that, that you're defining, right?
+
+Mm. And that, [01:40:15] that's like the difference, right? Don't do all the implementation sort of pre-specced and planned. [01:40:20] Set a set of criteria that, uh, the agent can evaluate with the tools it has ac- [01:40:25] access to on your machine or in the cloud, um, and let it go until it's able to, [01:40:30] you know, use a sub-agent or an adjudicator, uh, that [01:40:35] it, it passes your exit criteria.
+
+So I had it pulled up. I, I've closed it 'cause we kinda were off topic, [01:40:40] but, like- Um, one of the pieces of verification as an [01:40:45] example is, like, I was adding the ability, um, to my Dead Reckon harness, [01:40:50] uh, for it to spawn and run multiple coding [01:40:55] agents, uh, from heterogeneous providers, right? Because one of the [01:41:00] patterns that I've, uh, long used, and I mentioned this beginning of the, of the show [01:41:05] here, is, you know, I'll implement something in, in, in Claude, uh, [01:41:10] Claude Code, right?
+
+And then I'll use Codex with, like, a commit SHA range to say, like, go [01:41:15] do effectively, like, a code review, for lack of a better term. Um, and so I wanted to have a way of, [01:41:20] like, easily automating that amongst many other things. And so, like, Dead Reckon can [01:41:25] spawn a planning provider using Claude Code, like an [01:41:30] implementation provider using Codex or vice versa, and then have your choice of, like, review [01:41:35] agent for, for example.
+
+Um, and so one of the criteria when I was [01:41:40] implementing that functionality was for it to actually test in a real run, [01:41:45] uh, that it was able to, with an exemplar, um, sort of goal prompt, [01:41:50] to build, like some arbitrary thing like Flappy Bird. Like, it doesn't matter what it is, right? A- [01:41:55] anything you were wanting to build, that it...
+
+Th- that that actually worked, right? And so that's [01:42:00] not like a traditional, uh, test, right? That's, like, more of, like, a user [01:42:05] behavior functional test. And putting stuff like that into your [01:42:10] verification steps of your goal, like actually run the program and verify the [01:42:15] output, like, down to end depth or, or whatever.
+
+In this case, like, you know, I want you to [01:42:20] use Claude Code in the harness to, you know, actually implement this thing [01:42:25] having, like, uh, Codex verify it and then look at all the logs and prove [01:42:30] it. Like, don't stop the implementation until that happened. That's, like, um, a, a [01:42:35] difference, I guess, or an example of, like, what you can do when you're writing goals.
+
+hugo: [01:42:40] Totally. Hang. 
+
+han: Let me, let me put it in, in, in, in using some [01:42:45] analogies, uh, good or bad. So let's say for example, doing [01:42:50] dishes. Uh, when you, when you have a five years old, seven years old, when you tell them to do [01:42:55] dishes, you have to handhold them a little bit, make sure the water is warm, make sure you use [01:43:00] dish, dish soap, and scrub cleanly both surfaces, blah, blah, [01:43:05] blah, right?
+
+And then as they grow older, smarter, you go, "Please go do [01:43:10] dishes using the dishwasher." And if they are [01:43:15] 40 years old, hopefully learn, they learn how to do dishes, you just tell them to go dishes. Go do [01:43:20] dishes. And at the end, you only need to check to see if the dishes are clean and [01:43:25] dry, somewhere loaded either in the cabinet or in the dishwasher.
+
+So that's the difference, the [01:43:30] model progression that we went through over the past three years now? Yeah, [01:43:35] three years, right? Be- between, between initially ChatGPT, which is really good at [01:43:40] single-step actions, to some Claude Code where you still need to handhold, [01:43:45] couple, uh, a little bit, and now loop engineering, uh, Rob Regan or [01:43:50] whatnot, right?
+
+Auto research, it's all like that. So, so that's the more [01:43:55] analogy, uh, approach, uh, if you don't mind sh- me sharing the screen. Please. So [01:44:00] if, if we use a, a more of a machine learning or, or AI appro- uh, [01:44:05] uh, de- definition When you have a loop, at the [01:44:10] end, the, the key is you have to have a verifier that you can [01:44:15] verify the output is correct.
+
+And whatever implementation [01:44:20] detail, single agent, multi-agent, using skills, using, using, like, 200 different [01:44:25] agents or using one agent, that's irrelevant because all of those [01:44:30] details can be learned by back propagation. Now, how do you define [01:44:35] a good verifier or a good reward function? That is the, [01:44:40] that is, that is the trick, and you have to experiment and learn.[01:44:45] 
+
+Let's say, for example, if you want to, uh, have the [01:44:50] model write a, uh, final paper for you, you want [01:44:55] to... Perhaps you c- you need to come up with some verifiers or some checks. [01:45:00] Perhaps you don't want staccato-den sentences. Perhaps you don't want to [01:45:05] see any em dashes. You can add those in to your verifier [01:45:10] so that you make sure the model's output does not include those.
+
+Or you can [01:45:15] add, you need to add, all right, uh, I need to have, like, five paragraph. Do you have, do I have five [01:45:20] paragraph? Or maybe there is a word, uh, length limitations, or there is a [01:45:25] sentence length limitations, or sometimes some- something more deterministic, like I want [01:45:30] to write in the, in the voice of, uh, a certain person, or I want to [01:45:35] have the diction of a seven, seven seventh grader or a 10th grader, right?[01:45:40] 
+
+S- and, and, and you want to cover topics A, B, C, D, E. So [01:45:45] those are the things that we can set up as, as your goal, and [01:45:50] that's, that's how you can know how... This is how you ask model, how [01:45:55] you, the way you... The goal or loop engineering is literally you have to design [01:46:00] what you want as an outcome, express that in a [01:46:05] somewhat verifiable way.
+
+And if one of the things is missing, then [01:46:10] you will really quickly find out that, all right, the model output this, but then I want it [01:46:15] to add two more paragraph because it's too short, or it uses so many em [01:46:20] dashes, I need to fix that. Or it doesn't pass, uh, I guess, [01:46:25] PenGrid, the, the, the AI s- AI detector, which is, I don't trust it, but people use it, [01:46:30] so we have to use it, right?
+
+Uh, does it pace, uh, pass PenGrid? If it doesn't, [01:46:35] rewrite. Right? So set up some of this, this, this things. So [01:46:40] for coding, it could be that, all right, you want to pass all the tests, you want to have [01:46:45] all the test cases, you want to have, let's say, 100% test [01:46:50] coverage. Like, all this doesn't really mean... That's, it does something, uh, maybe not [01:46:55] perfect, and y- you don't want to have too much, too many comments and, and, and all this, all this [01:47:00] information.
+
+So with that, you have to have some sort of environment or a [01:47:05] sandbox to run it on. So very typically, if we run, we run everything on our, our [01:47:10] laptop, right? Or you can run this on a modal box or, or some, [01:47:15] some sandbox somewhere, or in cloud-managed agents, they, you know, Anthropic [01:47:20] manage the, the, the cloud, uh, sandbox online for you so everything's [01:47:25] run in the sandbox so you don't have to mess up your local environment, right?
+
+So, so [01:47:30] thinking... So that's the more, um- Data science, machine learning type of [01:47:35] approach of explaining what a verifier is, right? So, uh, or, or a [01:47:40] goal is. So can you define it is, is, is the biggest challenge. I'm [01:47:45] gonna stop sharing. 
+
+hugo: Without a doubt, and thank you for explaining that and analogizing so clearly [01:47:50] as well.
+
+Greg, please. 
+
+greg: Oh, I... Actually, your analogy, Han, inspired [01:47:55] me to, to express it in a slightly different analogy that I think everyone will get. [01:48:00] Um, so we've all been managed by or managed people before. If you've worked in [01:48:05] tech, you've probably heard of something like objectives and key results, right? How, like, the [01:48:10] great organizations like hearken back to Andy Grove, right?
+
+And, um, you know [01:48:15] all his wisdom. That's who kind of came up with OKRs, and then Google and all the other companies adopted them. [01:48:20] Uh, if you have been in a company that uses OKRs, uh, I- [01:48:25] like the benefit, and maybe sometimes the detriment, is, like, there is a [01:48:30] very clear objective if you write them well. It's like, you know, [01:48:35] ship this new piece of functionality.
+
+And then the key result, you might look at the user [01:48:40] activity, like do we get more maos or daos or waos, right? And it's gonna have a number assigned [01:48:45] with it. At the end of the quarter, right, you're able to say, "Okay, di- [01:48:50] did this work happen? Like, is the f- functionality shipped, and, like, did we meet our target?"
+
+[01:48:55] And, and I, I like that analogy because the thing that it doesn't do [01:49:00] is tell the people or the teams responsible for that set of [01:49:05] OKRs how to actually get there, how to actually do the work [01:49:10] to, to meet, um, you know, that objective in the way that it's measured, its success [01:49:15] measurement. And I think that analogy applies very much to using coding agents.
+
+Like, [01:49:20] we all started, and we're very, very verbose in speccing out exactly what we wanted [01:49:25] it to do, and then that becomes sort of loathsome after a while to, to be in [01:49:30] that much detail because at the point that you need to be in that detail, you might as well, like, write the code yourself [01:49:35] if you have the capability to.
+
+And so you abstract one level higher and you say, "Okay, how can [01:49:40] I get this extraordinarily intelligent," I'm using air quotes on purpose, um, [01:49:45] "model and harness to implement, like, the desire of my intent, [01:49:50] and how can I make it keep going and not stopping until it gets to something that I've [01:49:55] predefined effectively as the stopping criteria?"
+
+Um, and that's the path forward. Yeah, so I... 
+
+hugo: Well, I [01:50:00] do think it is a, maybe a difference between, yeah, setting OKRs and doing, like, more involved [01:50:05] spec-driven development. And but in our defense, we needed to do that with earlier models as well. [01:50:10] You'll recall that we needed to do chain of thought prompting- Oh, yeah
+
+before the model sucked [01:50:15] up, you know, all of that into reasoning, right? 
+
+greg: And the harnesses weren't as advanced [01:50:20] either, right? Uh- No ... like, a lot of the, a lot of the gains I think- haven't just [01:50:25] come because, you know, the underlying model LLM is that [01:50:30] much smarter. Now, i- it's because the harness and the model have been sort [01:50:35] of co-built and co-optimized, right?
+
+A- and that's why you get, I mean, I'm [01:50:40] sure, Han, you could probably go on, uh, at length about this. You get very, very different results [01:50:45] using coding agents and models depending on the harness and the, the LLM that's being used, [01:50:50] right? Like Claude Code running Opus 48 is gonna perform much differently than, you [01:50:55] know, Pi driving it, for example 
+
+han: Yeah, [01:51:00] 100%, 100%.
+
+I think it, it's, it's the, it, it, the audience [01:51:05] is just so much smarter now, and, and, and all, and, and [01:51:10] the way I would put it is instead of a, uh, [01:51:15] a high school intern, now we have a literally, literal PhD student that, [01:51:20] that's so experienced. Once you give you, once you give it a, [01:51:25] a, a, a verifiable objective to [01:51:30] achieve, it will actually go out and achieve it.
+
+And most of the time, it, uh, [01:51:35] like most of the time it will, uh, do it- 
+
+hugo: Yeah ... 
+
+han: very well, especially, [01:51:40] especially, especially for coding or for some type of design. [01:51:45] Like, they, they follow the directions, not the direction, they follow the [01:51:50] objectives to the dot. Writing, not so much. There is always a, a, [01:51:55] a, a chance of AI slop going on, because the, the way, the way I, I view [01:52:00] this is the model is basically a, a compression of all the knowledges that it ha- [01:52:05] it has, right?
+
+So when you prompt the model, it's always going to output [01:52:10] something similar or something that's close to the node, close to whatever that happens the [01:52:15] most. So, um, so that's why, like, if you don't [01:52:20] control, like what Craig, uh, did, right? Like control your skills to tell you to [01:52:25] instruct the model how to write, when you don't inject enough knowledge or instruction to [01:52:30] model, to steer it to behave in a certain way, uh, that's how we [01:52:35] get all the AI slop.
+
+hugo: Yeah, and also I do, I do think a lot of the time it does feel like having a [01:52:40] really smart, like, research assistant or early stage grad student, but [01:52:45] sometimes they've clearly had a few too many drinks or have like pharmaceutical grade [01:52:50] stimulants as well. Like there is, there is a vibe that they're, you know, they've [01:52:55] been, you know, playing around with some substances, I feel.
+
+greg: Yeah. 
+
+han: Yeah, [01:53:00] yeah, de- de- definitely. And, and, and that's how we [01:53:05] know that you have read enough AI slop or AI b- Yeah ... AI conversation. [01:53:10] 'Cause that doesn't... Like, if you don't read, if you just hand off, like type AI, go, set, do this, and y- [01:53:15] you never read, uh, some of the processes, uh, you will never discover some of these, uh, kinks.
+
+Absolutely. 
+
+hugo: I [01:53:20] mean, in most of my rules, it's like, if you say something, say it [01:53:25] once, and do not add any sentences that do not add any value. [01:53:30] This type of stuff, right? Because, um... Look, we've got a lovely comment in, [01:53:35] uh, Discord. Outstanding everyone, learning so much here. Um, this was awesome. Han [01:53:40] and, and Greg are great educators.
+
+And I, I want to s- second that, and I've learned a, [01:53:45] a huge amount. Greg, you did mention, um, you're teaching a course, and do you wanna tell us a [01:53:50] bit... It's a Maven course, right? 
+
+greg: It is. Um, yeah, [01:53:55] like, just like you, I think maybe you pilled me on this, or maybe it was Hamel or [01:54:00] whomever. Um, but i- it's on a pretty niche [01:54:05] topic in the scheme of things if you look at the, like, Ma- Maven course library.
+
+Uh, [01:54:10] it's on hardcore agentic engineering. So it's basically a lot of the stuff I talked about. It's not [01:54:15] for everyone. It's basically, like, if you wanna use agents to build products over a long [01:54:20] time horizon, be able to verify that the stuff, like, that you're actually gonna ship from a product [01:54:25] perspective will work, um, I think that driving agents [01:54:30] effectively is a very, like, high skill ceiling task [01:54:35] now.
+
+And a lot of, like, what I shared in Bits and Pieces and a lot of [01:54:40] patterns in the book, um, 25 Patterns in Agentic Engineering, is, like, the premise of the [01:54:45] course. Uh, I don't think there's been that many teams that have actually shipped, like, products [01:54:50] fully agentically end-to-end yet, and, like, the mindset and the me- mechanics that you need to do [01:54:55] that well, um, is what it's about.
+
+So a lot of that [01:55:00] actually will come from building something very similar to Dead Reckon in the course, because Dead Reckon [01:55:05] codifies all the, all the patterns that, like, heuristically I've been, um, just [01:55:10] laboring through. Uh, but yeah, that's, that's what it's about. It starts in, like, [01:55:15] two, three weeks, like August 3rd.
+
+Um, and it should be fun. It's just something else to do, [01:55:20] honestly, uh, in addition to building stuff, uh, for Spec Story, [01:55:25] because I think it's a topic that a lot of people, um, are probably [01:55:30] struggling with. Like, I gave a lightning lesson Two days ago, on [01:55:35] Tuesday, and it was literally on the most basic part of creating a definition of [01:55:40] done that will be like the gate that keeps your agent, like going.
+
+And a [01:55:45] lot of the people that were there for that lightning lesson sort of expressed the same feeling that [01:55:50] I had in sort of setting that up. It's pretty, like, dry stuff, [01:55:55] like knowing how to do that kind of thing. But when you see the, see the [01:56:00] balance of your day moving increasingly towards just spending all your time verifying [01:56:05] model outputs- 
+
+hugo: It's infrastructure
+
+it 
+
+greg: becomes, it becomes like the most important thing because it's [01:56:10] like, like how can I make my life easier? How can I build the right [01:56:15] infrastructure? Because I've done this loop now 1,000 times and, like, I can't take it anymore. [01:56:20] And if this is the way I'm gonna be building, I need to know all of these sort of principles and, you know, [01:56:25] um, ways to reduce the friction on myself.
+
+And [01:56:30] yeah, so. 
+
+hugo: Also share a link to the lightning lesson. People can watch it after and, and sign up and [01:56:35] see if the course is for them. Is, is your book public, Craig? 
+
+greg: Yeah. It's, [01:56:40] um... Yeah, it is. It's, it's on the SpecStory website. I'll get a link to that, uh, uh- 
+
+hugo: Okay. [01:56:45] Um, while you're looking for that- You got it
+
+I'd, I'd just love to let everyone know, [01:56:50] um, you can get early access, I think, to Han's u- upcoming book, Evaluation [01:56:55] and Alignment, the seminal pa- seminal papers, Building Trustworthy AI. So Han, maybe you can just [01:57:00] tell us a bit about y- your book and then, then we'll wrap up. 
+
+han: Sure. Yeah. So, so [01:57:05] I, I had, uh, a couple options, uh, uh, a couple topics where when we were talking [01:57:10] about a potential book deal, right?
+
+And, and there's post-training, how to do reinforcement [01:57:15] learning, but I figure there's not enough coverage about evaluation [01:57:20] and alignment. And, and, and, and that's the, the skill, [01:57:25] right? Not, not everybody will need to learn how to fine-tune a model, [01:57:30] post-training a model, reinforcement learning from human, AI, whatever feedback, right?[01:57:35] 
+
+But everybody nowadays or going towards the future should [01:57:40] have a, a... Should, should know how to learn, how to evaluate, [01:57:45] and potentially align model outputs And [01:57:50] that's, I think that's going to be the core skill, right? How do we call, call out the agent if the [01:57:55] agent's bluffing? And that is the reason why I focus on this book.
+
+So, like, we go through all of the [01:58:00] seminal papers. Some of them could be older, uh, older in the, uh, uh, span of [01:58:05] time. They, they stood the test of time, like how BLEU score was designed, how ROUGE score, [01:58:10] uh, are designed, and why was those designed that way, [01:58:15] for what purposes. So it's not really learning about a single metrics, but a design [01:58:20] philosophy of those, right?
+
+So we go through the whole spectrum into LLM as a [01:58:25] judge, and then, and then we go into the alignment phase where why do [01:58:30] we do reinforcement learning from human feedback, right? One of the things that people talk about SLOP is, [01:58:35] all right, I need to be able to determine SLOP, which means you have to have a way to show [01:58:40] two results and determine which one is which.
+
+Then by... from that you can have a [01:58:45] re- a preference model, a reward model that you can either use as a classifier at [01:58:50] the end or a guardrail, or you can use it, use it as a, as a reward [01:58:55] model to post-train your models on, right? So, so there's a lot of this intricate detail, [01:59:00] details, and there's also the discussion about alignment, right?
+
+Everybody hear about alignment, [01:59:05] alignment, alignment. Nobody knows what that means. Uh, uh, it's, it's a nice [01:59:10] word, right? Or what are we aligning for, right? So for Anthropic, they [01:59:15] align it for, uh, harmlessness, helpfulness and honesty. [01:59:20] So a model should be harmless, helpful and honest, right? So there's three edge framework, [01:59:25] right?
+
+So I talk about those as well, go through those, those very key and [01:59:30] core seminal papers that s- that build and leads up to the [01:59:35] evaluat- uh, to, to the current ecosystem as a whole 
+
+hugo: Super [01:59:40] cool. I-- look, I did wanna wrap up now, but both-- oh, [01:59:45] far out. Um, one small question, it-- which is [01:59:50] prompted, forgive the pun unintended, by everything you both just said.
+
+Firstly, Greg has [01:59:55] linked to his book and his course in the Discord, so thank you for that, Greg. Um, [02:00:00] but my question re- when you were talking about agentic engineering, there is such, um, a [02:00:05] distribution of, uh, expertise and what people are capable of. [02:00:10] I, I still meet data scientists who don't even know, like, to build an agents.md [02:00:15] or to have an agents.md and then maybe have a few other markdown so you're not [02:00:20] cramming that with absolutely n-n- e-everything.
+
+With respect to evaluation and [02:00:25] alignment, of course, the situation's e-even worse in terms of the, the distribution of what different, [02:00:30] different people, different organizations are, are up to. So I'm wondering, first Greg, I mean, [02:00:35] you're talking about hardcore e-engineering, uh, agentic engineering. I noticed in one of your s- [02:00:40] uh, screen shares, in one of your verification steps, it was like we need to do a smoke test [02:00:45] first.
+
+And this is like, this is like engineering 101, but agentic engineering [02:00:50] 101. One of the first things you wanna do is make sure your agents do, do smoke tests, [02:00:55] um, a-and these types of things. So I'm wondering, Greg, what you see is the distribution of where people are at [02:01:00] at, at the moment 
+
+greg: Um, well, like, let me [02:01:05] put it a different way, uh, at least in, in instead of talking about a distribution [02:01:10] because I, it's like hard for me to pontificate on that.
+
+Like, I don't know, uh, like the [02:01:15] distribution, like in the world. But I think that a lot of people, um, [02:01:20] obviously if you're a software engineer, for example, you're, you're very, you're very [02:01:25] comfortable in the traditional SDLC. And right now, um, [02:01:30] you know, you probably have access to a coding agent. It's probably in your ID, your company probably pays [02:01:35] for it.
+
+Um, but I think the difference in the mindset is like, uh, [02:01:40] like the unit of work that you're driving these agents towards i- in agentic [02:01:45] engineering is completely different from the way that you probably operate in your sort of team [02:01:50] environment, and what you're capable of as an individual is also very, [02:01:55] very different.
+
+Um, and so I think about it as like, you know, if you want to get [02:02:00] really, really good at building products, uh, whether or not they have [02:02:05] LLMs embedded in or not, you have to embrace a completely different mindset about how [02:02:10] you actually do the engineering, and that's almost as important as the [02:02:15] mechanics of like operating the agents and verifying things, yada, yada.
+
+And so [02:02:20] I think, um, you know, there's the oft cliched, you know, are you a 10X? [02:02:25] There's 100X, 1,000X engineer, right? Um, I think where we're moving [02:02:30] towards is, uh, the capability to of course drive like what people say is like [02:02:35] fleets of agents, right? If you, if you were able to do that, and I don't think you need to be able [02:02:40] to do that super well to, to build things completely agentically, [02:02:45] you, you, you will be bottlenecked on your ability to verify the results, right?
+
+Like [02:02:50] traditional SDLC with AI assisted augmentation, it's like [02:02:55] PRs are the limiting gate, right? Like you can produce so much code, who's gonna ever review it all, [02:03:00] right? Um, if you're building something like by yourself or on a very small team because [02:03:05] you just don't need as many hands on keyboard, you need, you know, the ability to plan and [02:03:10] articulate goals and, and like run the agents in parallel, uh, then [02:03:15] you need a better way of brief steering and verifying, right?
+
+And so- [02:03:20] I know I sort of like shirked your initial question and I was like, "I don't know what the distribution is." [02:03:25] But I do think like there's probably very few people that are actually fully [02:03:30] agentically engineering products that like are going to production and getting users right now, [02:03:35] and I think that that's the trend that we're gonna move to because obviously companies keep reducing [02:03:40] staff, changing the organizational structures, which is like much...
+
+It's gonna take a lot [02:03:45] longer to catch up to than the sort of like capabilities of the frontier models. But like no one's [02:03:50] really learning how to do this over six months, eight months, 12 [02:03:55] months, right? There's not, not enough time has elapsed and, um, I think [02:04:00] if I had to wager, there is a gigantic distribution in skill sets right now.
+
+Like because you've [02:04:05] had to have actually built something in production fully this way to understand like how to [02:04:10] do it, and it's not just like, oh, I sit down with like Claude Code and just start like [02:04:15] prompting stuff. I mean, it's like the whole engineering process is different. One of the things I kind of mentioned at the [02:04:20] beginning is like I think agentic engineering works best if you work in like a trunk-driven [02:04:25] way, meaning you're constantly integrating into like, you know, a, a main [02:04:30] branch.
+
+Why? Because if you're, if you are working with other people and people are [02:04:35] li- working on like long-lived branches, it's harder to keep track of all that context, and your coding [02:04:40] agent like doesn't understand, you know, what's out there and what the state of the system [02:04:45] is. Um, and so like I know that was like a long sort of meandering [02:04:50] uh, like monologue but, um- One of the things that I really [02:04:55] like to do is, like, constantly integrate in, like, a dev branch, right, which will be trunk, [02:05:00] and then if, you know, a colleague of mine's shipping something, um, just let them ship.
+
+As [02:05:05] long as they are not breaking the build, like, let 'em ship and then i- I either do, like, you know, [02:05:10] use an agent to summarize what it did so I can pick up from the longest sort of tip of, [02:05:15] um, like, main or, or the head. And sometimes if they are on a branch, we'll just do a [02:05:20] sem... Like, what I call a semantic rebase.
+
+So a re- a rebase, like, when you're [02:05:25] rebasing commits, right? It's not that. It would be, like, taking a branch and, like, [02:05:30] re-implementing it if it is, like, sort of farther away semantically based on th- [02:05:35] their intent, because agents can do that so much faster. That's not, like, what a traditional engineering team would do.
+
+They [02:05:40] wouldn't go re-implement a branch, right, with an agent, um, if a couple [02:05:45] days have passed and, like, you know, the code base has moved a lot. But that's something that you can do now with [02:05:50] agents, and we found, like, a lot of success working in that way. Uh, so yeah. I- I [02:05:55] don't know what the distribution is.
+
+I'm sure it's very wide. A lot of people are working in a lot of different ways. There's not [02:06:00] a w- or a right way, but I, I have found that, you know, kind of [02:06:05] re-approaching the whole development process, uh, not from first principles, but, but [02:06:10] from things that were maybe not as in vogue before, right? Like, [02:06:15] everyone's known the benefit of CI/CD, and when I say that, I mean, like, continuous integration and continuous [02:06:20] delivery, not like CID- CI/CD build systems, for a long time, but it's [02:06:25] been hard to implement with humans writing the code in the past.
+
+That's why everyone uses pull requests and, like, [02:06:30] you know, like, Git Flow or GitHub Flow. But now it's like you should be working on a [02:06:35] shared trunk, and you should only use, in my mind, like, branches for [02:06:40] very experimental things. Um, anyway, I'll stop. 
+
+hugo: I love... So firstly, I [02:06:45] didn't think you shirked my question.
+
+I think you changed it slightly into a question that you could specifically [02:06:50] speak to, and our jobs are to specify and verify as we know, even with e- each other, and I appreciate about that [02:06:55] you... That a- that about you, Greg. You, you often rephrase my questions [02:07:00] into, in- into, um, more appropriate ones. I can't 
+
+greg: understand you, Hugo.
+
+I don't know. 
+
+hugo: If, if not... Yeah, it's, [02:07:05] it's the- It's late ... it's the accent. It's late for me. It's been a long day. Um, I do... I mean, where this has led me though, I [02:07:10] mean, we know you, you feel like pull requests perhaps [02:07:15] shouldn't be used so much now. What about, what about Git generally? [02:07:20] 
+
+greg: Okay. Well, first of all, uh, you know, pull requests all [02:07:25] originated from open source land, right?
+
+And then every company in the world started adopting them [02:07:30] and, you know, of course with remote work and distributed teams it sort of made sense. But if you're working in, like, [02:07:35] a high trust environment and you're actually talking to people, like to your teammates, [02:07:40] like, having to work that way outside of, like, obligatory, like, compliance [02:07:45] reasons, which, you know, there, there are reasons why you might want to have a PR [02:07:50] process from, like, dev to main if you have, like, multiple st- like, you know, you have a dev [02:07:55] environment and, like, a production environment.
+
+Um, I, I don't think, like, should have ever been really [02:08:00] leveraged as much as they ha- had become. Um, that said, what do I [02:08:05] think about Git? It's funny you ask. Uh, I think that Git's not going anywhere, and I, I say that [02:08:10] having actually spent a bunch of time trying to build, like, a real time version control [02:08:15] system, um, over a, a fair number of months.
+
+Um, I, I think [02:08:20] Git's probably here to stay For time and more, and [02:08:25] memorial, it, it does all the things right. Whether or not GitHub, um, remains [02:08:30] the platform, we'll see. Uh, I, I, I don't know. Um, I'm [02:08:35] not really sure about that. I know that obviously GitHub has had a lot of scaling issues with the volume of code that's getting [02:08:40] produced.
+
+Um, and, you know, under investment in probably a lot of the [02:08:45] core of it. But I think Git is still a technology that as long as we're all sort of like [02:08:50] operating on file systems, it's like so battle tested and hardened, it's like hard to [02:08:55] displace. Um, and it, and it works. And I think the thing that's made it a lot easier [02:09:00] now is like you don't need to know all the Git internals and like all the commands.
+
+Not that you ever [02:09:05] did, 'cause your agents are extremely well-versed in all Git mechanics [02:09:10] having been trained on the corpus of data that they've been trained on. So I- ... have [02:09:15] not written or done a Git command myself in a extremely long time, [02:09:20] and it's been incredible. Like it's been incredible. 
+
+hugo: I, I do wanna t- [02:09:25] hear your thoughts on GitHub.
+
+So when... for, for clarity, when we had Wes McKinney on, he- Oh, okay ... he, [02:09:30] he's, he's built his own- Yeah ... you know, tracker in GitHub and... 'cause [02:09:35] he- Yeah ... he, he became very frustrated with how much you had to read on GitHub. He said [02:09:40] that he... quote-unquote, that he thinks they're in league with, with Big Scroll, um, which of course is [02:09:45] a tongue-in-cheek joke.
+
+We, we know that M- uh, Mitchell Hashimoto, who created [02:09:50] Ghosty, is, is leaving GitHub for a, a variety o- of reasons for, for, for his project. So [02:09:55] I, I wonder, do you think the affordance we have on GitHub are from- 
+
+greg: Okay ... 
+
+hugo: the [02:10:00] ancient world? So 
+
+greg: I, I, I don't know all the backstory on Wes. [02:10:05] Um, but o- o- in Mitchell's case, I know it's...
+
+i- this is, this is more to do with [02:10:10] like the like mechanics of working in open source when [02:10:15] anyone can open a PR with agent slop and putting a burden on [02:10:20] a maintainer, uh, to have to sort of like sift through, "Is this something I wanna spend my time [02:10:25] incorporating into the, you know, product functionality," right?
+
+And so like I know like Mitchell, it's like [02:10:30] he's just like... he, he's, he's, he'd been working on some like trust, trust project of some [02:10:35] sort, some sort of way of giving someone, um, like [02:10:40] rank, i, i, for lack of a better term, to, to know that they're like a trusted [02:10:45] contributor or could be one because I think post like- Like, [02:10:50] OpenClang coming out and now, like, Hermes Agent, all these things.
+
+People are just, like, creating [02:10:55] OpenClang, um, you know, instances running on their, you [02:11:00] know, Mac Minis or in the cloud or wherever, and just having them go look at repos, [02:11:05] like, autonomously in open slot pull requests. And there was that famous ... Can't remember [02:11:10] precisely. I think it was, like, working on some Python library where that, like, OpenClang was, like, fighting with the maintainer.
+
+Do you- 
+
+hugo: [02:11:15] Yeah, yeah. Do you remember? Yeah, it was a sci-fi. Yeah, yeah. I d- I, I do, actually. 
+
+greg: Yeah. Um, 
+
+hugo: it was 
+
+greg: brutal. And so I [02:11:20] think, I think, like, if you're an open source maintainer of an extremely popular [02:11:25] project like Ghosty is, and you're a single person, and you're [02:11:30] trying to figure out, like, "What's worth my time?"
+
+You know, the affordance on [02:11:35] GitHub where anyone can fork your repo and open a PR, unless of course you [02:11:40] disable that, uh, without a lot of other controls for, like, is this a brand-new account, [02:11:45] right? Like, have they contributed and had PRs accepted before? Like, the sort of trust [02:11:50] layer around the social coding aspect of GitHub, you know, doesn't exist.[02:11:55] 
+
+So from that perspective, I think, um, you know, there, there, there, [02:12:00] there may be some opportunity there, but there's such a critical mass and set of network [02:12:05] effects around GitHub for open source, it's like, I don't know. Even if some of these, [02:12:10] like, big names decide to sort of take their business elsewhere, I can't really [02:12:15] think...
+
+I, I don't, I don't see GitHub sort of, like, you know, becoming irrelevant. And [02:12:20] of course, on, on the sort of private or business side, obviously it's so embedded into [02:12:25] so many different, like, you know, companies' entire development processes [02:12:30] that it's also, like, very challenging to understand, um, if it might go the way of the [02:12:35] dodo.
+
+However, I'll counter myself by saying, you know, there are other version control [02:12:40] systems out there that very large companies use, like Perforce, for example. Like, Google has, like, the [02:12:45] biggest instance of Perforce ever. All game development studios use Per- Perforce, and they, they [02:12:50] run, like, m- modified versions of it, of course.
+
+Um, they... Like, Google [02:12:55] runs a gigantic monorepo. I think monorepos are extremely effective, [02:13:00] um, sort of design patterns for your architecture these days [02:13:05] because I don't know about you, but we, we have a bunch of different products all in separate [02:13:10] repos. And now, like, you find yourself figuring out like, "Oh, some of these things are connected and I have to [02:13:15] drive an agent session and tell it about context in all these different places," and it's really annoying.
+
+[02:13:20] So that's the one problem with, like, distributed version control systems where everything's, like, a separate [02:13:25] repo and you're not using, like, a monorepo structure. Uh, maybe there's, maybe there's [02:13:30] some, I don't know, like, white space there. But I, I, I just think GitHub's, like, so [02:13:35] embedded it's, like, hard to think of it, you know, getting displaced, uh- Totally.
+
+hugo: I- [02:13:40] 
+
+han: I- i- it's that Lindy rule, right? Like, if, if one thing that [02:13:45] exists, exists long enough, it will never die. It will exist for longer, right? So i- if [02:13:50] Cobo is still alive today, I don't see GitHub going away. There might be a [02:13:55] more, more drastic shift once the agent go over certain [02:14:00] crazy threshold, uh, more than today.
+
+Uh, but [02:14:05] I don't see people stop using that. Uh, and it's, it's a [02:14:10] stable, battle-tested way of storing code online. 
+
+hugo: Without a doubt. And [02:14:15] I, I, I do wonder how much the Lindy rule holds at times of technological transformation as well, 'cause you can [02:14:20] imagine certain things. I'm not saying GitHub is, is, is one of those, but- Well, well look, like-
+
+imagine certain things ... [02:14:25] 
+
+greg: other companies think there's an opportunity. We- you know OpenAI is- [02:14:30] Yeah ... building some competitor. Cursor- Yeah ... Cursor announced Origins, which is [02:14:35] effectively- Yeah ... hosted Git in the cloud. Thomas Domke's startup Entire is [02:14:40] doing distributed Git repos. Pierre, which also spun off of GitHub, [02:14:45] um, I think has some other, like, distributed Git sort of [02:14:50] hosting service.
+
+So there, there's other services out there. I think the problem is just, like, the network [02:14:55] effects. Like, you can build probably a better implementation that is not like a [02:15:00] single multi-tenant provider like GitHub is, right? Or you could re-replicate [02:15:05] that. But it's just, like, every other product is integrated with GitHub.
+
+[02:15:10] Like, you ever use Vercel? You ever use Supabase? You, you ever use any of these other products [02:15:15] that now all your agents are default, like, recommending to you? Like, it's just like, [02:15:20] okay, like I could go use some experimental hosting provider. Like, is it gonna be [02:15:25] around in a year? Like, GitHub's owned by Microsoft.
+
+Like, it's not, it's not gonna go [02:15:30] away. Like, unless something, I don't know, unthinkable happens. Like, [02:15:35] uh, a- and I think that's the, that's the problem too. It's just like, you know- 
+
+han: [02:15:40] Well, uh, it's good you bring up- ... 
+
+greg: better- ... 
+
+han: on, on the agent side, right? Like, last year, uh, [02:15:45] it's extraordinarily hard to steer agents to use UV as a [02:15:50] default- 
+
+greg: Yeah
+
+han: for Python, right? Yeah. A- and now UV, it... And, and now [02:15:55] nowadays agents are much smarter, and they, they, they are willing to use UV. So imagine, imagine [02:16:00] there, if there is a new alternative that comes up, and the training data is really not there, [02:16:05] which means you have to spend a whole lot of tokens, uh, in your skills or whatever, uh, to [02:16:10] steer the agent- Yeah
+
+to use that new, new, new, new, new, new [02:16:15] repository structure. And that, that's- Actually- ... gonna be adopted heavily. 
+
+greg: I didn't [02:16:20] mention this, but I think the biggest source of GitHub lo- lock-in is probably Actions. Like, [02:16:25] Actions is just, there's not really a competitor for it. Like, there used to [02:16:30] be, but now it's kind of like, I don't know.
+
+Like, I, I'm not a big GitLab [02:16:35] user for, like, obvious reasons, and I know that they have, like, a whole CI/CD pipeline and whatnot, but, like, I [02:16:40] mean, I, I couldn't imagine building anything with, like, out Actions these days. Like, it would be so annoying. [02:16:45] Um, so it's like, are you really gonna rebuild all of the [02:16:50] hosted runner infrastructure that's all part of Azure, uh, [02:16:55] alongside of your hosted version control system, right?
+
+Because- Like, [02:17:00] you're not using a hosted version control system just to store your code if you're building [02:17:05] something for real. You're also using it to deploy all your artifacts and, you know, manage your releases Well, [02:17:10] let, 
+
+hugo: let me ask you, like, I think the contrarian take, and you'd know a lot more about this having been at, at, [02:17:15] at GitHub.
+
+If, if OpenAI is building its GitHub competitor and they have [02:17:20] scheduled tasks and triggers and hooks, couldn't they [02:17:25] reproduce actions pretty, pretty easily? 
+
+greg: I mean, [02:17:30] they do have a lot of compute. Um, it's a different type of compute, of course. [02:17:35] I, I'm not really so sure... I- m- my sort [02:17:40] of, um, skeptical opinion is that OpenAI, OpenAI is going down that route, [02:17:45] uh, because they want you to host your code and give them some permission to [02:17:50] train on it.
+
+Like, like- That's, that's- I don't know if that's a fact but- ... that's what I'd do ... that, that's what it see- I mean, that's what [02:17:55] GitHub... That's what happened. I mean, like, Microsoft bought GitHub, then [02:18:00] formed a partnership with OpenAI, and OpenAI built the very first version of the [02:18:05] Codex model before all of these other things adopted that name, that was integrated in GitHub [02:18:10] Copilot based on the repository source code- No.
+
+Okay ... in 
+
+hugo: GitHub. 
+
+greg: Let's, 
+
+hugo: [02:18:15] let's get this right. So Han mentioned something very important earlier, RLVR, reinforcement [02:18:20] learning with verifiable rewards or verifiable results. And what do you [02:18:25] need to see if the code your agent wrote is [02:18:30] something the human found acceptable? If they Git commit it or commit it to a, a repo, [02:18:35] that's the strongest signal.
+
+That's the reinforcement learning, right? That's the strongest signal that they found it, it [02:18:40] acceptable. So if for the OpenAI or- 
+
+greg: Historically. Historically, yes, because people were manually [02:18:45] committing things. Now I'm not so sure, but yes, 
+
+hugo: you're right. But if, if you're... Yeah, if you ask your agent to, that's one of the...
+
+At the [02:18:50] end of a long trace and all of this sh- all of this stuff, just caught myself cussing 'cause the [02:18:55] YouTube algorithm doesn't particularly like it. But, um, if someone [02:19:00] commits, then that's a strong signal that this is something, or gets their agent to commit. So [02:19:05] if you have that in... 'Cause a lot of people turn off training.
+
+What, what that actually meant, like, blah, I don't know. [02:19:10] Um, but that, for them to do RLVR, having [02:19:15] that in-house is something which presumably could help them a, a huge amount in GBT [02:19:20] 6.3 or whatever. I 
+
+han: mean, there, there, there are stories where [02:19:25] there are companies, there are startups or big data companies, right?
+
+Now they, they [02:19:30] are putting out bounties and, like, they want to acquire that startup and get their code [02:19:35] bases and their email chains, and take that, that code base to, to, [02:19:40] to create, uh, uh, or use as a training corpus, uh, a- [02:19:45] and farm or, uh, mine those code bases for good training corpuses. So [02:19:50] that's, it's definitely, uh, uh, I think the incentives are aligned, [02:19:55] uh, for, for some of the companies there to do so, so they can get more training [02:20:00] corpuses.
+
+'Cause at the end of the day, the, the limit between, um, [02:20:05] GPT- 5.6 now, I think. It's like- Yeah ... so Terra, [02:20:10] whatever. Mm-hmm. And the next generation of, like, let's say GPT-7, [02:20:15] is the amount of training corpuses that's- Yep ... high in signal, [02:20:20] difficult, difficult to complete, long horizon. So, hey, it, it could [02:20:25] be that they could just train, uh, train a model or have a agent run [02:20:30] not just one single pull request, but hey, this is a empty code base.
+
+Here at the [02:20:35] end is what I want. I don't care how many commits you have, just do the whole thing from end to [02:20:40] end. Well, and this- And you can have a, like, 20 hour or 20-day task running on [02:20:45] GPUs. 
+
+hugo: This is one of the reasons Cursor, and I put this in quotes, but is [02:20:50] worth $60 billion to Elon Musk. I think it's also spite.
+
+Like, I think [02:20:55] he, he will spend a lot of money to, out of spite, like, try to ruin O- Yeah ... OpenAI. [02:21:00] Kind of like, I don't know if you've seen Curb Your Enthusiasm, but Larry at one point opens a spite shop, a coffee shop, to put [02:21:05] the coffee shop guy out, out of business. Um, [02:21:10] but, you know, Cursor being worth this amount is, like, the...
+
+I, I presume the move [02:21:15] is having all of the training and training data from them on what- 
+
+han: Cursor is really, really, [02:21:20] like... I think there's a couple companies that have really, really good data flywheel, right? So, like, in [02:21:25] data science, we talk about data flywheel, where the output, the result, it can be [02:21:30] mined and, and go back to re- improve the models, right?
+
+We see that on YouTube [02:21:35] algorithms or Amazon search algorithms and recommendations and whatnot. And [02:21:40] Midjourney is, uh, has really, really good data flywheel from their user base on Discord. [02:21:45] And Cursor, they collected so much data. And of, of [02:21:50] course, there's Claude Code, but there's also Claude Code and, and o- now OpenAI with [02:21:55] Code Desk collecting a lot of data, right?
+
+And now it's if you are [02:22:00] to simulate a human as an agent, right? As I'm an agent [02:22:05] and I want to do my work, then what environment do I have? First, I have to [02:22:10] have some IDE or a terminal nowadays, and I have to have a, a [02:22:15] GitHub terminal, uh, a, a GitHub account to store my code, and [02:22:20] then some CI/CD to pipe it out, uh, to run the code somewhere, like a web app or [02:22:25] whatnot.
+
+So they are... I think it makes sense for different frontier [02:22:30] lab companies or different data lab companies to collect each one of the [02:22:35] pieces to construct a more, uh- Well-rounded [02:22:40] environment. Basically, they're just ba- ba- basically, they are just playing, uh, what's that? [02:22:45] Minecraft, uh, collecting different pieces.
+
+Yeah. So then they can train their agent to chop down the trees [02:22:50] and, and build a castle or whatnot. 
+
+hugo: Totally. Yeah. Well, look, we've gone over [02:22:55] time, um, but wonderfully so. I've, I've learned so much from you both, and it's always great to chat. [02:23:00] Um, thanks everyone for joining. We've had over 60 people join throughout.
+
+Thank you for those sticking around to the [02:23:05] end as well. Um, check out Greg's course, check out Spec Story, check out [02:23:10] Han's, uh, website and his, his book as well. Um, and [02:23:15] it's Han, not Solo is my, uh, understanding. [02:23:20] But, um, to wrap up, just wanna thank you both for your, your time and wisdom and coming and sharing everything [02:23:25] you're doing with agents with us all.
+
+greg: Yeah. Thanks for having us. Thank you so much for 
+
+han: having me. [02:23:30] 
+
+hugo: Yeah. Fantastic. And thank you all for joining once again. If you like this stuff, share it with a friend, like and [02:23:35] subscribe, and check out other stuff we're up to in the description. And in the famous [02:23:40] words of Dr. Dre, see you in the next episode 
+
+greg: Bye 
+
+hugo: [02:23:45] And scene.
+
+Guys, that was, [02:23:50] that was super fun. 
+
+greg: Yeah, it was a lot of fun. 
+
+hugo: Um, I, I d- I [02:23:55] mean, we've gone for nearly two and a half hours, so thank you so much for sticking around. But it's, it's [02:24:00] amazing how, like, the last half hour, like, we managed to go on really, like, o- open [02:24:05] up a variety of different m- different topics, so...
+
+han: Co- coding is... [02:24:10] The change, the, the pace of change there is just so freaking crazy [02:24:15] nowadays. And, and- It is such 
+
+hugo: a wild time, isn't 
+
+han: it? Yeah. We, we went from, [02:24:20] uh, "You have to token max or g- you get fired," to a quarter, uh, like, in, in [02:24:25] early, early this year, to now, "All right, you have 200 bucks per month." 
+
+hugo: [02:24:30] Without a doubt.
+
+han: It's, it's, it's crazy. It's crazy. Yeah. 
+
+hugo: And I'm- 
+
+han: Yeah ... [02:24:35] 
+
+hugo: I'm maxed out on my, you know, Codex and Claude Code [02:24:40] subscriptions, and the amount of value I, I get is- 
+
+han: I, I, I- ... 
+
+hugo: mind boggling ... love 
+
+han: that they [02:24:45] are just smashing the reset button every other hour nowadays. 
+
+hugo: The reset is wild, man. Yeah. [02:24:50] I, 
+
+han: I already feel subsidized, 
+
+hugo: but...
+
+greg: There's [02:24:55] not, there's no lock-in. That's the problem. So, like- Yeah ... they have to keep individual developers happy [02:25:00] with their subs. And I've seen some pro forma financials for, um, [02:25:05] Anthropic, like, of whatever their, I don't know, like, $45 billion, [02:25:10] $48 billion run rate is. Only, like, 2 billion comes from [02:25:15] the subs. But people are so loud [02:25:20] online about shit that happens, like, with the subs that, [02:25:25] like, you know, every time, you know, when, when Fable got taken away then back, then now it's like, [02:25:30] "Oh, we extended you to June, July 12th.
+
+Oh, we extended you to July 19th." Like, the [02:25:35] front door into the enterprise is the individual developer that's doing shit on the side and also working in [02:25:40] the enterprise, right? Like, I think, like, a lot of, a lot of companies first bought [02:25:45] Cursor subs because it was, like, you know, the best harness out there, and then they all moved to [02:25:50] Claude Code, and then now- Mm
+
+they're moving to Codex. And, like, there's not, like, a lot of lock-in. So [02:25:55] I, I don't know if this is where you were going with it in terms of, like, the value and maxing out on all the [02:26:00] subs, but I think there's, there's been some fear that, like, Anthropic or, you [02:26:05] know, OpenAI will, like, make the subs, the max subs, like, way more [02:26:10] expensive or, you know, whatever.
+
+I, I don't think so. It's literally their loss leader so that [02:26:15] they can win the enterprise- Yeah ... where all the actual dollars are. 
+
+hugo: Without a doubt. 
+
+han: Well, on, on, on the enterprise side, [02:26:20] it's literally that, right? And we're not recorded, so, uh- We're not, right? [02:26:25] Okay. 
+
+hugo: No. 
+
+han: Oh, 
+
+hugo: no. Well, actually, we- we're not going live.
+
+I am still recording. Okay. So I can [02:26:30] stop that- Okay ... if you... Yeah, but we're not live, 
+
+han: no. Uh, so, so, so, uh, I'll, [02:26:35] I'll put it this way, right? Uh, if we look at Anthropic, like, [02:26:40] the... A lot... They, they have a lot of token resellers. To- Cursor was basically a token, [02:26:45] token reseller of Anthropic tokens. 
+
+greg: 50% of Anthropic's revenue was coming from Cursor at one point.[02:26:50] 
+
+han: Right. Yeah. And, and, and, and some of that is, is, uh, gradually going [02:26:55] away, right? To either, like, SpaceX AI or what- whatever concoction, [02:27:00] uh, Musk decide to name their, his companies after. Uh, so, [02:27:05] so, so this is... The, the pace of shift is extraordinary, [02:27:10] right? Like, just two years, or it was Cursor and then everyone moved to Claude [02:27:15] Code, and then Anthropic signed a bit, a bunch of deals, and now it's [02:27:20] OpenAI, Codex trying to do the big push with CoWork, which is awesome.
+
+Like, I, I think, uh, the CoWork... Well, not CoWork, the, uh, the ChatGPT Work or[02:27:25] [02:27:30] 
+
+the Codex rebrand- 
+
+hugo: Mm-hmm ... 
+
+han: is, I- it's like a ChatGPT... It's [02:27:35] gonna be a ChatGPT moment for anyone in productivity. Like, it's, it's so much [02:27:40] better, easier to use and to steer compared to ChatGPT, which is still [02:27:45] primarily a chat interface. And, and that changes things quite a whole lot [02:27:50] about, like- Without a doubt
+
+you can now, like, view your own [02:27:55] presentation. 'Cause, 'cause most... I- if you're on, like, Microsoft 365 [02:28:00] and you asked it to, "Hey, can you write me a presentation?" It's not going to give you a presentation at [02:28:05] the end. But if you are on ChatGPT Work or, or Cla- [02:28:10] CoWork, uh, whatever, uh, you actually get a Chat, uh, presentation at the end.[02:28:15] 
+
+And, and Menas, after the breakup, I think their revenues are, like, skyrocketing again [02:28:20] too- Yeah ... because it's so much, it's, it's so much easier to use. Like, all these agents [02:28:25] with this powerful models are, are, are really coming to life. [02:28:30] So, so, so yeah. It's... But, but, but, but to Greg's point, yes, there's [02:28:35] the, the, the, the, the, the, the, the, the switching, aside [02:28:40] from the switching cost, uh, but there's, there's not a whole lot of lock-in.[02:28:45] 
+
+There, there's no, so there's no, there's no like Microsoft, right, [02:28:50] come in- 
+
+hugo: Totally ... 
+
+han: all right, you will buy my Active Directory or Encarta [02:28:55] and, and, and, and I will throw in my GitHub for free, throw in Microsoft Teams for free, [02:29:00] and, and, and this type of platforming effect, uh, happening yet on the AI side. [02:29:05] Is the- Yeah, I mean...
+
+greg: Oh, I was just gonna say, like think about how easy it [02:29:10] is, like, y- you know, we talked about it, you'd probably do it too, Hugo, even though you didn't say it. Like, [02:29:15] you're working on a project, you can move from one harness to another very [02:29:20] simply. It's not challenging. Like 
+
+hugo: I do com- And in fact, I, I mean, I [02:29:25] find anything I generate with Opus models, [02:29:30] um, GBT models are better verifiers and critiquers- 
+
+greg: [02:29:35] Yeah
+
+hugo: for, for me. So- 
+
+greg: Yeah, but if you, like, if, if all of a [02:29:40] sudden, like, you know, if you've got super Fable pilled that... Let, let, let's say they actually take it away for [02:29:45] real on July 19th, which rumor has it maybe they will because maybe, like, [02:29:50] Opus 5 is soon to come out from the sub, I mean. Uh, you can always pay API token prices- Yeah, [02:29:55] yeah
+
+and be Yeah ... um, like y- you know, you, you just start using [02:30:00] 56 Sol, like, 'cause it's, it's better than Opus 48, right? Like, I would. Yep. Like, [02:30:05] if Fable wasn't there, I, well, I will in three days. And, like, I've gone through spells where I've [02:30:10] just been, like, Claude, just been, like... I think ch- when [02:30:15] ChatGPT 55 came out, uh, like, it was awesome, and it still is awesome.
+
+Um- [02:30:20] It is, yeah ... and it's like, I don't know, like, you can still build whatever you need to with you... It [02:30:25] doesn't matter, right? And, and so I know, like, enterprises can't move that fast, obviously, 'cause they [02:30:30] sign larger deals. They have more people, training, whatever, all that shit. But I think that's what, [02:30:35] like, all these companies are really struggling with is, like, you know, how do we, h- like, okay, [02:30:40] our, like, whatever, annual revenue, 'cause I don't know if it's [02:30:45] recurring, our, our run rate-
+
+is $58 billion. How do we not have that [02:30:50] drop, right? 'Cause they can't, they can't... Literally, like, they won't be able to IPO if it just starts, like, [02:30:55] plummeting because- Yeah, yeah ... OpenAI start... And that's what OpenAI, I think, is sensing. It's like Claude was on this [02:31:00] meteoric, like, sort of up and to the right hockey stick, and that's why I think [02:31:05] they're being so aggressive with, you know, the inclusion of the usage limits.
+
+They obviously have a lot... access to [02:31:10] way more compute than Anthropic does. Like, they're just trying to undercut them because they [02:31:15] know- Mm ... like, they can prevent them from, like, IPO-ing effectively because if they start, [02:31:20] start losing enterprise revenue, like, they're not gonna have a good story to [02:31:25] tell, right?
+
+Like, it's, uh- Totally ... it's been an amazing story. I- if it starts to, you know, plateau or [02:31:30] decelerate, it's a terrible story, and they'll, they'll be punished. 
+
+han: And, and, and now with [02:31:35] Kimi, like, K3 launched today, right? And it, it was, it i- it is the Opus 3- 38, [02:31:40] uh, 48 grade model. 
+
+greg: Yeah, and there's- And even Opus 48
+
+han: LLM 
+
+greg: 52 and of [02:31:45] course DeepSeek- Yeah ... and all, like, all very comparable sort of models- Right ... at tr- ch- like, [02:31:50] fantastic bargain bin prices. Like, if all of a sudden all these subs went away, I would just [02:31:55] use probably... I haven't tried Kimi K3 yet 'cause it just came out today, but- It just came out, yeah ... I've used [02:32:00] DeepSeek.
+
+Like, DeepSeek- 
+
+han: Not bad ... 
+
+greg: 4 Pro, like, f- i- it's not, [02:32:05] like, Opus level, but, like, it, like, it's, it's not like... I- if you rewound time, [02:32:10] like, six months, I mean, it's definitely on par with whatever version of, like, Sonnet [02:32:15] existed then. I mean, it- Totally ... costs nothing. It literally costs nothing. It's, like, [02:32:20] free. Yeah. 
+
+han: So, so, like, there, there's a couple headwinds, right?
+
+One is the open source [02:32:25] models are almost on par or close to par. Um, is they are not that far [02:32:30] behind or they are at par with the frontier. And the other headwind is [02:32:35] now everybody... So before it's token maxim, right? So everything's sky- skyrocketing. [02:32:40] We're going, going, going vertical. But now everybody's talking about, okay, you, you [02:32:45] cannot spend that much tokens.
+
+So the, the story, the, the story's sort of changed [02:32:50] ins- and, and it became like, all right, we have to control our cost. So, so some of [02:32:55] those will get impacted by, by, uh, I mean, the, the [02:33:00] sell side. I used to be on sell side or buy side, and buy side too. So it, it will get repriced [02:33:05] just because it doesn't, you know, the story, the story has changed.[02:33:10] 
+
+Uh, but, but I think Anthropic's still way up there, uh, in terms of [02:33:15] capabilities. Anthropic's still good. Uh, OpenAI is not bad either, right? Um, [02:33:20] and I think Anthropic actually share a whole lot more research versus OpenAI [02:33:25] through their, like alignment, 'cause, I mean, they are the, the, the, the, the, [02:33:30] the, the tree huggers.
+
+They care a lot about alignment, about interpretability, and all [02:33:35] those interesting information which might or might not improve model capabilities, but, [02:33:40] you know, they, they share, which is good, right? Which, which is a good thing. But I [02:33:45] don't know. Things will change really, really quickly. I, I don't even know what the new product service will be.
+
+Cowork, well, ChatGPT, ChatGPT [02:33:50] Work
+
+[02:33:55] is the, the new interface is pretty nice. You can see the little- They're 
+
+greg: all the same product though, that's the 
+
+hugo: funny thing. [02:34:00] It, it i- yeah. They're all AI generated They really all are. It's, it's the same. But to your point, I never thought of it as Cursor [02:34:05] without the code, and it... Or VS Code, right? Um, the other thing though that came [02:34:10] to mind, it was when you...
+
+I didn't mention this in the live stream, but when you started talking about mono- [02:34:15] monorepos a week a- a week and a half ago, nearly two weeks ago. I've actually [02:34:20] put pretty much my entire business in a monorepo now, which I access primarily [02:34:25] through Codex, but also through Claude Code and sometimes, um- Yeah
+
+[02:34:30] through, through Pi. But it is, it is a huge unlock. W- like, [02:34:35] absolutely powerful to have it all, all there, and having it reason across my entire... [02:34:40] Cross-functional business reasoning for, like, a solo [02:34:45] entrepreneur- Yeah ... who has a few contractors is fucking crazy, man. Yeah. 
+
+han: I, [02:34:50] I, I wrote about it, like, last year, early last year.
+
+Like, the first thing you should [02:34:55] do is put everything into a monorepo. Because it's, it's just- Amazing ... [02:35:00] you just get all the context. 
+
+hugo: I wish I'd done it earlier. Yeah, yeah. Yeah. Yeah, and it- And the ability to... I [02:35:05] had someone reach out for doing, like, corporate training here for a bank in Australia, and then I jumped on a [02:35:10] call with them, and being able to put...
+
+get Codex to pull in their emails, the transcript of the [02:35:15] call, figure out what their needs are, and then look at what I already have pre-baked. I was [02:35:20] like, "Find the proposal that I can generate for them," which is as little work to [02:35:25] change anything I have into something that will help them meet their needs.
+
+To be able to develop a proposal- Yeah ... [02:35:30] for live training, three different versions of it, two hours, four hours, and a day, in 19 minutes [02:35:35] given all that context, is insane. 
+
+greg: Yeah. 
+
+han: Yeah. [02:35:40] I, I, I think a lot of it is... A, a lot of the best practice is what people were [02:35:45] preaching and pushing for. Like, all right, let's break down the information silos, let's [02:35:50] document everything, let's have monorepos and whatnot.
+
+And, and, [02:35:55] and, and, and some of the c- some of the organizations are very resistant to change, 'cause [02:36:00] whatever worked, worked. And, and now with AI, all right, we have to do all this [02:36:05] catching up with all these best practices from like, I don't know, 20 years ago, [02:36:10] or from 10 years ago now. 
+
+hugo: The other thing I am wondering for, like, [02:36:15] Frontier Lab and Agent Lab moats is, do you think there's a future in which [02:36:20] Claude mo- Like, let's say you get Fable to do a big refactor for you of a massive [02:36:25] code base.
+
+Is, is there a future in which Claude models are, are better at working on that code [02:36:30] base than other models? Or because they distill and like, there's [02:36:35] this cycle of all models kind of ending up the same anyway, right? 
+
+han: I, I, [02:36:40] I think... So from an operational standpoint, uh- [02:36:45] It's usually the cost vers- the cost versus the [02:36:50] risk.
+
+The, the cost and risk versus the actual benefit from the refactoring. [02:36:55] Can we actually get... So if you have a bunch of COBOL that's running just [02:37:00] fine, and COBOL doesn't really crash, do you actually want to, uh, move [02:37:05] that into, uh, do you want to actually convert or transpile that into [02:37:10] TypeScript? 
+
+hugo: Hmm. 
+
+han: And my rationale would be, [02:37:15] hell no.
+
+That's nothing should be written in TypeScript ever, uh, or even Rust, [02:37:20] right? Like, how s- how, how, how, how much benefit are you gonna get out of [02:37:25] it aside from... 'Cause the, the, the, the old discussion [02:37:30] about converting or modernizing COBOL was purely because, [02:37:35] all right, we run out of people who still can read and understand COBOL.[02:37:40] 
+
+hugo: Yeah. 
+
+han: But now, if models can read and understand COBOL, [02:37:45] then why the heck do we still want to move it away from COBOL? [02:37:50] So that where there's, there's no longer any benefit of doing [02:37:55] migrations if- Absolutely ... the model can maintain and operate the system that [02:38:00] exists. And I think that's, that's the biggest, uh, fallacy is, like a lot of [02:38:05] the, the way we even manage teams is, is gonna change because let's [02:38:10] say five years ago when we managed teams, like, okay, we do like, uh, I don't know, [02:38:15] planning poker, you know, T-shirt sizing, Fibonacci numbers, because [02:38:20] writing code is the biggest bottle- w- was one of the biggest [02:38:25] bottleneck, and now all of those are gone.
+
+Like, so like, [02:38:30] I mean Greg, Greg talked about agentic engineering. Like, yeah, of course you should do [02:38:35] like chunk-based and limit and, and, and get as much PR throughput go, go over as [02:38:40] possible, or no PR if possible. But, but, you know, on enterprise cases or [02:38:45] security or compliance cases, you always have to have, have a, uh, [02:38:50] audit trail so you can, you can, you can get your SOC 2 and whatever in.
+
+But, [02:38:55] but, but yeah, like the, the, the, the, the bottleneck has shifted from [02:39:00] one end to the other. So like some people talk about, "Hey, you have to have... You have to build for the right [02:39:05] idea." Or some people talk about, I don't know, like you have to improve your [02:39:10] throughput, review and whatnot, or just look at, uh, change failure rate or [02:39:15] like time to recovery or whatnot.
+
+Mm. But, but those are, those [02:39:20] are long, long, long, old, old, old habits of, of, [02:39:25] of, of, of large, large organizations, right? [02:39:30] I mean, back in the '90s when people shipped software, it's literally like you compile the code, [02:39:35] you, you do test the code, you compile, you test, you smoke it, and you stamp it on [02:39:40] a... You stamp it, you burn it into a, a CD-ROM, and you ship it to clients, right?
+
+You [02:39:45] have the waterfall process, that's your CD, and, and literally CD, right? [02:39:50] Uh, and, and now we're still following the same process. You, you, you, you, you [02:39:55] check in, you test, and then you, you, you package it up, and you deploy. [02:40:00] We're still following the same process. I- is the process still sound? Do we still need, like, dev, [02:40:05] staging, and prod outside- Yeah.
+
+greg: Or I think more, more importantly, I [02:40:10] mean, like, not that I'm, like, in that game right now 'cause I'm a four-person startup, [02:40:15] but, you know, you work at Moody's, right? Yeah. Is that right? Uh, 
+
+han: yeah. Yeah. Yes. 
+
+greg: Like, [02:40:20] like think about any, like, large enterprise company that's, you know, built their business over [02:40:25] the last 15, 20 years, right?
+
+It, it could be a financial service company, [02:40:30] it could be a product company, tech company, whatever. You know, everyone pretty much has, [02:40:35] like, whole EPD structure, all these teams that have areas of responsibility and [02:40:40] ownership over surface area. Um, you know, rethinking that [02:40:45] organizational breakdown and who kind of owns what is, like, the long pole in the tent.
+
+[02:40:50] Because if you're effective these days, then I guess it somehow [02:40:55] depends on the size of your code base or whatever, but the amount that a single individual can actually [02:41:00] get done, like driving agents, is, like, insane. Like, [02:41:05] it's literally insane. I mean, you were talking about a lot of the DORA metrics just now.[02:41:10] 
+
+I used to run a company that literally sold, like, software engineering [02:41:15] intelligence products for people to measure that shit. Like- Right ... you know, I think the average number of [02:41:20] commits, the, the average lines of code in, like, the commit work of a [02:41:25] senior engineer historically has been between 50 and 100 lines of code a day, right?
+
+[02:41:30] Right. 
+
+han: Yeah. 
+
+greg: Like, that, that is, like, hard to fathom, right? And so [02:41:35] then you, you have, you know, an engineering team of 300 people that owns the [02:41:40] surface area of, like, whatever the product is that, like, sort of a mid, mid-stage company, right? Like, a [02:41:45] $500 million AR company or something like that. I, I, I can imagine, depending [02:41:50] on, you know, like, l- uh, let's say your $500 million company, you [02:41:55] probably have a code base between a million to 2 to 300 million lines of code, [02:42:00] I'm guessing, like, for a lot of these SaaS companies.
+
+Um- You know, if you [02:42:05] were able to actually figure out the human dynamics of organization, like the surface area that [02:42:10] those, okay, what's like 50 teams owned could probably be compressed to like [02:42:15] five, like honestly. Um, but that's gonna take... Like, organizations are so [02:42:20] resistant to like that kind of w- like actual work.
+
+Like, how could we actually restructure all these [02:42:25] teams? What happens to all these people's jobs, right? Like, that's where there's the inertia. Um, [02:42:30] and that's the thing that's like actually really interesting to me even though I don't really have a dog in the fight at the moment. Just [02:42:35] like what's gonna happen?
+
+Yeah. Because it's insane that, um, [02:42:40] people are getting rate limited to spend 200 or $1,000 of, of tokens a month [02:42:45] when they cost $300,000 loaded up on average or whatever. [02:42:50] It's like it makes no actual sense, but it's not rational because obviously these [02:42:55] companies can't be purely rational, right? Like, in the, in the way that they, they probably could be.
+
+I'm not [02:43:00] saying it's right or wrong, I'm just saying like it, it, it is an interesting- There, there- ... dynamic to observe. [02:43:05] 
+
+han: There, there are a couple, well, no, over the past decade, right, when interest rate was super [02:43:10] low, you got a lot of the PE roll-up shop. They just go around acquiring little [02:43:15] software companies here and there, and, and you, you just...
+
+And then you send in a bunch of ex-BCG [02:43:20] McKinsey guys go in and optimize their workflow and whatnot, re- break down the area, [02:43:25] uh, barriers, fire the people, and whatnot. 
+
+greg: I know it so intimately, my friend. I worked at a c- [02:43:30] Pluralsight was purchased by Vista Equity Partners. I know it so intimately. [02:43:35] 
+
+han: Ah, I'm so sorry.
+
+Yeah, and, and, and, and, and, and, and hopefully, you know, uh, [02:43:40] usually hopefully you can turn around and, and bundle and sell the company as a, for a [02:43:45] profit, right? And nowadays there's something that's, i- i- even though, [02:43:50] like with Claude Co, people say like, "Our software is free," right? Um, or the software valuation has [02:43:55] collapsed.
+
+It's no longer going to be like 40, 50 times sales. It's gonna be like 5 to 10 [02:44:00] times sales maybe, right? And, and, and but what happens is [02:44:05] now with PE shop, the, the, I mean, OpenAI or Anthropic [02:44:10] or whoever, or, or Microsoft, like deployment company, they would just partner with one of [02:44:15] the, the, the big roll-up shop like Vista or whatever, uh, and, and go in [02:44:20] and say, "Hey, we'll use AI to help you optimize your business."
+
+[02:44:25] And more and more people will just lose their job, which is f- it's, it's part of the game if [02:44:30] whoever, you know, is, uh, optimization is part of the game, right? 'Cause that's when, when you [02:44:35] don't have a lot of growth, uh, you, you, you, you find growth from optim- Yeah. You, you find [02:44:40] profit from optimizations. Um, and, and, and [02:44:45] usually you could, you will, you will take a PE shop to, to have that inertia, right?
+
+Like [02:44:50] the, uh- 
+
+greg: Yeah, yeah ... the 
+
+han: one thing- 
+
+greg: It's 
+
+han: not gonna happen organically ... free is 
+
+greg: good. Like it's- It's not happening [02:44:55] organically ... I think, like I think the, probably the closest to the like organic- [02:45:00] instance of that that's happening in a public company is like when Block- 
+
+han: Jack Dorsey? ... 
+
+greg: recently, [02:45:05] like Block- Yeah
+
+you know, like- Yeah ... they recently laid off like 40 pe- [02:45:10] 40% of people or s- something. And they, they can probably do that because Dorsey somehow [02:45:15] made some, I don't know, great case to the board and yada yada about [02:45:20] doing that. But y- you're not gonna find many companies that are gonna have the like chutzpah to be able to actually [02:45:25] do that because it- it, it's a, it's a bet that in the [02:45:30] short term, especially if you're a public company, you're gonna probably be not [02:45:35] rewarded for, like because no one's gonna trust that you have the execution [02:45:40] capabilities to actually pull off the complete reorganization of your, you [02:45:45] know, your product development process or, or whatever it is related to that.
+
+Um, [02:45:50] so I don't know. I, I- 
+
+han: Yeah, and, and he, he's, he's also like found- he's also founder CEO, so that- [02:45:55] Yeah ... that helped a whole lot, right? But- Yeah ... but not like... Or, or you could go Elon [02:46:00] Musk, so, so he can, you know, y- you acquire a company- Yeah ... and go in like Barry Gold and just fire [02:46:05] everyone. But otherwise, otherwise it's hard to- 
+
+hugo: And then rehire some of them as, as [02:46:10] well
+
+han: and re- and rehire, and rehire. Sure. 
+
+greg: But I mean, he did like flash and burn Twitter, man. I mean, [02:46:15] like you gotta- 
+
+hugo: Yeah. Do you remember? And, and then he had to rehire the person who, like knew how to get [02:46:20] the correct swipe cards so people could get into the building like a week later or something like that.[02:46:25] 
+
+greg: Yeah. But I mean, like- 
+
+han: It's the street screen test. [02:46:30] 
+
+greg: He even reduced the op ex- I think it was street test ... by like, well, I don't know, probably like 80%. 80, 
+
+han: yeah. 
+
+hugo: [02:46:35] Totally. 
+
+han: It 
+
+hugo: was, it worked. And it's still functioning in some sense. Um, I gotta jump off, guys, [02:46:40] but- 
+
+han: All right ... 
+
+hugo: I feel like- 
+
+greg: It's fun ... um, 
+
+hugo: yeah. I mean, there's, oh- No problem
+
+so much to talk about. [02:46:45] Um, thank you both once again, and I'm gonna create a lot of clips and put them on the socials and YouTube and that type of stuff. [02:46:50] So if you see something pop up and wanna engage or retweet or, and much appreciated, so we can [02:46:55] get as many eyeballs as possible. 
+
+han: Okay. All right. Thanks Kiko for the invite.
+
+hugo: Real pleasure. Yeah. 
+
+han: Thanks, Kiko. All right. Thank 
+
+hugo: you so much, [02:47:00] boys. All right. Bye bye. [02:47:05] [02:47:10] Ciao.
+

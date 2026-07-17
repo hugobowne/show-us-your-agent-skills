@@ -1,0 +1,3736 @@
+{
+  "channel_id": "1501755069375320164",
+  "exported_at": "2026-07-17T05:34:00.601233+00:00",
+  "message_count": 24,
+  "messages": [
+    {
+      "id": "1522568514165280888",
+      "channel_id": "1501755069375320164",
+      "timestamp": "2026-07-03T11:43:41.732000+00:00",
+      "edited_timestamp": null,
+      "type": 0,
+      "pinned": false,
+      "author": {
+        "id": "479569001572204544",
+        "username": "alexpaulkelly",
+        "global_name": "alex kelly",
+        "bot": false
+      },
+      "content": "Just got through the last youtube vidoe, decided to create a video using the pixi art, its pretty expensive stuff!",
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "referenced_message": null
+    },
+    {
+      "id": "1522570098844504144",
+      "channel_id": "1501755069375320164",
+      "timestamp": "2026-07-03T11:49:59.549000+00:00",
+      "edited_timestamp": null,
+      "type": 0,
+      "pinned": false,
+      "author": {
+        "id": "479569001572204544",
+        "username": "alexpaulkelly",
+        "global_name": "alex kelly",
+        "bot": false
+      },
+      "content": "Now on the latest video, I like how simple Matts rules are, very high level concepts he's asking the agent to think about, its like he's asking the trying to activate certain areas of hte model weights to nugde it in a certain direction without being overexplicit, probably a good approach the more inteligent a models is. I dont think you would get this type of agents.md if you asked a agent to write its own. Also what do you think he means on this line?  \"dont use other agents\".",
+      "attachments": [
+        {
+          "id": "1522570098584326164",
+          "filename": "image.png",
+          "size": 13864,
+          "url": "https://cdn.discordapp.com/attachments/1501755069375320164/1522570098584326164/image.png?ex=6a5abfa7&is=6a596e27&hm=94e25d8d78e27aec43e570b87e6a354a9b15fabb40d1fc32119b6e3848f9c667&",
+          "proxy_url": "https://media.discordapp.net/attachments/1501755069375320164/1522570098584326164/image.png?ex=6a5abfa7&is=6a596e27&hm=94e25d8d78e27aec43e570b87e6a354a9b15fabb40d1fc32119b6e3848f9c667&",
+          "width": 983,
+          "height": 56,
+          "content_type": "image/webp",
+          "original_content_type": "image/png",
+          "content_scan_version": 4,
+          "placeholder": "AwgGAYBaeIdQeshZ73fwfgc=",
+          "placeholder_version": 1
+        }
+      ],
+      "embeds": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": null,
+            "name": "❤️"
+          },
+          "count": 1,
+          "count_details": {
+            "burst": 0,
+            "normal": 1
+          },
+          "burst_colors": [],
+          "me_burst": false,
+          "burst_me": false,
+          "me": false,
+          "burst_count": 0
+        },
+        {
+          "emoji": {
+            "id": null,
+            "name": "👾"
+          },
+          "count": 1,
+          "count_details": {
+            "burst": 0,
+            "normal": 1
+          },
+          "burst_colors": [],
+          "me_burst": false,
+          "burst_me": false,
+          "me": false,
+          "burst_count": 0
+        }
+      ],
+      "referenced_message": null
+    },
+    {
+      "id": "1522572938262614026",
+      "channel_id": "1501755069375320164",
+      "timestamp": "2026-07-03T12:01:16.519000+00:00",
+      "edited_timestamp": null,
+      "type": 19,
+      "pinned": false,
+      "author": {
+        "id": "613249007015165973",
+        "username": "hugobowne",
+        "global_name": "hugobowne",
+        "bot": false
+      },
+      "content": "Hmmm good question. He may mean don’t use subagents (cos he wants the reviewing agent to have all the context) but he may also give agents access to other agents another way. Also totally agree wrt hand crafted agents.md!",
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "referenced_message": {
+        "id": "1522570098844504144",
+        "timestamp": "2026-07-03T11:49:59.549000+00:00",
+        "author": {
+          "id": "479569001572204544",
+          "username": "alexpaulkelly",
+          "global_name": "alex kelly",
+          "bot": false
+        },
+        "content": "Now on the latest video, I like how simple Matts rules are, very high level concepts he's asking the agent to think about, its like he's asking the trying to activate certain areas of hte model weights to nugde it in a certain direction without being overexplicit, probably a good approach the more inteligent a models is. I dont think you would get this type of agents.md if you asked a agent to write its own. Also what do you think he means on this line?  \"dont use other agents\"."
+      }
+    },
+    {
+      "id": "1522573401489674440",
+      "channel_id": "1501755069375320164",
+      "timestamp": "2026-07-03T12:03:06.961000+00:00",
+      "edited_timestamp": null,
+      "type": 0,
+      "pinned": false,
+      "author": {
+        "id": "613249007015165973",
+        "username": "hugobowne",
+        "global_name": "hugobowne",
+        "bot": false
+      },
+      "content": "<@479569001572204544> check out the rest of his AGENTS.md I reconstructed from the screen share (using a skill 😅 ) https://github.com/hugobowne/show-us-your-agent-skills/blob/main/workflows/agent-feedback-systems/AGENTS-reconstructed.md",
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "referenced_message": null
+    },
+    {
+      "id": "1522573661209366649",
+      "channel_id": "1501755069375320164",
+      "timestamp": "2026-07-03T12:04:08.883000+00:00",
+      "edited_timestamp": null,
+      "type": 19,
+      "pinned": false,
+      "author": {
+        "id": "613249007015165973",
+        "username": "hugobowne",
+        "global_name": "hugobowne",
+        "bot": false
+      },
+      "content": "And also his field notes! https://github.com/hugobowne/show-us-your-agent-skills/blob/main/episode-field-notes/ep-6/matt.md",
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "referenced_message": {
+        "id": "1522573401489674440",
+        "timestamp": "2026-07-03T12:03:06.961000+00:00",
+        "author": {
+          "id": "613249007015165973",
+          "username": "hugobowne",
+          "global_name": "hugobowne",
+          "bot": false
+        },
+        "content": "<@479569001572204544> check out the rest of his AGENTS.md I reconstructed from the screen share (using a skill 😅 ) https://github.com/hugobowne/show-us-your-agent-skills/blob/main/workflows/agent-feedback-systems/AGENTS-reconstructed.md"
+      }
+    },
+    {
+      "id": "1522594695467761855",
+      "channel_id": "1501755069375320164",
+      "timestamp": "2026-07-03T13:27:43.841000+00:00",
+      "edited_timestamp": "2026-07-03T13:27:53.758000+00:00",
+      "type": 19,
+      "pinned": false,
+      "author": {
+        "id": "479569001572204544",
+        "username": "alexpaulkelly",
+        "global_name": "alex kelly",
+        "bot": false
+      },
+      "content": "<@613249007015165973>  The next sessions on Evals.  This is video i've used ot help promote it, its took from a picture of hte group  https://www.youtube.com/watch?v=1bkRG5brHuA",
+      "attachments": [],
+      "embeds": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=1bkRG5brHuA",
+          "title": "evals 1 bughunt",
+          "description": "Evals bughunt",
+          "color": 16711680,
+          "reference_id": "1522594695467761855",
+          "author": {
+            "name": "alex kelly",
+            "url": "https://www.youtube.com/channel/UCmR7BIiOH1tjGaFgQikAiCw"
+          },
+          "provider": {
+            "name": "YouTube",
+            "url": "https://www.youtube.com"
+          },
+          "thumbnail": {
+            "url": "https://i.ytimg.com/vi/1bkRG5brHuA/maxresdefault.jpg",
+            "proxy_url": "https://images-ext-1.discordapp.net/external/RkLvz_qGBfNlhpr5qI4479SVPiY2b-8Zzr9JcKDy6lY/https/i.ytimg.com/vi/1bkRG5brHuA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720,
+            "content_type": "image/jpeg",
+            "placeholder": "WwgKDIJZqXZqeZaveF63pw8d3g==",
+            "placeholder_version": 1,
+            "flags": 0
+          },
+          "video": {
+            "url": "https://www.youtube.com/embed/1bkRG5brHuA",
+            "width": 1280,
+            "height": 720,
+            "placeholder": "WwgKDIJZqXZqeZaveF63pw8d3g==",
+            "placeholder_version": 1,
+            "flags": 0
+          },
+          "content_scan_version": 4
+        }
+      ],
+      "reactions": [],
+      "referenced_message": {
+        "id": "1522568514165280888",
+        "timestamp": "2026-07-03T11:43:41.732000+00:00",
+        "author": {
+          "id": "479569001572204544",
+          "username": "alexpaulkelly",
+          "global_name": "alex kelly",
+          "bot": false
+        },
+        "content": "Just got through the last youtube vidoe, decided to create a video using the pixi art, its pretty expensive stuff!"
+      }
+    },
+    {
+      "id": "1522757971371757650",
+      "channel_id": "1501755069375320164",
+      "timestamp": "2026-07-04T00:16:31.850000+00:00",
+      "edited_timestamp": null,
+      "type": 19,
+      "pinned": false,
+      "author": {
+        "id": "613249007015165973",
+        "username": "hugobowne",
+        "global_name": "hugobowne",
+        "bot": false
+      },
+      "content": "Hahah super cool! Are the 8 bit alien magic the gathering cards going into the test set?! 👾 😂",
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "referenced_message": {
+        "id": "1522594695467761855",
+        "timestamp": "2026-07-03T13:27:43.841000+00:00",
+        "author": {
+          "id": "479569001572204544",
+          "username": "alexpaulkelly",
+          "global_name": "alex kelly",
+          "bot": false
+        },
+        "content": "<@613249007015165973>  The next sessions on Evals.  This is video i've used ot help promote it, its took from a picture of hte group  https://www.youtube.com/watch?v=1bkRG5brHuA"
+      }
+    },
+    {
+      "id": "1522874712135307425",
+      "channel_id": "1501755069375320164",
+      "timestamp": "2026-07-04T08:00:25.017000+00:00",
+      "edited_timestamp": null,
+      "type": 19,
+      "pinned": false,
+      "author": {
+        "id": "479569001572204544",
+        "username": "alexpaulkelly",
+        "global_name": "alex kelly",
+        "bot": false
+      },
+      "content": "Haha I'm not too sure, I think the humans are catching the aliens.  The aliens are the bugs/outliers being bungled into the test set being turned into cards for evals.",
+      "attachments": [],
+      "embeds": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": null,
+            "name": "👾"
+          },
+          "count": 1,
+          "count_details": {
+            "burst": 0,
+            "normal": 1
+          },
+          "burst_colors": [],
+          "me_burst": false,
+          "burst_me": false,
+          "me": false,
+          "burst_count": 0
+        }
+      ],
+      "referenced_message": {
+        "id": "1522757971371757650",
+        "timestamp": "2026-07-04T00:16:31.850000+00:00",
+        "author": {
+          "id": "613249007015165973",
+          "username": "hugobowne",
+          "global_name": "hugobowne",
+          "bot": false
+        },
+        "content": "Hahah super cool! Are the 8 bit alien magic the gathering cards going into the test set?! 👾 😂"
+      }
+    },
+    {
+      "id": "1526092668050866186",
+      "channel_id": "1501755069375320164",
+      "timestamp": "2026-07-13T05:07:25.494000+00:00",
+      "edited_timestamp": null,
+      "type": 0,
+      "pinned": false,
+      "author": {
+        "id": "690557463245750292",
+        "username": "jlanaps",
+        "global_name": "JLA",
+        "bot": false
+      },
+      "content": "",
+      "attachments": [
+        {
+          "id": "1526092667816251424",
+          "filename": "image.png",
+          "size": 31806,
+          "url": "https://cdn.discordapp.com/attachments/1501755069375320164/1526092667816251424/image.png?ex=6a5b0a0d&is=6a59b88d&hm=46ea4c631a2713131104f50d384eadab1951541300287b91a472f14eb50cf833&",
+          "proxy_url": "https://media.discordapp.net/attachments/1501755069375320164/1526092667816251424/image.png?ex=6a5b0a0d&is=6a59b88d&hm=46ea4c631a2713131104f50d384eadab1951541300287b91a472f14eb50cf833&",
+          "width": 804,
+          "height": 357,
+          "content_type": "image/png",
+          "original_content_type": "image/png",
+          "content_scan_version": 4,
+          "placeholder": "xQcCA4CPZWdoh0d04J3+IRY=",
+          "placeholder_version": 1
+        }
+      ],
+      "embeds": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": null,
+            "name": "👀"
+          },
+          "count": 1,
+          "count_details": {
+            "burst": 0,
+            "normal": 1
+          },
+          "burst_colors": [],
+          "me_burst": false,
+          "burst_me": false,
+          "me": false,
+          "burst_count": 0
+        }
+      ],
+      "referenced_message": null
+    },
+    {
+      "id": "1527447724876759172",
+      "channel_id": "1501755069375320164",
+      "timestamp": "2026-07-16T22:51:56.217000+00:00",
+      "edited_timestamp": null,
+      "type": 0,
+      "pinned": false,
+      "author": {
+        "id": "613249007015165973",
+        "username": "hugobowne",
+        "global_name": "hugobowne",
+        "bot": false
+      },
+      "content": "",
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "referenced_message": null
+    },
+    {
+      "id": "1527453914809503856",
+      "channel_id": "1501755069375320164",
+      "timestamp": "2026-07-16T23:16:32.012000+00:00",
+      "edited_timestamp": null,
+      "type": 0,
+      "pinned": false,
+      "author": {
+        "id": "613249007015165973",
+        "username": "hugobowne",
+        "global_name": "hugobowne",
+        "bot": false
+      },
+      "content": "https://specstory.com/",
+      "attachments": [],
+      "embeds": [
+        {
+          "type": "article",
+          "url": "https://specstory.com/",
+          "title": "SpecStory - Ship 10x smarter with perfect context",
+          "description": "Never lose an AI conversation again. Automatically capture every chat from Cursor, Copilot, Claude Code & Codex. Save locally, access everywhere. Ship 10x smarter with perfect context.",
+          "provider": {
+            "name": "SpecStory"
+          },
+          "thumbnail": {
+            "url": "https://specstory.com/social_image.png",
+            "proxy_url": "https://images-ext-1.discordapp.net/external/-0ylUu6-w0Cz2MN5E_8Ll-ClfRTY7C7IuoTAn7WWnMI/https/specstory.com/social_image.png",
+            "width": 1200,
+            "height": 630,
+            "content_type": "image/png",
+            "placeholder": "zPcFBIBDdIluaXhgm4fLX7L9FA==",
+            "placeholder_version": 1,
+            "description": "SpecStory - Ship 10x smarter with perfect context",
+            "flags": 0
+          },
+          "content_scan_version": 4
+        }
+      ],
+      "reactions": [],
+      "referenced_message": null
+    },
+    {
+      "id": "1527454333631725659",
+      "channel_id": "1501755069375320164",
+      "timestamp": "2026-07-16T23:18:11.867000+00:00",
+      "edited_timestamp": null,
+      "type": 0,
+      "pinned": false,
+      "author": {
+        "id": "613249007015165973",
+        "username": "hugobowne",
+        "global_name": "hugobowne",
+        "bot": false
+      },
+      "content": "https://github.com/specstoryai",
+      "attachments": [],
+      "embeds": [
+        {
+          "type": "article",
+          "url": "https://github.com/specstoryai",
+          "title": "SpecStory",
+          "description": "SpecStory has 29 repositories available. Follow their code on GitHub.",
+          "color": 1975079,
+          "provider": {
+            "name": "GitHub"
+          },
+          "thumbnail": {
+            "url": "https://avatars.githubusercontent.com/u/166310736?s=280&v=4",
+            "proxy_url": "https://images-ext-1.discordapp.net/external/XMjDG7Ld7HbmovFhrpqzQXEVu8Z2g4zsEZAQphmAmb0/%3Fs%3D280%26v%3D4/https/avatars.githubusercontent.com/u/166310736",
+            "width": 280,
+            "height": 280,
+            "content_type": "image/png",
+            "placeholder": "olaBNRA4Z6iPc460l79p+ouWB0l1iYN5Zw==",
+            "placeholder_version": 1,
+            "description": "SpecStory has 29 repositories available. Follow their code on GitHub.",
+            "flags": 0
+          },
+          "content_scan_version": 4
+        }
+      ],
+      "reactions": [],
+      "referenced_message": null
+    },
+    {
+      "id": "1527460448851460196",
+      "channel_id": "1501755069375320164",
+      "timestamp": "2026-07-16T23:42:29.849000+00:00",
+      "edited_timestamp": null,
+      "type": 0,
+      "pinned": false,
+      "author": {
+        "id": "228673547294343168",
+        "username": "gregce",
+        "global_name": "gregce",
+        "bot": false
+      },
+      "content": "This is where lore lives specifically: https://github.com/specstoryai/getspecstory/tree/dev/lore",
+      "attachments": [],
+      "embeds": [
+        {
+          "type": "article",
+          "url": "https://github.com/specstoryai/getspecstory/tree/dev/lore",
+          "title": "getspecstory/lore at dev · specstoryai/getspecstory",
+          "description": "Install our local first extensions for your favorite AI IDE or Terminal Agent. Process your histories into reusable skills with Lore. Sync your conversations to the cloud. File issues and requests....",
+          "color": 1975079,
+          "provider": {
+            "name": "GitHub"
+          },
+          "thumbnail": {
+            "url": "https://opengraph.githubassets.com/5261506cefa2e9f046c61a95004bf2d3efc4ce0949960bbcd351142cf5ee83aa/specstoryai/getspecstory",
+            "proxy_url": "https://images-ext-1.discordapp.net/external/oHuQtmtACv7BPOwY2s_V4eSGvXgDRFEjo19poJ-PtR8/https/opengraph.githubassets.com/5261506cefa2e9f046c61a95004bf2d3efc4ce0949960bbcd351142cf5ee83aa/specstoryai/getspecstory",
+            "width": 1200,
+            "height": 600,
+            "content_type": "image/png",
+            "placeholder": "++cFDIJ2maaJl3iIaI94v6H1Cg==",
+            "placeholder_version": 1,
+            "description": "Install our local first extensions for your favorite AI IDE or Terminal Agent. Process your histories into reusable skills with Lore. Sync your conversations to the cloud. File issues and requests....",
+            "flags": 0
+          },
+          "content_scan_version": 4
+        }
+      ],
+      "reactions": [],
+      "referenced_message": null
+    },
+    {
+      "id": "1527462528999755816",
+      "channel_id": "1501755069375320164",
+      "timestamp": "2026-07-16T23:50:45.795000+00:00",
+      "edited_timestamp": null,
+      "type": 0,
+      "pinned": false,
+      "author": {
+        "id": "613249007015165973",
+        "username": "hugobowne",
+        "global_name": "hugobowne",
+        "bot": false
+      },
+      "content": "https://www.skillsbench.ai/",
+      "attachments": [],
+      "embeds": [
+        {
+          "type": "article",
+          "url": "https://www.skillsbench.ai/",
+          "title": "SkillsBench — AI Agent Skills Benchmark & Evaluation",
+          "description": "The first benchmark for evaluating AI agent skills. 87 tasks, 24 model-harness configurations, 3 trials per task. See how skills improve agent performance across diverse domains.",
+          "provider": {
+            "name": "SkillsBench"
+          },
+          "thumbnail": {
+            "url": "https://skillsbench.ai/twitter-image?268ebebc24601b32",
+            "proxy_url": "https://images-ext-1.discordapp.net/external/uotUuusjj2ExxzfsPy6v1c6qBgI5btksySQdlfEmo_Y/%3F268ebebc24601b32/https/skillsbench.ai/twitter-image",
+            "width": 1200,
+            "height": 630,
+            "content_type": "image/png",
+            "placeholder": "/fcBBIDgboByZ4iqM2XkiU9P5w==",
+            "placeholder_version": 1,
+            "flags": 0
+          },
+          "content_scan_version": 4
+        }
+      ],
+      "reactions": [],
+      "referenced_message": null
+    },
+    {
+      "id": "1527471394579808508",
+      "channel_id": "1501755069375320164",
+      "timestamp": "2026-07-17T00:25:59.514000+00:00",
+      "edited_timestamp": null,
+      "type": 0,
+      "pinned": false,
+      "author": {
+        "id": "613249007015165973",
+        "username": "hugobowne",
+        "global_name": "hugobowne",
+        "bot": false
+      },
+      "content": "https://maven.com/p/c6d4f5/loop-engineering-without-the-bs",
+      "attachments": [],
+      "embeds": [
+        {
+          "type": "article",
+          "url": "https://maven.com/p/c6d4f5/loop-engineering-without-the-bs",
+          "title": "Loop Engineering, Without the BS",
+          "description": "Every agent workflow now wants a loop. Generate, judge, revise, repeat, and keep spending tokens until the chart goes up. Sometimes this is useful optimization. Sometimes it is an LLM grading its own homework with extra steps. We’ll separate the engineering from the hype, decide when a loop is worth running, and build eval boundaries that stop...",
+          "thumbnail": {
+            "url": "https://maven.com/api/og/free-lesson/c6d4f5?v=iuetumc9gs",
+            "proxy_url": "https://images-ext-1.discordapp.net/external/LFNzKT40B--AcBNzRPVP3A5FNlSHpfBA819drt6WjJM/%3Fv%3Diuetumc9gs/https/maven.com/api/og/free-lesson/c6d4f5",
+            "width": 1200,
+            "height": 630,
+            "content_type": "image/png",
+            "placeholder": "CvcFDID0VzjihWjHmE3g0gc8bA==",
+            "placeholder_version": 1,
+            "flags": 0
+          },
+          "content_scan_version": 4
+        }
+      ],
+      "reactions": [],
+      "referenced_message": null
+    },
+    {
+      "id": "1527471538423599184",
+      "channel_id": "1501755069375320164",
+      "timestamp": "2026-07-17T00:26:33.809000+00:00",
+      "edited_timestamp": null,
+      "type": 0,
+      "pinned": false,
+      "author": {
+        "id": "613249007015165973",
+        "username": "hugobowne",
+        "global_name": "hugobowne",
+        "bot": false
+      },
+      "content": "https://maven.com/p/50451d/building-effective-agent-harnesses",
+      "attachments": [],
+      "embeds": [
+        {
+          "type": "article",
+          "url": "https://maven.com/p/50451d/building-effective-agent-harnesses",
+          "title": "Building Effective Agent Harnesses",
+          "description": "Agent frameworks have an impressive talent for making every feature feel mandatory. Memory! Planning! Multi-agent orchestration! You ain't gonna need most of it. We’ll build an agent loop from first principles, examine MCP, hooks, cron jobs, and sub-agents, and learn from Pi, Codex, and Claude Code so you can decide what belongs in your harnes...",
+          "thumbnail": {
+            "url": "https://maven.com/api/og/free-lesson/50451d?v=2fhc9sccbdq",
+            "proxy_url": "https://images-ext-1.discordapp.net/external/JvrdC7nT4-d3g1V8PjGCr4KSFrKo4u_mCDCkDU7o-jc/%3Fv%3D2fhc9sccbdq/https/maven.com/api/og/free-lesson/50451d",
+            "width": 1200,
+            "height": 630,
+            "content_type": "image/png",
+            "placeholder": "C/cFDID0VzfihWjHmEzg0gc8bA==",
+            "placeholder_version": 1,
+            "flags": 0
+          },
+          "content_scan_version": 4
+        }
+      ],
+      "reactions": [],
+      "referenced_message": null
+    },
+    {
+      "id": "1527472376512774257",
+      "channel_id": "1501755069375320164",
+      "timestamp": "2026-07-17T00:29:53.625000+00:00",
+      "edited_timestamp": null,
+      "type": 0,
+      "pinned": false,
+      "author": {
+        "id": "898261025558781983",
+        "username": "sethtam",
+        "global_name": "sethtam",
+        "bot": false
+      },
+      "content": "<@613249007015165973> Please explain in the most basic way what this means.    Loop engineering.",
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "referenced_message": null
+    },
+    {
+      "id": "1527473437277163681",
+      "channel_id": "1501755069375320164",
+      "timestamp": "2026-07-17T00:34:06.531000+00:00",
+      "edited_timestamp": null,
+      "type": 0,
+      "pinned": false,
+      "author": {
+        "id": "898261025558781983",
+        "username": "sethtam",
+        "global_name": "sethtam",
+        "bot": false
+      },
+      "content": "@hugo bowne-anderson Please explain in the most basic way what this means.    GOAL is",
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "referenced_message": null
+    },
+    {
+      "id": "1527475542574764062",
+      "channel_id": "1501755069375320164",
+      "timestamp": "2026-07-17T00:42:28.473000+00:00",
+      "edited_timestamp": null,
+      "type": 0,
+      "pinned": false,
+      "author": {
+        "id": "898261025558781983",
+        "username": "sethtam",
+        "global_name": "sethtam",
+        "bot": false
+      },
+      "content": "OUTSTANDING everyone .... learning so much here ........ thanks <@613249007015165973>  this was awesome Han and Greg are great educators!  Thanks for explaining the basics!",
+      "attachments": [],
+      "embeds": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": null,
+            "name": "👍"
+          },
+          "count": 1,
+          "count_details": {
+            "burst": 0,
+            "normal": 1
+          },
+          "burst_colors": [],
+          "me_burst": false,
+          "burst_me": false,
+          "me": false,
+          "burst_count": 0
+        },
+        {
+          "emoji": {
+            "id": null,
+            "name": "🚀"
+          },
+          "count": 1,
+          "count_details": {
+            "burst": 0,
+            "normal": 1
+          },
+          "burst_colors": [],
+          "me_burst": false,
+          "burst_me": false,
+          "me": false,
+          "burst_count": 0
+        },
+        {
+          "emoji": {
+            "id": null,
+            "name": "💯"
+          },
+          "count": 1,
+          "count_details": {
+            "burst": 0,
+            "normal": 1
+          },
+          "burst_colors": [],
+          "me_burst": false,
+          "burst_me": false,
+          "me": false,
+          "burst_count": 0
+        }
+      ],
+      "referenced_message": null
+    },
+    {
+      "id": "1527476063112790129",
+      "channel_id": "1501755069375320164",
+      "timestamp": "2026-07-17T00:44:32.579000+00:00",
+      "edited_timestamp": null,
+      "type": 0,
+      "pinned": false,
+      "author": {
+        "id": "898261025558781983",
+        "username": "sethtam",
+        "global_name": "sethtam",
+        "bot": false
+      },
+      "content": "These are the bites for X <@613249007015165973> !",
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "referenced_message": null
+    },
+    {
+      "id": "1527478504281739355",
+      "channel_id": "1501755069375320164",
+      "timestamp": "2026-07-17T00:54:14.599000+00:00",
+      "edited_timestamp": null,
+      "type": 0,
+      "pinned": false,
+      "author": {
+        "id": "228673547294343168",
+        "username": "gregce",
+        "global_name": "gregce",
+        "bot": false
+      },
+      "content": "here's the book and course link:\n\n- https://specstory.com/books/25-patterns-in-agentic-engineering-book-2026.pdf\n- https://maven.com/specstory/hardcore-agentic-engineering-for-builders-who-ship?promoCode=HARDCORE",
+      "attachments": [],
+      "embeds": [
+        {
+          "type": "article",
+          "url": "https://maven.com/specstory/hardcore-agentic-engineering-for-builders-who-ship?promoCode=HARDCORE",
+          "title": "Hardcore Agentic Engineering for builders who ship by Greg Ceccarel...",
+          "description": "Build an agentic harness end-to-end, hands on, and walk away able to brief the goal, steer the run, and verify on your own repo confidently.",
+          "thumbnail": {
+            "url": "https://maven.com/api/og/course/hardcore-agentic-engineering-for-builders-who-ship",
+            "proxy_url": "https://images-ext-1.discordapp.net/external/i9gYwRWGKgNa5tqpClKD8xCbbthCZ33xxpWsFyB8jNs/https/maven.com/api/og/course/hardcore-agentic-engineering-for-builders-who-ship",
+            "width": 1200,
+            "height": 630,
+            "content_type": "image/png",
+            "placeholder": "NggKDIJdxYcvmpWWhnmQ5AQ5Tg==",
+            "placeholder_version": 1,
+            "flags": 0
+          },
+          "content_scan_version": 4
+        }
+      ],
+      "reactions": [
+        {
+          "emoji": {
+            "id": null,
+            "name": "🙏🏻"
+          },
+          "count": 2,
+          "count_details": {
+            "burst": 0,
+            "normal": 2
+          },
+          "burst_colors": [],
+          "me_burst": false,
+          "burst_me": false,
+          "me": false,
+          "burst_count": 0
+        },
+        {
+          "emoji": {
+            "id": null,
+            "name": "🚀"
+          },
+          "count": 1,
+          "count_details": {
+            "burst": 0,
+            "normal": 1
+          },
+          "burst_colors": [],
+          "me_burst": false,
+          "burst_me": false,
+          "me": false,
+          "burst_count": 0
+        },
+        {
+          "emoji": {
+            "id": null,
+            "name": "💯"
+          },
+          "count": 1,
+          "count_details": {
+            "burst": 0,
+            "normal": 1
+          },
+          "burst_colors": [],
+          "me_burst": false,
+          "burst_me": false,
+          "me": false,
+          "burst_count": 0
+        },
+        {
+          "emoji": {
+            "id": null,
+            "name": "🌟"
+          },
+          "count": 1,
+          "count_details": {
+            "burst": 0,
+            "normal": 1
+          },
+          "burst_colors": [],
+          "me_burst": false,
+          "burst_me": false,
+          "me": false,
+          "burst_count": 0
+        }
+      ],
+      "referenced_message": null
+    },
+    {
+      "id": "1527481626370506883",
+      "channel_id": "1501755069375320164",
+      "timestamp": "2026-07-17T01:06:38.963000+00:00",
+      "edited_timestamp": null,
+      "type": 0,
+      "pinned": false,
+      "author": {
+        "id": "898261025558781983",
+        "username": "sethtam",
+        "global_name": "sethtam",
+        "bot": false
+      },
+      "content": "Great Preso today!  Thanks everyone!",
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "referenced_message": null
+    },
+    {
+      "id": "1527485936097558570",
+      "channel_id": "1501755069375320164",
+      "timestamp": "2026-07-17T01:23:46.482000+00:00",
+      "edited_timestamp": null,
+      "type": 0,
+      "pinned": false,
+      "author": {
+        "id": "613249007015165973",
+        "username": "hugobowne",
+        "global_name": "hugobowne",
+        "bot": false
+      },
+      "content": "thanks for joining, all!",
+      "attachments": [],
+      "embeds": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": null,
+            "name": "🚀"
+          },
+          "count": 2,
+          "count_details": {
+            "burst": 0,
+            "normal": 2
+          },
+          "burst_colors": [],
+          "me_burst": false,
+          "burst_me": false,
+          "me": false,
+          "burst_count": 0
+        },
+        {
+          "emoji": {
+            "id": null,
+            "name": "🔥"
+          },
+          "count": 1,
+          "count_details": {
+            "burst": 0,
+            "normal": 1
+          },
+          "burst_colors": [],
+          "me_burst": false,
+          "burst_me": false,
+          "me": false,
+          "burst_count": 0
+        },
+        {
+          "emoji": {
+            "id": null,
+            "name": "💯"
+          },
+          "count": 1,
+          "count_details": {
+            "burst": 0,
+            "normal": 1
+          },
+          "burst_colors": [],
+          "me_burst": false,
+          "burst_me": false,
+          "me": false,
+          "burst_count": 0
+        },
+        {
+          "emoji": {
+            "id": null,
+            "name": "⚡"
+          },
+          "count": 1,
+          "count_details": {
+            "burst": 0,
+            "normal": 1
+          },
+          "burst_colors": [],
+          "me_burst": false,
+          "burst_me": false,
+          "me": false,
+          "burst_count": 0
+        }
+      ],
+      "referenced_message": null
+    },
+    {
+      "id": "1527486120693076158",
+      "channel_id": "1501755069375320164",
+      "timestamp": "2026-07-17T01:24:30.493000+00:00",
+      "edited_timestamp": null,
+      "type": 0,
+      "pinned": false,
+      "author": {
+        "id": "898261025558781983",
+        "username": "sethtam",
+        "global_name": "sethtam",
+        "bot": false
+      },
+      "content": "Everyone of these gets better and better....great stuff!",
+      "attachments": [],
+      "embeds": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": null,
+            "name": "👾"
+          },
+          "count": 1,
+          "count_details": {
+            "burst": 0,
+            "normal": 1
+          },
+          "burst_colors": [],
+          "me_burst": false,
+          "burst_me": false,
+          "me": false,
+          "burst_count": 0
+        }
+      ],
+      "referenced_message": null
+    }
+  ],
+  "thread_count": 16,
+  "threads": [
+    {
+      "id": "1502091093842460752",
+      "parent_id": "1501755069375320164",
+      "owner_id": "613249007015165973",
+      "name": "How token-hungry is Roborev? And",
+      "type": 11,
+      "archived": true,
+      "archive_timestamp": "2026-06-07T03:02:17.701000+00:00",
+      "locked": false,
+      "message_count": 3,
+      "member_count": 2,
+      "rate_limit_per_user": 0,
+      "exported_message_count": 4,
+      "messages": [
+        {
+          "id": "1502091908523233461",
+          "channel_id": "1502091093842460752",
+          "timestamp": "2026-05-07T23:36:58.510000+00:00",
+          "edited_timestamp": null,
+          "type": 21,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": {
+            "id": "1502091093842460752",
+            "timestamp": "2026-05-07T23:33:44.275000+00:00",
+            "author": {
+              "id": "470284868987781142",
+              "username": "kp2555",
+              "global_name": "kp",
+              "bot": false
+            },
+            "content": "How token-hungry is Roborev? And Middleman?"
+          }
+        },
+        {
+          "id": "1502091915020079194",
+          "channel_id": "1502091093842460752",
+          "timestamp": "2026-05-07T23:37:00.059000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "hope wes can answer this a bit later",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1502094333380268082",
+          "channel_id": "1502091093842460752",
+          "timestamp": "2026-05-07T23:46:36.641000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "from wes!\n> middleman itself it not token hungry! roborev is pretty reasonable but I keep a OpenAI $200 plan dedicated to it with a little bit of plan review on the side",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [
+            {
+              "emoji": {
+                "id": null,
+                "name": "🔥"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            }
+          ],
+          "referenced_message": null
+        },
+        {
+          "id": "1502141138025320488",
+          "channel_id": "1502091093842460752",
+          "timestamp": "2026-05-08T02:52:35.738000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "470284868987781142",
+            "username": "kp2555",
+            "global_name": "kp",
+            "bot": false
+          },
+          "content": "Thanks <@613249007015165973>",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [
+            {
+              "emoji": {
+                "id": null,
+                "name": "👍🏻"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            }
+          ],
+          "referenced_message": null
+        }
+      ]
+    },
+    {
+      "id": "1502094238144397415",
+      "parent_id": "1501755069375320164",
+      "owner_id": "613249007015165973",
+      "name": "if possible, coulld Jeremiah talk about",
+      "type": 11,
+      "archived": true,
+      "archive_timestamp": "2026-06-07T12:51:33.316000+00:00",
+      "locked": false,
+      "message_count": 3,
+      "member_count": 3,
+      "rate_limit_per_user": 0,
+      "exported_message_count": 4,
+      "messages": [
+        {
+          "id": "1502094494202597506",
+          "channel_id": "1502094238144397415",
+          "timestamp": "2026-05-07T23:47:14.984000+00:00",
+          "edited_timestamp": null,
+          "type": 21,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": {
+            "id": "1502094238144397415",
+            "timestamp": "2026-05-07T23:46:13.935000+00:00",
+            "author": {
+              "id": "804012503406215258",
+              "username": "suren0824",
+              "global_name": "suren (Plato's Cave)",
+              "bot": false
+            },
+            "content": "if possible, coulld Jeremiah talk about his second brain stack? any details beyond OpenClaw, any modifications with sharing?"
+          }
+        },
+        {
+          "id": "1502094498627321936",
+          "channel_id": "1502094238144397415",
+          "timestamp": "2026-05-07T23:47:16.039000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "hope to get to it",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1502100157024440371",
+          "channel_id": "1502094238144397415",
+          "timestamp": "2026-05-08T00:09:45.106000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "804012503406215258",
+            "username": "suren0824",
+            "global_name": "suren (Plato's Cave)",
+            "bot": false
+          },
+          "content": "if possible/time remaining, what does it mean to \"muck around with OpenClaw's memory\" (for noobs), how does one do it?\n\nalso, any challenges Jeremiah faced with using OpenClaw as his memory absorber.  any note-taking app like Obsidian or Notion attached to the OpenClaw? \n\nand do other participants have a 'second brain' stack, if woth sharing?",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [
+            {
+              "emoji": {
+                "id": null,
+                "name": "👍🏻"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            }
+          ],
+          "referenced_message": null
+        },
+        {
+          "id": "1502291551085264907",
+          "channel_id": "1502094238144397415",
+          "timestamp": "2026-05-08T12:50:17.006000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "542726670155513873",
+            "username": "jlowin",
+            "global_name": "jeremiah",
+            "bot": false
+          },
+          "content": "Hey <@804012503406215258> - when I started with OpenClaw, memory basically meant \"a daily log\" period. So I started giving it specific instructions to create distinct files for people, places, companies, etc. and build knowledge that way. The new \"memory wiki\" plugin gives it some of this guidance automatically. So the first version of \"muck around\" is just structuring it beyond simple semantic retrieval based on how I commonly access it. More recently I'm studying how I actually ask questions about things and have more specific instructions for my OpenClaw about how to process ingest and store information to surface answers more quickly. For example, when I provide meeting transcripts, I don't just want the raw transcript and summary in memory; I want distinct characterizations of what was discussed, by whom, in what context, etc.",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [
+            {
+              "emoji": {
+                "id": null,
+                "name": "❤️"
+              },
+              "count": 2,
+              "count_details": {
+                "burst": 0,
+                "normal": 2
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            },
+            {
+              "emoji": {
+                "id": "1361578504721928324",
+                "name": "thank_you"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            }
+          ],
+          "referenced_message": null
+        }
+      ]
+    },
+    {
+      "id": "1502096753699323904",
+      "parent_id": "1501755069375320164",
+      "owner_id": "613249007015165973",
+      "name": "Jeremiah seems to be using Cursor (e.g.",
+      "type": 11,
+      "archived": true,
+      "archive_timestamp": "2026-06-08T18:58:06.366000+00:00",
+      "locked": false,
+      "message_count": 8,
+      "member_count": 4,
+      "rate_limit_per_user": 0,
+      "exported_message_count": 9,
+      "messages": [
+        {
+          "id": "1502591381376466974",
+          "channel_id": "1502096753699323904",
+          "timestamp": "2026-05-09T08:41:42.118000+00:00",
+          "edited_timestamp": null,
+          "type": 21,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": {
+            "id": "1502096753699323904",
+            "timestamp": "2026-05-07T23:56:13.690000+00:00",
+            "author": {
+              "id": "804012503406215258",
+              "username": "suren0824",
+              "global_name": "suren (Plato's Cave)",
+              "bot": false
+            },
+            "content": "Jeremiah seems to be using Cursor (e.g. right now , the skill.md) - is it interesting it to talk about 'Cursor vs Claude Code' (or 'Claude Code inside Cursor') ? for n00bs like me"
+          }
+        },
+        {
+          "id": "1502591388607447120",
+          "channel_id": "1502096753699323904",
+          "timestamp": "2026-05-09T08:41:43.842000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "its a great question and i would have gotten to it, if we'd had more time.\nmy general advice is to experiment with different models and different tools to see what works for you.\nand most of all avoid getting locked into any one tool!",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1502591567163166781",
+          "channel_id": "1502096753699323904",
+          "timestamp": "2026-05-09T08:42:26.413000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "i have used VSCode for years so like using different provider plugins there",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1502591621915742249",
+          "channel_id": "1502096753699323904",
+          "timestamp": "2026-05-09T08:42:39.467000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "i also love using the terminal so use claude code a bunch",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1502592147357040701",
+          "channel_id": "1502096753699323904",
+          "timestamp": "2026-05-09T08:44:44.742000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "having said that, as <@618851450273136651> mentioned at the start, on some days claude just feels really dumb so i need a back up plan! and like wes and many others, i often use claude models to build and codex to test.\ndon't get caught up in the twitter fueled model/harness/vendors wars (or at least if you do, know that's what's happening) -- find tools that work for you and don't get locked in",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1502592508486484032",
+          "channel_id": "1502096753699323904",
+          "timestamp": "2026-05-09T08:46:10.842000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "also semi pro tip: use smarter reasoning models  (eg opus) for planning and faster cheaper models (eg sonnet) for executing",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1502592632591749181",
+          "channel_id": "1502096753699323904",
+          "timestamp": "2026-05-09T08:46:40.431000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "more best practices and pro tips from the sharp af minds of <@751156367506800701> and <@736013353998090241> here https://hugobowne.substack.com/p/how-to-build-an-ai-agent-with-ai",
+          "attachments": [],
+          "embeds": [
+            {
+              "type": "article",
+              "url": "https://hugobowne.substack.com/p/how-to-build-an-ai-agent-with-ai",
+              "title": "How to Build an AI Agent with AI-Assisted Coding",
+              "description": "Or 7 Ways to Supercharge your AI-Assisted Dev Stack",
+              "thumbnail": {
+                "url": "https://substackcdn.com/image/fetch/$s_!2TzP!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fhugobowne.substack.com%2Fapi%2Fv1%2Fpost_preview%2F183517194%2Ftwitter.jpg%3Fversion%3D4",
+                "proxy_url": "https://images-ext-1.discordapp.net/external/QnkEHArfBFir5s4T4qmIf9znsqIGxBIjZns8JXAMRvI/https/substackcdn.com/image/fetch/%24s_%212TzP%21%2Cf_auto%2Cq_auto%3Abest%2Cfl_progressive%3Asteep/https%253A%252F%252Fhugobowne.substack.com%252Fapi%252Fv1%252Fpost_preview%252F183517194%252Ftwitter.jpg%253Fversion%253D4",
+                "width": 1600,
+                "height": 800,
+                "content_type": "image/jpeg",
+                "placeholder": "xvcFBICPhnd7l4dpiIn0rTrfqg==",
+                "placeholder_version": 1,
+                "flags": 0
+              },
+              "content_scan_version": 4
+            }
+          ],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1502592687705161728",
+          "channel_id": "1502096753699323904",
+          "timestamp": "2026-05-09T08:46:53.571000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "and here: https://hugobowne.substack.com/p/top-questions-about-ai-assisted-software",
+          "attachments": [],
+          "embeds": [
+            {
+              "type": "article",
+              "url": "https://hugobowne.substack.com/p/top-questions-about-ai-assisted-software",
+              "title": "Top Questions About AI-Assisted Software Development",
+              "description": "Effective AI-Assisted Coding",
+              "thumbnail": {
+                "url": "https://substackcdn.com/image/fetch/$s_!XLs4!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fhugobowne.substack.com%2Fapi%2Fv1%2Fpost_preview%2F192708425%2Ftwitter.jpg%3Fversion%3D4",
+                "proxy_url": "https://images-ext-1.discordapp.net/external/UVwKpWPRBDeh1rmbdvxQGtdZ2I1e6_1TZBvHJA8P3Ek/https/substackcdn.com/image/fetch/%24s_%21XLs4%21%2Cf_auto%2Cq_auto%3Abest%2Cfl_progressive%3Asteep/https%253A%252F%252Fhugobowne.substack.com%252Fapi%252Fv1%252Fpost_preview%252F192708425%252Ftwitter.jpg%253Fversion%253D4",
+                "width": 1600,
+                "height": 800,
+                "content_type": "image/jpeg",
+                "placeholder": "xvcFDIDCR0aIh4dwdYi1hmBKCA==",
+                "placeholder_version": 1,
+                "flags": 0
+              },
+              "content_scan_version": 4
+            }
+          ],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1502744903887884520",
+          "channel_id": "1502096753699323904",
+          "timestamp": "2026-05-09T18:51:44.737000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "618851450273136651",
+            "username": "wesm007",
+            "global_name": "wesm",
+            "bot": false
+          },
+          "content": "roborev really helps with keeping dumb Claude on the rails",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [
+            {
+              "emoji": {
+                "id": null,
+                "name": "🤖"
+              },
+              "count": 2,
+              "count_details": {
+                "burst": 0,
+                "normal": 2
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            },
+            {
+              "emoji": {
+                "id": null,
+                "name": "👾"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            }
+          ],
+          "referenced_message": null
+        }
+      ]
+    },
+    {
+      "id": "1502096939116925110",
+      "parent_id": "1501755069375320164",
+      "owner_id": "613249007015165973",
+      "name": "also, is the skill.md public? (if so, a",
+      "type": 11,
+      "archived": true,
+      "archive_timestamp": "2026-06-08T08:42:46.570000+00:00",
+      "locked": false,
+      "message_count": 1,
+      "member_count": 2,
+      "rate_limit_per_user": 0,
+      "exported_message_count": 2,
+      "messages": [
+        {
+          "id": "1502591096784556042",
+          "channel_id": "1502096939116925110",
+          "timestamp": "2026-05-09T08:40:34.266000+00:00",
+          "edited_timestamp": null,
+          "type": 21,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": {
+            "id": "1502096939116925110",
+            "timestamp": "2026-05-07T23:56:57.897000+00:00",
+            "author": {
+              "id": "804012503406215258",
+              "username": "suren0824",
+              "global_name": "suren (Plato's Cave)",
+              "bot": false
+            },
+            "content": "also, is the skill.md public? (if so, a link to it?)"
+          }
+        },
+        {
+          "id": "1502591101914054676",
+          "channel_id": "1502096939116925110",
+          "timestamp": "2026-05-09T08:40:35.489000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "all skills / workflows that guests are sharing will be in this repo: https://github.com/hugobowne/show-us-your-agent-skills",
+          "attachments": [],
+          "embeds": [
+            {
+              "type": "article",
+              "url": "https://github.com/hugobowne/show-us-your-agent-skills",
+              "title": "GitHub - hugobowne/show-us-your-agent-skills: Companion repo to our...",
+              "description": "Companion repo to our livestream series https://luma.com/uvjjxbks - hugobowne/show-us-your-agent-skills",
+              "color": 1975079,
+              "provider": {
+                "name": "GitHub"
+              },
+              "thumbnail": {
+                "url": "https://opengraph.githubassets.com/d531c5eaafe7260963200ef58e230da1504e86d6857091138aea4632486eb680/hugobowne/show-us-your-agent-skills",
+                "proxy_url": "https://images-ext-1.discordapp.net/external/2ceBjYp8FWENEiZiRhFr6mKr8GTq6kns-qtleH06kU8/https/opengraph.githubassets.com/d531c5eaafe7260963200ef58e230da1504e86d6857091138aea4632486eb680/hugobowne/show-us-your-agent-skills",
+                "width": 1200,
+                "height": 600,
+                "content_type": "image/png",
+                "placeholder": "PAgGBIA8m9SilmlseV/AOwW8Uw==",
+                "placeholder_version": 1,
+                "description": "Companion repo to our livestream series https://luma.com/uvjjxbks - hugobowne/show-us-your-agent-skills",
+                "flags": 0
+              },
+              "content_scan_version": 4
+            }
+          ],
+          "reactions": [
+            {
+              "emoji": {
+                "id": null,
+                "name": "❤️"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            }
+          ],
+          "referenced_message": null
+        }
+      ]
+    },
+    {
+      "id": "1502100096651755550",
+      "parent_id": "1501755069375320164",
+      "owner_id": "613249007015165973",
+      "name": "I have to jump off but here was the \"",
+      "type": 11,
+      "archived": true,
+      "archive_timestamp": "2026-06-08T08:45:19.383000+00:00",
+      "locked": false,
+      "message_count": 1,
+      "member_count": 2,
+      "rate_limit_per_user": 0,
+      "exported_message_count": 2,
+      "messages": [
+        {
+          "id": "1502590924423692318",
+          "channel_id": "1502100096651755550",
+          "timestamp": "2026-05-09T08:39:53.172000+00:00",
+          "edited_timestamp": null,
+          "type": 21,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": {
+            "id": "1502100096651755550",
+            "timestamp": "2026-05-08T00:09:30.712000+00:00",
+            "author": {
+              "id": "618851450273136651",
+              "username": "wesm007",
+              "global_name": "wesm",
+              "bot": false
+            },
+            "content": "I have to jump off but here was the \"dashboard\" that my initial prompt produced, clearly it would require some more prompts to get something more useful and interactive out"
+          }
+        },
+        {
+          "id": "1502590933194244158",
+          "channel_id": "1502100096651755550",
+          "timestamp": "2026-05-09T08:39:55.263000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "thanks, wes 007! 🔫",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        }
+      ]
+    },
+    {
+      "id": "1502108916824412210",
+      "parent_id": "1501755069375320164",
+      "owner_id": "613249007015165973",
+      "name": "this has been a great livestream",
+      "type": 11,
+      "archived": true,
+      "archive_timestamp": "2026-06-08T08:41:11.639000+00:00",
+      "locked": false,
+      "message_count": 1,
+      "member_count": 2,
+      "rate_limit_per_user": 0,
+      "exported_message_count": 2,
+      "messages": [
+        {
+          "id": "1502590385967333386",
+          "channel_id": "1502108916824412210",
+          "timestamp": "2026-05-09T08:37:44.794000+00:00",
+          "edited_timestamp": null,
+          "type": 21,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": {
+            "id": "1502108916824412210",
+            "timestamp": "2026-05-08T00:44:33.605000+00:00",
+            "author": {
+              "id": "804012503406215258",
+              "username": "suren0824",
+              "global_name": "suren (Plato's Cave)",
+              "bot": false
+            },
+            "content": "this has been a great livestream 🙌🏼🙏🏼 <@613249007015165973> \nperhaps share the 'roadmap' / future plans for this? similar format to this episode, but different topics (besides skills)"
+          }
+        },
+        {
+          "id": "1502590392590143639",
+          "channel_id": "1502108916824412210",
+          "timestamp": "2026-05-09T08:37:46.373000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "thanks, <@804012503406215258> . you can find our upcoming episodes here: https://luma.com/7kfkk6wb\nis that what you mean?",
+          "attachments": [],
+          "embeds": [
+            {
+              "type": "article",
+              "url": "https://luma.com/7kfkk6wb",
+              "title": "Show Us Your (Agent) Skills Ep. 02 · Luma",
+              "description": "What are people at the top of the game building with AI agents and how are they doing it?\nAre they Claudemaxxing with 8 terminals open at once? Or…",
+              "color": 16511487,
+              "thumbnail": {
+                "url": "https://og.luma.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event?calendar_avatar=https%3A%2F%2Fcdn.lu.ma%2Favatars-default%2Fcommunity_avatar_1.png&calendar_name=Vanishing%20Gradients%20Livestreams&color0=%23f6f9f8&color1=%23422074&color2=%233dfafb&color3=%23de21ea&host_avatar=https%3A%2F%2Fcdn.lu.ma%2Favatars-default%2Favatar_26.png&host_name=hugo%20bowne-anderson&img=https%3A%2F%2Fimages.lumacdn.com%2Fuploads%2Fzd%2F728ea2e9-4809-47bc-8d76-8a82095c62cf.png&name=Show%20Us%20Your%20%28Agent%29%20Skills%20Ep.%2002&palette_neutral=%23422074%3A5.68%2C%23f6f9f8%3A34.04&palette_vibrant=%23de21ea%3A1.24%2C%233dfafb%3A1.26",
+                "proxy_url": "https://images-ext-1.discordapp.net/external/qLqBgKoMTcfzh3wM11IkXrvtRs3V-rtRmPgGp52OV3c/%3Fcalendar_avatar%3Dhttps%253A%252F%252Fcdn.lu.ma%252Favatars-default%252Fcommunity_avatar_1.png%26calendar_name%3DVanishing%2520Gradients%2520Livestreams%26color0%3D%2523f6f9f8%26color1%3D%2523422074%26color2%3D%25233dfafb%26color3%3D%2523de21ea%26host_avatar%3Dhttps%253A%252F%252Fcdn.lu.ma%252Favatars-default%252Favatar_26.png%26host_name%3Dhugo%2520bowne-anderson%26img%3Dhttps%253A%252F%252Fimages.lumacdn.com%252Fuploads%252Fzd%252F728ea2e9-4809-47bc-8d76-8a82095c62cf.png%26name%3DShow%2520Us%2520Your%2520%2528Agent%2529%2520Skills%2520Ep.%252002%26palette_neutral%3D%2523422074%253A5.68%252C%2523f6f9f8%253A34.04%26palette_vibrant%3D%2523de21ea%253A1.24%252C%25233dfafb%253A1.26/https/og.luma.com/cdn-cgi/image/format%3Dauto%2Cfit%3Dcover%2Cdpr%3D1%2Canim%3Dfalse%2Cbackground%3Dwhite%2Cquality%3D75%2Cwidth%3D800%2Cheight%3D420/event",
+                "width": 800,
+                "height": 420,
+                "content_type": "image/jpeg",
+                "placeholder": "KqcJHIxwbGZmh4eFeIazrwjpeg==",
+                "placeholder_version": 1,
+                "flags": 0
+              },
+              "content_scan_version": 4
+            }
+          ],
+          "reactions": [
+            {
+              "emoji": {
+                "id": null,
+                "name": "❤️"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            }
+          ],
+          "referenced_message": null
+        }
+      ]
+    },
+    {
+      "id": "1502108966036176936",
+      "parent_id": "1501755069375320164",
+      "owner_id": "613249007015165973",
+      "name": "This is insane....I learned so much.",
+      "type": 11,
+      "archived": true,
+      "archive_timestamp": "2026-06-08T08:40:21.597000+00:00",
+      "locked": false,
+      "message_count": 1,
+      "member_count": 2,
+      "rate_limit_per_user": 0,
+      "exported_message_count": 2,
+      "messages": [
+        {
+          "id": "1502590446088622171",
+          "channel_id": "1502108966036176936",
+          "timestamp": "2026-05-09T08:37:59.128000+00:00",
+          "edited_timestamp": null,
+          "type": 21,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": {
+            "id": "1502108966036176936",
+            "timestamp": "2026-05-08T00:44:45.338000+00:00",
+            "author": {
+              "id": "898261025558781983",
+              "username": "sethtam",
+              "global_name": "sethtam",
+              "bot": false
+            },
+            "content": "This is insane....I learned so much.   Thanks Thomas, Randy, Jeremiah, Wes and Hugo let's do this next THURSDAY."
+          }
+        },
+        {
+          "id": "1502590451549474896",
+          "channel_id": "1502108966036176936",
+          "timestamp": "2026-05-09T08:38:00.430000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "im so glad and me too!",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        }
+      ]
+    },
+    {
+      "id": "1502202780469952572",
+      "parent_id": "1501755069375320164",
+      "owner_id": "613249007015165973",
+      "name": "GitHub - hugobowne/show-us-your-agent-sk...",
+      "type": 11,
+      "archived": true,
+      "archive_timestamp": "2026-06-08T08:39:39.781000+00:00",
+      "locked": false,
+      "message_count": 1,
+      "member_count": 3,
+      "rate_limit_per_user": 0,
+      "exported_message_count": 2,
+      "messages": [
+        {
+          "id": "1502589589448294482",
+          "channel_id": "1502202780469952572",
+          "timestamp": "2026-05-09T08:34:34.889000+00:00",
+          "edited_timestamp": null,
+          "type": 21,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": {
+            "id": "1502202780469952572",
+            "timestamp": "2026-05-08T06:57:32.442000+00:00",
+            "author": {
+              "id": "772159925836054540",
+              "username": "curiouskid.",
+              "global_name": "curiouskid",
+              "bot": false
+            },
+            "content": "Excellent video! 🔥 \n\nThe idea of [notes](https://github.com/hugobowne/show-us-your-agent-skills) on github is awesome. Reminds me of 'AI that works' ([link](https://github.com/ai-that-works/ai-that-works/)).  I do hope that <@613249007015165973>  and <@506027210747150347>  are able to capture the various ideas and links that the guests mention 😄 . Won't be an easy task!"
+          }
+        },
+        {
+          "id": "1502589621970931773",
+          "channel_id": "1502202780469952572",
+          "timestamp": "2026-05-09T08:34:42.643000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "building a skill for it 😜",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [
+            {
+              "emoji": {
+                "id": null,
+                "name": "🔥"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            }
+          ],
+          "referenced_message": null
+        }
+      ]
+    },
+    {
+      "id": "1502378602937843825",
+      "parent_id": "1501755069375320164",
+      "owner_id": "613249007015165973",
+      "name": "Conductor, I Am In LÖVE",
+      "type": 11,
+      "archived": true,
+      "archive_timestamp": "2026-06-09T10:47:03.299000+00:00",
+      "locked": false,
+      "message_count": 2,
+      "member_count": 2,
+      "rate_limit_per_user": 0,
+      "exported_message_count": 3,
+      "messages": [
+        {
+          "id": "1502590736267350046",
+          "channel_id": "1502378602937843825",
+          "timestamp": "2026-05-09T08:39:08.312000+00:00",
+          "edited_timestamp": null,
+          "type": 21,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": {
+            "id": "1502378602937843825",
+            "timestamp": "2026-05-08T18:36:11.785000+00:00",
+            "author": {
+              "id": "271911699336921088",
+              "username": "vincentwarmerdam",
+              "global_name": "Vincent",
+              "bot": false
+            },
+            "content": "Maybe the best skill ... is to find a framework that doesn't need one ...\n\nhttps://www.youtube.com/watch?v=FDcNTlB9BUQ"
+          }
+        },
+        {
+          "id": "1502590742030192772",
+          "channel_id": "1502378602937843825",
+          "timestamp": "2026-05-09T08:39:09.686000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "or maybe frontier models will suck up all our skills, like they did with our harnesses 😜",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1502984439397879888",
+          "channel_id": "1502378602937843825",
+          "timestamp": "2026-05-10T10:43:34.453000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "271911699336921088",
+            "username": "vincentwarmerdam",
+            "global_name": "Vincent",
+            "bot": false
+          },
+          "content": "Maybe, but doing quick demos like that is super easy with Love and really hard with Unity3d",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        }
+      ]
+    },
+    {
+      "id": "1502382473710145786",
+      "parent_id": "1501755069375320164",
+      "owner_id": "613249007015165973",
+      "name": "Wes mentioned,",
+      "type": 11,
+      "archived": true,
+      "archive_timestamp": "2026-06-08T08:42:58.796000+00:00",
+      "locked": false,
+      "message_count": 3,
+      "member_count": 3,
+      "rate_limit_per_user": 0,
+      "exported_message_count": 4,
+      "messages": [
+        {
+          "id": "1502589737503031337",
+          "channel_id": "1502382473710145786",
+          "timestamp": "2026-05-09T08:35:10.188000+00:00",
+          "edited_timestamp": null,
+          "type": 21,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": {
+            "id": "1502382473710145786",
+            "timestamp": "2026-05-08T18:51:34.649000+00:00",
+            "author": {
+              "id": "818955661316063232",
+              "username": "jessehartman",
+              "global_name": "Jesse H.",
+              "bot": false
+            },
+            "content": "Wes mentioned,\n> commit at every turn\n\nIs there a reason for this? I haven't heard this before."
+          }
+        },
+        {
+          "id": "1502589743572189205",
+          "channel_id": "1502382473710145786",
+          "timestamp": "2026-05-09T08:35:11.635000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "yes! so you can roll back to any single point in time/code",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [
+            {
+              "emoji": {
+                "id": null,
+                "name": "🙏"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            }
+          ],
+          "referenced_message": null
+        },
+        {
+          "id": "1502589967774515262",
+          "channel_id": "1502382473710145786",
+          "timestamp": "2026-05-09T08:36:05.089000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "check this nice example of an AGENT.md from <@751156367506800701> and <@736013353998090241>  that captures this idea well",
+          "attachments": [
+            {
+              "id": "1502589967531249674",
+              "filename": "https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2F6afc948f-3341-4105-9a55-07913ad86330_1600x1261.png",
+              "size": 1412804,
+              "url": "https://cdn.discordapp.com/attachments/1502382473710145786/1502589967531249674/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2F6afc948f-3341-4105-9a55-07913ad86330_1600x1261.png?ex=6a5a9235&is=6a5940b5&hm=3da2229b9684b458bf9d54051aa5e77110e947ad3b3f35041e4507c7adf9b7a0&",
+              "proxy_url": "https://media.discordapp.net/attachments/1502382473710145786/1502589967531249674/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2F6afc948f-3341-4105-9a55-07913ad86330_1600x1261.png?ex=6a5a9235&is=6a5940b5&hm=3da2229b9684b458bf9d54051aa5e77110e947ad3b3f35041e4507c7adf9b7a0&",
+              "width": 1600,
+              "height": 1261,
+              "content_type": "image/png",
+              "original_content_type": "image/png",
+              "content_scan_version": 4,
+              "placeholder": "1PcJDYDp2Nd5iId/d6d4fhV3EPV6",
+              "placeholder_version": 1,
+              "title": "https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6afc948f-3341-4105-9a55-07913ad86330_1600x1261"
+            }
+          ],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1502590004633931836",
+          "channel_id": "1502382473710145786",
+          "timestamp": "2026-05-09T08:36:13.877000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "from here: https://hugobowne.substack.com/p/how-to-build-an-ai-agent-with-ai",
+          "attachments": [],
+          "embeds": [
+            {
+              "type": "article",
+              "url": "https://hugobowne.substack.com/p/how-to-build-an-ai-agent-with-ai",
+              "title": "How to Build an AI Agent with AI-Assisted Coding",
+              "description": "Or 7 Ways to Supercharge your AI-Assisted Dev Stack",
+              "thumbnail": {
+                "url": "https://substackcdn.com/image/fetch/$s_!2TzP!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fhugobowne.substack.com%2Fapi%2Fv1%2Fpost_preview%2F183517194%2Ftwitter.jpg%3Fversion%3D4",
+                "proxy_url": "https://images-ext-1.discordapp.net/external/QnkEHArfBFir5s4T4qmIf9znsqIGxBIjZns8JXAMRvI/https/substackcdn.com/image/fetch/%24s_%212TzP%21%2Cf_auto%2Cq_auto%3Abest%2Cfl_progressive%3Asteep/https%253A%252F%252Fhugobowne.substack.com%252Fapi%252Fv1%252Fpost_preview%252F183517194%252Ftwitter.jpg%253Fversion%253D4",
+                "width": 1600,
+                "height": 800,
+                "content_type": "image/jpeg",
+                "placeholder": "xvcFBICPhnd7l4dpiIn0rTrfqg==",
+                "placeholder_version": 1,
+                "flags": 0
+              },
+              "content_scan_version": 4
+            }
+          ],
+          "reactions": [],
+          "referenced_message": null
+        }
+      ]
+    },
+    {
+      "id": "1506919769633329284",
+      "parent_id": "1501755069375320164",
+      "owner_id": "804012503406215258",
+      "name": "especially listeners 🙂",
+      "type": 11,
+      "archived": true,
+      "archive_timestamp": "2026-06-20T11:18:31.727000+00:00",
+      "locked": false,
+      "message_count": 6,
+      "member_count": 3,
+      "rate_limit_per_user": 0,
+      "exported_message_count": 7,
+      "messages": [
+        {
+          "id": "1506921841606918164",
+          "channel_id": "1506919769633329284",
+          "timestamp": "2026-05-21T07:29:24.293000+00:00",
+          "edited_timestamp": null,
+          "type": 21,
+          "pinned": false,
+          "author": {
+            "id": "804012503406215258",
+            "username": "suren0824",
+            "global_name": "suren (Plato's Cave)",
+            "bot": false
+          },
+          "content": "",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": {
+            "id": "1506919769633329284",
+            "timestamp": "2026-05-21T07:21:10.296000+00:00",
+            "author": {
+              "id": "613249007015165973",
+              "username": "hugobowne",
+              "global_name": "hugobowne",
+              "bot": false
+            },
+            "content": "especially listeners 🙂"
+          }
+        },
+        {
+          "id": "1506921846124183616",
+          "channel_id": "1506919769633329284",
+          "timestamp": "2026-05-21T07:29:25.370000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "804012503406215258",
+            "username": "suren0824",
+            "global_name": "suren (Plato's Cave)",
+            "bot": false
+          },
+          "content": "Suren here ( my  GH is not cool enough to show yet - too many private repos) , but i'm quant in Finance & Crypto - am interested in building a Quant Agent + generally use AI/agents to make my life easier (Second Brain etc)",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [
+            {
+              "emoji": {
+                "id": null,
+                "name": "🙌🏻"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            }
+          ],
+          "referenced_message": null
+        },
+        {
+          "id": "1506923838284496926",
+          "channel_id": "1506919769633329284",
+          "timestamp": "2026-05-21T07:37:20.338000+00:00",
+          "edited_timestamp": null,
+          "type": 19,
+          "pinned": false,
+          "author": {
+            "id": "281894484516536320",
+            "username": "t1998",
+            "global_name": "-T-",
+            "bot": false
+          },
+          "content": "Same field. Also have the problem mostly all the stuff in the finance area I would put on gh would be nda violations 😂\nSo I guess a mostly empty GH is normal in this field 😅",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [
+            {
+              "emoji": {
+                "id": null,
+                "name": "❤️"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            }
+          ],
+          "referenced_message": {
+            "id": "1506921846124183616",
+            "timestamp": "2026-05-21T07:29:25.370000+00:00",
+            "author": {
+              "id": "804012503406215258",
+              "username": "suren0824",
+              "global_name": "suren (Plato's Cave)",
+              "bot": false
+            },
+            "content": "Suren here ( my  GH is not cool enough to show yet - too many private repos) , but i'm quant in Finance & Crypto - am interested in building a Quant Agent + generally use AI/agents to make my life easier (Second Brain etc)"
+          }
+        },
+        {
+          "id": "1506927282030248029",
+          "channel_id": "1506919769633329284",
+          "timestamp": "2026-05-21T07:51:01.391000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "804012503406215258",
+            "username": "suren0824",
+            "global_name": "suren (Plato's Cave)",
+            "bot": false
+          },
+          "content": "my empty GH : https://github.com/glassport (safe space here 🤞🏼 )",
+          "attachments": [],
+          "embeds": [
+            {
+              "type": "link",
+              "url": "https://github.com/glassport",
+              "title": "glassport - Overview",
+              "description": "GitHub is where glassport builds software.",
+              "color": 1975079,
+              "provider": {
+                "name": "GitHub"
+              },
+              "thumbnail": {
+                "url": "https://avatars.githubusercontent.com/u/44062953?v=4?s=400",
+                "proxy_url": "https://images-ext-1.discordapp.net/external/vHdTbxYiVe2-ohFXQ9sbktwFstn1Jgg0otfqF_V8yCo/%3Fv%3D4%3Fs%3D400/https/avatars.githubusercontent.com/u/44062953",
+                "width": 420,
+                "height": 420,
+                "content_type": "image/png",
+                "placeholder": "9CgKJwaoyHeAiXl6h8Z3p4h6evVXV38F",
+                "placeholder_version": 1,
+                "flags": 0
+              },
+              "content_scan_version": 4
+            }
+          ],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1506932439199780985",
+          "channel_id": "1506919769633329284",
+          "timestamp": "2026-05-21T08:11:30.956000+00:00",
+          "edited_timestamp": null,
+          "type": 19,
+          "pinned": false,
+          "author": {
+            "id": "281894484516536320",
+            "username": "t1998",
+            "global_name": "-T-",
+            "bot": false
+          },
+          "content": "Safe space are wonderful \nI follow you 😉 - now you have a little motivation!",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [
+            {
+              "emoji": {
+                "id": null,
+                "name": "❤️"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            }
+          ],
+          "referenced_message": {
+            "id": "1506927282030248029",
+            "timestamp": "2026-05-21T07:51:01.391000+00:00",
+            "author": {
+              "id": "804012503406215258",
+              "username": "suren0824",
+              "global_name": "suren (Plato's Cave)",
+              "bot": false
+            },
+            "content": "my empty GH : https://github.com/glassport (safe space here 🤞🏼 )"
+          }
+        },
+        {
+          "id": "1506933116722348144",
+          "channel_id": "1506919769633329284",
+          "timestamp": "2026-05-21T08:14:12.490000+00:00",
+          "edited_timestamp": null,
+          "type": 19,
+          "pinned": false,
+          "author": {
+            "id": "804012503406215258",
+            "username": "suren0824",
+            "global_name": "suren (Plato's Cave)",
+            "bot": false
+          },
+          "content": "followed you back (and yes, good to have motivation, I'll put somethin out there soon 🤞🏼 )",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": {
+            "id": "1506932439199780985",
+            "timestamp": "2026-05-21T08:11:30.956000+00:00",
+            "author": {
+              "id": "281894484516536320",
+              "username": "t1998",
+              "global_name": "-T-",
+              "bot": false
+            },
+            "content": "Safe space are wonderful \nI follow you 😉 - now you have a little motivation!"
+          }
+        },
+        {
+          "id": "1506977246970249318",
+          "channel_id": "1506919769633329284",
+          "timestamp": "2026-05-21T11:09:33.961000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "love this!",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [
+            {
+              "emoji": {
+                "id": null,
+                "name": "❤️"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            }
+          ],
+          "referenced_message": null
+        }
+      ]
+    },
+    {
+      "id": "1506926556025458739",
+      "parent_id": "1501755069375320164",
+      "owner_id": "613249007015165973",
+      "name": "I have done a little, but generally ny",
+      "type": 11,
+      "archived": true,
+      "archive_timestamp": "2026-06-20T07:54:41.586000+00:00",
+      "locked": false,
+      "message_count": 3,
+      "member_count": 3,
+      "rate_limit_per_user": 0,
+      "exported_message_count": 4,
+      "messages": [
+        {
+          "id": "1506927244008886303",
+          "channel_id": "1506926556025458739",
+          "timestamp": "2026-05-21T07:50:52.326000+00:00",
+          "edited_timestamp": null,
+          "type": 21,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": {
+            "id": "1506926556025458739",
+            "timestamp": "2026-05-21T07:48:08.298000+00:00",
+            "author": {
+              "id": "185962798709211137",
+              "username": "_akaba",
+              "global_name": "Akaba",
+              "bot": false
+            },
+            "content": "I have done a little, but generally ny background is more a research space. So I find I am more using agents to build specs and figure out what I want to do etc. Still kind of in the phase before I need to build a thing (which often can be easier). I related a lot to Vincents lego analogy (I am sure someone here has a link to that)"
+          }
+        },
+        {
+          "id": "1506927248211709982",
+          "channel_id": "1506926556025458739",
+          "timestamp": "2026-05-21T07:50:53.328000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "we discussed it here recently: https://hugobowne.substack.com/p/agent-harnessipynb",
+          "attachments": [],
+          "embeds": [
+            {
+              "type": "article",
+              "url": "https://hugobowne.substack.com/p/agent-harnessipynb",
+              "title": "Agent-Harness.ipynb*",
+              "description": "Reimagining notebooks as canvases for human-agent collaboration",
+              "thumbnail": {
+                "url": "https://substackcdn.com/image/fetch/$s_!rn-T!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fhugobowne.substack.com%2Fapi%2Fv1%2Fpost_preview%2F198498721%2Ftwitter.jpg%3Fversion%3D4",
+                "proxy_url": "https://images-ext-1.discordapp.net/external/fB8RJR1pvOeK0WTgDUy48Mrm3b59aoZ68qiBrv1uiWY/https/substackcdn.com/image/fetch/%24s_%21rn-T%21%2Cf_auto%2Cq_auto%3Abest%2Cfl_progressive%3Asteep/https%253A%252F%252Fhugobowne.substack.com%252Fapi%252Fv1%252Fpost_preview%252F198498721%252Ftwitter.jpg%253Fversion%253D4",
+                "width": 1600,
+                "height": 800,
+                "content_type": "image/jpeg",
+                "placeholder": "WbcJHIZXhnZ8d3eAd4qgdgdNdw==",
+                "placeholder_version": 1,
+                "flags": 0
+              },
+              "content_scan_version": 4
+            }
+          ],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1506927346136125521",
+          "channel_id": "1506926556025458739",
+          "timestamp": "2026-05-21T07:51:16.675000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "video here https://www.youtube.com/watch?v=d4wGcjvXJh0",
+          "attachments": [],
+          "embeds": [
+            {
+              "type": "video",
+              "url": "https://www.youtube.com/watch?v=d4wGcjvXJh0",
+              "title": "Agent-Harness.ipynb* with Vincent Warmerdam (marimo)",
+              "description": "Agent this, harness that, notebooks are dead, context engineer what!\n\nAgent harnesses are all the rage right now and, although the hype is a lot, understanding what they are, how to use them, and even how to build them is a critical skill for working with AI agents.\n\nAnd now you can build them in notebooks!\n\nJoin Vincent Warmerdam (Marimo) and H...",
+              "color": 16711680,
+              "author": {
+                "name": "Vanishing Gradients",
+                "url": "https://www.youtube.com/channel/UC_NafIo-Ku2loOLrzm45ABA"
+              },
+              "provider": {
+                "name": "YouTube",
+                "url": "https://www.youtube.com"
+              },
+              "thumbnail": {
+                "url": "https://i.ytimg.com/vi/d4wGcjvXJh0/maxresdefault.jpg",
+                "proxy_url": "https://images-ext-1.discordapp.net/external/-fRy6NQmeGN6snR7PtK1tKd3SWkHYDza4xD_u1DWtwI/https/i.ytimg.com/vi/d4wGcjvXJh0/maxresdefault.jpg",
+                "width": 1280,
+                "height": 720,
+                "content_type": "image/jpeg",
+                "placeholder": "4JYJJIgnlWZMeXigd2uAhwZMWg==",
+                "placeholder_version": 1,
+                "flags": 0
+              },
+              "video": {
+                "url": "https://www.youtube.com/embed/d4wGcjvXJh0",
+                "width": 1280,
+                "height": 720,
+                "placeholder": "4JYJJIgnlWZMeXigd2uAhwZMWg==",
+                "placeholder_version": 1,
+                "flags": 0
+              },
+              "content_scan_version": 4
+            }
+          ],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1506927639447994460",
+          "channel_id": "1506926556025458739",
+          "timestamp": "2026-05-21T07:52:26.606000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "185962798709211137",
+            "username": "_akaba",
+            "global_name": "Akaba",
+            "bot": false
+          },
+          "content": "Thanks <@613249007015165973>",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        }
+      ]
+    },
+    {
+      "id": "1509881779333370048",
+      "parent_id": "1501755069375320164",
+      "owner_id": "613249007015165973",
+      "name": "Just listening through the video (coulnt",
+      "type": 11,
+      "archived": true,
+      "archive_timestamp": "2026-07-14T06:17:27.967000+00:00",
+      "locked": false,
+      "message_count": 7,
+      "member_count": 2,
+      "rate_limit_per_user": 0,
+      "exported_message_count": 8,
+      "messages": [
+        {
+          "id": "1510089444114305226",
+          "channel_id": "1509881779333370048",
+          "timestamp": "2026-05-30T01:16:19.582000+00:00",
+          "edited_timestamp": null,
+          "type": 21,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": {
+            "id": "1509881779333370048",
+            "timestamp": "2026-05-29T11:31:08.440000+00:00",
+            "author": {
+              "id": "479569001572204544",
+              "username": "alexpaulkelly",
+              "global_name": "alex kelly",
+              "bot": false
+            },
+            "content": "Just listening through the video (coulnt watch it live as it was early in the morning), Just at Hammel part, they were talking about browser access for agents, what do people use to control there browsers on windows?  mac seam to have more options."
+          }
+        },
+        {
+          "id": "1510089462926020748",
+          "channel_id": "1509881779333370048",
+          "timestamp": "2026-05-30T01:16:24.067000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "i don't use windows but many agents eg codex have browser use capabilities: this doesn't work on windows?",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1510663371333046282",
+          "channel_id": "1509881779333370048",
+          "timestamp": "2026-05-31T15:16:54.494000+00:00",
+          "edited_timestamp": null,
+          "type": 19,
+          "pinned": false,
+          "author": {
+            "id": "479569001572204544",
+            "username": "alexpaulkelly",
+            "global_name": "alex kelly",
+            "bot": false
+          },
+          "content": "Apparently its in there as of May 28 for codex (i had to update), so yeah its there now.  Seams reasonably locked down as would check my FB messages as part of a test.  Computer use is not still, that might be a regional thing, I'm in the UK.",
+          "attachments": [
+            {
+              "id": "1510663371064606930",
+              "filename": "image.png",
+              "size": 20291,
+              "url": "https://cdn.discordapp.com/attachments/1509881779333370048/1510663371064606930/image.png?ex=6a5af026&is=6a599ea6&hm=5875bf68b2c3c953162694255010ff1fee047db2accb49d73697a3b0f22a83c7&",
+              "proxy_url": "https://media.discordapp.net/attachments/1509881779333370048/1510663371064606930/image.png?ex=6a5af026&is=6a599ea6&hm=5875bf68b2c3c953162694255010ff1fee047db2accb49d73697a3b0f22a83c7&",
+              "width": 929,
+              "height": 308,
+              "content_type": "image/png",
+              "original_content_type": "image/png",
+              "content_scan_version": 4,
+              "placeholder": "BwgCAoC/iUeCideZ7yL3PlM=",
+              "placeholder_version": 1
+            }
+          ],
+          "embeds": [],
+          "reactions": [
+            {
+              "emoji": {
+                "id": null,
+                "name": "👾"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            }
+          ],
+          "referenced_message": {
+            "id": "1510089462926020748",
+            "timestamp": "2026-05-30T01:16:24.067000+00:00",
+            "author": {
+              "id": "613249007015165973",
+              "username": "hugobowne",
+              "global_name": "hugobowne",
+              "bot": false
+            },
+            "content": "i don't use windows but many agents eg codex have browser use capabilities: this doesn't work on windows?"
+          }
+        },
+        {
+          "id": "1510665998448197712",
+          "channel_id": "1509881779333370048",
+          "timestamp": "2026-05-31T15:27:20.847000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "479569001572204544",
+            "username": "alexpaulkelly",
+            "global_name": "alex kelly",
+            "bot": false
+          },
+          "content": "<@613249007015165973> By the way, I’m loving the Show Me Your Agents series. The format feels just right, enough detail to understand the panel’s perspectives and technical workflows without over explaining.\n\nGreat choice of panellists too. I’m picking up useful tips that I’m already putting into practice.  its giveing me a good sense of where agents are heading from the different perspectives. I like the pushback in the conversations, keeps things honest!",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1510897230121533510",
+          "channel_id": "1509881779333370048",
+          "timestamp": "2026-06-01T06:46:10.774000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "thanks, alex, i appreciate the feedback! we're currently figuring out what cadence makes sense for us and definitely want to continue. not easy in addition to day jobs! what useful tips have you used so far?",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1510918573864914995",
+          "channel_id": "1509881779333370048",
+          "timestamp": "2026-06-01T08:10:59.519000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "479569001572204544",
+            "username": "alexpaulkelly",
+            "global_name": "alex kelly",
+            "bot": false
+          },
+          "content": "So many little nugets, from Wes's dont look at the code (followed him for awhile pandas/arrow ect) which i have done a while but not as structured, heard about super powers before but he framed it well, showed where he thinks missing pieices are too.  Tried super powers myself and watched the tokens meter sky rocket (need a bigger sub)  but i get why. Plus keeping a eye on his other projects now. \n\nHamels skills : Glad you pushed back on few things here.  I think the main takeaway I got from this was inspect other skills but make them your own.  I get his point about what to watch for, e.g. regular updates, who they came from.  I'm mostly using skills for connecting to services that are unique to me, most of them are custom and unique to me and my org or doing regualr task to my flavour. I also use cursor, alot of people say the editor is gone but its still there.  The changes in codex, e.g. the remote feature (this one i think is huge - I'm getting a old laptop back online for this) and how the apps improved. \n\nElainer and her little antidotes about hermes, im a hermes user.  Im still figureing out why its useful.  Not using it for creating apps but for those not coding task, i cant remember which tips as i get alot of tips from her social media.  \n\nAnyway, I could go on, i think you get the idea, happy to go into more details if you wanted..  Also love that you add a bit of humor, even if it does go missed on some of the guest.",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1515600772887351366",
+          "channel_id": "1509881779333370048",
+          "timestamp": "2026-06-14T06:16:22.757000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "this is great, thanks, alex! really good to know the concrete value you're getting 😄",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1515600775940673688",
+          "channel_id": "1509881779333370048",
+          "timestamp": "2026-06-14T06:16:23.485000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "and this\n>  Also love that you add a bit of humor, even if it does go missed on some of the guest.\n🤣",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [
+            {
+              "emoji": {
+                "id": null,
+                "name": "😆"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            }
+          ],
+          "referenced_message": null
+        }
+      ]
+    },
+    {
+      "id": "1517328141339852982",
+      "parent_id": "1501755069375320164",
+      "owner_id": "613249007015165973",
+      "name": "public-talks/2026-06-02-tool-architectur...",
+      "type": 11,
+      "archived": false,
+      "archive_timestamp": "2026-06-19T00:41:17.340000+00:00",
+      "locked": false,
+      "message_count": 22,
+      "member_count": 2,
+      "rate_limit_per_user": 0,
+      "exported_message_count": 23,
+      "messages": [
+        {
+          "id": "1517328384189796402",
+          "channel_id": "1517328141339852982",
+          "timestamp": "2026-06-19T00:41:17.389000+00:00",
+          "edited_timestamp": null,
+          "type": 21,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": {
+            "id": "1517328141339852982",
+            "timestamp": "2026-06-19T00:40:19.489000+00:00",
+            "author": {
+              "id": "804012503406215258",
+              "username": "suren0824",
+              "global_name": "suren (Plato's Cave)",
+              "bot": false
+            },
+            "content": "https://github.com/Isaac-Flath/public-talks/blob/main/2026-06-02-tool-architectures-public-talk.html\nwhat tool did <@736013353998090241> us to make this preso , please?\ncc: <@613249007015165973>"
+          }
+        },
+        {
+          "id": "1517328388660920381",
+          "channel_id": "1517328141339852982",
+          "timestamp": "2026-06-19T00:41:18.455000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "hopefully <@736013353998090241> can tell you. it may be secret sauce tho!",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [
+            {
+              "emoji": {
+                "id": null,
+                "name": "❤️"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            },
+            {
+              "emoji": {
+                "id": null,
+                "name": "🤫"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            }
+          ],
+          "referenced_message": null
+        },
+        {
+          "id": "1517328775509971084",
+          "channel_id": "1517328141339852982",
+          "timestamp": "2026-06-19T00:42:50.687000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "804012503406215258",
+            "username": "suren0824",
+            "global_name": "suren (Plato's Cave)",
+            "bot": false
+          },
+          "content": "also for <@736013353998090241> , couldn't find Raw2Draft repo",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1517328792727588946",
+          "channel_id": "1517328141339852982",
+          "timestamp": "2026-06-19T00:42:54.792000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "804012503406215258",
+            "username": "suren0824",
+            "global_name": "suren (Plato's Cave)",
+            "bot": false
+          },
+          "content": "`git clone https://github.com/Isaac-Flath/raw2draft.git\nCloning into 'raw2draft'...\nremote: Repository not found.\nfatal: repository 'https://github.com/Isaac-Flath/raw2draft.git/' not found`",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1517328881235918998",
+          "channel_id": "1517328141339852982",
+          "timestamp": "2026-06-19T00:43:15.894000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "that one was private iirc",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1517328888500588575",
+          "channel_id": "1517328141339852982",
+          "timestamp": "2026-06-19T00:43:17.626000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "😄",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1517328963519647818",
+          "channel_id": "1517328141339852982",
+          "timestamp": "2026-06-19T00:43:35.512000+00:00",
+          "edited_timestamp": "2026-06-19T00:43:46.114000+00:00",
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "804012503406215258",
+            "username": "suren0824",
+            "global_name": "suren (Plato's Cave)",
+            "bot": false
+          },
+          "content": "ah! 😂 I wasn't paying attention to the podcast I guess 🫠",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1517329162652876920",
+          "channel_id": "1517328141339852982",
+          "timestamp": "2026-06-19T00:44:22.989000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "you can (and maybe its best practice to) adapt the idea to write your own such skills with your agent",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [
+            {
+              "emoji": {
+                "id": null,
+                "name": "❤️"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            }
+          ],
+          "referenced_message": null
+        },
+        {
+          "id": "1517329224183189705",
+          "channel_id": "1517328141339852982",
+          "timestamp": "2026-06-19T00:44:37.659000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "and will likely be more appropriate for your use case!",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1517329306098077729",
+          "channel_id": "1517328141339852982",
+          "timestamp": "2026-06-19T00:44:57.189000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "736013353998090241",
+            "username": "isaac.flath",
+            "global_name": "Isaac.Flath",
+            "bot": false
+          },
+          "content": "Hah, yeah I don't have time to properly maintain or answer all the questions I was getting so it's private.  I've been considering making it available just for the people in my community though.\n\nBut it really is built jsut for me.  I suspect it'd be hard for anyone else to use because I haven't worked on making it really great UX for a wide variety of workflows",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [
+            {
+              "emoji": {
+                "id": null,
+                "name": "❤️"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            },
+            {
+              "emoji": {
+                "id": null,
+                "name": "☝🏻"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            },
+            {
+              "emoji": {
+                "id": null,
+                "name": "💯"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            }
+          ],
+          "referenced_message": null
+        },
+        {
+          "id": "1517329490408112188",
+          "channel_id": "1517328141339852982",
+          "timestamp": "2026-06-19T00:45:41.132000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "this is a really important point re skills",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1517329542044450939",
+          "channel_id": "1517328141339852982",
+          "timestamp": "2026-06-19T00:45:53.443000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "736013353998090241",
+            "username": "isaac.flath",
+            "global_name": "Isaac.Flath",
+            "bot": false
+          },
+          "content": "It's a lot of stuff that I don't need to configure options, because it's just for me.  And I can make very idiomatic choices for how I organize my filesystem, because it's just for me.  Etc.",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1517329594250952804",
+          "channel_id": "1517328141339852982",
+          "timestamp": "2026-06-19T00:46:05.890000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "and related to hamels point re fuck your skills",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1517329683824247024",
+          "channel_id": "1517328141339852982",
+          "timestamp": "2026-06-19T00:46:27.246000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "(that was a follow up to my previous message lol)",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1517329790531535080",
+          "channel_id": "1517328141339852982",
+          "timestamp": "2026-06-19T00:46:52.687000+00:00",
+          "edited_timestamp": "2026-06-19T00:47:11.686000+00:00",
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "804012503406215258",
+            "username": "suren0824",
+            "global_name": "suren (Plato's Cave)",
+            "bot": false
+          },
+          "content": "guess you can tell these skills are non-transferrable 🥁🥹",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1517329906831458409",
+          "channel_id": "1517328141339852982",
+          "timestamp": "2026-06-19T00:47:20.415000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "they are tranferrable but in a different way: you can rebuild it yourself with your agent easily!",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [
+            {
+              "emoji": {
+                "id": null,
+                "name": "💯"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            }
+          ],
+          "referenced_message": null
+        },
+        {
+          "id": "1517329937437167798",
+          "channel_id": "1517328141339852982",
+          "timestamp": "2026-06-19T00:47:27.712000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "736013353998090241",
+            "username": "isaac.flath",
+            "global_name": "Isaac.Flath",
+            "bot": false
+          },
+          "content": "On skills hamel and I are working on distributing our skills in the community though haha.  But we're working on tooling so that it's easy to share to the smaller group, while also frictionless for us so it's the exact skills we actually use.\n\nPrivate skill sharing is shockingly hard, if you want to give it via email because not everyone is a dev with a github account lol.",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [
+            {
+              "emoji": {
+                "id": null,
+                "name": "💯"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            }
+          ],
+          "referenced_message": null
+        },
+        {
+          "id": "1517329945771114518",
+          "channel_id": "1517328141339852982",
+          "timestamp": "2026-06-19T00:47:29.699000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "and iterate",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [
+            {
+              "emoji": {
+                "id": null,
+                "name": "♻️"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            },
+            {
+              "emoji": {
+                "id": "1361578504721928324",
+                "name": "thank_you"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            }
+          ],
+          "referenced_message": null
+        },
+        {
+          "id": "1517330336055431310",
+          "channel_id": "1517328141339852982",
+          "timestamp": "2026-06-19T00:49:02.750000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "804012503406215258",
+            "username": "suren0824",
+            "global_name": "suren (Plato's Cave)",
+            "bot": false
+          },
+          "content": "thanks a lot <@736013353998090241>  and <@613249007015165973> , for the above 👆🏼🙏🏼",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1517330930551754915",
+          "channel_id": "1517328141339852982",
+          "timestamp": "2026-06-19T00:51:24.489000+00:00",
+          "edited_timestamp": "2026-06-19T00:53:10.408000+00:00",
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "804012503406215258",
+            "username": "suren0824",
+            "global_name": "suren (Plato's Cave)",
+            "bot": false
+          },
+          "content": "and the original preso question at the top of the thread (https://discord.com/channels/1324240687641657484/1501755069375320164/1517328141339852982 ), i.e. what tool <@736013353998090241>  used for making https://github.com/Isaac-Flath/public-talks/blob/main/2026-06-02-tool-architectures-public-talk.html ) - was that an agent too?",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1517341542266966108",
+          "channel_id": "1517328141339852982",
+          "timestamp": "2026-06-19T01:33:34.519000+00:00",
+          "edited_timestamp": "2026-06-19T01:34:04.588000+00:00",
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "736013353998090241",
+            "username": "isaac.flath",
+            "global_name": "Isaac.Flath",
+            "bot": false
+          },
+          "content": "That was the raw2draft desktop app I showed in the talk today 🙂 .  All custom by me for me.",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [
+            {
+              "emoji": {
+                "id": null,
+                "name": "👾"
+              },
+              "count": 1,
+              "count_details": {
+                "burst": 0,
+                "normal": 1
+              },
+              "burst_colors": [],
+              "me_burst": false,
+              "burst_me": false,
+              "me": false,
+              "burst_count": 0
+            }
+          ],
+          "referenced_message": null
+        },
+        {
+          "id": "1518509849648955393",
+          "channel_id": "1517328141339852982",
+          "timestamp": "2026-06-22T06:56:00.705000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "more here: https://hugobowne.github.io/show-us-your-agent-skills/agent-skills/guests/isaac-flath/",
+          "attachments": [],
+          "embeds": [
+            {
+              "type": "article",
+              "url": "https://hugobowne.github.io/show-us-your-agent-skills/agent-skills/guests/isaac-flath/",
+              "title": "Isaac Flath · Show Us Your Agent Skills",
+              "description": "Raw2Draft keeps AI-made reports, diagrams, slides, and drafts editable so Isaac can finish the last ten percent by hand.",
+              "provider": {
+                "name": "hugo-bowne-anderson.ai"
+              },
+              "thumbnail": {
+                "url": "https://hugobowne.github.io/show-us-your-agent-skills/show/avatars/isaac.png",
+                "proxy_url": "https://images-ext-1.discordapp.net/external/0utPBLxtzs4COXeLCRAkgP1Yu6-MTZDx1BaGqu4SArk/https/hugobowne.github.io/show-us-your-agent-skills/show/avatars/isaac.png",
+                "width": 1024,
+                "height": 1024,
+                "content_type": "image/png",
+                "placeholder": "VxgKFwZLeDStiGaAeYiXd4eHN8IFA3oD",
+                "placeholder_version": 1,
+                "flags": 0
+              },
+              "content_scan_version": 4
+            }
+          ],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1518509950421303336",
+          "channel_id": "1517328141339852982",
+          "timestamp": "2026-06-22T06:56:24.731000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "and here 👾 https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/human-editable-ai-artifacts",
+          "attachments": [],
+          "embeds": [
+            {
+              "type": "article",
+              "url": "https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/human-editable-ai-artifacts",
+              "title": "show-us-your-agent-skills/workflows/human-editable-ai-artifacts at ...",
+              "description": "Companion repo to our livestream series Show Us Your (Agent) Skills - hugobowne/show-us-your-agent-skills",
+              "color": 1975079,
+              "provider": {
+                "name": "GitHub"
+              },
+              "thumbnail": {
+                "url": "https://opengraph.githubassets.com/5b507ff1292a27e81537280aaafe2a015c94195d923c1b6f83a57c084223ad68/hugobowne/show-us-your-agent-skills",
+                "proxy_url": "https://images-ext-1.discordapp.net/external/CgOm0vZ47PWCGKgB44XIdwdetOEjsfqh9XPplcCLsUQ/https/opengraph.githubassets.com/5b507ff1292a27e81537280aaafe2a015c94195d923c1b6f83a57c084223ad68/hugobowne/show-us-your-agent-skills",
+                "width": 1200,
+                "height": 600,
+                "content_type": "image/png",
+                "placeholder": "OwgGDIBbmrWWlmhoeV93UC+acA==",
+                "placeholder_version": 1,
+                "flags": 0
+              },
+              "content_scan_version": 4
+            }
+          ],
+          "reactions": [],
+          "referenced_message": null
+        }
+      ]
+    },
+    {
+      "id": "1522403528834809917",
+      "parent_id": "1501755069375320164",
+      "owner_id": "613249007015165973",
+      "name": "Thank you Skylar appreciate how good you",
+      "type": 11,
+      "archived": false,
+      "archive_timestamp": "2026-07-03T00:57:22.858000+00:00",
+      "locked": false,
+      "message_count": 2,
+      "member_count": 3,
+      "rate_limit_per_user": 0,
+      "exported_message_count": 3,
+      "messages": [
+        {
+          "id": "1522405864085000333",
+          "channel_id": "1522403528834809917",
+          "timestamp": "2026-07-03T00:57:22.931000+00:00",
+          "edited_timestamp": null,
+          "type": 21,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": {
+            "id": "1522403528834809917",
+            "timestamp": "2026-07-03T00:48:06.164000+00:00",
+            "author": {
+              "id": "898261025558781983",
+              "username": "sethtam",
+              "global_name": "sethtam",
+              "bot": false
+            },
+            "content": "Thank you Skylar appreciate how good you are at explaining complex ideas in a simple way.   Today was epic"
+          }
+        },
+        {
+          "id": "1522405869176881162",
+          "channel_id": "1522403528834809917",
+          "timestamp": "2026-07-03T00:57:24.145000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "<@1307147124474908672>",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1522762468693119110",
+          "channel_id": "1522403528834809917",
+          "timestamp": "2026-07-04T00:34:24.095000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "898261025558781983",
+            "username": "sethtam",
+            "global_name": "sethtam",
+            "bot": false
+          },
+          "content": "I have to say I am using Hermes Agent V18 and it is so good so fast the web search is very efficient.",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        }
+      ]
+    },
+    {
+      "id": "1522568514165280888",
+      "parent_id": "1501755069375320164",
+      "owner_id": "613249007015165973",
+      "name": "Just got through the last youtube vidoe",
+      "type": 11,
+      "archived": false,
+      "archive_timestamp": "2026-07-03T11:46:19.133000+00:00",
+      "locked": false,
+      "message_count": 3,
+      "member_count": 2,
+      "rate_limit_per_user": 0,
+      "exported_message_count": 4,
+      "messages": [
+        {
+          "id": "1522569174759641198",
+          "channel_id": "1522568514165280888",
+          "timestamp": "2026-07-03T11:46:19.230000+00:00",
+          "edited_timestamp": null,
+          "type": 21,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": {
+            "id": "1522568514165280888",
+            "timestamp": "2026-07-03T11:43:41.732000+00:00",
+            "author": {
+              "id": "479569001572204544",
+              "username": "alexpaulkelly",
+              "global_name": "alex kelly",
+              "bot": false
+            },
+            "content": "Just got through the last youtube vidoe, decided to create a video using the pixi art, its pretty expensive stuff!"
+          }
+        },
+        {
+          "id": "1522569179922698391",
+          "channel_id": "1522568514165280888",
+          "timestamp": "2026-07-03T11:46:20.461000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "Ha yeh! It’s actually a good point that I could include in the skill: get the agent to tell the human the approx cost before running. Did 15 seconds cost you around $2.70? Would love to see what you made, Alex!",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1522570672352526357",
+          "channel_id": "1522568514165280888",
+          "timestamp": "2026-07-03T11:52:16.284000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "479569001572204544",
+            "username": "alexpaulkelly",
+            "global_name": "alex kelly",
+            "bot": false
+          },
+          "content": "I run a local inperson AI group and being playing with AI to advertise it.  This is perfect.  I have a elevenlabs so tried to adapt it to only realise you can only do video through the UI.  I'll get it up somewhere and share here. I found googles omni the best model result.",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        },
+        {
+          "id": "1522572161997475970",
+          "channel_id": "1522568514165280888",
+          "timestamp": "2026-07-03T11:58:11.443000+00:00",
+          "edited_timestamp": null,
+          "type": 0,
+          "pinned": false,
+          "author": {
+            "id": "613249007015165973",
+            "username": "hugobowne",
+            "global_name": "hugobowne",
+            "bot": false
+          },
+          "content": "Great please do!",
+          "attachments": [],
+          "embeds": [],
+          "reactions": [],
+          "referenced_message": null
+        }
+      ]
+    }
+  ]
+}
