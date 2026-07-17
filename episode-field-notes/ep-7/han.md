@@ -2,11 +2,11 @@
 
 [Han-Chung Lee](https://leehanchung.github.io/) is Director of Machine Learning at Moody's, where he leads teams building custom LLMs, generative-AI applications, and search and discovery systems for financial data. He previously led data science at WalletHub, held engineering roles at Workhuman, AMD, and Ericsson, and spent about a decade running a quantitative fund and managing technology mutual funds.
 
-Han evaluates an agent as the combination of a model and the harness that gives it tools. [SkillsBench](https://www.skillsbench.ai/) tests that complete system because the same skill can behave very differently when either component changes. *"We define agents as having the harness plus a model, because the model needs hands and feet to connect it to different tools."* [[00:47:30]](https://youtube.com/live/kfCi2EBu-nc?t=2850)
+Han works on [SkillsBench](https://www.skillsbench.ai/) with several collaborators. The benchmark evaluates an agent as the combination of a model and the harness that gives it tools because the same skill can behave very differently when either component changes. *"We define agents as having the harness plus a model, because the model needs hands and feet to connect it to different tools."* [[00:47:30]](https://youtube.com/live/kfCi2EBu-nc?t=2850)
 
 SkillsBench runs skills across model-and-harness combinations, places each task in a controlled environment, grades the result with deterministic checks or an LLM judge, and preserves the trajectory for inspection. In one run, an agent invoked Chrome unexpectedly. Han also watches for hypothetical failure modes such as deleting a test to make it pass or hallucinating a completion after a skill fails. At 100 or 1,000 tasks, those traces support comparisons across agents and expose recurring out-of-bound behavior.
 
-Han clips only articles he has read into [Obsidian](https://obsidian.md/), then runs a nightly Codex task that extracts and links entities across English, simplified Chinese, and traditional Chinese sources. The graph helps him recover ideas when he remembers the concept but not the search term, without outsourcing the reading itself.
+Beyond agent evaluation, Han uses agents to retrieve ideas across everything he has read. He clips those articles into [Obsidian](https://obsidian.md/), then runs a nightly Codex task that extracts and links entities across English, simplified Chinese, and traditional Chinese sources. The graph helps him recover ideas when he remembers the concept but not the search term, without outsourcing the reading itself.
 
 ## On working with agents
 
