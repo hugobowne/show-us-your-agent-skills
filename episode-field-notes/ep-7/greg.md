@@ -1,20 +1,20 @@
 # Greg Ceccarelli - Episode 7 field notes
 
-[Greg Ceccarelli](https://www.gregceccarelli.com/) is co-founder and CPO of [SpecStory](https://specstory.com/). He previously served as CPO at Pluralsight and worked at GitHub, Dropbox, and Google. His Episode 7 demo shows how [Lore](https://github.com/specstoryai/getspecstory/tree/dev/lore) turns the exhaust of everyday agent work into reusable skills: SpecStory saves sessions from multiple coding agents as markdown, Lore mines repeated patterns across those histories, and the human reviews the evidence before approving a skill for installation.
+[Greg Ceccarelli](https://www.gregceccarelli.com/) is co-founder and CPO of [SpecStory](https://specstory.com/). He previously served as CPO at Pluralsight and worked at GitHub, Dropbox, and Google. Greg argues that agents now produce more code than people can review. *"We're spending the vast majority of our time just verifying if it actually did the thing that we intended it to do."* [[01:17:55]](https://youtube.com/live/kfCi2EBu-nc?t=4675)
 
-The raw sessions matter because the reasoning behind a change often disappears when only the finished artifact survives. *"Storing transcripts, storing your traces, whatever you want to call them, your agent sessions, is really important because to do useful things, if you were going to try and extract decisions or the why, you need that raw material."* [[00:05:25]](https://youtube.com/live/kfCi2EBu-nc?t=325)
+Direct-to-trunk integration works for Greg only on a small, high-trust team. *"You still use pull requests. I wouldn't even do that anymore. Just push it straight to trunk, have your agent summarize it."* [[00:09:45]](https://youtube.com/live/kfCi2EBu-nc?t=585) He uses agents to reimplement the intent of stale branches against the current codebase.
 
-In Greg's live run, Lore parses 516 long sessions, labels whether the user accepted or rejected an agent response, corroborates recurring practices across projects, and presents candidate skills with citations. Greg selects a second quality gate that runs after functional success, approves it in plan mode, and lets Lore install it across his agent harnesses. *"The premise of what I'm going to share is how you can mine them with a skill that makes new skills, all from your agent transcripts."* [[00:06:05]](https://youtube.com/live/kfCi2EBu-nc?t=365)
+[Lore](https://github.com/specstoryai/getspecstory/tree/dev/lore) mines 516 saved agent sessions for recurring practices, then lets Greg decide which practices become reusable skills. [Dead Reckon](https://deadreckon.sh/) runs Claude Code, Cursor, or Codex until they pass deterministic definition-of-done checks hidden from the coding model.
 
 ## On working with agents
 
 ### What he loves: expressing product intent instead of syntax
 
-Greg values the productivity that comes from describing an architecture and desired outcome in English instead of concentrating on programming-language syntax. That speed matters because it lets him put software in front of people, gather feedback, and iterate. *"I don't really have to think about programming languages and syntax anymore, and I can just express my desires, well thought out, architected in English language, and get outcomes and output."* [[00:08:20]](https://youtube.com/live/kfCi2EBu-nc?t=500)
+Describing an architecture and desired outcome in English lets Greg ship software, gather user feedback, and iterate without concentrating on programming-language syntax. *"I don't really have to think about programming languages and syntax anymore, and I can just express my desires, well thought out, architected in English language, and get outcomes and output."* [[00:08:20]](https://youtube.com/live/kfCi2EBu-nc?t=500)
 
 ### What he finds most frustrating: the attention addiction
 
-Greg finds agent work isolating and difficult to stop. The same rapid reward that makes agents productive can keep him entranced in sessions. *"I don't like the attention addiction that comes with working with agents. These things are so powerful and so good that it's hard to put them down."* [[00:10:35]](https://youtube.com/live/kfCi2EBu-nc?t=635)
+Greg finds coding-agent sessions isolating and difficult to stop because the dopamine reward counters the productivity gain. *"I don't like the attention addiction that comes with working with agents. These things are so powerful and so good that it's hard to put them down."* [[00:10:35]](https://youtube.com/live/kfCi2EBu-nc?t=635)
 
 He deliberately keeps agent work off his phone so closing the laptop creates a real boundary. *"I've set up my stack in a way that I know if I close my laptop, I'm not going to be looking at my phone."* [[00:24:50]](https://youtube.com/live/kfCi2EBu-nc?t=1490)
 
@@ -22,7 +22,7 @@ He deliberately keeps agent work off his phone so closing the laptop creates a r
 
 ### Mine agent histories, review candidate practices, then forge approved skills
 
-Greg starts by syncing SpecStory session logs from multiple agents into a project repository as markdown. Lore builds a local database, parses the sessions, labels conversation turns, runs theme mining and corroboration, then presents candidate practices with citations to the histories where it found them. The human chooses what deserves to become a reusable skill. *"It presents stuff for your review. It will never install anything unless you actually approve it."* [[00:34:00]](https://youtube.com/live/kfCi2EBu-nc?t=2040)
+Greg starts by syncing SpecStory session logs from multiple agents into a project repository as markdown. Lore builds a local database, parses the sessions, labels conversation turns, runs theme mining and corroboration, then presents candidate practices with citations to the histories where it found them. Greg reviews the cited candidates and decides which practices become reusable skills. *"It presents stuff for your review. It will never install anything unless you actually approve it."* [[00:34:00]](https://youtube.com/live/kfCi2EBu-nc?t=2040)
 
 The guided run lets Greg choose a project, select the last 30 days, and ask Lore to find and forge skills. He recommends running that deeper mining occasionally with a high-reasoning model, rather than continuously. *"You don't need to do these Lore runs that often. I would say once a month or something, to see what comes out."* [[00:27:50]](https://youtube.com/live/kfCi2EBu-nc?t=1670)
 
@@ -37,23 +37,29 @@ Lore detects a recurring pattern in Greg's histories: once a feature works, he r
 
 Greg recognizes the pattern as something he does repeatedly and chooses it for forging. *"Functional success never closes the loop. Immediately after confirming a feature works or before letting anything ship, the user, me, runs a distinct second gate of non-functional checks."* [[00:32:25]](https://youtube.com/live/kfCi2EBu-nc?t=1945)
 
-### Run coding agents until external checks prove the work is done
+### Keep coding agents running until hidden checks prove the work is done
 
 Greg's Dead Reckon workflow wraps coding CLIs and keeps Claude Code, Cursor, or Codex running until they pass deterministic definition-of-done checks stored outside the model's reach. *"The model will not be the one determining its end run."* [[01:20:00]](https://youtube.com/live/kfCi2EBu-nc?t=4800)
 
-The workflow supports unattended jobs that may continue for 20 hours. Greg built Dead Reckon with Codex goals, storing source intent in a goals directory and pairing each goal with a writer document, phased tasks, reference context, and independent verification steps. *"If an agentic coding harness runs an LLM in a loop, the goal of loop engineering then is to run your agentic coding harnesses in a loop."* [[01:30:15]](https://youtube.com/live/kfCi2EBu-nc?t=5415)
+The workflow supports unattended jobs that may continue for 20 hours. Greg built Dead Reckon with Codex goals and stores source intent in a goals directory. Each goal includes a writer document, phased tasks, reference context, and independent verification steps. *"If an agentic coding harness runs an LLM in a loop, the goal of loop engineering then is to run your agentic coding harnesses in a loop."* [[01:30:15]](https://youtube.com/live/kfCi2EBu-nc?t=5415)
 
-### Integrate continuously, then reimplement stale branch intent
+### Replace pull requests with continuous trunk integration
 
-Greg integrates team changes continuously into a shared trunk. Agents summarize newly integrated work so another teammate can resume from the current head. When a branch has drifted too far, the agent reimplements its intent against the current codebase in what Greg calls a semantic rebase. *"It would be taking a branch and reimplementing it if it is farther away semantically based on their intent, because agents can do that so much faster."* [[01:58:25]](https://youtube.com/live/kfCi2EBu-nc?t=7105)
+Greg integrates team changes continuously into a shared trunk and reserves branches for experimental work. *"You should be working on a shared trunk, and you should only use, in my mind, branches for very experimental things."* [[01:59:35]](https://youtube.com/live/kfCi2EBu-nc?t=7175) He asks an agent to summarize newly integrated work so he can resume from the current head.
+
+When a branch has drifted too far, the agent reimplements its intent against the current codebase in what Greg calls a semantic rebase. *"It would be taking a branch and reimplementing it if it is farther away semantically based on their intent, because agents can do that so much faster."* [[01:58:25]](https://youtube.com/live/kfCi2EBu-nc?t=7105)
+
+### Use one model family to review another
+
+Greg separates implementation from review by switching model families. *"I'll implement something in Claude Code, and then I'll use Codex with a commit SHA range to do effectively a code review."* [[01:34:15]](https://youtube.com/live/kfCi2EBu-nc?t=5655) Dead Reckon can assign different providers to planning, implementation, and review. Greg required a real end-to-end run as one verification criterion while adding this multi-provider feature.
 
 ## Skills
 
 ### [Lore](https://github.com/specstoryai/getspecstory/tree/dev/lore)
 
-Lore is an interactive agent skill that mines SpecStory session histories and forges new skills from recurring practices. It offers commands for guided setup, skill inventory, finding and forging candidates, installation, and uninstallation. Greg demonstrates it inside Claude Code, but says it can also run in Codex, Cursor CLI, and Cursor IDE. *"What this skill that's called Lore does is look at all of that fantastic exhaust, and then it has an engine, part deterministic and part based on your local model, to pull out those patterns."* [[00:07:30]](https://youtube.com/live/kfCi2EBu-nc?t=450)
+Lore is an interactive agent skill that mines SpecStory session histories and forges new skills from recurring practices. It offers commands for guided setup, skill inventory, finding and forging candidates, installation, and uninstallation. Greg demonstrates it inside Claude Code and says it can also run in Codex, Cursor CLI, and Cursor IDE. *"What this skill that's called Lore does is look at all of that fantastic exhaust, and then it has an engine, part deterministic and part based on your local model, to pull out those patterns."* [[00:07:30]](https://youtube.com/live/kfCi2EBu-nc?t=450)
 
-The skill inventories Lore-forged skills alongside other installed skills. That visibility helps explain surprising agent behavior when a forgotten skill triggers from ordinary English in a prompt. *"How many times have you installed a skill, completely forgotten about it, and been like, 'Wait, why is the LLM doing this thing?'"* [[00:16:15]](https://youtube.com/live/kfCi2EBu-nc?t=975)
+The inventory reveals forgotten installed skills that can trigger from ordinary English and change agent behavior. *"How many times have you installed a skill, completely forgotten about it, and been like, 'Wait, why is the LLM doing this thing?'"* [[00:16:15]](https://youtube.com/live/kfCi2EBu-nc?t=975)
 
 Each run creates a local database that parses large session files and labels conversation turns. The engine divides each interaction into a `beat`: user prompt, agent response, and the next user prompt. That third turn supplies evidence that the previous response was accepted or rejected. *"That's a beat instead of just a user prompt, agent response, because what it tries to do is see, did you actually accept what came out of the response from your prior prompt and label it."* [[00:20:35]](https://youtube.com/live/kfCi2EBu-nc?t=1235)
 
@@ -73,6 +79,10 @@ Greg chooses the candidate built around a post-success hygiene gate and asks Lor
 
 He then tests Lore's uninstall flow because the newly produced skill may not be useful enough to keep. *"I wasn't looking at this with the most critical lens. It produced this. I don't know if this is actually something that I want."* [[00:36:20]](https://youtube.com/live/kfCi2EBu-nc?t=2180)
 
+### Goal engineering
+
+Greg created a skill for writing goals that pair outcome criteria with reference context and independent verification steps. *"I created a skill and did a little writeup on what I was calling goal engineering."* [[01:26:05]](https://youtube.com/live/kfCi2EBu-nc?t=5165)
+
 ## Tools / projects he showed
 
 ### [SpecStory](https://specstory.com/)
@@ -91,7 +101,7 @@ Cursor gives Greg the VS Code-style surface he wants for managing many terminal 
 
 ### Claude Code and Codex
 
-Greg moves between Claude Code and Codex depending on the work. Lore uses the native menu picker in Claude Code for its guided setup, and it can install a forged skill across multiple agent environments. *"The skill actually tells Claude how to interact with you. So you get this guided setup using some of the built-ins, in terms of this menu picker and whatnot that Claude natively supports."* [[00:18:10]](https://youtube.com/live/kfCi2EBu-nc?t=1090)
+Lore uses the native menu picker in Claude Code for its guided setup, and it can install a forged skill across multiple agent environments. *"The skill actually tells Claude how to interact with you. So you get this guided setup using some of the built-ins, in terms of this menu picker and whatnot that Claude natively supports."* [[00:18:10]](https://youtube.com/live/kfCi2EBu-nc?t=1090)
 
 ### [Impeccable](https://impeccable.style/)
 
@@ -103,17 +113,41 @@ Stoa is an interactive WebRTC collaboration environment that Greg used as a larg
 
 ### JFK files viewer
 
-Greg and Hugo built a viewer for the newly released JFK files in April 2025, before `vibe coding` had become their normal label for that kind of work. *"I think that day, we were vibe coding before it was really even called vibe coding."* [[00:02:10]](https://youtube.com/live/kfCi2EBu-nc?t=130)
+Greg and Hugo built a viewer for the newly released JFK files in April, before `vibe coding` had become their normal label for that kind of work. *"I think that day, we were vibe coding before it was really even called vibe coding."* [[00:02:10]](https://youtube.com/live/kfCi2EBu-nc?t=130)
 
 ## Principles and explainers
 
+### Code generation moves the bottleneck to verification
+
+Agents can produce more code than a pull-request process can absorb. *"PRs are the limiting gate. You can produce so much code, who's going to ever review it all?"* [[01:55:55]](https://youtube.com/live/kfCi2EBu-nc?t=6955)
+
+### Agents stop when they stop calling tools
+
+Codex and Pi finish a run when the model stops calling tools and returns a completion, subject to any turn limits imposed by the harness. *"It's whenever the model stops calling tools that it finishes."* [[01:21:35]](https://youtube.com/live/kfCi2EBu-nc?t=4895) Dead Reckon moves the stopping decision to hidden deterministic checks.
+
+### Define outcomes and stopping conditions, not implementation steps
+
+Greg recommends giving capable agents verifiable outcomes instead of prescribing every implementation step. *"Don't do all the implementation pre-specced and planned. Set a set of criteria that the agent can evaluate with the tools it has access to."* [[01:33:15]](https://youtube.com/live/kfCi2EBu-nc?t=5595)
+
+### Few teams have shipped fully agentically
+
+Greg says many developers use coding agents, but few teams have rebuilt product development around agents and shipped the resulting software to users. *"There's probably very few people that are actually fully agentically engineering products that are going to production and getting users right now."* [[01:56:25]](https://youtube.com/live/kfCi2EBu-nc?t=6985)
+
+### Models and harnesses improve together
+
+Greg attributes coding-agent gains to the system around the model as well as the model itself. *"A lot of the gains haven't just come because the underlying LLM is that much smarter. It's because the harness and the model have been co-built and co-optimized."* [[01:43:20]](https://youtube.com/live/kfCi2EBu-nc?t=6200)
+
+### Monorepos keep agent context in one place
+
+Greg's agents need extra prompting when connected product context is scattered across repositories. *"I think monorepos are extremely effective design patterns for your architecture these days."* [[02:06:00]](https://youtube.com/live/kfCi2EBu-nc?t=7560)
+
 ### Agent traces preserve intent and repeated working patterns
 
-Finished code preserves what was built, while agent sessions also retain the decisions, corrections, preferences, and verification habits that shaped it. Those histories can expose patterns that the user repeats without having named or documented them. *"A lot of the patterns and heuristics that you use are actually in those agent session logs."* [[00:05:40]](https://youtube.com/live/kfCi2EBu-nc?t=340)
+Agent sessions retain the decisions, corrections, preferences, and verification habits that finished code omits. Those histories can expose patterns that the user repeats without having named or documented them. *"A lot of the patterns and heuristics that you use are actually in those agent session logs."* [[00:05:40]](https://youtube.com/live/kfCi2EBu-nc?t=340)
 
 ### The next user turn supplies acceptance evidence
 
-A user prompt and agent response do not show whether the result was useful. Lore includes the next user prompt in each beat so it can classify acceptance, rejection, or correction. That metadata becomes part of the evidence used to mine and corroborate patterns. *"Did you actually accept what came out of the response from your prior prompt?"* [[00:20:35]](https://youtube.com/live/kfCi2EBu-nc?t=1235)
+Lore includes the next user prompt in each beat so it can classify acceptance, rejection, or correction. That metadata becomes part of the evidence used to mine and corroborate patterns. *"Did you actually accept what came out of the response from your prior prompt?"* [[00:20:35]](https://youtube.com/live/kfCi2EBu-nc?t=1235)
 
 ### Deterministic preprocessing makes large session corpora tractable
 
@@ -123,25 +157,19 @@ Greg separates repeatable indexing and parsing from model-driven theme analysis.
 
 Lore retains dossiers across runs and looks for recurring behavior across projects. A practice seen in SpecStory Cloud, Stoa, the CLI, and the VS Code extension carries stronger evidence than a one-off instruction in a single session. *"It did some adjudication to understand if that pattern was one worth presenting."* [[00:30:10]](https://youtube.com/live/kfCi2EBu-nc?t=1810)
 
-### High-reasoning models fit infrequent pattern-mining runs
-
-Lore's deep run is slow and occasional. Greg prefers a high-reasoning model because it needs to recover latent themes from long histories, while the deterministic engine handles the bulk parsing. *"You actually want to have a lot of reasoning, and you want to use the workflow because you're trying to pull out all these latent themes in what you've done."* [[00:27:35]](https://youtube.com/live/kfCi2EBu-nc?t=1655)
-
 ### Candidate skills need human judgment before and after installation
 
 Lore filters weak candidates through corroboration and adversarial adjudication, but Greg still reviews the surviving dossiers. He can approve one candidate, reject the rest, inspect the generated skill, and uninstall it if the artifact is not useful. *"It skips a bunch of stuff that it couldn't adversarially adjudicate as being relevant or important enough because it hadn't found it in enough evidence."* [[00:33:20]](https://youtube.com/live/kfCi2EBu-nc?t=2000)
 
-### Repository trust determines when agents push
+### Will GitHub die?
 
-Greg keeps accumulated commits local when he wants the final push to remain a human decision. *"I'll do a big batch of work, accumulate a lot of local commits, but I don't want the agent to push it."* [[00:06:55]](https://youtube.com/live/kfCi2EBu-nc?t=415) On a small, high-trust team, he pushes directly to trunk and has the agent summarize the change. *"Just push it straight to trunk, have your agent summarize it."* [[00:09:45]](https://youtube.com/live/kfCi2EBu-nc?t=585)
+Greg expects Git to endure because it works on file systems, is battle-tested and hardened, and is difficult to displace. He is less certain about GitHub: *"I think that Git's not going anywhere. Whether or not GitHub remains the platform, we'll see."* [[02:01:10]](https://youtube.com/live/kfCi2EBu-nc?t=7270)
 
-### Keep mined evidence readable across hundreds of sessions
+Agent-generated pull requests force open-source maintainers to decide whether each unsolicited contribution deserves attention. Greg describes the burden as *"anyone can open a PR with agent slop."* [[02:03:10]](https://youtube.com/live/kfCi2EBu-nc?t=7390) GitHub does not provide enough information about a new account's history and accepted contributions for maintainers to establish trust. Greg argues that *"the trust layer around the social coding aspect of GitHub doesn't exist."* [[02:04:50]](https://youtube.com/live/kfCi2EBu-nc?t=7490)
 
-Greg combines deterministic processing with carefully designed skill instructions and menus so the results remain readable after hundreds of sessions are mined. *"I tried to put a lot of effort into making it such that it was easy to parse."* [[00:35:35]](https://youtube.com/live/kfCi2EBu-nc?t=2135)
+GitHub's network effects, integrations, and Actions infrastructure still make displacement difficult. Greg calls Actions *"the biggest source of GitHub lock-in"* because teams use the platform to build, deploy, and release artifacts as well as store code. [[02:09:20]](https://youtube.com/live/kfCi2EBu-nc?t=7760)
 
-### A meta-harness can manage several coding agents
-
-Greg has built a harness around multiple coding harnesses, and his daily stack already treats Cursor as a surface for Claude Code and Codex. *"I've gone so far as building a harness around harnesses. It gets really meta."* [[00:03:30]](https://youtube.com/live/kfCi2EBu-nc?t=210)
+Greg speculates that OpenAI may want hosted code for training, while stating that he does not know whether the claim is factual: *"My skeptical opinion is that OpenAI is going down that route because they want you to host your code and give them some permission to train on it. I don't know if that's a fact."* [[02:10:40]](https://youtube.com/live/kfCi2EBu-nc?t=7840)
 
 ## Additional quotations
 
@@ -153,13 +181,12 @@ Greg has built a harness around multiple coding harnesses, and his daily stack a
 
 - On long sessions: *"I tend to use the same session for a very long time since compaction has gotten so much better."* [[00:28:20]](https://youtube.com/live/kfCi2EBu-nc?t=1700)
 
+- On terminal output: *"The amount of walls of text that I read a day, pivoting between many different terminals across many projects, is mind-numbing."* [[01:17:45]](https://youtube.com/live/kfCi2EBu-nc?t=4665)
 
-## Live reactions and follow-ups
+- On repeatedly building the same infrastructure: *"I've done this loop now 1,000 times, and I can't take it anymore."* [[01:49:10]](https://youtube.com/live/kfCi2EBu-nc?t=6550)
 
-### Will GitHub remain the platform?
+- On Git mechanics: *"I have not written or done a Git command myself in an extremely long time, and it's been incredible."* [[02:02:15]](https://youtube.com/live/kfCi2EBu-nc?t=7335)
 
-Greg expects Git to endure because it works on file systems, is battle-tested and hardened, and is difficult to displace. Agents make it easier to use because their training makes them fluent in Git mechanics. Greg sees more uncertainty around GitHub as the hosting platform: *"I think that Git's not going anywhere. Whether or not GitHub remains the platform, we'll see."* [[02:01:10]](https://youtube.com/live/kfCi2EBu-nc?t=7270) GitHub's network effects, integrations, and Actions infrastructure still make displacement difficult. Greg calls Actions *"the biggest source of GitHub lock-in"* because teams use the platform to build, deploy, and release artifacts as well as store code. [[02:09:20]](https://youtube.com/live/kfCi2EBu-nc?t=7760)
+## Links
 
-### Greg's links and audience reaction
-
-Greg posted the [Lore source](https://github.com/specstoryai/getspecstory/tree/dev/lore), his free book [*25 Patterns in Agentic Engineering*](https://specstory.com/books/25-patterns-in-agentic-engineering-book-2026.pdf), and the [Hardcore Agentic Engineering](https://maven.com/specstory/hardcore-agentic-engineering-for-builders-who-ship?promoCode=HARDCORE) course. Seth Tam described Han and Greg as “great educators” and thanked them for “explaining the basics.”
+Greg posted the [Lore source](https://github.com/specstoryai/getspecstory/tree/dev/lore), his free book [*25 Patterns in Agentic Engineering*](https://specstory.com/books/25-patterns-in-agentic-engineering-book-2026.pdf), and the [Hardcore Agentic Engineering](https://maven.com/specstory/hardcore-agentic-engineering-for-builders-who-ship?promoCode=HARDCORE) course.
