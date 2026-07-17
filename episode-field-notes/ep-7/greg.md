@@ -4,7 +4,7 @@
 
 Greg demonstrated two ways of carrying intent through agentic work. [Lore](https://github.com/specstoryai/getspecstory/tree/dev/lore) mined 516 saved agent sessions, checked subsequent user responses for evidence of acceptance or rejection, and presented recurring practices with citations before Greg approved them as reusable skills. [Dead Reckon](https://deadreckon.sh/) stores source intent in goals, then keeps Claude Code, Cursor, or Codex working until deterministic checks hidden from the coding model prove the outcome is complete.
 
-Preserved intent also changes how Greg ships software. He thinks small, high-trust teams should abandon pull requests, integrate continuously into a shared trunk, and ask agents to reimplement the intent of stale branches through what he calls a semantic rebase. *"You still use pull requests. I wouldn't even do that anymore. Just push it straight to trunk, have your agent summarize it."* [[00:09:45]](https://youtube.com/live/kfCi2EBu-nc?t=585) He implements with one model family, reviews the commit range with another, and expects Git to survive while questioning whether GitHub will remain the platform.
+Greg argues that agentic engineering changes the software development lifecycle itself. Small, high-trust teams articulate goals, run agents in parallel, steer them briefly, and make verification the limiting discipline. *"The unit of work that you're driving these agents towards in agentic engineering is completely different from the way that you probably operate in your sort of team environment."* [[01:54:40]](https://youtube.com/live/kfCi2EBu-nc?t=6880) In his own work, that operating model includes continuous integration into a shared trunk, agent-written summaries, cross-model review, and semantic rebasing when a branch has drifted from the current codebase. He expects Git to survive while questioning whether GitHub will remain the platform.
 
 ## On working with agents
 
@@ -117,9 +117,11 @@ Greg and Hugo built a viewer for the newly released JFK files in April, before `
 
 ## Principles and explainers
 
-### Code generation moves the bottleneck to verification
+### Agentic engineering changes the software development lifecycle
 
-Agents can produce more code than a pull-request process can absorb. *"PRs are the limiting gate. You can produce so much code, who's going to ever review it all?"* [[01:55:55]](https://youtube.com/live/kfCi2EBu-nc?t=6955)
+On small teams, fewer people write code directly. They plan and articulate goals, run agents in parallel, then find better ways to steer and verify the agents' work. *"You have to embrace a completely different mindset about how you actually do the engineering, and that's almost as important as the mechanics of operating the agents and verifying things."* [[01:55:05]](https://youtube.com/live/kfCi2EBu-nc?t=6905)
+
+Pull-request review becomes the limiting gate when agents can generate more code than people can inspect. *"PRs are the limiting gate. You can produce so much code, who's going to ever review it all?"* [[01:55:55]](https://youtube.com/live/kfCi2EBu-nc?t=6955) Greg's hidden completion checks and cross-model review address verification. Shared-trunk integration and semantic rebasing keep parallel work aligned with a fast-moving codebase.
 
 ### Agents stop when they stop calling tools
 
