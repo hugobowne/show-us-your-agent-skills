@@ -1,6 +1,6 @@
 # goal-rider-author
 
-An agent skill that briefs the next round of coding work with a compact goal and a detailed companion rider.
+An agent skill for loop engineering that briefs a long-running coding agent with a compact goal, a detailed companion rider, and verifiable conditions for stopping.
 
 ## who showed it
 
@@ -8,9 +8,13 @@ An agent skill that briefs the next round of coding work with a compact goal and
 
 ## what it does
 
-`goal-rider-author` creates two linked documents for an autonomous coding run. The goal is the short spine: what to build, what to read first, the operating posture, verification, and stopping conditions. The rider is the detailed companion specification, with phase plans, schemas, named tests, command signatures, constraints, and out-of-scope work.
+`goal-rider-author` gives an agentic harness enough context and external verification to keep working without repeated human prompts. The harness can run until it satisfies the exit conditions defined before the work begins.
+
+Greg uses **rider** in the addendum sense: a companion document that expands a shorter primary document. The goal is the short spine, covering what to build, what to read first, the operating posture, verification, and stopping conditions. The rider carries the prescriptive detail, including phase plans, schemas, named tests, command signatures, constraints, and out-of-scope work.
 
 The split keeps the agent's primary brief below 4,000 characters while allowing the rider to carry as much implementation detail as the work requires.
+
+Greg published the full pattern and copyable skill in [*Goal Engineering: how I brief coding agents using paired goal+rider documents*](https://www.gregceccarelli.com/goal-engineering).
 
 > *"I got so enamored with goals when they first came out, I created a skill and did a little write-up on what I was calling goal engineering."* [[01:26:13]](https://youtube.com/live/kfCi2EBu-nc?t=5173)
 
@@ -20,12 +24,15 @@ Greg stores each pair in the project's goals directory. The goal points the agen
 
 ## why it's notable
 
-The goal and rider give long agent runs both freedom and a boundary. The agent chooses implementation details inside a prescriptive execution envelope, while named tests, smoke checks, architecture updates, and stop conditions make completion externally verifiable.
+The goal and rider turn loop engineering into a bounded development practice. The agent chooses implementation details inside a prescriptive execution envelope, while named tests, smoke checks, architecture updates, and stop conditions make completion externally verifiable.
+
+> *"You wanna do a very long unattended run, and you wanna come back, and you wanna know that if it's been running for 20 hours or something, that it's passed what you've predefined as the thing that's gonna allow the harness to break the loop."* [[01:20:27]](https://youtube.com/live/kfCi2EBu-nc?t=4827)
 
 > *"Don't do all the implementation pre-specced and planned. Set a set of criteria that the agent can evaluate with the tools it has access to on your machine or in the cloud, and let it go until it passes your exit criteria."* [[01:33:24]](https://youtube.com/live/kfCi2EBu-nc?t=5604)
 
 ## watch it
 
+- [**01:20:27**](https://youtube.com/live/kfCi2EBu-nc?t=4827): Why long unattended runs need predefined conditions that break the loop.
 - [**01:26:00**](https://youtube.com/live/kfCi2EBu-nc?t=5160): Greg opens Dead Reckon's directory of paired goal and rider files.
 - [**01:26:13**](https://youtube.com/live/kfCi2EBu-nc?t=5173): Greg explains that he turned goal engineering into a skill.
 - [**01:26:55**](https://youtube.com/live/kfCi2EBu-nc?t=5215): Reference context, phased tasks, and independent verification steps.
