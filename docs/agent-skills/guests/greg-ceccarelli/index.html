@@ -42,7 +42,9 @@
 <link rel="stylesheet" href="../../../shared/shared.css">
 <link rel="stylesheet" href="../guest.css">
 <style>
+.portrait-media { aspect-ratio: 16 / 9; }
 .portrait-media img { image-rendering: pixelated; object-position: center 18%; }
+.portrait-media video { width: 100%; height: auto; aspect-ratio: 16 / 9; image-rendering: auto; object-fit: contain; }
 .figure-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin-top:24px; }
 .stat .n { font-size: clamp(13px, 1.35vw, 18px); }
 @media (max-width:720px) {
@@ -89,12 +91,15 @@
           <a class="btn" href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/verifiable-agent-loops" target="_blank" rel="noopener">$ VERIFIABLE LOOPS</a>
         </div>
       </div>
-      <aside class="portrait" aria-label="Greg Ceccarelli 8-bit portrait">
+      <aside class="portrait" aria-label="Greg Ceccarelli 8-bit video">
         <div class="portrait-media">
-          <img src="greg-ceccarelli-8bit.png" alt="8-bit portrait of Greg Ceccarelli">
+          <video poster="greg-ceccarelli-8bit.png" autoplay muted loop playsinline controls preload="metadata" aria-label="8-bit Greg Ceccarelli intro video">
+            <source src="greg-ceccarelli-8bit.mp4" type="video/mp4">
+            <img src="greg-ceccarelli-8bit.png" alt="Greg Ceccarelli">
+          </video>
         </div>
         <div class="portrait-caption">
-          <b>"STORING YOUR AGENT SESSIONS IS REALLY IMPORTANT"</b>
+          <b>8-BIT VIDEO &middot; "STORING YOUR AGENT SESSIONS IS REALLY IMPORTANT"</b>
           <span>The finished code does not preserve every decision, correction, and repeated practice. Lore works from the raw session history. <a href="https://youtube.com/live/kfCi2EBu-nc?t=325" target="_blank" rel="noopener" style="color:var(--cyan)">00:05:25</a></span>
         </div>
       </aside>
