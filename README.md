@@ -17,13 +17,13 @@ This repo turns each episode into browsable, forkable artifacts: markdown
 skills, workflow writeups, and tool references you can read, copy, and
 adapt to your own setup.
 
-## Upcoming Episode 7: Greg Ceccarelli, Han-Chung Lee
+## Upcoming Episode 8: Chip Huyen, Tim Hopper
 
-[Register on Luma](https://luma.com/y4hylb82)
+[Register on Luma](https://luma.com/gjvafog2)
 
-Friday, July 17, 2026, 9:00 AM - 10:30 AM AEST (GMT+10), live on YouTube.
+Friday, July 31, 2026, 9:00–10:30 AM Australia/Sydney, live on YouTube.
 
-Guests will include Greg Ceccarelli (SpecStory, ex-GitHub) and Han-Chung Lee (Moody's Analytics, author of "Evaluation and Alignment: The Seminal Papers").
+Guests will include Chip Huyen and Tim Hopper.
 
 ## Installation (npx skills)
 
@@ -47,6 +47,14 @@ npx skills update
 ```
 
 These skills are snapshots from the corresponding live streams. Creators often iterate on their own versions afterwards, so check each skill's README for instructions to pull the latest from the creator when one is linked.
+
+## Latest episode: Greg Ceccarelli, Han-Chung Lee
+
+[Watch Episode 7 on YouTube](https://youtube.com/live/kfCi2EBu-nc)
+
+Greg Ceccarelli showed Lore mining 516 saved agent sessions for recurring practices, and Dead Reckon keeping coding agents in bounded loops until hidden checks pass. Han-Chung Lee showed SkillsBench evaluating complete model-and-harness combinations, then a nightly Codex job linking concepts across his multilingual Obsidian vault.
+
+Episode 7 presented **4 skills and 9 workflows**. The companion repo currently packages 2 of those skills and 4 workflows. See the [complete Episode 7 inventory](episodes/ep-7.md), [Greg's field notes](episode-field-notes/ep-7/greg.md), [Han's field notes](episode-field-notes/ep-7/han.md), and their guest dossiers: [Greg Ceccarelli](docs/agent-skills/guests/greg-ceccarelli/index.html), [Han-Chung Lee](docs/agent-skills/guests/han-chung-lee/index.html).
 
 ## Episode 1: Wes McKinney, Jeremiah Lowin, Randy Olson
 
