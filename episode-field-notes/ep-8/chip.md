@@ -8,8 +8,8 @@ Good AI Stack is Chip's database and interface for exploring AI companies, produ
 
 Running that many agents moved the bottleneck to Chip's own attention. Every instruction becomes a task record with its agent, status, and evidence, because she cannot remember what is happening across all the tabs and projects. *"I care more about what I think of as human context management."* [[00:56:37]](https://youtube.com/live/NH-ic7-V-jY?t=3397)
 
-<a href="https://youtube.com/live/NH-ic7-V-jY?t=3455"><img src="images/chip-agent-task-ledger.png" alt="Chip Huyen showing the task ledger in her cross-provider agent runner during Episode 8" /></a>
-<sub>Chip's runner turns instructions into tasks and preserves the assigned agent, status, and evidence for later inspection. <a href="https://youtube.com/live/NH-ic7-V-jY?t=3455">[00:57:35]</a></sub>
+<a href="https://youtube.com/live/NH-ic7-V-jY?t=2941"><img src="images/chip-agent-runner.png" alt="Chip Huyen showing a runner project with 1,409 agents during Episode 8" /></a>
+<sub>Chip shows a runner project with 1,409 agent entries. <a href="https://youtube.com/live/NH-ic7-V-jY?t=2941">[00:49:01]</a></sub>
 
 ## On working with agents
 

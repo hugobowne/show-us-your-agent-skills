@@ -2,7 +2,8 @@
 
 [Tim Hopper](https://tdhopper.com/) is a machine learning platform engineer and Python developer who has spent more than a decade helping teams shorten feedback loops across machine learning, developer tooling, and production systems. He writes about AI-assisted development, Python tooling, and helping researchers and data scientists spend less time fighting infrastructure.
 
-<img src="images/tim-hopper.png" alt="Tim Hopper during Episode 8" />
+<a href="https://youtube.com/live/NH-ic7-V-jY?t=1701"><img src="images/tim-phone-agent.png" alt="Tim Hopper showing Claude Code running on his iPhone during Episode 8" /></a>
+<sub>Tim opens Claude Code on his iPhone during a few free minutes. <a href="https://youtube.com/live/NH-ic7-V-jY?t=1701">[00:28:21]</a></sub>
 
 Agents reopened Tim's side projects after four children made long, uninterrupted coding sessions scarce. His operating model gives the agent sustained attention while he contributes brief bursts of direction from a phone: *"The agent kind of gives sustained focus to something and allows me to have much more intermittent focus."* [[00:11:50]](https://youtube.com/live/NH-ic7-V-jY?t=710) He connects to a home Mac Mini through [Moshi](https://getmoshi.app/), [Mosh](https://mosh.org/), [Tailscale](https://tailscale.com/), and [Zellij](https://zellij.dev/), dictates prompts with [Spokenly](https://spokenly.app/), lets [Claude Code](https://code.claude.com/docs/en/overview) build and deploy on [Cloudflare](https://workers.cloudflare.com/), and asks a [Resend](https://resend.com/) skill to email him the result when family life pulls him away. From his phone, Tim uses a [printable-magazine skill](https://github.com/tdhopper/dotfiles2.0/blob/6e19eb1a4814a2677e1bd9c0404d605d72bea34e/.claude/skills/magazine-explainer/SKILL.md) to make booklets for his children, and Claude Code built [Hopper Herald](https://hopper-herald.tdhopper.workers.dev/) on Cloudflare while he walked.
 
