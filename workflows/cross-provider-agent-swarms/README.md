@@ -1,10 +1,15 @@
 # Cross-provider agent swarms
 
-Chip Huyen showed a project that had used 1,409 agents. Her runner puts a strong agent in charge of planning and review, then hands implementation to cheaper agents across providers. It collects their work, sends it back through review, and keeps the original instruction, assigned agent, status, and evidence for every task. Chip can launch a large job, stop carrying messages between tabs, and return later to see what happened.
+Chip Huyen showed a project that had used 1,409 agents. Her runner puts a strong model such as Fable or Codex in charge of planning and review, then hands implementation to cheaper agents such as Sonnet, GPT-5.4, DeepSeek, or Kimi. It collects their work, sends it back through review, and keeps the original instruction, assigned agent, status, and evidence for every task. Chip can launch a large job, stop carrying messages between tabs, and return later to see what happened.
+
+<a href="https://youtube.com/live/NH-ic7-V-jY?t=2652"><img src="images/0-conversation.png" alt="Hugo Bowne-Anderson, Tim Hopper, Chip Huyen, and Thomas Wiecki during Episode 8" /></a>
+<sub>Chip joins Hugo, Tim, and Thomas before showing her cross-provider runner. <a href="https://youtube.com/live/NH-ic7-V-jY?t=2652">[00:44:12]</a></sub>
 
 ## who showed it
 
 [Chip Huyen](https://huyenchip.com/) is a writer and computer scientist focused on bringing AI into production. She taught Machine Learning Systems Design at Stanford, founded and sold an AI infrastructure company, and wrote *Designing Machine Learning Systems* and *AI Engineering*.
+
+<img src="images/0-chip-huyen.png" alt="Chip Huyen explaining her cross-provider agent runner" />
 
 ## the premise
 
@@ -53,9 +58,6 @@ Chip previously copied plans and review comments between provider tabs. Her runn
 Chip can only attend to a few tasks at once. Her runner detects tasks in her instructions and records the original request, assigned agent, status, and evidence. She does not inspect every completed task. She uses the ledger when a bug returns or a result needs to be reconstructed.
 
 > *"I care more about what I think of as human context management."* [\[00:56:37\]](https://youtube.com/live/NH-ic7-V-jY?t=3397)
-
-<a href="https://youtube.com/live/NH-ic7-V-jY?t=3455"><img src="images/3-task-ledger.png" alt="Chip Huyen showing a task record with its instruction, assigned agent, status, and evidence" /></a>
-<sub>The task ledger materializes Chip's instruction as a record she can return to after leaving the run unattended. <a href="https://youtube.com/live/NH-ic7-V-jY?t=3455">[00:57:35]</a></sub>
 
 ### 6. Optimize for finishing the assigned task
 
