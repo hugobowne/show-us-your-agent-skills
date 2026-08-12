@@ -1,0 +1,26 @@
+{
+  "skill_name": "magazine-explainer",
+  "evals": [
+    {
+      "id": 0,
+      "name": "volcanoes-for-nora",
+      "prompt": "make nora (she's 9) a magazine-style explainer about how volcanoes work — she loves earth science",
+      "expected_output": "A print-ready multi-page PDF magazine explainer about volcanoes, themed for earth science (not racing-orange), written at a 9-year-old level, with real volcano photos, numbered sections, cards/tables/diagrams, and a closing prompt. Prose audited against PROSE.md + stop-slop.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "name": "sharks-for-james-age8",
+      "prompt": "my son james is 8 and super into sharks right now. research it and build him a cool illustrated guide PDF about the biggest predator sharks",
+      "expected_output": "A print-ready PDF guide about large predator sharks for an 8-year-old, with real shark photos, comparison content (e.g. great white vs others), simple-but-real facts, magazine layout, and a closing prompt. Reading level appropriate for age 8.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "rockets-for-smart-11yo",
+      "prompt": "can you turn the topic of how rockets get to space into a nice PDF for my daughter? she's 11 and smart, wants the real engineering not baby stuff",
+      "expected_output": "A print-ready PDF explainer on rocket propulsion / getting to orbit for a smart 11-year-old, introducing real engineering terms (thrust, stages, escape velocity) and defining them, with real rocket photos, a space-appropriate color theme, diagrams/tables, and a closing prompt.",
+      "files": []
+    }
+  ]
+}

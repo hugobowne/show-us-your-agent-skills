@@ -1,6 +1,6 @@
-# Verified frontend
+# verified-frontend
 
-A starting point for building a local visual verification loop with your agent: render frontend changes, inspect them in a browser, revise what is visibly wrong, and return screenshots with the work.
+An agent skill for opening frontend changes in a browser, inspecting the rendered page, fixing visible problems, and returning screenshots with the work.
 
 ## who showed it
 

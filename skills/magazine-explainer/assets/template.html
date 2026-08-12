@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{TITLE}}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  /* ============================================================
+     DIGEST MAGAZINE — pages are 5.5x8.5in (half-Letter). They print
+     1:1 (no shrinking) and two sit on a landscape Letter sheet, so
+     booklet.sh folds them into a real pocket magazine that any duplex
+     printer can make. Design at THIS size: short lines, stacked layouts.
+
+     THEME — swap these accents to fit the subject.
+     Racing/RC = orange. Space = #6d5efc indigo + #22d3ee cyan.
+     Dinosaurs = #2f9e44 green + #e8a33d amber. Ocean = #0ea5e9.
+     Keep --steel dark and --cream light; just swap --orange/--amber.
+     ============================================================ */
+  :root{
+    --ink:#15171c;
+    --ink-soft:#3a3f4a;
+    --muted:#6b7280;
+    --paper:#ffffff;
+    --cream:#faf7f2;
+    --line:#e6e2da;
+    --orange:#ff5a1f;       /* primary accent  */
+    --orange-deep:#d8410d;  /* darker accent for small text */
+    --amber:#ffb020;        /* secondary accent */
+    --steel:#1f2733;        /* dark headings / dark panels */
+    --green:#1f9d6b;
+    --blue:#2563eb;
+  }
+
+  *{ box-sizing:border-box; }
+  @page{ size: 5.5in 8.5in; margin: 11mm 10mm; }   /* digest / half-Letter */
+  @page :first{ margin:0; }
+  html,body{ margin:0; padding:0; }
+  body{ font-family:'Inter', -apple-system, sans-serif; color:var(--ink); font-size:10.5pt; line-height:1.5; background:var(--paper); -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  h1,h2,h3,.display{ font-family:'Barlow Condensed', sans-serif; letter-spacing:.2px; }
+
+  /* ============ COVER (fills one digest page) ============ */
+  .cover{ position:relative; height:100vh; background: radial-gradient(700px 380px at 80% -10%, rgba(255,90,31,.35), transparent 55%), linear-gradient(160deg,#10141b 0%, #1b2330 55%, #0c0f15 100%); color:#fff; padding:15mm 13mm; display:flex; flex-direction:column; justify-content:space-between; overflow:hidden; page-break-after:always; }
+  .cover::after{ content:""; position:absolute; inset:0; background-image: repeating-linear-gradient(90deg, rgba(255,255,255,.04) 0 1px, transparent 1px 34px), repeating-linear-gradient(0deg, rgba(255,255,255,.04) 0 1px, transparent 1px 34px); mask-image:linear-gradient(180deg, transparent, #000 35%, #000 72%, transparent); pointer-events:none; }
+  .cover-top{ position:relative; z-index:2; display:flex; align-items:center; gap:8px; }
+  .badge{ font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:9pt; letter-spacing:1.5px; text-transform:uppercase; color:#0c0f15; background:var(--amber); padding:4px 9px; border-radius:4px; }
+  .badge.alt{ background:transparent; color:#cdd5e0; border:1px solid rgba(255,255,255,.25); }
+  .cover-mid{ position:relative; z-index:2; }
+  .kicker{ font-family:'Barlow Condensed',sans-serif; text-transform:uppercase; letter-spacing:3px; color:var(--amber); font-weight:600; font-size:10pt; margin-bottom:5px; }
+  .cover h1{ font-family:'Archivo Black', sans-serif; font-size:31pt; line-height:.95; margin:0 0 9px; text-transform:uppercase; letter-spacing:-.5px; }
+  .cover h1 .o{ color:var(--orange); }
+  .cover .sub{ font-size:11pt; color:#d7dde6; max-width:74%; line-height:1.45; }
+  /* Hero photo bottom-right; keep .sub max-width so text & photo never overlap.
+     Tune width/right/bottom to the photo's aspect ratio, then re-render & check. */
+  .cover-hero{ position:absolute; right:-6px; bottom:74px; z-index:1; width:235px; border-radius:12px; filter:drop-shadow(0 18px 26px rgba(0,0,0,.6)); }
+  .cover-foot{ position:relative; z-index:2; display:flex; justify-content:space-between; align-items:flex-end; border-top:1px solid rgba(255,255,255,.15); padding-top:10px; }
+  .cover-foot .for{ font-family:'Barlow Condensed',sans-serif; font-size:15pt; font-weight:700; }
+  .cover-foot .for small{ display:block; font-family:'Inter',sans-serif; font-size:8pt; font-weight:400; letter-spacing:1.5px; text-transform:uppercase; color:#9aa3b2; }
+  .cover-foot .meta{ text-align:right; font-size:7.5pt; color:#9aa3b2; letter-spacing:.4px; max-width:45%; }
+
+  /* ============ CONTENT ============ */
+  .page{ padding-top:1mm; }
+  .section{ margin-bottom:9px; }
+  .sec-head{ display:flex; align-items:baseline; gap:9px; margin:11px 0 5px; page-break-after:avoid; }
+  .sec-num{ font-family:'Archivo Black',sans-serif; font-size:17pt; color:var(--orange); line-height:1; }
+  .sec-head h2{ font-size:17pt; margin:0; color:var(--steel); font-weight:700; text-transform:uppercase; }
+  .sec-rule{ height:2.5px; background:linear-gradient(90deg,var(--orange), transparent); border-radius:3px; margin:-1px 0 8px; page-break-after:avoid; }
+  p{ margin:0 0 7px; color:var(--ink-soft); }
+  strong{ color:var(--ink); font-weight:600; }
+  .lead{ font-size:11.5pt; color:var(--ink); }
+  h3{ font-size:12.5pt; color:var(--steel); margin:10px 0 3px; font-weight:700; page-break-after:avoid; }
+
+  /* Callouts — at most one standout fact per section */
+  .callout{ border-radius:9px; padding:9px 11px 9px 13px; margin:8px 0; background:var(--cream); border:1px solid var(--line); position:relative; page-break-inside:avoid; }
+  .callout::before{ content:""; position:absolute; left:0; top:0; bottom:0; width:4px; border-radius:9px 0 0 9px; background:var(--orange); }
+  .callout .ct{ font-family:'Barlow Condensed',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:10pt; color:var(--orange-deep); margin-bottom:1px; }
+  .callout.tip::before{ background:var(--green); } .callout.tip .ct{ color:var(--green); }
+  .callout.warn::before{ background:var(--amber); } .callout.warn .ct{ color:#b07900; }
+  .callout p:last-child{ margin-bottom:0; }
+
+  /* Cards — STACK by default (the page is narrow). Add .duo for a short side-by-side pair. */
+  .cards{ display:grid; grid-template-columns:1fr; gap:9px; margin:8px 0; }
+  .cards.duo{ grid-template-columns:1fr 1fr; }
+  .card{ border:1px solid var(--line); border-radius:11px; padding:11px 12px; background:#fff; page-break-inside:avoid; box-shadow:0 1px 0 rgba(0,0,0,.03); }
+  .card .tag{ display:inline-block; font-family:'Barlow Condensed',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:8pt; padding:2px 7px; border-radius:20px; background:var(--steel); color:#fff; margin-bottom:5px; }
+  .card .tag.budget{ background:var(--green); } .card .tag.value{ background:var(--orange); } .card .tag.dream{ background:var(--blue); }
+  .card h4{ font-family:'Barlow Condensed',sans-serif; font-size:13pt; margin:1px 0 3px; color:var(--steel); font-weight:700; }
+  .card .price{ font-family:'JetBrains Mono',monospace; font-weight:600; font-size:9pt; color:var(--orange-deep); }
+  .card ul{ margin:5px 0 0; padding-left:15px; } .card li{ margin:2px 0; color:var(--ink-soft); }
+  .pcard{ display:flex; flex-direction:column; } /* photo card */
+  .pcard .shot{ width:100%; height:150px; object-fit:contain; background:#fff; margin-bottom:5px; }
+
+  /* Figure: framed custom diagram (inline SVG) with caption. SVG fills can use
+     theme vars (fill="var(--orange)") so diagrams recolor with the issue. */
+  figure.diagram{ margin:8px 0; border:1px solid var(--line); border-radius:11px; background:#fff; padding:10px 10px 7px; page-break-inside:avoid; }
+  figure.diagram svg{ display:block; width:100%; height:auto; }
+  figure.diagram figcaption{ margin-top:6px; font-size:8pt; color:var(--muted); text-align:center; }
+  figure.diagram.dark{ background:var(--steel); border-color:var(--steel); }
+  figure.diagram.dark figcaption{ color:#9fb2c9; }
+
+  /* Tables */
+  table{ width:100%; border-collapse:collapse; margin:8px 0; font-size:9pt; page-break-inside:avoid; }
+  thead th{ background:var(--steel); color:#fff; text-align:left; padding:6px 8px; font-family:'Barlow Condensed',sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:.5px; font-size:9.5pt; }
+  thead th:first-child{ border-radius:7px 0 0 0; } thead th:last-child{ border-radius:0 7px 0 0; }
+  tbody td{ padding:5px 8px; border-bottom:1px solid var(--line); color:var(--ink-soft); vertical-align:top; }
+  tbody tr:nth-child(even){ background:var(--cream); }
+  tbody td:first-child{ font-weight:600; color:var(--ink); }
+
+  /* Spec boxes — STACK on the narrow page (mono "how it works" flows) */
+  .spec{ display:grid; grid-template-columns:1fr; gap:9px; margin:8px 0; page-break-inside:avoid; }
+  .spec .box{ background:var(--steel); color:#e7ecf3; border-radius:11px; padding:11px; font-family:'JetBrains Mono', monospace; font-size:8.5pt; line-height:1.45; }
+  .spec .box.bl{ background:linear-gradient(160deg,#1b2735,#0f1722); }
+  .spec .box h4{ font-family:'Barlow Condensed',sans-serif; color:var(--amber); font-size:12pt; margin:0 0 6px; letter-spacing:.5px; text-transform:uppercase; }
+  .spec .box .flow{ color:#9fb2c9; } .spec .box .flow b{ color:#fff; }
+  .spec .box.bl .flow .hot{ color:#7ee0b0; } .spec .box .hot-red{ color:#ff8a5c; }
+
+  /* Checklist */
+  .check{ list-style:none; padding:0; margin:7px 0; }
+  .check li{ position:relative; padding:6px 9px 6px 34px; border:1px solid var(--line); border-radius:8px; margin-bottom:5px; background:#fff; page-break-inside:avoid; color:var(--ink-soft); }
+  .check li::before{ content:"✓"; position:absolute; left:8px; top:50%; transform:translateY(-50%); width:18px; height:18px; border-radius:5px; background:var(--green); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:10pt; }
+  .check li b{ color:var(--ink); }
+
+  /* Numbered question / step list */
+  .qlist{ counter-reset:q; list-style:none; padding:0; margin:7px 0; }
+  .qlist li{ position:relative; padding:2px 0 8px 34px; page-break-inside:avoid; }
+  .qlist li::before{ counter-increment:q; content:"Q" counter(q); position:absolute; left:0; top:1px; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:10pt; color:#fff; background:var(--orange); width:26px; height:22px; border-radius:5px; display:flex; align-items:center; justify-content:center; }
+  .qlist .q{ font-weight:600; color:var(--ink); display:block; margin-bottom:1px; }
+
+  .divider{ text-align:center; color:var(--orange); letter-spacing:7px; margin:11px 0 5px; font-size:10pt; }
+
+  /* Closing dark panel — strong forced white so bold shows on dark. */
+  .closer{ margin-top:12px; border-radius:12px; padding:15px 17px; background:linear-gradient(150deg,#161c26,#0f1420); color:#fff; page-break-inside:avoid; }
+  .closer h2{ color:#fff; font-size:17pt; margin:0 0 5px; text-transform:uppercase; }
+  .closer p{ color:#c9d2de; }
+  .closer strong{ color:#fff; }
+  .closer .q2{ color:var(--amber); font-weight:600; }
+
+  .footnote{ font-size:7.5pt; color:var(--muted); margin-top:9px; text-align:center; }
+</style>
+</head>
+<body>
+
+<!-- ============ COVER ============ -->
+<section class="cover">
+  <img class="cover-hero" src="img/hero.jpg" alt="">       <!-- a striking subject photo on a clean background -->
+  <div class="cover-top">
+    <span class="badge">{{KICKER_BADGE}}</span>             <!-- e.g. "Field Guide" / "Explorer's Handbook" -->
+    <span class="badge alt">{{SUBJECT_TAG}}</span>          <!-- e.g. "Deep Space" -->
+  </div>
+  <div class="cover-mid">
+    <div class="kicker">{{OVERLINE}}</div>                  <!-- small uppercase line above title -->
+    <h1>{{TITLE_LINE_1}}<br>{{TITLE_LINE_2}}<br><span class="o">{{TITLE_ACCENT}}</span></h1>
+    <p class="sub">{{COVER_SUBTITLE}}</p>
+  </div>
+  <div class="cover-foot">
+    <div class="for">{{KID_NAME}}<small>{{KID_ROLE_LINE}}</small></div>   <!-- e.g. "Explorer · Pilot · Scientist" -->
+    <div class="meta">{{META_TAGLINE}}</div>
+  </div>
+</section>
+
+<!-- ============ BODY — replace with real sections. Pages are NARROW (5.5in):
+     keep lines short, stack cards/spec boxes (they default to one column; add
+     class="cards duo" only for a short side-by-side pair). Group sections in one
+     or more <div class="page"> wrappers and let them flow — don't force a break
+     before every section. Headings stay glued to their content automatically. -->
+<div class="page">
+
+  <div class="section">
+    <p class="lead">{{HOOK_SENTENCE}}</p>
+    <p>{{INTRO_PARAGRAPH}}</p>
+  </div>
+
+  <div class="section">
+    <div class="sec-head"><span class="sec-num">01</span><h2>{{SECTION_TITLE}}</h2></div>
+    <div class="sec-rule"></div>
+    <p>{{SECTION_INTRO}}</p>
+    <div class="cards">
+      <div class="card"><span class="tag">{{TAG}}</span><h4>{{CARD_TITLE}}</h4><p>{{CARD_BODY}}</p></div>
+      <div class="card"><span class="tag">{{TAG}}</span><h4>{{CARD_TITLE}}</h4><p>{{CARD_BODY}}</p></div>
+    </div>
+    <div class="callout tip"><div class="ct">{{LABEL}}</div><p>{{ONE_KEY_FACT}}</p></div>
+  </div>
+
+  <!-- See references/design-system.md for the full catalog: photo cards, diagrams
+       (inline SVG), comparison tables, mono "how it works" spec boxes, checklists,
+       numbered Q&A lists, and the closing panel. -->
+
+  <div class="closer">
+    <h2>{{CLOSER_TITLE}}</h2>
+    <p>{{CLOSER_SETUP}}</p>
+    <p class="q2">{{CLOSER_QUESTION}}</p>
+  </div>
+  <p class="footnote">{{FOOTNOTE}}</p>
+
+</div>
+</body>
+</html>
