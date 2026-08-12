@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Han-Chung Lee &middot; Show Us Your Agent Skills</title>
+<meta name="description" content="Han-Chung Lee's Show Us Your Agent Skills dossier: evaluating model-and-harness combinations with SkillsBench, inspecting complete agent trajectories, and running a nightly multilingual knowledge graph in Obsidian.">
+<meta name="author" content="Hugo Bowne-Anderson">
+<link rel="canonical" href="https://hugobowne.github.io/show-us-your-agent-skills/agent-skills/guests/han-chung-lee/">
+
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://hugobowne.github.io/show-us-your-agent-skills/agent-skills/guests/han-chung-lee/">
+<meta property="og:title" content="Han-Chung Lee &middot; Show Us Your Agent Skills">
+<meta property="og:description" content="Benchmark the complete agent, inspect its trajectory, and let a nightly agent connect only the material you have read.">
+<meta property="og:site_name" content="hugo-bowne-anderson.ai">
+<meta property="og:image" content="https://hugobowne.github.io/show-us-your-agent-skills/agent-skills/guests/han-chung-lee/han-chung-lee-8bit.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@hugobowne">
+<meta name="twitter:creator" content="@hugobowne">
+<meta name="twitter:title" content="Han-Chung Lee &middot; Show Us Your Agent Skills">
+<meta name="twitter:description" content="SkillsBench, verifiable trajectories, and a nightly multilingual knowledge graph in Obsidian.">
+<meta name="twitter:image" content="https://hugobowne.github.io/show-us-your-agent-skills/agent-skills/guests/han-chung-lee/han-chung-lee-8bit.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Han-Chung Lee",
+    "url": "https://leehanchung.github.io/",
+    "sameAs": ["https://leehanchung.github.io/", "https://www.linkedin.com/in/hanchunglee/", "https://www.skillsbench.ai/"],
+    "worksFor": { "@type": "Organization", "name": "Moody's" }
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Geist:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../shared/shared.css">
+<link rel="stylesheet" href="../guest.css">
+<style>
+.portrait-media { aspect-ratio: 16 / 9; }
+.portrait-media img { image-rendering: pixelated; object-position: center 18%; }
+.portrait-media video { width:100%; height:auto; aspect-ratio:16 / 9; object-fit:contain; }
+.figure-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin-top:24px; }
+.stat .n { font-size:clamp(13px,1.35vw,18px); }
+@media (max-width:720px) {
+  .hero-actions { display:grid; grid-template-columns:minmax(0,1fr); }
+  .btn { text-align:center; white-space:normal; line-height:1.45; }
+  .figure-grid { grid-template-columns:minmax(0,1fr); }
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="page">
+    <div class="logo"><a href="https://hugobowne.github.io/">hugo-bowne-anderson<span class="dot">.</span>ai</a></div>
+    <nav>
+      <a href="https://hugobowne.github.io/#podcasts">podcasts</a>
+      <a href="https://hugobowne.github.io/#writing">writing</a>
+      <a href="../../../agent-skills" class="active">agent skills</a>
+      <a href="../../../agent-skills#hub">skills hub</a>
+    </nav>
+    <div class="status">ep 07 field notes</div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="page hero-grid">
+      <div>
+        <div class="crumb"><a href="../../../agent-skills#past">Show Us Your Agent Skills</a> / EP 07 / guest dossier</div>
+        <div class="eyebrow">
+          <span class="mini-avatar"><img src="han-chung-lee-8bit.png" alt=""></span>
+          <span class="chip cyan">HAN-CHUNG LEE</span>
+          <span class="chip">SKILLSBENCH</span>
+          <span class="chip">TRAJECTORIES</span>
+          <span class="chip">OBSIDIAN</span>
+          <span class="chip">NIGHTLY CODEX</span>
+        </div>
+        <h1>HAN-CHUNG <span>LEE</span></h1>
+        <p class="dek">
+          Han evaluates the complete agent: the model, the harness that gives it hands and feet, the skill, the tools, the controlled environment, the resulting artifact, and every action in between. SkillsBench makes those combinations comparable and exposes failures that a plausible final answer can hide. Then Han applies the same discipline to his own memory. He clips only articles he has read into Obsidian and lets a nightly Codex task connect entities and concepts across English, simplified Chinese, and traditional Chinese without rewriting his prose. Han is Director of Machine Learning at Moody's and a contributor to SkillsBench.
+        </p>
+        <div class="hero-actions">
+          <a class="btn cyan" href="https://www.youtube.com/watch?v=kfCi2EBu-nc&amp;t=2320s" target="_blank" rel="noopener">&#9654; WATCH SEGMENT</a>
+          <a class="btn" href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/benchmarking-agent-skills" target="_blank" rel="noopener">$ BENCHMARK SKILLS</a>
+          <a class="btn" href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/nightly-knowledge-graph" target="_blank" rel="noopener">$ NIGHTLY GRAPH</a>
+        </div>
+      </div>
+      <aside class="portrait" aria-label="Han-Chung Lee 8-bit video">
+        <div class="portrait-media">
+          <video poster="han-chung-lee-8bit.png" autoplay muted loop playsinline controls preload="metadata" aria-label="8-bit Han-Chung Lee intro video">
+            <source src="han-chung-lee-8bit.mp4" type="video/mp4">
+            <img src="han-chung-lee-8bit.png" alt="Han-Chung Lee">
+          </video>
+        </div>
+        <div class="portrait-caption">
+          <b>8-BIT VIDEO &middot; "THE MODEL NEEDS HANDS AND FEET"</b>
+          <span>SkillsBench defines an agent as the model and the harness that connects it to tools. Change either one and the same skill can behave differently. <a href="https://youtube.com/live/kfCi2EBu-nc?t=2860" target="_blank" rel="noopener" style="color:var(--cyan)">00:47:40</a></span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="scoreboard-sec">
+    <div class="page">
+      <div class="scoreboard">
+        <a class="stat" href="https://youtube.com/live/kfCi2EBu-nc?t=2860" target="_blank" rel="noopener"><span class="n">MODEL + HARNESS</span><span class="l">the unit SkillsBench evaluates as an agent</span></a>
+        <a class="stat" href="https://youtube.com/live/kfCi2EBu-nc?t=3187" target="_blank" rel="noopener"><span class="n">FULL TRACE</span><span class="l">actions, tool calls, observations, and environment changes</span></a>
+        <a class="stat" href="https://youtube.com/live/kfCi2EBu-nc?t=3408" target="_blank" rel="noopener"><span class="n">CHROME?</span><span class="l">an unexpected tool invocation found in the trajectory</span></a>
+        <a class="stat" href="https://youtube.com/live/kfCi2EBu-nc?t=3833" target="_blank" rel="noopener"><span class="n">100 / 1,000</span><span class="l">sandboxed tasks in a scaled evaluation run</span></a>
+        <a class="stat" href="https://youtube.com/live/kfCi2EBu-nc?t=4153" target="_blank" rel="noopener"><span class="n">NIGHTLY</span><span class="l">the second brain's sleep time</span></a>
+        <a class="stat" href="https://youtube.com/live/kfCi2EBu-nc?t=4267" target="_blank" rel="noopener"><span class="n">EN / 简 / 繁</span><span class="l">aliases across English and Chinese sources</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="page">
+      <div class="ytfacade" data-id="kfCi2EBu-nc" data-start="2320" role="button" tabindex="0" aria-label="Play Han-Chung Lee's EP 07 segment" style="max-width:880px;margin:0 auto;">
+        <img src="https://i.ytimg.com/vi/kfCi2EBu-nc/maxresdefault.jpg" onerror="this.src='https://i.ytimg.com/vi/kfCi2EBu-nc/hqdefault.jpg'" alt="" loading="lazy">
+        <button class="ytplay" aria-hidden="true" tabindex="-1">&#9654;</button>
+        <div class="ytcap"><b>EP 07 &middot; HAN-CHUNG LEE</b> &middot; Claude Code as a control plane, SkillsBench, trajectory inspection, verifiable results, and a nightly Obsidian knowledge graph</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="interstitial">
+    <div class="page iq">
+      <p>"We define agents as having a harness plus a model, because the model needs hands and feet to connect it to different tools."</p>
+      <div class="cap">A benchmark score belongs to a complete configuration. The same skill can produce a different result when the model or harness changes. <a href="https://youtube.com/live/kfCi2EBu-nc?t=2860" target="_blank" rel="noopener">00:47:40</a></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="page">
+      <h2>THE WHOLE AGENT GETS <span>EVALUATED</span></h2>
+      <div class="sub">the <a href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/benchmarking-agent-skills" target="_blank" rel="noopener">benchmarking-agent-skills workflow</a>, demonstrated through SkillsBench</div>
+      <div class="split">
+        <div class="panel">
+          <p>SkillsBench does not assign a skill one universal score. Its leaderboard compares model-and-harness combinations with and without the skill, because the harness determines how the model receives instructions, calls tools, and interacts with the environment.</p>
+          <p>Han's live task asks an agent to turn a CSV into a quantitative sales-report workbook. The run happens in a controlled environment. A short Python verifier checks the workbook's structure, regional values, and formulas, including whether totals remain live spreadsheet formulas instead of hardcoded numbers.</p>
+          <p>The final artifact is only one part of the evidence. SkillsBench preserves the trajectory so an evaluator can see prompts, reasoning, actions, tool calls, observations, errors, and environment changes. That is how Han found a prior run invoking Chrome unexpectedly even though Chrome had nothing to do with the requested workbook.</p>
+        </div>
+        <figure class="figure">
+          <a href="https://youtube.com/live/kfCi2EBu-nc?t=2860" target="_blank" rel="noopener"><img src="images/agent-leaderboard.png" alt="Han-Chung Lee showing the SkillsBench leaderboard comparing model and harness combinations with and without skills"></a>
+          <figcaption>Each leaderboard row is an agent configuration: a model paired with the harness that gives it tools. <a href="https://youtube.com/live/kfCi2EBu-nc?t=2860" target="_blank" rel="noopener">[00:47:40]</a></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="interstitial">
+    <div class="page iq">
+      <p>"Nowadays the evaluation surface just grows so big in the agent world, because no longer do you only have the output, but you have the traces as how the agent actually completed its task."</p>
+      <div class="cap">A correct file can sit at the end of a wasteful, unsafe, or out-of-bounds trajectory. The path is part of the result. <a href="https://youtube.com/live/kfCi2EBu-nc?t=3187" target="_blank" rel="noopener">00:53:07</a></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="page">
+      <h2>TASK, SANDBOX, VERIFY, <span>INSPECT</span></h2>
+      <div class="sub">a benchmark that explains failures instead of stopping at a score</div>
+      <div class="steps">
+        <div class="step"><span><b>Define one task and its environment</b><span>Turn the prompt into a self-contained task with inputs, tools, dependencies, and a controlled workspace. <a class="ts" href="https://youtube.com/live/kfCi2EBu-nc?t=3038" target="_blank" rel="noopener">00:50:38</a></span></span></div>
+        <div class="step"><span><b>Choose the complete configuration</b><span>Record the skill, model, harness, and tool access as the agent under test. <a class="ts" href="https://youtube.com/live/kfCi2EBu-nc?t=2902" target="_blank" rel="noopener">00:48:22</a></span></span></div>
+        <div class="step"><span><b>Run inside a sandbox</b><span>Isolate the task so the agent can act without contaminating other runs or touching unrelated systems. <a class="ts" href="https://youtube.com/live/kfCi2EBu-nc?t=3038" target="_blank" rel="noopener">00:50:38</a></span></span></div>
+        <div class="step"><span><b>Grade the artifact</b><span>Use a short deterministic verifier when possible and an LLM judge when the criterion depends on taste. <a class="ts" href="https://youtube.com/live/kfCi2EBu-nc?t=3304" target="_blank" rel="noopener">00:55:04</a></span></span></div>
+        <div class="step"><span><b>Inspect the trajectory</b><span>Read the actions, tool calls, observations, and environment changes for reward hacking or unexpected behavior. <a class="ts" href="https://youtube.com/live/kfCi2EBu-nc?t=3408" target="_blank" rel="noopener">00:56:48</a></span></span></div>
+        <div class="step"><span><b>Scale and compare</b><span>Run hundreds or thousands of tasks across sandboxes, then compare accuracy, behavior, reasoning, and token spend. <a class="ts" href="https://youtube.com/live/kfCi2EBu-nc?t=3833" target="_blank" rel="noopener">01:03:53</a></span></span></div>
+      </div>
+      <div class="figure-grid">
+        <figure class="figure">
+          <a href="https://youtube.com/live/kfCi2EBu-nc?t=3320" target="_blank" rel="noopener"><img src="images/deterministic-verifier.png" alt="A Python verifier checking workbook headers, sales values, and live SUM formulas"></a>
+          <figcaption>The workbook verifier checks concrete properties and rejects a hardcoded total where the task requires a live formula. <a href="https://youtube.com/live/kfCi2EBu-nc?t=3320" target="_blank" rel="noopener">[00:55:20]</a></figcaption>
+        </figure>
+        <figure class="figure">
+          <a href="https://youtube.com/live/kfCi2EBu-nc?t=3435" target="_blank" rel="noopener"><img src="images/trajectory-events.png" alt="A SkillsBench rollout diagram showing actions, tool calls, and observations in an agent trajectory"></a>
+          <figcaption>The trajectory preserves every event between the input and result, not just the agent's final message. <a href="https://youtube.com/live/kfCi2EBu-nc?t=3435" target="_blank" rel="noopener">[00:57:15]</a></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="interstitial">
+    <div class="page iq">
+      <p>"We have to make sure the agent doesn't go out of bound."</p>
+      <div class="cap">A passing test can conceal a deleted test file. A trace can reveal the agent changing the yardstick instead of satisfying it. <a href="https://youtube.com/live/kfCi2EBu-nc?t=3427" target="_blank" rel="noopener">00:57:07</a></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="page">
+      <h2>THE TRACE TURNS FAILURE INTO A <span>DIAGNOSIS</span></h2>
+      <div class="sub">skill instruction, agent behavior, artifact, and verifier result line up in one record</div>
+      <div class="split">
+        <div class="panel">
+          <p>The live workbook fails because its total is the hardcoded value 4050 instead of a live <code>SUM</code> formula. The trajectory explains why: the spreadsheet skill itself instructed the agent to calculate totals and write the values into the cells. The model followed the bad instruction and still reported success.</p>
+          <p>That evidence separates several possible repairs. A team can fix the skill, change the model-and-harness combination, constrain the available tools, strengthen the verifier, or add a trajectory check. It can also measure two successful agents differently by penalizing excessive reasoning or token spend.</p>
+          <p>Han connects this to loop engineering later in the episode. A verifier creates the signal that lets an agent keep working, but its reward must describe the desired outcome well enough that deleting the test, bypassing the check, or changing the environment does not count as success.</p>
+        </div>
+        <figure class="figure">
+          <a href="https://youtube.com/live/kfCi2EBu-nc?t=3840" target="_blank" rel="noopener"><img src="images/skill-trace-diagnosis.png" alt="The spreadsheet skill instruction, agent tool calls, final response, and verifier result aligned in SkillsBench"></a>
+          <figcaption>The skill tells the agent to hardcode totals; the trace shows it doing so; the verifier catches the exact defect. <a href="https://youtube.com/live/kfCi2EBu-nc?t=3840" target="_blank" rel="noopener">[01:04:00]</a></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="interstitial">
+    <div class="page iq">
+      <p>"It's a nightly job, sort of. I guess this is my second brain's sleep time when it does the agglomeration and tagging of the subject."</p>
+      <div class="cap">Once Han has done the reading, a scheduled agent handles the repetitive linking and index maintenance inside his vault. <a href="https://youtube.com/live/kfCi2EBu-nc?t=4153" target="_blank" rel="noopener">01:09:13</a></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="page">
+      <h2>THE VAULT WORKS WHILE HE <span>SLEEPS</span></h2>
+      <div class="sub">the <a href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/nightly-knowledge-graph" target="_blank" rel="noopener">nightly-knowledge-graph workflow</a> for a maintained, multilingual LLM wiki</div>
+      <div class="split">
+        <div class="panel">
+          <p>Han starts with a strict ingestion rule: only articles he has read enter the Obsidian vault. The corpus is his augmented memory, not a warehouse of pages that an automation collected while he looked away.</p>
+          <p>Each night, a scheduled Codex task sifts through the notes, extracts entity and concept names, refreshes a wiki index, and adds evidenced aliases to canonical pages. A transformer reference can then retrieve sources in English, simplified Chinese, and traditional Chinese, including material clipped from Weibo or Zhihu.</p>
+          <p>The graph makes tip-of-the-tongue retrieval possible when Han remembers an idea but has lost the keyword. The task also preserves human-authored prose and reports ambiguous maintenance work instead of silently rewriting it. The agent organizes the corpus; Han retains the reading and comprehension.</p>
+        </div>
+        <figure class="figure">
+          <a href="https://youtube.com/live/kfCi2EBu-nc?t=4092" target="_blank" rel="noopener"><img src="images/augmented-memory.png" alt="Han-Chung Lee's five-step workflow from reading and capturing articles to connecting them nightly in an Obsidian vault"></a>
+          <figcaption>Read first, capture second, then let the nightly job connect the material and return it to later thinking and writing. <a href="https://youtube.com/live/kfCi2EBu-nc?t=4092" target="_blank" rel="noopener">[01:08:12]</a></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="interstitial">
+    <div class="page iq">
+      <p>"Only the articles I read, I will clip them, store them in Obsidian. Again, I don't want to clip something I don't remember."</p>
+      <div class="cap">The scheduled job begins after the human has selected, read, and understood the source. <a href="https://youtube.com/live/kfCi2EBu-nc?t=4097" target="_blank" rel="noopener">01:08:17</a></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="page">
+      <h2>READ, CAPTURE, CONNECT, <span>REVIEW</span></h2>
+      <div class="sub">a principled scheduled workflow for keeping an LLM wiki useful</div>
+      <div class="steps">
+        <div class="step"><span><b>Read the source</b><span>Finish the article before it earns a place in the personal corpus. <a class="ts" href="https://youtube.com/live/kfCi2EBu-nc?t=4097" target="_blank" rel="noopener">01:08:17</a></span></span></div>
+        <div class="step"><span><b>Clip it into Obsidian</b><span>Store the source in portable Markdown inside a linkable vault. <a class="ts" href="https://youtube.com/live/kfCi2EBu-nc?t=4089" target="_blank" rel="noopener">01:08:09</a></span></span></div>
+        <div class="step"><span><b>Schedule the maintenance pass</b><span>Point a recurring Codex task at the notes folder and run it during the vault's sleep time. <a class="ts" href="https://youtube.com/live/kfCi2EBu-nc?t=4183" target="_blank" rel="noopener">01:09:43</a></span></span></div>
+        <div class="step"><span><b>Extract entities and concepts</b><span>Tag names, link concepts, and refresh the wiki index across the corpus. <a class="ts" href="https://youtube.com/live/kfCi2EBu-nc?t=4131" target="_blank" rel="noopener">01:08:51</a></span></span></div>
+        <div class="step"><span><b>Resolve multilingual aliases</b><span>Connect English and Chinese references to canonical pages without erasing the original source language. <a class="ts" href="https://youtube.com/live/kfCi2EBu-nc?t=4267" target="_blank" rel="noopener">01:11:07</a></span></span></div>
+        <div class="step"><span><b>Inspect the graph and report</b><span>Use clusters for retrieval, preserve human prose, and surface ambiguous changes for review. <a class="ts" href="https://youtube.com/live/kfCi2EBu-nc?t=4485" target="_blank" rel="noopener">01:14:45</a></span></span></div>
+      </div>
+      <div class="figure-grid">
+        <figure class="figure">
+          <a href="https://youtube.com/live/kfCi2EBu-nc?t=4313" target="_blank" rel="noopener"><img src="images/knowledge-graph.png" alt="The dense Obsidian Graph view of Han-Chung Lee's notes vault"></a>
+          <figcaption>The full graph exposes clusters and connections across the articles Han has read. <a href="https://youtube.com/live/kfCi2EBu-nc?t=4313" target="_blank" rel="noopener">[01:11:53]</a></figcaption>
+        </figure>
+        <figure class="figure">
+          <a href="https://youtube.com/live/kfCi2EBu-nc?t=4365" target="_blank" rel="noopener"><img src="images/company-cluster.png" alt="An Amazon-centered Obsidian cluster connected to English and Chinese article titles"></a>
+          <figcaption>An expanded company cluster connects a canonical Amazon page to source material with English and Chinese titles. <a href="https://youtube.com/live/kfCi2EBu-nc?t=4365" target="_blank" rel="noopener">[01:12:45]</a></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="interstitial">
+    <div class="page iq">
+      <p>"We should be learning the same way, just so that we don't completely outsource our understanding, our comprehension to the models."</p>
+      <div class="cap">The corpus remains valuable because Han read it. The model connects that understanding without pretending to replace it. <a href="https://youtube.com/live/kfCi2EBu-nc?t=4485" target="_blank" rel="noopener">01:14:45</a></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="page">
+      <h2>HAN'S <span>FIELD KIT</span></h2>
+      <div class="sub">the benchmark, two reusable workflows, and the verifier-centered loop they support</div>
+      <div class="cards">
+        <article class="card">
+          <span class="tag workflow">benchmark</span>
+          <h3><a href="https://www.skillsbench.ai/" target="_blank" rel="noopener" style="color:var(--cyan)">SkillsBench</a></h3>
+          <p>Compare how skills perform across complete agent configurations, including the model, harness, tools, environment, artifact, and trace.</p>
+        </article>
+        <article class="card">
+          <span class="tag workflow">workflow</span>
+          <h3><a href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/benchmarking-agent-skills" target="_blank" rel="noopener" style="color:var(--cyan)">benchmarking-agent-skills</a></h3>
+          <p>Define sandboxed tasks, grade their artifacts, inspect trajectories, and compare the behavior of model-and-harness combinations.</p>
+        </article>
+        <article class="card">
+          <span class="tag workflow">workflow</span>
+          <h3><a href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/nightly-knowledge-graph" target="_blank" rel="noopener" style="color:var(--cyan)">nightly-knowledge-graph</a></h3>
+          <p>Maintain a multilingual Obsidian wiki with a scheduled agent while keeping reading, source selection, and prose with the human.</p>
+        </article>
+        <article class="card">
+          <span class="tag workflow">workflow</span>
+          <h3><a href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/verifiable-agent-loops" target="_blank" rel="noopener" style="color:var(--cyan)">verifiable-agent-loops</a></h3>
+          <p>Define independent completion evidence, constrain the worker, inspect the trajectory, and repair rewards the agent learns to game.</p>
+        </article>
+        <article class="card">
+          <span class="tag workflow">practice</span>
+          <h3><a href="https://youtube.com/live/kfCi2EBu-nc?t=2395" target="_blank" rel="noopener" style="color:var(--cyan)">CLI control plane</a></h3>
+          <p>Han uses Claude Code to work through AWS and Jira from one interface, with minimum-permission credentials for consequential systems.</p>
+        </article>
+        <article class="card">
+          <span class="tag workflow">practice</span>
+          <h3><a href="https://youtube.com/live/kfCi2EBu-nc?t=2730" target="_blank" rel="noopener" style="color:var(--cyan)">Fork before the deep end</a></h3>
+          <p>Branch a research or writing session before a long detour makes the accumulated context difficult to redirect or recover.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="interstitial">
+    <div class="page iq">
+      <p>"At the end, the key is you have to have a verifier that you can verify the output is correct."</p>
+      <div class="cap">Better models need less procedural instruction, but a trustworthy loop still needs evidence that the work reached the intended state. <a href="https://youtube.com/live/kfCi2EBu-nc?t=5830" target="_blank" rel="noopener">01:37:10</a></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="page">
+      <h2>HAN'S <span>STACK</span></h2>
+      <div class="sub">agent evaluation, scheduled knowledge maintenance, and practical control planes</div>
+      <div class="tools">
+        <a class="tool" href="https://www.skillsbench.ai/" target="_blank" rel="noopener"><b>SkillsBench</b>agent-skill benchmarking</a>
+        <a class="tool" href="https://www.benchflow.ai/" target="_blank" rel="noopener"><b>Benchflow</b>evaluation orchestration</a>
+        <a class="tool" href="https://openai.com/codex/" target="_blank" rel="noopener"><b>Codex</b>nightly vault maintenance</a>
+        <a class="tool" href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener"><b>Claude Code</b>CLI control plane</a>
+        <a class="tool" href="https://obsidian.md/" target="_blank" rel="noopener"><b>Obsidian</b>augmented memory and graph</a>
+        <a class="tool" href="https://www.docker.com/" target="_blank" rel="noopener"><b>Docker</b>isolated task environments</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="page">
+    <div>© 2026 hugo bowne-anderson &middot; show us your agent skills &middot; han: "we shape our tools and our tools shape us"</div>
+    <div class="socials">
+      <a href="../../../agent-skills">show page</a>
+      <a href="https://github.com/hugobowne/show-us-your-agent-skills/blob/main/episode-field-notes/ep-7/han.md" target="_blank" rel="noopener">full field notes</a>
+      <a href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/benchmarking-agent-skills" target="_blank" rel="noopener">benchmark workflow</a>
+      <a href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/nightly-knowledge-graph" target="_blank" rel="noopener">knowledge workflow</a>
+      <a href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/verifiable-agent-loops" target="_blank" rel="noopener">loop workflow</a>
+      <a href="https://www.youtube.com/watch?v=kfCi2EBu-nc" target="_blank" rel="noopener">episode 07</a>
+      <a href="https://leehanchung.github.io/" target="_blank" rel="noopener">Han's site</a>
+      <a href="https://www.skillsbench.ai/" target="_blank" rel="noopener">SkillsBench</a>
+    </div>
+  </div>
+</footer>
+<script>
+document.querySelectorAll('.ytfacade').forEach(function (f) {
+  function play() {
+    var ifr = document.createElement('iframe');
+    ifr.src = 'https://www.youtube-nocookie.com/embed/' + f.dataset.id +
+      '?start=' + (f.dataset.start || 0) + '&autoplay=1&rel=0';
+    ifr.allow = 'autoplay; encrypted-media; picture-in-picture; web-share; fullscreen';
+    ifr.allowFullscreen = true;
+    f.innerHTML = '';
+    f.appendChild(ifr);
+    f.style.cursor = 'default';
+    f.removeAttribute('role');
+  }
+  f.addEventListener('click', play, { once:true });
+  f.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); play(); }
+  }, { once:true });
+});
+</script>
+</body>
+</html>

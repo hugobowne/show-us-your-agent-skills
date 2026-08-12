@@ -243,7 +243,7 @@ body::before {
 }
 .sec .sub::before { content: "// "; }
 
-/* ─── next-up Ep 3 ─── */
+/* ─── next-up episode ─── */
 .nextup { background: linear-gradient(180deg, rgba(67,250,251,0.04), transparent 60%), var(--bg); }
 .nextup .hd { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
 .nextup .badge {
@@ -262,6 +262,8 @@ body::before {
   text-align: right;
 }
 .lineup { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; }
+.lineup.two { display: flex; flex-wrap: wrap; justify-content: center; }
+.lineup.two .lcard { flex: 0 0 calc(33.333% - 8px); }
 .lineup.three { display: flex; flex-wrap: wrap; justify-content: center; }
 .lineup.three .lcard { flex: 0 0 calc(33.333% - 8px); }
 .lcard {
@@ -610,7 +612,7 @@ a.rcard:hover {
 }
 .hub-card .de { color: var(--fg-2); font-size: 13px; line-height: 1.5; margin-bottom: 12px; }
 .hub-card .by { font-family: "JetBrains Mono", monospace; font-size: 11px; color: var(--fg-3); line-height: 1.6; }
-.hub-card .by .ep { color: var(--magenta); font-weight: 700; letter-spacing: 0.04em; margin-right: 8px; }
+.hub-card .by .episode-label { color: var(--magenta); font-weight: 700; letter-spacing: 0.04em; margin-right: 8px; }
 .hub-card .by b { color: var(--magenta); font-weight: 400; }
 .hub-card .by .yt { color: var(--cyan); margin-left: 8px; }
 .hub-card .hub-tag { position: absolute; top: 14px; right: 16px; }
@@ -717,6 +719,7 @@ a.rcard:hover {
   .roster.wrap .rcard { flex-basis: calc(50% - 6px); }
   .dossier-grid { grid-template-columns: minmax(0, 1fr); }
   .lineup.text .tcard { flex-basis: calc(50% - 6px); }
+  .lineup.two .lcard { flex-basis: calc(50% - 6px); }
   .lineup.three .lcard { flex-basis: calc(50% - 6px); }
   .stats .v { font-size: 20px; }
   .sec h2 { font-size: 16px; }
@@ -739,7 +742,7 @@ a.rcard:hover {
   .stats .v { font-size: 18px; }
   .stats .v.v-sm { font-size: 14px; }
   .stats .c { padding: 16px 14px; }
-  .stats .k { font-size: 8px; }
+  .stats .k { font-size: 8px; white-space: normal; line-height: 1.4; }
   .btn { font-size: 11px; padding: 14px 18px; }
   .ep .hd .num { font-size: 20px; }
   .nextup .badge, .nextup .hd .date { font-size: 10px; }
@@ -760,7 +763,7 @@ a.rcard:hover {
       <a href="agent-skills" class="active">agent skills</a>
       <a href="https://hugobowne.github.io/#course">building agents</a>
     </nav>
-    <a class="status" href="https://luma.com/y4hylb82" target="_blank" rel="noopener">register · ep 07 · jul 17</a>
+    <a class="status" href="https://www.youtube.com/watch?v=NH-ic7-V-jY" target="_blank" rel="noopener">watch · ep 08</a>
   </div>
 </header>
 
@@ -769,8 +772,7 @@ a.rcard:hover {
   <div class="page">
   <div class="season-bar">
     <span>SEASON</span><span>02</span>
-    <span>SHIPPED</span><span>06</span>
-    <span>UPCOMING</span><span>01</span>
+    <span>SHIPPED</span><span>08</span>
     <span>VENUE</span><span>YOUTUBE LIVE</span>
   </div>
   <h1>
@@ -791,7 +793,7 @@ a.rcard:hover {
     background reviewers, from people whose software you've been using for years.
   </p>
   <div class="ctas">
-    <a class="btn" href="https://luma.com/y4hylb82" target="_blank" rel="noopener">▶ PRESS START · EP 07</a>
+    <a class="btn" href="https://www.youtube.com/watch?v=NH-ic7-V-jY" target="_blank" rel="noopener">▶ WATCH · EP 08</a>
     <a class="btn cyan" href="#past">▣ WATCH PAST EPISODES</a>
     <a class="btn" href="#dossiers">▣ MEET THE GUESTS</a>
   </div>
@@ -802,41 +804,117 @@ a.rcard:hover {
 <section class="stats">
   <div class="page">
     <div class="c"><div class="k">SEASON</div><div class="v">02</div></div>
-    <div class="c"><div class="k">EPISODES</div><div class="v">06</div></div>
-    <div class="c"><div class="k">BUILDERS</div><div class="v">22</div></div>
-    <div class="c"><div class="k">SKILLS · WORKFLOWS</div><div class="v v-sm">61 · 87</div></div>
-  </div>
-</section>
-
-<!-- NEXT UP · EP 07 -->
-<section class="sec nextup" id="next">
-  <div class="page">
-  <div class="hd">
-    <span class="badge">NEXT EPISODE</span>
-    <span class="date">JUL 17 · 2026</span>
-    <span class="runtime">friday · live on youtube</span>
-  </div>
-  <h2>EP 07 · <span class="br">COMING UP</span></h2>
-  <div class="sub">Greg Ceccarelli and Han-Chung Lee on what they are building with AI agents</div>
-
-  <div class="lineup text">
-    <a class="tcard" href="https://luma.com/y4hylb82" target="_blank" rel="noopener">
-      <div class="nm">GREG CECCARELLI<span class="co">specstory · ex-github</span></div>
-    </a>
-    <a class="tcard" href="https://luma.com/y4hylb82" target="_blank" rel="noopener">
-      <div class="nm">HAN-CHUNG LEE<span class="co">moody's analytics</span></div>
-    </a>
-  </div>
-
-  <div class="foot">
-    <div class="ho">HOSTS <b>HUGO BOWNE-ANDERSON</b> · <b>THOMAS WIECKI</b></div>
-    <a class="btn sm cyan" href="https://luma.com/y4hylb82" target="_blank" rel="noopener">REGISTER ▶</a>
-  </div>
+    <div class="c"><div class="k">EPISODES</div><div class="v">08</div></div>
+    <div class="c"><div class="k">BUILDERS</div><div class="v">26</div></div>
+    <div class="c"><div class="k">SKILLS · WORKFLOWS</div><div class="v v-sm">73 · 103</div></div>
   </div>
 </section>
 
 <!-- PAST EPISODES -->
 <section class="sec ep" id="past">
+  <div class="page">
+  <div class="hd">
+    <div class="num">EP 08</div>
+    <div class="stat">· JUL 2026 · 02 GUESTS · FULL EPISODE</div>
+  </div>
+  <h3>1,409 AGENTS &amp; SOFTWARE BUILT ON A WALK</h3>
+  <p class="hub-intro">Chip Huyen showed a runner where a strong model plans and reviews while cheaper agents work across providers. Tim Hopper showed how he builds and deploys software from his phone while walking, then asks the agent to email him when it finishes.</p>
+  <div class="ytfacade" data-id="NH-ic7-V-jY" data-start="0" role="button" tabindex="0" aria-label="Play EP 08 - Chip Huyen and Tim Hopper">
+    <img src="https://i.ytimg.com/vi/NH-ic7-V-jY/maxresdefault.jpg" onerror="this.src='https://i.ytimg.com/vi/NH-ic7-V-jY/hqdefault.jpg'" alt="" loading="lazy">
+    <button class="ytplay" aria-hidden="true" tabindex="-1">&#9654;</button>
+    <div class="ytcap"><b>EP 08 · CHIP HUYEN &amp; TIM HOPPER</b> - cross-provider agent swarms, verified frontends, software built from a phone, printable magazines, and completion emails</div>
+  </div>
+  <div class="roster wrap">
+    <a class="rcard" href="agent-skills/guests/chip-huyen/"><img src="show/avatars/chip.png" alt="Chip Huyen"><div class="lbl">CHIP HUYEN<span class="co">good ai stack · cross-provider runner</span></div></a>
+    <a class="rcard" href="agent-skills/guests/tim-hopper/"><img src="show/avatars/tim.png" alt="Tim Hopper"><div class="lbl">TIM HOPPER<span class="co">hopper herald · phone-first agents</span></div></a>
+  </div>
+  <div class="skillz">
+    <div class="hd2">▣ HIGHLIGHT REEL</div>
+    <div class="item">
+      <div class="idx">01</div>
+      <div><div class="nm"><a href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/cross-provider-agent-swarms" target="_blank" rel="noopener">cross-provider-agent-swarms</a> <span class="ttag workflow">workflow</span></div><div class="de">Put a strong model in charge of planning and review, then distribute implementation across cheaper workers from several providers. · Chip Huyen</div></div>
+      <a class="ts" href="https://youtube.com/live/NH-ic7-V-jY?t=3008" target="_blank" rel="noopener">00:50:08</a>
+    </div>
+    <div class="item">
+      <div class="idx">02</div>
+      <div><div class="nm"><a href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/skills/verified-frontend" target="_blank" rel="noopener">verified-frontend</a> <span class="ttag skill">skill</span></div><div class="de">Open the rendered page, inspect it visually, improve it, and attach screenshot evidence to the pull request. · Chip Huyen</div></div>
+      <a class="ts" href="https://youtube.com/live/NH-ic7-V-jY?t=3680" target="_blank" rel="noopener">01:01:20</a>
+    </div>
+    <div class="item">
+      <div class="idx">03</div>
+      <div><div class="nm"><a href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/persistent-phone-agent-sessions" target="_blank" rel="noopener">persistent-phone-agent-sessions</a> <span class="ttag workflow">workflow</span></div><div class="de">Keep project sessions running at home and direct them from a phone whenever a few minutes appear. · Tim Hopper</div></div>
+      <a class="ts" href="https://youtube.com/live/NH-ic7-V-jY?t=1701" target="_blank" rel="noopener">00:28:21</a>
+    </div>
+    <div class="item">
+      <div class="idx">04</div>
+      <div><div class="nm"><a href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/skills/magazine-explainer" target="_blank" rel="noopener">magazine-explainer</a> <span class="ttag skill">skill</span></div><div class="de">Turn a vague topic into a researched, illustrated web magazine and a booklet for an ordinary printer. · Tim Hopper</div></div>
+      <a class="ts" href="https://youtube.com/live/NH-ic7-V-jY?t=762" target="_blank" rel="noopener">00:12:42</a>
+    </div>
+    <div class="item">
+      <div class="idx">05</div>
+      <div><div class="nm"><a href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/skills/resend-email" target="_blank" rel="noopener">resend-email</a> <span class="ttag skill">skill</span></div><div class="de">Email the finished result and next steps when Tim has left the agent running overnight. · Tim Hopper</div></div>
+      <a class="ts" href="https://youtube.com/live/NH-ic7-V-jY?t=1975" target="_blank" rel="noopener">00:32:55</a>
+    </div>
+  </div>
+  <div class="actions">
+    <a class="btn sm cyan" href="https://www.youtube.com/watch?v=NH-ic7-V-jY" target="_blank" rel="noopener">▶ WATCH ON YOUTUBE</a>
+    <a class="btn sm" href="#hub">$ INSTALL SKILLS</a>
+  </div>
+  </div>
+</section>
+
+<section class="sec ep">
+  <div class="page">
+  <div class="hd">
+    <div class="num">EP 07</div>
+    <div class="stat">· JUL 2026 · 02 GUESTS · FULL EPISODE</div>
+  </div>
+  <h3>LOOP ENGINEERING, AGENT BENCHMARKS &amp; NIGHTLY MEMORY</h3>
+  <p class="hub-intro">Mining agent histories into reviewed skills, keeping coding agents inside verifiable loops, benchmarking complete model-and-harness combinations, and maintaining a multilingual knowledge graph on a nightly schedule.</p>
+  <div class="ytfacade" data-id="kfCi2EBu-nc" data-start="0" role="button" tabindex="0" aria-label="Play EP 07 - Loop Engineering, Agent Benchmarks and Nightly Memory">
+    <img src="https://i.ytimg.com/vi/kfCi2EBu-nc/maxresdefault.jpg" onerror="this.src='https://i.ytimg.com/vi/kfCi2EBu-nc/hqdefault.jpg'" alt="" loading="lazy">
+    <button class="ytplay" aria-hidden="true" tabindex="-1">&#9654;</button>
+    <div class="ytcap"><b>EP 07 · LOOP ENGINEERING, AGENT BENCHMARKS &amp; NIGHTLY MEMORY</b> - Lore, Dead Reckon, SkillsBench, verifiable trajectories, and a scheduled Obsidian knowledge graph</div>
+  </div>
+  <div class="roster wrap">
+    <a class="rcard" href="agent-skills/guests/greg-ceccarelli/"><img src="agent-skills/guests/greg-ceccarelli/greg-ceccarelli-8bit.png" alt="Greg Ceccarelli"><div class="lbl">GREG CECCARELLI<span class="co">specstory · lore · dead reckon</span></div></a>
+    <a class="rcard" href="agent-skills/guests/han-chung-lee/"><img src="agent-skills/guests/han-chung-lee/han-chung-lee-8bit.png" alt="Han-Chung Lee"><div class="lbl">HAN-CHUNG LEE<span class="co">moody's · skillsbench</span></div></a>
+  </div>
+  <div class="skillz">
+    <div class="hd2">▣ HIGHLIGHT REEL</div>
+    <div class="item">
+      <div class="idx">01</div>
+      <div><div class="nm"><a href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/skills/lore" target="_blank" rel="noopener">lore</a> <span class="ttag skill">skill</span></div><div class="de">Mine saved agent sessions for recurring practices, cite the source histories, and install nothing until the human approves it. · Greg Ceccarelli</div></div>
+      <a class="ts" href="https://youtube.com/live/kfCi2EBu-nc?t=450" target="_blank" rel="noopener">00:07:30</a>
+    </div>
+    <div class="item">
+      <div class="idx">02</div>
+      <div><div class="nm"><a href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/skills-from-agent-history" target="_blank" rel="noopener">skills-from-agent-history</a> <span class="ttag workflow">workflow</span></div><div class="de">Turn real interaction history into reviewed skill candidates, with acceptance evidence from the next user turn. · Greg Ceccarelli</div></div>
+      <a class="ts" href="https://youtube.com/live/kfCi2EBu-nc?t=1235" target="_blank" rel="noopener">00:20:35</a>
+    </div>
+    <div class="item">
+      <div class="idx">03</div>
+      <div><div class="nm"><a href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/verifiable-agent-loops" target="_blank" rel="noopener">verifiable-agent-loops</a> <span class="ttag workflow">workflow</span></div><div class="de">Keep the coding model working until an independently held completion check proves the intended outcome. · Greg Ceccarelli</div></div>
+      <a class="ts" href="https://youtube.com/live/kfCi2EBu-nc?t=4800" target="_blank" rel="noopener">01:20:00</a>
+    </div>
+    <div class="item">
+      <div class="idx">04</div>
+      <div><div class="nm"><a href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/benchmarking-agent-skills" target="_blank" rel="noopener">benchmarking-agent-skills</a> <span class="ttag workflow">workflow</span></div><div class="de">Compare skills across model-and-harness combinations, then inspect the complete trajectory for hidden failures. · Han-Chung Lee</div></div>
+      <a class="ts" href="https://youtube.com/live/kfCi2EBu-nc?t=2860" target="_blank" rel="noopener">00:47:40</a>
+    </div>
+    <div class="item">
+      <div class="idx">05</div>
+      <div><div class="nm"><a href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/nightly-knowledge-graph" target="_blank" rel="noopener">nightly-knowledge-graph</a> <span class="ttag workflow">workflow</span></div><div class="de">Read first, then let a scheduled agent connect entities and concepts without rewriting the human-authored corpus. · Han-Chung Lee</div></div>
+      <a class="ts" href="https://youtube.com/live/kfCi2EBu-nc?t=4153" target="_blank" rel="noopener">01:09:13</a>
+    </div>
+  </div>
+  <div class="actions">
+    <a class="btn sm cyan" href="https://www.youtube.com/watch?v=kfCi2EBu-nc" target="_blank" rel="noopener">▶ WATCH ON YOUTUBE</a>
+  </div>
+  </div>
+</section>
+
+<section class="sec ep">
   <div class="page">
   <div class="hd">
     <div class="num">EP 06</div>
@@ -1323,6 +1401,22 @@ a.rcard:hover {
   <h2>GUEST <span class="br">DOSSIERS</span></h2>
   <div class="sub">one page per builder: segment video, field notes, artifacts, and the workflow they showed</div>
   <div class="dossier-grid">
+    <a class="dossier-card" href="agent-skills/guests/chip-huyen/">
+      <span class="av"><img src="show/avatars/chip.png" alt="Chip Huyen"></span>
+      <span><span class="nm">CHIP HUYEN</span><span class="ep">EP 08</span><span class="de">1,409 agents, a cross-provider runner, and the records that keep the work reviewable</span></span>
+    </a>
+    <a class="dossier-card" href="agent-skills/guests/tim-hopper/">
+      <span class="av"><img src="show/avatars/tim.png" alt="Tim Hopper"></span>
+      <span><span class="nm">TIM HOPPER</span><span class="ep">EP 08</span><span class="de">building and deploying Hopper Herald from his phone while walking</span></span>
+    </a>
+    <a class="dossier-card" href="agent-skills/guests/greg-ceccarelli/">
+      <span class="av"><img src="agent-skills/guests/greg-ceccarelli/greg-ceccarelli-8bit.png" alt="Greg Ceccarelli"></span>
+      <span><span class="nm">GREG CECCARELLI</span><span class="ep">EP 07</span><span class="de">Lore, hidden completion checks, and a new agentic software lifecycle</span></span>
+    </a>
+    <a class="dossier-card" href="agent-skills/guests/han-chung-lee/">
+      <span class="av"><img src="agent-skills/guests/han-chung-lee/han-chung-lee-8bit.png" alt="Han-Chung Lee"></span>
+      <span><span class="nm">HAN-CHUNG LEE</span><span class="ep">EP 07</span><span class="de">SkillsBench, verifiable trajectories, and nightly multilingual memory</span></span>
+    </a>
     <a class="dossier-card" href="agent-skills/guests/matt-rocklin/">
       <span class="av"><img src="show/avatars/rocklin.png" alt="Matt Rocklin"></span>
       <span><span class="nm">MATT ROCKLIN</span><span class="ep">EP 06</span><span class="de">the whole company as context, AGENTS.md, and feedback systems</span></span>
@@ -1425,6 +1519,66 @@ a.rcard:hover {
   </div>
 
   <div class="hub-grid">
+    <div class="hub-card" data-repo="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/cross-provider-agent-swarms">
+      <span class="hub-tag"><span class="ttag workflow">workflow</span></span>
+      <div class="hub-hd"><a class="nm" href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/cross-provider-agent-swarms" target="_blank" rel="noopener">cross-provider-agent-swarms</a><div class="ep-tag">EP 08</div></div>
+      <div class="de">Let a strong model plan and review while cheaper agents implement across providers.</div>
+      <div class="by"><span class="episode-label">EP 08</span><b>Chip Huyen</b> · Good AI Stack <a class="yt" href="https://youtube.com/live/NH-ic7-V-jY?t=3008" target="_blank" rel="noopener">↗ youtube · 00:50:08</a></div>
+    </div>
+    <div class="hub-card" data-repo="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/skills/verified-frontend">
+      <span class="hub-tag"><span class="ttag skill">skill</span></span>
+      <div class="hub-hd"><a class="nm" href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/skills/verified-frontend" target="_blank" rel="noopener">verified-frontend</a><div class="ep-tag">EP 08</div></div>
+      <div class="de">Inspect the rendered page and attach screenshot evidence to the pull request.</div>
+      <div class="by"><span class="episode-label">EP 08</span><b>Chip Huyen</b> <a class="yt" href="https://youtube.com/live/NH-ic7-V-jY?t=3680" target="_blank" rel="noopener">↗ youtube · 01:01:20</a></div>
+    </div>
+    <div class="hub-card" data-repo="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/persistent-phone-agent-sessions">
+      <span class="hub-tag"><span class="ttag workflow">workflow</span></span>
+      <div class="hub-hd"><a class="nm" href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/persistent-phone-agent-sessions" target="_blank" rel="noopener">persistent-phone-agent-sessions</a><div class="ep-tag">EP 08</div></div>
+      <div class="de">Keep projects running at home and direct them from a phone during short breaks.</div>
+      <div class="by"><span class="episode-label">EP 08</span><b>Tim Hopper</b> <a class="yt" href="https://youtube.com/live/NH-ic7-V-jY?t=1701" target="_blank" rel="noopener">↗ youtube · 00:28:21</a></div>
+    </div>
+    <div class="hub-card" data-repo="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/skills/magazine-explainer">
+      <span class="hub-tag"><span class="ttag skill">skill</span></span>
+      <div class="hub-hd"><a class="nm" href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/skills/magazine-explainer" target="_blank" rel="noopener">magazine-explainer</a><div class="ep-tag">EP 08</div></div>
+      <div class="de">Research, illustrate, and lay out a web magazine and printable booklet.</div>
+      <div class="by"><span class="episode-label">EP 08</span><b>Tim Hopper</b> <a class="yt" href="https://youtube.com/live/NH-ic7-V-jY?t=762" target="_blank" rel="noopener">↗ youtube · 00:12:42</a></div>
+    </div>
+    <div class="hub-card" data-repo="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/skills/resend-email">
+      <span class="hub-tag"><span class="ttag skill">skill</span></span>
+      <div class="hub-hd"><a class="nm" href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/skills/resend-email" target="_blank" rel="noopener">resend-email</a><div class="ep-tag">EP 08</div></div>
+      <div class="de">Email the result and next steps when an unattended agent finishes its work.</div>
+      <div class="by"><span class="episode-label">EP 08</span><b>Tim Hopper</b> <a class="yt" href="https://youtube.com/live/NH-ic7-V-jY?t=1975" target="_blank" rel="noopener">↗ youtube · 00:32:55</a></div>
+    </div>
+    <div class="hub-card" data-repo="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/skills/lore">
+      <span class="hub-tag"><span class="ttag skill">skill</span></span>
+      <div class="hub-hd"><a class="nm" href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/skills/lore" target="_blank" rel="noopener">lore</a><div class="ep-tag">EP 07</div></div>
+      <div class="de">Mine real agent histories into cited skill candidates that require human approval.</div>
+      <div class="by"><span class="episode-label">EP 07</span><b>Greg Ceccarelli</b> · SpecStory <a class="yt" href="https://youtube.com/live/kfCi2EBu-nc?t=450" target="_blank" rel="noopener">↗ youtube · 00:07:30</a></div>
+    </div>
+    <div class="hub-card" data-repo="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/verifiable-agent-loops">
+      <span class="hub-tag"><span class="ttag workflow">workflow</span></span>
+      <div class="hub-hd"><a class="nm" href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/verifiable-agent-loops" target="_blank" rel="noopener">verifiable-agent-loops</a><div class="ep-tag">EP 07</div></div>
+      <div class="de">Design the outcome and verifier first, then let agents iterate inside a bounded loop.</div>
+      <div class="by"><span class="episode-label">EP 07</span><b>Greg Ceccarelli</b> · Dead Reckon <a class="yt" href="https://youtube.com/live/kfCi2EBu-nc?t=4800" target="_blank" rel="noopener">↗ youtube · 01:20:00</a></div>
+    </div>
+    <div class="hub-card" data-repo="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/skills-from-agent-history">
+      <span class="hub-tag"><span class="ttag workflow">workflow</span></span>
+      <div class="hub-hd"><a class="nm" href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/skills-from-agent-history" target="_blank" rel="noopener">skills-from-agent-history</a><div class="ep-tag">EP 07</div></div>
+      <div class="de">Use accepted and corrected agent sessions as evidence for reusable working practices.</div>
+      <div class="by"><span class="episode-label">EP 07</span><b>Greg Ceccarelli</b> · Lore <a class="yt" href="https://youtube.com/live/kfCi2EBu-nc?t=1235" target="_blank" rel="noopener">↗ youtube · 00:20:35</a></div>
+    </div>
+    <div class="hub-card" data-repo="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/benchmarking-agent-skills">
+      <span class="hub-tag"><span class="ttag workflow">workflow</span></span>
+      <div class="hub-hd"><a class="nm" href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/benchmarking-agent-skills" target="_blank" rel="noopener">benchmarking-agent-skills</a><div class="ep-tag">EP 07</div></div>
+      <div class="de">Test the whole agent configuration and preserve its trajectory for diagnosis.</div>
+      <div class="by"><span class="episode-label">EP 07</span><b>Han-Chung Lee</b> · SkillsBench <a class="yt" href="https://youtube.com/live/kfCi2EBu-nc?t=2860" target="_blank" rel="noopener">↗ youtube · 00:47:40</a></div>
+    </div>
+    <div class="hub-card" data-repo="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/nightly-knowledge-graph">
+      <span class="hub-tag"><span class="ttag workflow">workflow</span></span>
+      <div class="hub-hd"><a class="nm" href="https://github.com/hugobowne/show-us-your-agent-skills/tree/main/workflows/nightly-knowledge-graph" target="_blank" rel="noopener">nightly-knowledge-graph</a><div class="ep-tag">EP 07</div></div>
+      <div class="de">Schedule entity and concept linking across material the human has actually read.</div>
+      <div class="by"><span class="episode-label">EP 07</span><b>Han-Chung Lee</b> · Obsidian <a class="yt" href="https://youtube.com/live/kfCi2EBu-nc?t=4153" target="_blank" rel="noopener">↗ youtube · 01:09:13</a></div>
+    </div>
     <div class="hub-card" data-repo="https://github.com/hugobowne/show-us-your-agent-skills/blob/main/skills/explain">
       <span class="hub-tag"><span class="ttag skill">skill</span></span>
       <div class="hub-hd"><a class="nm" href="https://github.com/hugobowne/show-us-your-agent-skills/blob/main/skills/explain" target="_blank" rel="noopener">explain</a><div class="ep-tag">EP 01</div></div>

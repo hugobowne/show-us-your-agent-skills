@@ -40,7 +40,9 @@ uv run <skill-dir>/scripts/make_8bit.py <input_photo> [output_png] [--prompt "..
 
 - Default output: `<input_stem>_8bit.png` next to the input.
 - Stylize prompt is `DEFAULT_PROMPT` at the top of `scripts/make_8bit.py`. Pass `--prompt` to override it for one run.
-- Model ID: `gemini-3.1-flash-image-preview`. If the API rejects it, try `gemini-2.5-flash-image-preview` (the "nano banana" model).
+- Default model ID: `gemini-3.1-flash-image`.
+- Current fallback IDs to try are `gemini-3.1-flash-lite-image` and `gemini-2.5-flash-image`. Do not use the old `*-preview` fallback names unless `ListModels` shows they are supported for the current API key.
+- The script uses Gemini's Interactions API for image editing, matching the current Google AI docs for Nano Banana image generation.
 - The model can sometimes add facial features that aren't in the source (e.g. a beard on a clean-shaven subject). Flag the output when this happens; do not silently rewrite the prompt to compensate.
 
 ## Step 2: Animate the still
@@ -51,9 +53,11 @@ uv run <skill-dir>/scripts/make_video.py <input_image> [output_mp4] \
 ```
 
 - `<input_image>` is normally the 8-bit PNG from step 1, but any image works (used as the first frame).
-- This call costs Replicate credits and takes ~30 to 90s.
+- This call costs Replicate credits and can take 5 to 10 minutes.
 - Output is an MP4 plus a `replicate.delivery` URL printed to stdout. The URL expires; the local file is the durable artifact.
-- Occasionally Replicate returns `ModelError: ... sensitive (E005)` on benign inputs. Rerun the same command before changing the prompt or image; it usually clears on retry.
+- Run only one Replicate prediction at a time. Every retry creates another chargeable prediction.
+- Never retry automatically after a timeout, disconnection, or ambiguous error. Use the printed prediction ID to check the existing job first; retry only with explicit user approval.
+- If generation succeeded but the download failed, recover the output from that prediction instead of generating again.
 
 ## End-of-run
 

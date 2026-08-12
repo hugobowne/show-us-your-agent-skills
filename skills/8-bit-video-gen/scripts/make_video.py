@@ -1,6 +1,7 @@
 # /// script
 # requires-python = ">=3.11"
 # dependencies = [
+#   "httpx",
 #   "replicate",
 #   "python-dotenv",
 # ]
@@ -8,6 +9,7 @@
 import argparse
 from pathlib import Path
 
+import httpx
 import replicate
 from dotenv import load_dotenv
 
@@ -37,11 +39,33 @@ with open(args.image, "rb") as image_file:
         "image": image_file,
     }
 
-    output = replicate.run("bytedance/seedance-2.0", input=input)
+    prediction = replicate.models.predictions.create(
+        model="bytedance/seedance-2.0",
+        input=input,
+        wait=False,
+    )
 
-print(output.url)
+print(f"prediction: {prediction.id}", flush=True)
+prediction.wait()
 
-with open(output_path, "wb") as f:
-    f.write(output.read())
+if prediction.status != "succeeded":
+    raise RuntimeError(f"prediction {prediction.id} {prediction.status}: {prediction.error}")
+if not isinstance(prediction.output, str):
+    raise RuntimeError(f"prediction {prediction.id} succeeded without a video URL")
 
-print(f"saved: {output_path}")
+print(prediction.output)
+
+output_path.parent.mkdir(parents=True, exist_ok=True)
+partial_path = output_path.with_suffix(output_path.suffix + ".part")
+with httpx.stream("GET", prediction.output, follow_redirects=True, timeout=None) as response:
+    response.raise_for_status()
+    with open(partial_path, "wb") as f:
+        for chunk in response.iter_bytes():
+            f.write(chunk)
+
+if partial_path.stat().st_size == 0:
+    raise RuntimeError(f"downloaded an empty video for prediction {prediction.id}")
+
+partial_path.replace(output_path)
+
+print(f"saved: {output_path} ({output_path.stat().st_size} bytes)")
